@@ -19,11 +19,22 @@ import {
     ColumnDef,
 } from "@tanstack/react-table";
 import {Button} from "@/components/ui/button.tsx";
-import {ArrowDownUp, CircleAlert, Download, MoreHorizontal, Plus, Settings2} from "lucide-react";
+import {
+    ArrowDown10,
+    ArrowDownUp, ArrowDownZA, ArrowUp01, ArrowUpAZ,
+    CircleAlert,
+    Copy,
+    DollarSign,
+    Download,
+    MoreHorizontal,
+    Plus,
+    Settings2,
+    User
+} from "lucide-react";
 import {
     DropdownMenu,
     DropdownMenuContent, DropdownMenuItem,
-    DropdownMenuLabel, DropdownMenuSeparator,
+    DropdownMenuSeparator,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu.tsx";
 import {useQuery} from "@tanstack/react-query";
@@ -98,16 +109,15 @@ const columns: ColumnDef<Property>[] = [
                                 <MoreHorizontal/>
                             </Button>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent align="end">
-                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                        <DropdownMenuContent align="end" className={'dark'}>
                             <DropdownMenuItem
                                 onClick={() => navigator.clipboard.writeText(property.id.toString())}
                             >
-                                Copy payment ID
+                                <Copy /> Copy payment ID
                             </DropdownMenuItem>
                             <DropdownMenuSeparator/>
-                            <DropdownMenuItem>View customer</DropdownMenuItem>
-                            <DropdownMenuItem>View payment details</DropdownMenuItem>
+                            <DropdownMenuItem><User /> View customer</DropdownMenuItem>
+                            <DropdownMenuItem><DollarSign /> View payment details</DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </>
@@ -168,17 +178,18 @@ export default function PropertiesList() {
                     <DropdownMenuTrigger asChild>
                         <Button variant={'ghost'} size={'sm'}><ArrowDownUp/></Button>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-56" align="start">
-                        <DropdownMenuItem>Name - asc</DropdownMenuItem>
-                        <DropdownMenuItem>Name - desc</DropdownMenuItem>
-                        <DropdownMenuItem>Bedrooms - asc</DropdownMenuItem>
-                        <DropdownMenuItem>Bedrooms - desc</DropdownMenuItem>
+                    <DropdownMenuContent className="w-46 dark" align="start">
+                        <DropdownMenuItem className={'flex justify-between'}><span>Name</span> <span><ArrowUpAZ className={'text-white size-5'} /></span></DropdownMenuItem>
+                        <DropdownMenuItem className={'flex justify-between'}><span>Name</span> <span><ArrowDownZA className={'text-white size-5'} /></span></DropdownMenuItem>
+                        <DropdownMenuItem className={'flex justify-between'}><span>Bedrooms</span> <span><ArrowUp01 className={'text-white size-5'} /></span></DropdownMenuItem>
+                        <DropdownMenuItem className={'flex justify-between'}><span>Bedrooms</span> <span><ArrowDown10 className={'text-white size-5'} /></span></DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </Filters>
 
 
             <DataTable
+                className={'mt-2'}
                 onSortChange={(records: Property[]) => {console.log(records)}}
                 onSelectChange={setSelectedProperties}
                 records={query.data?.data || []}
@@ -211,7 +222,7 @@ export default function PropertiesList() {
                 </PaginationContent>
             </Pagination>
 
-            <FixedFormActions visible={selectedProperties.length > 0}>
+            <FixedFormActions visible={selectedProperties.length > 0} className={'bottom-20 md:bottom-7'}>
                 <CircleAlert className={'text-orange-300 size-5 ml-1'}/>
                 <div className={'mr-10 text-mute'}>
                     {selectedProperties.length} selected

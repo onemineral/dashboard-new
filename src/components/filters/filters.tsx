@@ -1,6 +1,6 @@
 import {Button} from "@/components/ui/button.tsx";
 import {ReactNode, useEffect, useState} from "react";
-import {Plus, X} from "lucide-react";
+import {Filter, X} from "lucide-react";
 import {cn} from "@/lib/utils.ts";
 import deepEqual from 'deep-equal';
 import {
@@ -89,9 +89,9 @@ export function Filters({className, onFiltersChange, availableFilters, selectedF
         {additionalFilters.length > 0 && (
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button variant="outline" size={'sm'} className={'border-dashed'}><Plus/></Button>
+                    <Button variant="outline" size={'sm'} className={'border-dashed'}><Filter /></Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56" align="center">
+                <DropdownMenuContent className="w-56 dark" align="center">
                     {additionalFilters.map((filter) => (
                         <DropdownMenuItem key={filter.name} onClick={() => {
                             addFilter(filter.name, null, null);

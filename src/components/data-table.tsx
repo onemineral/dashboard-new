@@ -45,7 +45,8 @@ export const DataTable = ({
                               loading = false,
                               emptyElement,
                               onSortChange,
-                              onSelectChange
+                              onSelectChange,
+                              className,
                           }: {
     records: any[],
     columnDef: ColumnDef<any>[],
@@ -53,6 +54,7 @@ export const DataTable = ({
     emptyElement?: ReactNode,
     onSortChange?: (records: any[]) => void,
     onSelectChange?: (selectedIds: (string | number)[]) => void,
+    className?: string,
 }) => {
     const [data, setData] = useState<any[]>(records);
 
@@ -67,20 +69,21 @@ export const DataTable = ({
                     accessorKey: "selector",
                     size: 25,
                     header: ({table}) => (<Checkbox
-                                checked={
-                                    table.getIsAllPageRowsSelected() ||
-                                    (table.getIsSomePageRowsSelected() && "indeterminate")
-                                }
-                                onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
-                                aria-label="Select all"
-                            />
+                            checked={
+                                table.getIsAllPageRowsSelected() ||
+                                (table.getIsSomePageRowsSelected() && "indeterminate")
+                            }
+                            className={'bg-white'}
+                            onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
+                            aria-label="Select all"
+                        />
                     ),
                     cell: ({row}) => <Checkbox
                         className={'ml-1'}
-                            checked={row.getIsSelected()}
-                            onCheckedChange={(value) => row.toggleSelected(!!value)}
-                            aria-label="Select row"
-                        />,
+                        checked={row.getIsSelected()}
+                        onCheckedChange={(value) => row.toggleSelected(!!value)}
+                        aria-label="Select row"
+                    />,
                 },
                 ...retColumns,
             ];
@@ -148,7 +151,7 @@ export const DataTable = ({
         onDragEnd={onSortChange ? handleDragEnd : undefined}
         sensors={onSortChange ? sensors : undefined}
     >
-        <RTable data={data} columns={columns} onSelectChange={onSelectChange}/>
+        <RTable data={data} columns={columns} onSelectChange={onSelectChange} className={className}/>
     </DndContext>;
 }
 
@@ -166,7 +169,12 @@ function getPinned(columns: ColumnDef<any>[]): string[] {
     return result;
 }
 
-const RTable = ({data, columns, onSelectChange}: { data: any[], columns: ColumnDef<any>[] , onSelectChange?: (selectedIds: (string | number)[]) => void,}) => {
+const RTable = ({data, columns, onSelectChange, className}: {
+    data: any[],
+    columns: ColumnDef<any>[],
+    onSelectChange?: (selectedIds: (string | number)[]) => void,
+    className?: string,
+}) => {
     const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({});
     const [rowSelection, setRowSelection] = React.useState({});
 
@@ -191,18 +199,19 @@ const RTable = ({data, columns, onSelectChange}: { data: any[], columns: ColumnD
     });
 
     useEffect(() => {
-        if(onSelectChange) {
+        if (onSelectChange) {
             onSelectChange(Object.keys(rowSelection));
         }
     }, [onSelectChange, rowSelection]);
 
-    return <Table className={'table-auto border-b border-accent'}>
+    return <Table className={cn('table-auto border-b border-accent', className)}>
         <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
                 <TableRow className={'border-accent'} key={headerGroup.id}>
                     {headerGroup.headers.map((header) => {
                         return (
-                            <TableHead key={header.id} className={'bg-background'}
+                            <TableHead key={header.id}
+                                       className={'bg-muted'}
                                        style={getCommonPinningStyles(header.column)}>
                                 {header.isPlaceholder
                                     ? null

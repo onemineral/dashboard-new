@@ -12,6 +12,8 @@ import {Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle} from "@/
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "./ui/dialog";
+import {useIsMobile} from "@/hooks/use-mobile.ts";
+import {Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle} from "@/components/ui/drawer.tsx";
 
 type BreadcrumbType = {
     label: string;
@@ -30,6 +32,7 @@ export function Page({children, modal = false, size = 'sm', validateClose}: {chi
     const [open, setOpen] = useState(true);
     const navigate = useNavigate();
     const location = useLocation();
+    const isMobile = useIsMobile();
 
     const attemptClose = (open: boolean) => {
         if(!open) {
@@ -46,25 +49,35 @@ export function Page({children, modal = false, size = 'sm', validateClose}: {chi
 
         let content = <></>;
 
-        if(modal) {
-            content = <Dialog open={open} onOpenChange={attemptClose}>
+        if(isMobile) {
+            return <Drawer open={open} onOpenChange={attemptClose}>
+                <DrawerContent className={'px-4'}>
+                    {children}
+                </DrawerContent>
+            </Drawer>
+        } else {
+
+            if (modal) {
+                content = <Dialog open={open} onOpenChange={attemptClose}>
                     <DialogContent className={'@container group/page is-background is-dialog'} size={size}>
                         {children}
                     </DialogContent>
                 </Dialog>;
-        } else {
-            const sheetSizes: any = {
-                sm: 'md:max-w-xl!',
-                md: 'md:max-w-3xl!',
-                lg: 'xl:max-w-5xl! lg:max-w-3xl!',
-                xl: 'xl:max-w-7xl! lg:max-w-5xl!'
-            };
-            
-            content = <Sheet open={open} onOpenChange={attemptClose}>
-                    <SheetContent className={cn("@container max-w-[calc(100vw-1rem)]! group/page is-sheet is-background gap-0 min-w-80 m-2 rounded-2xl flex flex-col h-[calc(100dvh-1rem)] border shadow-xl w-full! px-4 overflow-y-auto", sheetSizes[size])}>
+            } else {
+                const sheetSizes: any = {
+                    sm: 'md:max-w-xl!',
+                    md: 'md:max-w-3xl!',
+                    lg: 'xl:max-w-5xl! lg:max-w-3xl!',
+                    xl: 'xl:max-w-7xl! lg:max-w-5xl!'
+                };
+
+                content = <Sheet open={open} onOpenChange={attemptClose}>
+                    <SheetContent
+                        className={cn("@container max-w-[calc(100vw-1rem)]! group/page is-sheet is-background gap-0 min-w-80 m-2 rounded-2xl flex flex-col h-[calc(100dvh-1rem)] border shadow-xl w-full! px-4 overflow-y-auto", sheetSizes[size])}>
                         {children}
                     </SheetContent>
                 </Sheet>;
+            }
         }
 
         return <PageContext.Provider
@@ -128,8 +141,15 @@ export function PageBreadcrumbs({breadcrumbs = []}: { breadcrumbs?: BreadcrumbTy
 export function PageHeader({children, className}: { children: React.ReactNode, className?: string }) {
     const location = useLocation();
     const {modal} = useContext(PageContext);
+    const isMobile = useIsMobile();
 
     if (location.state?.background) {
+        if(isMobile) {
+            return <DrawerHeader className={cn("text-left", className)}>
+                {children}
+            </DrawerHeader>
+        }
+
         if(modal) {
             return <DialogHeader className={className}>{children}</DialogHeader>;
         }
@@ -147,8 +167,13 @@ export function PageHeader({children, className}: { children: React.ReactNode, c
 export function PageTitle({children, className}: { children: React.ReactNode, className?: string }) {
     const location = useLocation();
     const {modal} = useContext(PageContext);
+    const isMobile = useIsMobile();
 
     if (location.state?.background) {
+        if(isMobile) {
+            return <DrawerTitle className={className}>{children}</DrawerTitle>
+        }
+
         if(modal) {
             return <DialogTitle className={className}>{children}</DialogTitle>;
         }
@@ -185,8 +210,13 @@ export function PageActions({children, className}: { children: React.ReactNode, 
 export function PageDescription({children, className}: { children: React.ReactNode, className?: string }) {
     const location = useLocation();
     const {modal} = useContext(PageContext);
+    const isMobile = useIsMobile();
 
     if (location.state?.background) {
+        if(isMobile) {
+            return <DrawerDescription className={className}>{children}</DrawerDescription>;
+        }
+
         if(modal) {
             return <DialogDescription className={className}>{children}</DialogDescription>;    
         }

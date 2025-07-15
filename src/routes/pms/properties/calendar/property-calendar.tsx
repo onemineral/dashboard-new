@@ -119,13 +119,13 @@ function PropertyCalendar() {
             {label: 'Dashboard', href: '/demo'},
             {label: 'Page'}
         ]}/>
-        <PageHeader>
-            <PageTitle>Dashboard</PageTitle>
+        <PageHeader className={'pb-0'}>
+            <PageTitle>Property calendar</PageTitle>
             <PageDescription>
                 Welcome to the calendar page
             </PageDescription>
         </PageHeader>
-        <PageContent className={'-mt-4'}>
+        <PageContent className={'overflow-y-auto'}>
             {isLoading && <div>Loading...</div>}
             {!isLoading && property !== null && (<>
                 <SingleCalendar
