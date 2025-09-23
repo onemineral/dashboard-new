@@ -5,6 +5,7 @@ import Schema from "@/models/Schema.ts";
 import Field from "@/models/field.tsx";
 import PicklistFilter from "@/components/filters/types/picklist-filter.tsx";
 import CheckboxListFilter from "@/components/filters/types/checkbox-list-filter.tsx";
+import RadioFilter from "@/components/filters/types/radio-filter.tsx";
 
 type FilterDefinition = {
     field: string,
@@ -42,7 +43,7 @@ function resolveFieldComponent(field: Field, fieldName: string) {
             if(Object.keys(field.possibleValues).length > 5) {
                 return <PicklistFilter options={field.possibleValues} field={fieldName} />;
             } else {
-                return <CheckboxListFilter options={field.possibleValues} field={fieldName} />
+                return <RadioFilter options={field.possibleValues} field={fieldName} />
             }
         default:
             return null;

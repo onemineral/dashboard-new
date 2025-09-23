@@ -56,7 +56,15 @@ const PicklistFilter = ({options, field}: { options: { [key: string]: string | R
                                 <Separator orientation="vertical" className="h-4!"/>
                                 <Badge variant="default" className="lg:hidden">{1}</Badge>
                                 <div className="hidden gap-1 lg:flex text-emerald-700">
-                                    {Object.keys(options).filter((k) => selection?.value == k).map((k) => options[k]).join(', ')}
+                                    {(() => {
+                                        const displayText = Object.keys(options)
+                                            .filter((k) => selection?.value == k)
+                                            .map((k) => options[k])
+                                            .join(', ');
+                                        return displayText.length > 100
+                                            ? displayText.slice(0, 100) + '…'
+                                            : displayText;
+                                    })()}
                                 </div>
                             </>
                         ) : <Plus className={'mr-3 size-3'}/>}
