@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { FilterProps } from '../components/Filters/types';
+import { FilterProps } from '../components/application/filters/types';
 
 export interface DisplayProps {
     record: any;
@@ -25,8 +25,6 @@ export default class Field {
 
     private readonly _label: string;
 
-    protected readonly _placeholder: any;
-
     private readonly _description: string;
 
     private readonly _hints: any;
@@ -41,6 +39,8 @@ export default class Field {
 
     protected readonly _possibleValues?: any;
 
+    protected readonly _spec: any;
+
     public constructor(data: any) {
         const {
             name,
@@ -52,11 +52,11 @@ export default class Field {
             isRequired,
             is_required,
             is_filterable,
-            placeholder,
             default_value,
             possible_values,
         } = data;
 
+        this._spec = data;
         this._name = name;
         this._type = type;
         this._label = label;
@@ -66,7 +66,6 @@ export default class Field {
         this._isRequired = isRequired || is_required;
         this._isFilterable = is_filterable;
         this._defaultValue = default_value;
-        this._placeholder = placeholder;
         this._possibleValues = possible_values;
     }
 
@@ -90,8 +89,16 @@ export default class Field {
         return this._isFilterable;
     }
 
+    public get isRequired() {
+        return this._isRequired;
+    }
+
     public get description() {
         return this._description;
+    }
+
+    public get spec() {
+        return this._spec;
     }
 
     public get hints() {
@@ -102,23 +109,8 @@ export default class Field {
         return this._errors;
     }
 
-    public get placeholder() {
-        return this._placeholder;
-    }
-
     public get possibleValues() {
         return this._possibleValues;
     }
 
-    public renderDisplay(props: DisplayProps): null | ReactNode {
-        return null;
-    }
-
-    public renderInput(props: InputProps): null | ReactNode {
-        return null;
-    }
-
-    public renderFilterInput(props: FilterProps): null | ReactNode {
-        return null;
-    }
 }

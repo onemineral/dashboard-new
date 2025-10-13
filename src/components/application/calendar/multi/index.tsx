@@ -277,7 +277,7 @@ const MulticalendarHeader = ({
 
     const datesGroupedByMonth = useMultiCalendarStore((state) => state.datesGroupedByMonth);
 
-    return <div className={'flex sticky top-0 z-20 bg-background pb-1'}>
+    return <div className={'flex sticky top-0 z-2 bg-background pb-1'}>
         {datesGroupedByMonth.map((groupedMonth, index) => (
             <div key={index} className={'flex'}>
                 <div>

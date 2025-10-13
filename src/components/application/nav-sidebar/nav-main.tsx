@@ -38,7 +38,7 @@ export function NavMain() {
                 <SidebarMenuItem>
                     <SidebarMenuButton asChild>
                         <Link to={'/'}>
-                            <LayoutDashboard className={'size-6!'} />
+                            <LayoutDashboard className={'size-6!'} /> Dashboard
                         </Link>
                     </SidebarMenuButton>
                 </SidebarMenuItem>

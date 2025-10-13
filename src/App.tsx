@@ -1,7 +1,7 @@
 import { Routes, useLocation, Route } from 'react-router-dom'
-import { NotFound } from './routes/not-found'
+import { NotFound } from './pages/not-found'
 import routes from './routes';
-import Layout from './components/layout';
+import Layout from './components/application/layout';
 import { useState } from 'react';
 import { AppContext } from '@/contexts/app-context.tsx'
 import { useQuery } from '@tanstack/react-query';
@@ -9,7 +9,7 @@ import AppLoader from './components/application/app-loader';
 import { UnauthorizedAccess } from './components/application/unauthorized-access';
 import { ReactivateSubscription } from './components/application/reactivate-subscription';
 import api from './lib/api';
-import { Toaster } from './components/ui/toaster';
+import { Toaster } from './components/ui/sonner';
 import Schema from "@/models/Schema.ts";
 import {Settings} from "@onemineral/pms-js-sdk";
 
@@ -46,7 +46,21 @@ function App() {
       } as any}
     >
       <AppRoutes />
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          unstyled: true,
+          classNames: {
+            error:
+              "bg-red-50 text-red-800 border border-red-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-red-500",
+            success:
+              "bg-green-50 text-green-800 border border-green-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-green-500",
+            warning:
+              "bg-yellow-50 text-yellow-900 border border-yellow-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-yellow-500",
+            info:
+              "bg-blue-50 text-blue-800 border border-blue-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-blue-500",
+          },
+        }}
+      />
     </AppContext.Provider>;
 }
 

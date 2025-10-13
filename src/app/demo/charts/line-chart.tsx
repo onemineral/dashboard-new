@@ -29,13 +29,13 @@ const chartData = [
 const chartConfig = {
     desktop: {
         label: "Desktop",
-        color: "hsl(var(--chart-1))",
+        color: "var(--chart-1)",
     },
 } satisfies ChartConfig
 
 export function DemoLineChart() {
     return (
-        <Card>
+        <Card className={'shadow-none border-none'}>
             <CardHeader>
                 <CardTitle>Line Chart</CardTitle>
                 <CardDescription>January - June 2024</CardDescription>

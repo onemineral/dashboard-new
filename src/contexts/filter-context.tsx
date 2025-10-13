@@ -1,5 +1,5 @@
 import {createContext} from "react";
-import {FilterSettings, FilterSelection} from "@/components/filters/filters.tsx";
+import {FilterSettings, FilterSelection} from "@/components/application/filters/filters";
 
 export const FilterContext = createContext<{
     settings: FilterSettings;

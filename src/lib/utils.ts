@@ -45,3 +45,54 @@ export function mergeObjects(obj1: object|null|undefined, obj2: object|null|unde
 
   return result;
 }
+
+export function translated(text: any, locale?: string) {
+    if (!text) {
+        return null;
+    }
+
+    if (typeof text === 'string') {
+        return text;
+    }
+
+    if (locale && text[locale]) {
+        return text[locale];
+    }
+
+    if(text.en) {
+        return text.en;
+    }
+
+    const values = Object.values(text);
+    for(let i = 0; i < values.length; i++) {
+        if(values[i]) {
+          return values[i];
+        }
+    }
+}
+
+/**
+ * Get flag emoji for a language by converting its ISO locale country code to a flag emoji.
+ * Uses Unicode Regional Indicator Symbols (same approach as phone component).
+ *
+ * @param isoLocale - ISO locale string (e.g., "en_US", "es_ES", "fr_FR")
+ * @returns Flag emoji for the country code
+ */
+export function getFlagEmoji(isoLocale: string): string {
+    // Extract country code from ISO locale (e.g., "en_US" -> "US")
+    const countryCode = isoLocale.split("_")[1];
+
+    if (!countryCode || countryCode.length !== 2) {
+        return "🌐"; // Fallback globe emoji
+    }
+
+    // Convert country code to flag emoji using Regional Indicator Symbols
+    // Each letter is converted to its corresponding Regional Indicator Symbol
+    // by adding 127397 to the character code (127462 - 65 = 127397, where 65 is 'A')
+    const codePoints = countryCode
+        .toUpperCase()
+        .split("")
+        .map((char) => 127397 + char.charCodeAt(0));
+
+    return String.fromCodePoint(...codePoints);
+}

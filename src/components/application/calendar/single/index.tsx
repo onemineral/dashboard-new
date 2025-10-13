@@ -117,7 +117,7 @@ export default function SingleCalendar({
 
     return (
         <div className={'w-full'}>
-            <div className={'sticky top-0 pt-4 z-20 flex w-full justify-between space-x-1 bg-background'}>
+            <div className={'sticky top-0 pt-4 z-2 flex w-full justify-between space-x-1 bg-background'}>
                 <DayNameHeader isWeekend={false}>Mon</DayNameHeader>
                 <DayNameHeader isWeekend={false}>Tue</DayNameHeader>
                 <DayNameHeader isWeekend={false}>Wed</DayNameHeader>

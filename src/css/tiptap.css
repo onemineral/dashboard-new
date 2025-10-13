@@ -1,0 +1,81 @@
+/* Rich Text Editor Styles - TipTap & ProseMirror */
+
+.rich-text-editor .ProseMirror {
+  @apply focus:outline-none min-h-full;
+}
+
+.rich-text-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  @apply text-muted-foreground pointer-events-none float-left h-0;
+}
+
+.rich-text-editor .ProseMirror h1 {
+  @apply text-2xl font-bold mt-4 mb-2 first:mt-0;
+}
+
+.rich-text-editor .ProseMirror h2 {
+  @apply text-xl font-bold mt-3 mb-2 first:mt-0;
+}
+
+.rich-text-editor .ProseMirror h3 {
+  @apply text-lg font-semibold mt-2 mb-1 first:mt-0;
+}
+
+.rich-text-editor .ProseMirror p {
+  @apply my-2 first:mt-0 last:mb-0;
+}
+
+.rich-text-editor .ProseMirror ul,
+.rich-text-editor .ProseMirror ol {
+  @apply pl-6 my-2;
+}
+
+.rich-text-editor .ProseMirror ul {
+  @apply list-disc;
+}
+
+.rich-text-editor .ProseMirror ol {
+  @apply list-decimal;
+}
+
+.rich-text-editor .ProseMirror li {
+  @apply my-1;
+}
+
+.rich-text-editor .ProseMirror li p {
+  @apply my-0;
+}
+
+.rich-text-editor .ProseMirror code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.rich-text-editor .ProseMirror pre {
+  @apply bg-muted p-4 rounded-md my-4 overflow-x-auto;
+}
+
+.rich-text-editor .ProseMirror pre code {
+  @apply bg-transparent p-0 text-sm;
+}
+
+.rich-text-editor .ProseMirror a {
+  @apply text-primary underline underline-offset-2 cursor-pointer;
+}
+
+.rich-text-editor .ProseMirror blockquote {
+  @apply border-l-4 border-border pl-4 my-4 italic;
+}
+
+.rich-text-editor .ProseMirror hr {
+  @apply my-4 border-border;
+}
+
+/* Selection styles */
+.rich-text-editor .ProseMirror ::selection {
+  @apply bg-primary/20;
+}
+
+/* Focus styles for better UX */
+.rich-text-editor .ProseMirror:focus {
+  @apply outline-none;
+}

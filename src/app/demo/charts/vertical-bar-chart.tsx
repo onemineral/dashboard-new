@@ -29,17 +29,17 @@ const chartData = [
 const chartConfig = {
     desktop: {
         label: "Desktop",
-        color: "hsl(var(--chart-1))",
+        color: "var(--chart-1)",
     },
     mobile: {
         label: "Mobile",
-        color: "hsl(var(--chart-2))",
+        color: "var(--accent)",
     },
 } satisfies ChartConfig
 
 export function DemoVerticalBarChart() {
     return (
-        <Card>
+        <Card className={'shadow-none border-none'}>
             <CardHeader>
                 <CardTitle>Bar Chart - Multiple</CardTitle>
                 <CardDescription>January - June 2024</CardDescription>
@@ -57,10 +57,10 @@ export function DemoVerticalBarChart() {
                         />
                         <ChartTooltip
                             cursor={false}
-                            content={<ChartTooltipContent indicator="dashed" />}
+                            content={<ChartTooltipContent indicator="dot" />}
                         />
-                        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-                        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+                        <Bar dataKey="desktop" fill="currentColor" radius={4} style={{ color: "var(--color-desktop)" }} />
+                        <Bar dataKey="mobile" fill="currentColor" radius={4} stroke={'#ccc'} strokeDasharray={'5 5'} style={{ color: "var(--color-mobile)", border: '1px dashed #ccc' }} />
                     </BarChart>
                 </ChartContainer>
             </CardContent>
