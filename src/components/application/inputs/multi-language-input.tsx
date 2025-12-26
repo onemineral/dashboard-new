@@ -25,6 +25,8 @@ export interface MultiLanguageInputProps {
     className?: string;
     /** Maximum character limit per language */
     maxCharacters?: number;
+    /** Minimum character requirement per language */
+    minCharacters?: number;
     /** Show character count */
     showCount?: boolean;
     /** Warning threshold percentage (0-1) */
@@ -69,6 +71,7 @@ export interface MultiLanguageInputProps {
  * <MultiLanguageInput
  *   value={value}
  *   onChange={setValue}
+ *   minCharacters={5}
  *   maxCharacters={100}
  *   placeholder="Enter title..."
  * />
@@ -111,6 +114,7 @@ export const MultiLanguageInput = React.memo(
                 error = false,
                 className,
                 maxCharacters,
+                minCharacters,
                 showCount = true,
                 warningThreshold = 0.8,
                 "data-testid": dataTestId,
@@ -158,6 +162,8 @@ export const MultiLanguageInput = React.memo(
                     error={error}
                     orientation="horizontal"
                     className={className}
+                    minCharacters={minCharacters}
+                    maxCharacters={maxCharacters}
                     data-testid={dataTestId}
                 >
                     <div className="relative flex flex-col flex-1">
@@ -183,6 +189,7 @@ export const MultiLanguageInput = React.memo(
                         {/* Character Counter */}
                         <CharacterCounter
                             characterCount={currentText?.length || 0}
+                            minCharacters={minCharacters}
                             maxCharacters={maxCharacters}
                             showCount={showCount}
                             warningThreshold={warningThreshold}

@@ -1,0 +1,114 @@
+{
+    "resource": {
+        "fields": {
+            "id": {
+                "type": "id",
+                "name": "id",
+                "label": "ID",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "name": {
+                "type": "text",
+                "name": "name",
+                "label": "Name",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {}
+            },
+            "counter": {
+                "type": "integer",
+                "name": "counter",
+                "label": "Counter",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "day": {
+                "type": "date",
+                "name": "day",
+                "label": "Date",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {}
+            },
+            "color": {
+                "type": "color",
+                "name": "color",
+                "label": "Color",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "brochure_url": {
+                "type": "url",
+                "name": "brochure_url",
+                "label": "Brochure",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "file": {
+                "type": "file",
+                "name": "file",
+                "label": "File",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "email": {
+                "type": "email",
+                "name": "email",
+                "label": "Email",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "rating": {
+                "type": "decimal",
+                "name": "rating",
+                "label": "Rating",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "percent": {
+                "type": "decimal",
+                "name": "percent",
+                "label": "Percent",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "amount": {
+                "type": "price",
+                "name": "amount",
+                "label": "Amount",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "created_at": {
+                "type": "datetime",
+                "name": "created_at",
+                "label": "Created",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {}
+            }
+        }
+    }
+}

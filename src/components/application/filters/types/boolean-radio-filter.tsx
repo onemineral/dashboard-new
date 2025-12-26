@@ -9,6 +9,7 @@ import { useFilter } from "@/components/application/filters/hooks/use-filter";
 import { Plus } from "lucide-react";
 import { FilterRemoveButton } from "@/components/application/filters/filters";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group.tsx";
+import { FormattedMessage } from "react-intl";
 
 type BooleanRadioFilterProps = {
   field: string;
@@ -18,8 +19,8 @@ type BooleanRadioFilterProps = {
 
 const BooleanRadioFilter = ({
   field,
-  trueLabel = "Yes",
-  falseLabel = "No",
+  trueLabel = <FormattedMessage defaultMessage="Yes" description="Boolean filter true label" />,
+  falseLabel = <FormattedMessage defaultMessage="No" description="Boolean filter false label" />,
 }: BooleanRadioFilterProps) => {
   const { remove, settings, set, selection } = useFilter();
   // The value is expected to be a boolean or undefined
@@ -128,7 +129,7 @@ const BooleanRadioFilter = ({
               setOpen(!open);
             }}
           >
-            Apply
+            <FormattedMessage defaultMessage="Apply" description="Button to apply the boolean filter selection" />
           </Button>
         </PopoverContent>
       </Popover>

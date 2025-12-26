@@ -1,0 +1,4223 @@
+{
+  "++Xb5Q": [
+    {
+      "type": 0,
+      "value": "Je unieke merchant-ID (FUC) die je van Redsys hebt gekregen, meestal 9 cijfers"
+    }
+  ],
+  "+0teqB": [
+    {
+      "type": 0,
+      "value": "Terminalnummer toegewezen door Redsys (meestal ‘1’ bij een enkele terminal)"
+    }
+  ],
+  "+TZnSI": [
+    {
+      "type": 0,
+      "value": "accommodatie"
+    }
+  ],
+  "+crfr6": [
+    {
+      "type": 0,
+      "value": "Houd je Merchant Salt veilig en deel deze nooit openbaar. Deze waarde wordt gebruikt om veilige hashes te genereren voor alle betalingsverzoeken naar je account."
+    }
+  ],
+  "+dSPvA": [
+    {
+      "type": 0,
+      "value": "PayPal Developer Dashboard"
+    }
+  ],
+  "+efOJ6": [
+    {
+      "type": 0,
+      "value": "za"
+    }
+  ],
+  "+mL9Gz": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheid bijwerken"
+    }
+  ],
+  "+o1ZCY": [
+    {
+      "type": 0,
+      "value": "Telefoon"
+    }
+  ],
+  "+qKl8A": [
+    {
+      "type": 0,
+      "value": "Resetten"
+    }
+  ],
+  "+sCbso": [
+    {
+      "type": 0,
+      "value": "Btw-nummer / fiscaal nummer"
+    }
+  ],
+  "+sFjDr": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "+ssSkh": [
+    {
+      "type": 0,
+      "value": "Hulp nodig bij het vinden van je Xmoney-inloggegevens? Bekijk de installatie-instructies"
+    }
+  ],
+  "+uGQkt": [
+    {
+      "type": 0,
+      "value": "*"
+    }
+  ],
+  "/12tKm": [
+    {
+      "type": 0,
+      "value": "API Login ID is verplicht"
+    }
+  ],
+  "/8YgtH": [
+    {
+      "type": 0,
+      "value": "Volgende"
+    }
+  ],
+  "/LSOfM": [
+    {
+      "type": 0,
+      "value": "Je unieke API Login ID, verstrekt door Authorize.net voor API-authenticatie"
+    }
+  ],
+  "/XtBEU": [
+    {
+      "type": 0,
+      "value": "Om je Razorpay-account te koppelen, moet je je API-inloggegevens ophalen uit je dashboard:"
+    }
+  ],
+  "/fzYxb": [
+    {
+      "type": 0,
+      "value": "Geen valuta beschikbaar"
+    }
+  ],
+  "/myRRj": [
+    {
+      "type": 0,
+      "value": "Log in op je "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " met je merchant-inloggegevens."
+    }
+  ],
+  "/qhPPc": [
+    {
+      "type": 0,
+      "value": "Bestand verwijderen"
+    }
+  ],
+  "/rTtyJ": [
+    {
+      "type": 0,
+      "value": "Achternaam"
+    }
+  ],
+  "0/tQuf": [
+    {
+      "type": 0,
+      "value": "Bij een API-koppeling schakelt Airbnb je advertenties automatisch over naar hun commissie­structuur met alleen hostkosten (15,5% in plaats van 3%). Wij compenseren dit door je prijzen aan te passen, zodat de gast hetzelfde bedrag betaalt en jij dezelfde uitbetaling ontvangt."
+    }
+  ],
+  "05N7am": [
+    {
+      "type": 0,
+      "value": "klant"
+    }
+  ],
+  "0GT0SI": [
+    {
+      "type": 0,
+      "value": "Annuleren"
+    }
+  ],
+  "0ICrVM": [
+    {
+      "type": 0,
+      "value": "Key ID is verplicht"
+    }
+  ],
+  "0KIYiv": [
+    {
+      "type": 0,
+      "value": "analytics"
+    }
+  ],
+  "0TZhGi": [
+    {
+      "type": 0,
+      "value": "planning"
+    }
+  ],
+  "0U3uEj": [
+    {
+      "type": 0,
+      "value": "Als je nog geen API-sleutels hebt, klik dan op ‘Generate Key’ om een nieuw sleutelpaar aan te maken."
+    }
+  ],
+  "0d4QCF": [
+    {
+      "type": 0,
+      "value": "Gedeelde commissie"
+    }
+  ],
+  "0f/taE": [
+    {
+      "type": 0,
+      "value": "Selecteer je standaardvaluta (meestal EUR voor Spanje) en alle valuta’s die je wilt accepteren."
+    }
+  ],
+  "0kZeTh": [
+    {
+      "type": 0,
+      "value": "Redsys-account koppelen"
+    }
+  ],
+  "0lWa8l": [
+    {
+      "type": 0,
+      "value": "Zo zorgen we ervoor dat het aanpassen van je Airbnb-prijzen niets verandert voor jou of je gasten."
+    }
+  ],
+  "0lgY8w": [
+    {
+      "type": 0,
+      "value": "Betaalmethoden opslaan (Save payment methods) (voor het bewaren van betaalmethoden)"
+    }
+  ],
+  "0mhGN1": [
+    {
+      "type": 0,
+      "value": "Klik onder het gedeelte Instellingen op ‘Account Credentials’ of ‘API Keys’."
+    }
+  ],
+  "0nDVG5": [
+    {
+      "type": 0,
+      "value": "API-sleutel"
+    }
+  ],
+  "0uEyPn": [
+    {
+      "type": 0,
+      "value": "Belangrijkste huisregels"
+    }
+  ],
+  "1+Njhd": [
+    {
+      "type": 0,
+      "value": "Weergavevaluta"
+    }
+  ],
+  "1IwVJ/": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "1ME8gM": [
+    {
+      "type": 0,
+      "value": "Opslaan..."
+    }
+  ],
+  "1c7Eg9": [
+    {
+      "type": 0,
+      "value": "Gast: 0%"
+    }
+  ],
+  "1dOd3r": [
+    {
+      "type": 0,
+      "value": "Zoek je ‘Merchant Code’ (FUC - Código de comercio), meestal een nummer van 9 cijfers."
+    }
+  ],
+  "1kryhX": [
+    {
+      "type": 0,
+      "value": "Client ID"
+    }
+  ],
+  "1qWnpo": [
+    {
+      "type": 0,
+      "value": "Je ziet nu je Merchant Key (ook wel API Key genoemd). Dit is een unieke identificatie voor je merchant-account. Kopieer deze waarde."
+    }
+  ],
+  "1tn+ul": [
+    {
+      "type": 0,
+      "value": "+ Airbnb-gastkosten"
+    }
+  ],
+  "1zU6LU": [
+    {
+      "type": 0,
+      "value": "Breedtegraad-coördinaat"
+    }
+  ],
+  "29UOKo": [
+    {
+      "type": 0,
+      "value": "Voor"
+    }
+  ],
+  "2BRner": [
+    {
+      "type": 0,
+      "value": "Vakantiehuurovereenkomst"
+    }
+  ],
+  "2HHm1c": [
+    {
+      "type": 0,
+      "value": "Hulp nodig bij het vinden van je Authorize.net-inloggegevens? Bekijk de installatie-instructies"
+    }
+  ],
+  "2XJblv": [
+    {
+      "type": 0,
+      "value": "Uitgelicht"
+    }
+  ],
+  "2YpiUO": [
+    {
+      "type": 0,
+      "value": "Key Secret is verplicht"
+    }
+  ],
+  "2kAsyS": [
+    {
+      "type": 0,
+      "value": "Ga na het inloggen in het menu aan de linkerkant naar ‘Settings’."
+    }
+  ],
+  "2n0X8r": [
+    {
+      "type": 0,
+      "value": "Volg deze stappen om je Authorize.net-inloggegevens op te halen en je betaalgateway te configureren"
+    }
+  ],
+  "3+LMGK": [
+    {
+      "type": 0,
+      "value": "Co-host"
+    }
+  ],
+  "30erry": [
+    {
+      "type": 0,
+      "value": "PayU.in Merchant Dashboard"
+    }
+  ],
+  "356Com": [
+    {
+      "type": 0,
+      "value": "Beperking voor check-in"
+    }
+  ],
+  "3FLph+": [
+    {
+      "type": 0,
+      "value": "Max. grootte: "
+    },
+    {
+      "type": 1,
+      "value": "size"
+    }
+  ],
+  "3K7lCg": [
+    {
+      "type": 0,
+      "value": "Klik onder het gedeelte Instellingen op ‘API Keys’."
+    }
+  ],
+  "3KbOCN": [
+    {
+      "type": 0,
+      "value": "Laten we uw hoofdinstellingen configureren"
+    }
+  ],
+  "3OaIGu": [
+    {
+      "type": 0,
+      "value": "Accommodaties"
+    }
+  ],
+  "3QtHMq": [
+    {
+      "type": 0,
+      "value": "Hulp nodig bij het vinden van je PayU.in-inloggegevens? Bekijk de installatie-instructies"
+    }
+  ],
+  "3UtT5H": [
+    {
+      "type": 0,
+      "value": "Doorgaan"
+    }
+  ],
+  "3VDEsx": [
+    {
+      "type": 0,
+      "value": "Uitgelicht"
+    }
+  ],
+  "3Zued9": [
+    {
+      "type": 0,
+      "value": "Bestand wissen"
+    }
+  ],
+  "3kCp+u": [
+    {
+      "type": 0,
+      "value": "Volg deze stappen om je Redsys-gegevens op te halen en je betaalgateway te configureren"
+    }
+  ],
+  "3kEEA8": [
+    {
+      "type": 0,
+      "value": "OTA-creditcardverwerking"
+    }
+  ],
+  "3kIgh3": [
+    {
+      "type": 0,
+      "value": "Voornaam"
+    }
+  ],
+  "3mStAG": [
+    {
+      "type": 0,
+      "value": "Toepassen"
+    }
+  ],
+  "3s3IxJ": [
+    {
+      "type": 0,
+      "value": "iCal-import van "
+    },
+    {
+      "type": 1,
+      "value": "icalName"
+    },
+    {
+      "type": 0,
+      "value": " heeft de beschikbaarheidsstatus gewijzigd naar "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "42j2Yl": [
+    {
+      "type": 0,
+      "value": "Importeer en beheer reserveringen zonder gedoe"
+    }
+  ],
+  "4Ap+k9": [
+    {
+      "type": 0,
+      "value": "Bezig met verbinden..."
+    }
+  ],
+  "4DvW3w": [
+    {
+      "type": 0,
+      "value": "Gastvriendelijke huurovereenkomst voor kort verblijf (1–30 nachten). Ideaal voor Airbnb, VRBO of directe boekingen. Behandelt borgstellingen, annuleringsvoorwaarden, in- en uitcheckprocedures, huisregels en verantwoordelijkheden van de gast."
+    }
+  ],
+  "4Gg0C7": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "4JR3Dt": [
+    {
+      "type": 0,
+      "value": "Verbinding mislukt"
+    }
+  ],
+  "4JuKSp": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheidsgeschiedenis"
+    }
+  ],
+  "4Nlmyz": [
+    {
+      "type": 0,
+      "value": "Selecteer land"
+    }
+  ],
+  "4SR2Qh": [
+    {
+      "type": 0,
+      "value": "Dag"
+    }
+  ],
+  "4Ucygo": [
+    {
+      "type": 0,
+      "value": "Bezig met verbinden..."
+    }
+  ],
+  "4ZLWca": [
+    {
+      "type": 0,
+      "value": "Zoek adres..."
+    }
+  ],
+  "4ZNYGb": [
+    {
+      "type": 0,
+      "value": "vr"
+    }
+  ],
+  "4gfoGt": [
+    {
+      "type": 0,
+      "value": "ID"
+    }
+  ],
+  "4hPHpa": [
+    {
+      "type": 0,
+      "value": "Transaction Key is verplicht"
+    }
+  ],
+  "4vuqmI": [
+    {
+      "type": 0,
+      "value": "Welkom aan boord! Laten we alles instellen"
+    }
+  ],
+  "5+u2og": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheidsstatussen konden niet worden geladen"
+    }
+  ],
+  "55mCjK": [
+    {
+      "type": 0,
+      "value": "Zoek accommodaties..."
+    }
+  ],
+  "56bErq": [
+    {
+      "type": 0,
+      "value": "Ongeldige einddatum"
+    }
+  ],
+  "5DkMof": [
+    {
+      "type": 0,
+      "value": "Kies UI-taal"
+    }
+  ],
+  "5EFbSV": [
+    {
+      "type": 0,
+      "value": "Accepteer veilig betalingen met PayPal"
+    }
+  ],
+  "5G+3FI": [
+    {
+      "type": 0,
+      "value": "Geen accounts gevonden."
+    }
+  ],
+  "5LH+O5": [
+    {
+      "type": 0,
+      "value": "Tarief moet een geldig getal zijn"
+    }
+  ],
+  "5OlbLO": [
+    {
+      "type": 0,
+      "value": "Terug"
+    }
+  ],
+  "5PMMrN": [
+    {
+      "type": 0,
+      "value": "Merknaam moet minimaal 2 tekens bevatten"
+    }
+  ],
+  "5UlhKh": [
+    {
+      "type": 0,
+      "value": "Zakelijk adres"
+    }
+  ],
+  "5WWihP": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "bestand"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "bestanden"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " geselecteerd"
+    }
+  ],
+  "5iOMya": [
+    {
+      "type": 0,
+      "value": "Geen land gevonden."
+    }
+  ],
+  "5rFDAN": [
+    {
+      "type": 0,
+      "value": "Beschrijf uw aangepaste type overeenkomst"
+    }
+  ],
+  "65M3eA": [
+    {
+      "type": 0,
+      "value": "Beschrijf uw annuleringsvoorwaarden en restitutiebeleid"
+    }
+  ],
+  "66+pWG": [
+    {
+      "type": 0,
+      "value": "Aanvullende huisregels"
+    }
+  ],
+  "66uz/9": [
+    {
+      "type": 0,
+      "value": "Na"
+    }
+  ],
+  "6BVS0B": [
+    {
+      "type": 0,
+      "value": "Handtekeningsleutel (SHA-256)"
+    }
+  ],
+  "6CXY7+": [
+    {
+      "type": 0,
+      "value": "Startdatum moet na "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " liggen"
+    }
+  ],
+  "6CZ2VT": [
+    {
+      "type": 0,
+      "value": "Je inkomsten blijven gelijk"
+    }
+  ],
+  "6QOz2B": [
+    {
+      "type": 0,
+      "value": "Toegestane valuta’s"
+    }
+  ],
+  "6V7n+L": [
+    {
+      "type": 0,
+      "value": "Resetten"
+    }
+  ],
+  "6YI4kg": [
+    {
+      "type": 0,
+      "value": "Ga in het bovenste menu naar \"Apps & Credentials\" (Apps & Credentials)."
+    }
+  ],
+  "6aZ6oU": [
+    {
+      "type": 0,
+      "value": "Selecteer alle valuta’s die deze betaalgateway kan verwerken. Betalingen in andere valuta worden bij de verwerking omgezet naar de standaardvaluta."
+    }
+  ],
+  "6hqX55": [
+    {
+      "type": 1,
+      "value": "fileName"
+    },
+    {
+      "type": 0,
+      "value": " verwijderen"
+    }
+  ],
+  "6jBqKO": [
+    {
+      "type": 0,
+      "value": "Verbinding mislukt"
+    }
+  ],
+  "6oqioY": [
+    {
+      "type": 0,
+      "value": "Ja"
+    }
+  ],
+  "6tO6oi": [
+    {
+      "type": 0,
+      "value": "Je vermelde prijs"
+    }
+  ],
+  "70DkFz": [
+    {
+      "type": 0,
+      "value": "Aangepast"
+    }
+  ],
+  "735/I6": [
+    {
+      "type": 0,
+      "value": "Extra talen"
+    }
+  ],
+  "764Jrf": [
+    {
+      "type": 0,
+      "value": "Geheime sleutel om de echtheid van webhooks te verifiëren en betalingsmeldingen te beveiligen. Houd deze vertrouwelijk en deel hem nooit openbaar."
+    }
+  ],
+  "79R694": [
+    {
+      "type": 0,
+      "value": "Bijwerken van beschikbaarheid mislukt"
+    }
+  ],
+  "7LCyD2": [
+    {
+      "type": 0,
+      "value": "Selecteer standaardtaal"
+    }
+  ],
+  "7RfiVr": [
+    {
+      "type": 0,
+      "value": "Pop-up geblokkeerd"
+    }
+  ],
+  "7S9iXq": [
+    {
+      "type": 0,
+      "value": "Voer je PayU.in API-inloggegevens in vanuit je merchant-dashboard"
+    }
+  ],
+  "7T1liF": [
+    {
+      "type": 0,
+      "value": "Merchant Salt is verplicht"
+    }
+  ],
+  "7U1n7w": [
+    {
+      "type": 0,
+      "value": "Genereer uw huurovereenkomst"
+    }
+  ],
+  "7eul9b": [
+    {
+      "type": 0,
+      "value": "Webhook Secret"
+    }
+  ],
+  "7jmAkN": [
+    {
+      "type": 0,
+      "value": "Hulp nodig bij het vinden van je Razorpay-inloggegevens? Bekijk de installatie-instructies"
+    }
+  ],
+  "7qDNyf": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "82It5E": [
+    {
+      "type": 0,
+      "value": "Selecteer een accommodatie..."
+    }
+  ],
+  "88kNaO": [
+    {
+      "type": 0,
+      "value": "Verbinding mislukt"
+    }
+  ],
+  "88zIRQ": [
+    {
+      "type": 0,
+      "value": "Het Stripe-autorisatievenster wordt geopend..."
+    }
+  ],
+  "8C+PAW": [
+    {
+      "type": 0,
+      "value": "Hex-code"
+    }
+  ],
+  "8FdIpV": [
+    {
+      "type": 0,
+      "value": "Bezig met verbinden..."
+    }
+  ],
+  "8H9gfX": [
+    {
+      "type": 0,
+      "value": "Niet roken"
+    }
+  ],
+  "8LIDP6": [
+    {
+      "type": 0,
+      "value": "Transaction Key"
+    }
+  ],
+  "8TIbvo": [
+    {
+      "type": 0,
+      "value": "Dit beleid is van toepassing op boekingen via uw eigen website en VRBO. Andere OTA’s zoals Airbnb en Booking.com hanteren hun eigen annuleringsbeleid, dat dan in plaats hiervan geldt."
+    }
+  ],
+  "8U6PX5": [
+    {
+      "type": 0,
+      "value": "Datumbereik-kiezer"
+    }
+  ],
+  "8WjQyt": [
+    {
+      "type": 0,
+      "value": "Log in op je "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " met je bankgegevens."
+    }
+  ],
+  "8f+bQB": [
+    {
+      "type": 0,
+      "value": "Merklogo"
+    }
+  ],
+  "8jvJ2a": [
+    {
+      "type": 0,
+      "value": "boeking"
+    }
+  ],
+  "8khNNy": [
+    {
+      "type": 0,
+      "value": "Gedeelde commissie"
+    }
+  ],
+  "8m2mNb": [
+    {
+      "type": 0,
+      "value": "Koppelen met Airbnb"
+    }
+  ],
+  "8rC+q+": [
+    {
+      "type": 0,
+      "value": "Zorg dat je de juiste sleutels voor de omgeving gebruikt: gebruik ‘Live Mode’-sleutels (rzp_live_) voor productiebetalingen, niet ‘Test Mode’-sleutels (rzp_test_)."
+    }
+  ],
+  "8rPgs4": [
+    {
+      "type": 0,
+      "value": "Voer je Redsys-merchantgegevens in vanuit de configuratie van je Virtual POS"
+    }
+  ],
+  "957I9k": [
+    {
+      "type": 0,
+      "value": "Selecteer land"
+    }
+  ],
+  "95bDjd": [
+    {
+      "type": 0,
+      "value": "Je Authorize.net-account is succesvol gekoppeld en klaar om betalingen te verwerken."
+    }
+  ],
+  "9GzCSL": [
+    {
+      "type": 0,
+      "value": "Status bijgewerkt"
+    }
+  ],
+  "9HQrgV": [
+    {
+      "type": 0,
+      "value": "Laat leeg als u niet onder een bedrijf opereert."
+    }
+  ],
+  "9JT9XF": [
+    {
+      "type": 0,
+      "value": "Authorize.net-inloggegevens"
+    }
+  ],
+  "9M/Nz4": [
+    {
+      "type": 0,
+      "value": "Naam"
+    }
+  ],
+  "9YTW5G": [
+    {
+      "type": 0,
+      "value": "Meer pagina's"
+    }
+  ],
+  "9Zp2R9": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "9ahmSP": [
+    {
+      "type": 0,
+      "value": "Kopieer je inloggegevens en plak ze in het formulier om je Authorize.net-account te koppelen."
+    }
+  ],
+  "9kRCfP": [
+    {
+      "type": 0,
+      "value": "Accepteer veilig betalingen met Stripe, het toonaangevende betaalplatform met ondersteuning voor creditcards, betaalpassen, digitale wallets en lokale betaalmethoden wereldwijd"
+    }
+  ],
+  "9kq+V8": [
+    {
+      "type": 0,
+      "value": "Koppelen met Airbnb"
+    }
+  ],
+  "9xRnJR": [
+    {
+      "type": 0,
+      "value": "Wat wilt u doen met de geselecteerde datums?"
+    }
+  ],
+  "A+xeP3": [
+    {
+      "type": 0,
+      "value": "Objectconditie"
+    }
+  ],
+  "AJ3+Af": [
+    {
+      "type": 0,
+      "value": "Accepteer cryptobetalingen met Xmoney, met ondersteuning voor Bitcoin, Ethereum, USDT en andere grote cryptocurrencies met directe uitbetaling"
+    }
+  ],
+  "ARaLjq": [
+    {
+      "type": 0,
+      "value": "Domein-whitelisting vereist"
+    }
+  ],
+  "AqvmOj": [
+    {
+      "type": 0,
+      "value": "Kalender"
+    }
+  ],
+  "ArD4uQ": [
+    {
+      "type": 0,
+      "value": "bijv. BTW123456789 of EIN 12-3456789"
+    }
+  ],
+  "Aso6At": [
+    {
+      "type": 0,
+      "value": "Zorg dat je Virtual POS is ingesteld op de integratiemodus ‘REST API’."
+    }
+  ],
+  "AvzD7r": [
+    {
+      "type": 0,
+      "value": "Landen laden..."
+    }
+  ],
+  "B34Ye5": [
+    {
+      "type": 0,
+      "value": "Bijv. regels voor veilig gebruik van de jacuzzi, toelichting op parkeervoorwaarden voor 2 auto’s, bepaling over het respecteren van buren, uitleg over kosten voor zwembadverwarming..."
+    }
+  ],
+  "B3EMvw": [
+    {
+      "type": 0,
+      "value": "Zoek je ‘Terminal’-nummer (Número de terminal), meestal ‘1’ bij standaardinstellingen."
+    }
+  ],
+  "B4uXBC": [
+    {
+      "type": 0,
+      "value": "Minimumverblijf moet een geldig getal zijn"
+    }
+  ],
+  "B7m04Z": [
+    {
+      "type": 0,
+      "value": "Ongeldige startdatum"
+    }
+  ],
+  "BEWkMT": [
+    {
+      "type": 0,
+      "value": "beschikbaarheid"
+    }
+  ],
+  "BFYTcS": [
+    {
+      "type": 0,
+      "value": "Koppel je Airbnb-account om je accommodaties en reserveringen automatisch te synchroniseren."
+    }
+  ],
+  "BJM1Kd": [
+    {
+      "type": 0,
+      "value": "Je ziet nu je API Key (begint met ‘u_live_api_’ voor live-modus of ‘u_test_api_’ voor testmodus). Kopieer deze waarde."
+    }
+  ],
+  "BQCp+E": [
+    {
+      "type": 0,
+      "value": "Succesvol verbonden"
+    }
+  ],
+  "BSWE9u": [
+    {
+      "type": 0,
+      "value": "gegevens"
+    }
+  ],
+  "Ba3d8z": [
+    {
+      "type": 0,
+      "value": "Mijn profiel"
+    }
+  ],
+  "BcQIVG": [
+    {
+      "type": 0,
+      "value": "Landen zoeken..."
+    }
+  ],
+  "Bi53tf": [
+    {
+      "type": 0,
+      "value": "Aangepast"
+    }
+  ],
+  "BlmJHz": [
+    {
+      "type": 0,
+      "value": "Bestand uploaden"
+    }
+  ],
+  "BogP+d": [
+    {
+      "type": 0,
+      "value": "Geen huisdieren"
+    }
+  ],
+  "BtvSd5": [
+    {
+      "type": 0,
+      "value": "Handtekeningsleutel is verplicht"
+    }
+  ],
+  "Bza8Ck": [
+    {
+      "type": 0,
+      "value": "gast"
+    }
+  ],
+  "C5WQ1D": [
+    {
+      "type": 0,
+      "value": "Je moet "
+    },
+    {
+      "children": [
+        {
+          "type": 1,
+          "value": "currentDomain"
+        }
+      ],
+      "type": 8,
+      "value": "strong"
+    },
+    {
+      "type": 0,
+      "value": " en het domein van je eigen website op de whitelist zetten in je Razorpay-dashboard (Settings → API Keys → Whitelist Domains)."
+    }
+  ],
+  "C6mSpf": [
+    {
+      "type": 0,
+      "value": "De Client ID van je PayPal‑applicatie uit de Developer Dashboard"
+    }
+  ],
+  "CA/i/C": [
+    {
+      "type": 0,
+      "value": "Authorize.net Merchant Interface"
+    }
+  ],
+  "CCUbxX": [
+    {
+      "type": 0,
+      "value": "Standaardvaluta"
+    }
+  ],
+  "CJ7o0o": [
+    {
+      "type": 0,
+      "value": "Wordt gebruikt om geaggregeerde financiële gegevens over alle accommodaties weer te geven. Elke accommodatie heeft zijn eigen boekingsvaluta."
+    }
+  ],
+  "CNTZll": [
+    {
+      "type": 0,
+      "value": "Je ontvangt"
+    }
+  ],
+  "CYPLf9": [
+    {
+      "type": 0,
+      "value": "contact@example.com"
+    }
+  ],
+  "CYqfVo": [
+    {
+      "type": 0,
+      "value": "Voornaam is verplicht"
+    }
+  ],
+  "CbGXs2": [
+    {
+      "type": 0,
+      "value": "Vandaag"
+    }
+  ],
+  "CgIj0s": [
+    {
+      "type": 0,
+      "value": "Selectie wissen"
+    }
+  ],
+  "Cm/acF": [
+    {
+      "type": 0,
+      "value": "Client Secret"
+    }
+  ],
+  "CphCmr": [
+    {
+      "type": 0,
+      "value": "Zorg dat je gegevens uit de Live‑omgeving gebruikt voor betalingen in productie."
+    }
+  ],
+  "Cw1PUM": [
+    {
+      "type": 0,
+      "value": "Log in op je "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " met je merchant-inloggegevens."
+    }
+  ],
+  "D+X/Qj": [
+    {
+      "type": 0,
+      "value": "Kopieer de \"Client ID\" en \"Secret\" van de app-details pagina."
+    }
+  ],
+  "DJ7TGX": [
+    {
+      "type": 0,
+      "value": "Key ID"
+    }
+  ],
+  "DNXfj7": [
+    {
+      "type": 0,
+      "value": "Controleer onder 'Features' (Features) of de volgende rechten zijn ingeschakeld:"
+    }
+  ],
+  "Dsr5qL": [
+    {
+      "type": 0,
+      "value": "Geen restitutie bij annulering minder dan 7 dagen voor check-in"
+    }
+  ],
+  "DuOTim": [
+    {
+      "type": 0,
+      "value": "Achternaam is verplicht"
+    }
+  ],
+  "E8suJo": [
+    {
+      "type": 0,
+      "value": "Zondag"
+    }
+  ],
+  "EInxH0": [
+    {
+      "type": 0,
+      "value": "Uitgebreide checkout (Expanded checkout)"
+    }
+  ],
+  "EJMuPX": [
+    {
+      "type": 0,
+      "value": "Wijzigingen opslaan"
+    }
+  ],
+  "EJqOKf": [
+    {
+      "type": 0,
+      "value": "Accommodatie toevoegen"
+    }
+  ],
+  "EOtRjL": [
+    {
+      "type": 0,
+      "value": "Amsterdam"
+    }
+  ],
+  "EOvdde": [
+    {
+      "type": 0,
+      "value": "Bewerken"
+    }
+  ],
+  "EcOwTg": [
+    {
+      "type": 0,
+      "value": "Geldige reeks: -180 tot 180"
+    }
+  ],
+  "EnF3EM": [
+    {
+      "type": 0,
+      "value": "Wordt gebruikt om tijdstempels in het hele dashboard weer te geven. Elke accommodatie heeft zijn eigen tijdzone."
+    }
+  ],
+  "ErBvSd": [
+    {
+      "type": 0,
+      "value": "Om je PayPal‑account te koppelen, moet je een PayPal‑applicatie aanmaken en je API‑gegevens ophalen:"
+    }
+  ],
+  "F4LIQL": [
+    {
+      "type": 0,
+      "value": "Bezig met verbinden..."
+    }
+  ],
+  "F6lZL3": [
+    {
+      "type": 0,
+      "value": "Wachten op autorisatie"
+    }
+  ],
+  "FEfTVi": [
+    {
+      "type": 0,
+      "value": "API-sleutel is verplicht"
+    }
+  ],
+  "FHrDtj": [
+    {
+      "type": 0,
+      "value": "do"
+    }
+  ],
+  "FIGyto": [
+    {
+      "type": 0,
+      "value": "Dit is de taal voor alle menu's, knoppen en interface-elementen."
+    }
+  ],
+  "FUcnBP": [
+    {
+      "type": 0,
+      "value": "Beheer berichten, aanvragen, pre-approvals en speciale aanbiedingen"
+    }
+  ],
+  "FYhbnJ": [
+    {
+      "type": 0,
+      "value": "Geheime API-sleutel die wordt gebruikt om API-verzoeken te authenticeren en te autoriseren. Houd deze vertrouwelijk en deel hem nooit openbaar."
+    }
+  ],
+  "Fte18l": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheid"
+    }
+  ],
+  "Fvrx4V": [
+    {
+      "type": 0,
+      "value": "Aangepaste prijs"
+    }
+  ],
+  "G17Zwg": [
+    {
+      "type": 0,
+      "value": "Maximaal "
+    },
+    {
+      "type": 1,
+      "value": "maxFiles"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "bestand"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "bestanden"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "maxFiles"
+    },
+    {
+      "type": 0,
+      "value": " toegestaan"
+    }
+  ],
+  "G258Qr": [
+    {
+      "type": 0,
+      "value": "Toepassen"
+    }
+  ],
+  "GDI8mK": [
+    {
+      "type": 0,
+      "value": "Razorpay Dashboard"
+    }
+  ],
+  "GHNpa4": [
+    {
+      "type": 0,
+      "value": "Alle bestanden wissen"
+    }
+  ],
+  "GJz/Ju": [
+    {
+      "type": 0,
+      "value": "− Je hostkosten (15,5%)"
+    }
+  ],
+  "GV4liN": [
+    {
+      "type": 0,
+      "value": "Onder de API Key zie je je Webhook Secret. Kopieer deze waarde zorgvuldig; deze wordt gebruikt om de echtheid van webhooks te verifiëren."
+    }
+  ],
+  "Gvd55t": [
+    {
+      "type": 0,
+      "value": "API Login ID"
+    }
+  ],
+  "H67iMU": [
+    {
+      "type": 0,
+      "value": "Klik op het oogpictogram of de knop ‘Show’ naast de Key Secret om deze zichtbaar te maken. Dit is je geheime sleutel voor authenticatie. Kopieer deze waarde zorgvuldig."
+    }
+  ],
+  "H9EL3M": [
+    {
+      "type": 0,
+      "value": "Juridische bedrijfsnaam"
+    }
+  ],
+  "HBAXMq": [
+    {
+      "type": 0,
+      "value": "Naam"
+    }
+  ],
+  "HD0jtN": [
+    {
+      "type": 0,
+      "value": "Wachten op autorisatie..."
+    }
+  ],
+  "HEXBfz": [
+    {
+      "type": 0,
+      "value": "Snel kiezen"
+    }
+  ],
+  "HOym9z": [
+    {
+      "type": 0,
+      "value": "Land is verplicht"
+    }
+  ],
+  "HThB82": [
+    {
+      "type": 0,
+      "value": "Merchant Salt"
+    }
+  ],
+  "I/Rbi1": [
+    {
+      "type": 0,
+      "value": "Tarief"
+    }
+  ],
+  "I8mQRn": [
+    {
+      "type": 0,
+      "value": "Dinsdag"
+    }
+  ],
+  "IejaKr": [
+    {
+      "type": 0,
+      "value": "Nee"
+    }
+  ],
+  "IhL/yX": [
+    {
+      "type": 0,
+      "value": "Bekijk alle wijzigingen in de beschikbaarheid voor de geselecteerde datums"
+    }
+  ],
+  "ImL7iD": [
+    {
+      "type": 0,
+      "value": "Volledige terugbetaling bij annulering tot minimaal 24 uur voor check-in"
+    }
+  ],
+  "Iv5u44": [
+    {
+      "type": 0,
+      "value": "Maandag"
+    }
+  ],
+  "J81fbb": [
+    {
+      "type": 0,
+      "value": "Geen geschiedenis gevonden"
+    }
+  ],
+  "JWwnVm": [
+    {
+      "type": 0,
+      "value": "Valuta’s laden is mislukt"
+    }
+  ],
+  "JeNf5C": [
+    {
+      "type": 0,
+      "value": "Maximum van 5 extra talen bereikt"
+    }
+  ],
+  "JmUKsE": [
+    {
+      "type": 0,
+      "value": "Uitgelicht"
+    }
+  ],
+  "Jn6vdr": [
+    {
+      "type": 0,
+      "value": "Geldige reeks: -90 tot 90"
+    }
+  ],
+  "Jo6yop": [
+    {
+      "type": 0,
+      "value": "Mislukt"
+    }
+  ],
+  "Jx1XL/": [
+    {
+      "type": 0,
+      "value": "Geen betaalproviders beschikbaar"
+    }
+  ],
+  "K133NN": [
+    {
+      "type": 0,
+      "value": "Landen konden niet worden geladen. Probeer het opnieuw."
+    }
+  ],
+  "KBbI2C": [
+    {
+      "type": 0,
+      "value": "Geen wijziging"
+    }
+  ],
+  "KC3rcq": [
+    {
+      "type": 0,
+      "value": "E-mail"
+    }
+  ],
+  "KFGwsm": [
+    {
+      "type": 0,
+      "value": "Accommodaties konden niet worden geladen. Probeer het opnieuw."
+    }
+  ],
+  "KRYLvD": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheid succesvol bijgewerkt"
+    }
+  ],
+  "KfDaoT": [
+    {
+      "type": 0,
+      "value": "Beperken"
+    }
+  ],
+  "KgIF6j": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "Kmskqc": [
+    {
+      "type": 0,
+      "value": "Bekijk en beheer alle voorzieningen die in je systeem beschikbaar zijn."
+    }
+  ],
+  "Kq0VZ6": [
+    {
+      "type": 0,
+      "value": "Voor nu overslaan"
+    }
+  ],
+  "KsklO8": [
+    {
+      "type": 0,
+      "value": "Zorg dat je account is ingesteld op productiemodus en niet op testmodus voor live betalingen."
+    }
+  ],
+  "KxKL+n": [
+    {
+      "type": 0,
+      "value": "Boekingen"
+    }
+  ],
+  "L14TDm": [
+    {
+      "type": 0,
+      "value": "Er zijn nog geen wijzigingen aangebracht in deze datumperiode"
+    }
+  ],
+  "L42aHo": [
+    {
+      "type": 0,
+      "value": "Eerst: het kiezen van je UI- en contenttalen."
+    }
+  ],
+  "LAbvMA": [
+    {
+      "type": 0,
+      "value": "Je tarieven worden ongewijzigd gesynchroniseerd. Al geoptimaliseerd voor gebruik met een PMS."
+    }
+  ],
+  "LDUyG4": [
+    {
+      "type": 0,
+      "value": "Einddatum moet na "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " liggen"
+    }
+  ],
+  "LHZI5Y": [
+    {
+      "type": 0,
+      "value": "Succesvol verbonden"
+    }
+  ],
+  "LHg/un": [
+    {
+      "type": 0,
+      "value": "Geschiedenis bekijken"
+    }
+  ],
+  "LQEcMx": [
+    {
+      "type": 0,
+      "value": "Synchronisatie van beschikbaarheid en tarieven in real time"
+    }
+  ],
+  "LT4CJg": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheidsstatus is verplicht"
+    }
+  ],
+  "LaKRvO": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "Lg4Fi9": [
+    {
+      "type": 0,
+      "value": "Belangrijk"
+    }
+  ],
+  "Lhbbcw": [
+    {
+      "type": 0,
+      "value": "Zoek op accommodatienaam"
+    }
+  ],
+  "LqNWNm": [
+    {
+      "type": 0,
+      "value": "De opgegeven gegevens zijn onjuist. Controleer je Client ID en Client Secret en probeer het opnieuw."
+    }
+  ],
+  "M92dZr": [
+    {
+      "type": 0,
+      "value": "Zorg dat je productiesleutels gebruikt, niet de testsleutels, voor echte betalingen."
+    }
+  ],
+  "MCAh17": [
+    {
+      "type": 0,
+      "value": "Xmoney API-inloggegevens"
+    }
+  ],
+  "MLQakG": [
+    {
+      "type": 0,
+      "value": "Er is een fout opgetreden."
+    }
+  ],
+  "MXtKEO": [
+    {
+      "type": 0,
+      "value": "Wijzig de beschikbaarheidsstatus voor de geselecteerde datums. Je kunt datums markeren als beschikbaar of niet beschikbaar voor boekingen. Voeg eventueel notities toe om de reden van de wijziging bij te houden."
+    }
+  ],
+  "MfrEpx": [
+    {
+      "type": 0,
+      "value": "Beschikbaarheid bijwerken voor geselecteerde datums"
+    }
+  ],
+  "MmX1j5": [
+    {
+      "type": 0,
+      "value": "Toepassen"
+    }
+  ],
+  "MqJtIe": [
+    {
+      "type": 0,
+      "value": "Gasten"
+    }
+  ],
+  "MsOMSR": [
+    {
+      "type": 0,
+      "value": "Synchroniseer accommodaties en details automatisch"
+    }
+  ],
+  "N+75uC": [
+    {
+      "type": 0,
+      "value": "Alleen hostkosten"
+    }
+  ],
+  "N0sIXl": [
+    {
+      "type": 0,
+      "value": "Donderdag"
+    }
+  ],
+  "N2OYyx": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "NDEfG/": [
+    {
+      "type": 0,
+      "value": "Succesvol verbonden"
+    }
+  ],
+  "NJGmr+": [
+    {
+      "type": 0,
+      "value": "Max. aantal bestanden: "
+    },
+    {
+      "type": 1,
+      "value": "count"
+    }
+  ],
+  "NTyqYb": [
+    {
+      "type": 0,
+      "value": "voorkeuren"
+    }
+  ],
+  "NZZi1d": [
+    {
+      "type": 0,
+      "value": "Airbnb-advertenties importeren"
+    }
+  ],
+  "NZwqC9": [
+    {
+      "type": 0,
+      "value": "dashboard"
+    }
+  ],
+  "NfG5Dv": [
+    {
+      "type": 0,
+      "value": "Merchant Key"
+    }
+  ],
+  "Nty3JH": [
+    {
+      "type": 0,
+      "value": "Verbinden..."
+    }
+  ],
+  "NxALzL": [
+    {
+      "type": 0,
+      "value": "Lengtegraad"
+    }
+  ],
+  "O/8GDW": [
+    {
+      "type": 0,
+      "value": "Stel uw merknaam, valuta en andere kerninstellingen in."
+    }
+  ],
+  "O2TvYO": [
+    {
+      "type": 0,
+      "value": "Voorbeeld: voor een advertentie van $100 per nacht"
+    }
+  ],
+  "O4G22V": [
+    {
+      "type": 0,
+      "value": "Selecteer tijdzone"
+    }
+  ],
+  "O4JbH7": [
+    {
+      "type": 0,
+      "value": "Bevestig het genereren en kopieer de nieuwe Transaction Key direct – deze wordt om veiligheidsredenen maar één keer getoond."
+    }
+  ],
+  "O8g76z": [
+    {
+      "type": 0,
+      "value": "Tarieven en restricties bijwerken"
+    }
+  ],
+  "OCVZ6a": [
+    {
+      "type": 0,
+      "value": "Gereed"
+    }
+  ],
+  "OGLvM4": [
+    {
+      "type": 0,
+      "value": "Minimumverblijf moet een positief getal zijn"
+    }
+  ],
+  "Oax1XH": [
+    {
+      "type": 0,
+      "value": "Bestanden uploaden"
+    }
+  ],
+  "OeHpB+": [
+    {
+      "type": 0,
+      "value": "statistieken"
+    }
+  ],
+  "Ono6nG": [
+    {
+      "type": 0,
+      "value": "Hoofdstraat 123"
+    }
+  ],
+  "Oubdq/": [
+    {
+      "type": 0,
+      "value": "Zet bestanden hier neer of klik om te bladeren"
+    }
+  ],
+  "OwgPg/": [
+    {
+      "type": 0,
+      "value": "Primaire contenttaal"
+    }
+  ],
+  "P76X5R": [
+    {
+      "type": 0,
+      "value": "Opslaan"
+    }
+  ],
+  "PHnbNG": [
+    {
+      "type": 0,
+      "value": "Mijn website"
+    }
+  ],
+  "PT0PoN": [
+    {
+      "type": 0,
+      "value": "Standaardvaluta is verplicht"
+    }
+  ],
+  "PYORN9": [
+    {
+      "type": 0,
+      "value": "Je Razorpay-account is succesvol gekoppeld en klaar om betalingen te verwerken."
+    }
+  ],
+  "PYUO/D": [
+    {
+      "type": 0,
+      "value": "Genereer of haal je ‘Signature Key SHA-256’ (Clave secreta de firma) op. Als je er nog geen hebt, moet je deze aanmaken in de beveiligingssectie."
+    }
+  ],
+  "PZO/Vm": [
+    {
+      "type": 0,
+      "value": "Lengtegraad-coördinaat"
+    }
+  ],
+  "PZgJFD": [
+    {
+      "type": 0,
+      "value": "Uw bedrijfs- of accommodatienaam die wordt getoond in gastcommunicatie en betaallinks."
+    }
+  ],
+  "PeSZfT": [
+    {
+      "type": 0,
+      "value": "Accommodaties"
+    }
+  ],
+  "Q7u+VV": [
+    {
+      "type": 0,
+      "value": "vermelding"
+    }
+  ],
+  "QFItoI": [
+    {
+      "type": 0,
+      "value": "Mapping-naam"
+    }
+  ],
+  "QSt/yx": [
+    {
+      "type": 0,
+      "value": "Kies een betalingsprovider om online betalingen te accepteren, boekingen te verwerken en veilige betaallinks naar uw gasten te sturen."
+    }
+  ],
+  "QcRAOz": [
+    {
+      "type": 0,
+      "value": "Voer telefoonnummer in"
+    }
+  ],
+  "QhExZh": [
+    {
+      "type": 0,
+      "value": "Gast betaalt totaal"
+    }
+  ],
+  "QkU8pF": [
+    {
+      "type": 0,
+      "value": "Rapporten"
+    }
+  ],
+  "QrrLMn": [
+    {
+      "type": 0,
+      "value": "Houd je API Key en Webhook Secret veilig en deel ze nooit openbaar. Ze worden gebruikt om alle API-verzoeken te authenticeren en de echtheid van webhooks te verifiëren."
+    }
+  ],
+  "R26oUq": [
+    {
+      "type": 0,
+      "value": "Weergavevaluta is verplicht"
+    }
+  ],
+  "RAoXEd": [
+    {
+      "type": 0,
+      "value": "Accepteer veilig creditcardbetalingen met Redsys, de toonaangevende betaalgateway in Spanje"
+    }
+  ],
+  "RBGdAu": [
+    {
+      "type": 0,
+      "value": "Klik op de kaart om de locatie in te stellen"
+    }
+  ],
+  "RJf6QP": [
+    {
+      "type": 0,
+      "value": "cliënt"
+    }
+  ],
+  "RLi2kv": [
+    {
+      "type": 0,
+      "value": "Voorinstellingen"
+    }
+  ],
+  "RN2TV/": [
+    {
+      "type": 0,
+      "value": "Wordt weergegeven op betaallinks en in communicatie met gasten."
+    }
+  ],
+  "RQPIrX": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "RaGXAl": [
+    {
+      "type": 0,
+      "value": "Geschiedenis laden..."
+    }
+  ],
+  "Rx858S": [
+    {
+      "type": 0,
+      "value": "Volg deze stappen om je PayU.in-inloggegevens op te halen en je betaalgateway te configureren"
+    }
+  ],
+  "Rywutb": [
+    {
+      "type": 0,
+      "value": "Bezig met verbinden…"
+    }
+  ],
+  "S/W8wt": [
+    {
+      "type": 0,
+      "value": "Zoek op naam van voorziening"
+    }
+  ],
+  "S0jR0w": [
+    {
+      "type": 0,
+      "value": "Niet uitgelicht"
+    }
+  ],
+  "STkUKY": [
+    {
+      "type": 0,
+      "value": "Kopieer zowel de Merchant Key als de Merchant Salt en plak ze vervolgens in het bovenstaande formulier om je PayU.in-account met Rentalwise te verbinden."
+    }
+  ],
+  "SUSpIj": [
+    {
+      "type": 0,
+      "value": "Google Maps API-sleutel niet geconfigureerd"
+    }
+  ],
+  "Sv2doR": [
+    {
+      "type": 0,
+      "value": "Geen feesten/evenementen"
+    }
+  ],
+  "T4AJRc": [
+    {
+      "type": 0,
+      "value": "Pre-autorisatie borg"
+    }
+  ],
+  "T7FKbK": [
+    {
+      "type": 0,
+      "value": "Voer je Razorpay API-inloggegevens in vanuit je dashboard"
+    }
+  ],
+  "TAQtsp": [
+    {
+      "type": 0,
+      "value": "Uitgelicht"
+    }
+  ],
+  "TNt0xR": [
+    {
+      "type": 0,
+      "value": "Landen konden niet worden geladen"
+    }
+  ],
+  "TP9+uy": [
+    {
+      "type": 0,
+      "value": "Hoe het werkt →"
+    }
+  ],
+  "TPRG4x": [
+    {
+      "type": 0,
+      "value": "Kies maximaal 5 extra talen voor uw content. Klik op een taal om deze te selecteren of te deselecteren."
+    }
+  ],
+  "TX4nd7": [
+    {
+      "type": 0,
+      "value": "Betalingsdetails bekijken"
+    }
+  ],
+  "Tc801C": [
+    {
+      "type": 0,
+      "value": "Bijwerken van kalender mislukt"
+    }
+  ],
+  "Tj93Dw": [
+    {
+      "type": 0,
+      "value": "Merchant Code"
+    }
+  ],
+  "TnFf7r": [
+    {
+      "type": 0,
+      "value": "Selecteer een datumbereik"
+    }
+  ],
+  "U+BpmB": [
+    {
+      "type": 0,
+      "value": "Geen beschikbaarheidsstatussen beschikbaar"
+    }
+  ],
+  "U+Ld/N": [
+    {
+      "type": 0,
+      "value": "PayPal‑account koppelen"
+    }
+  ],
+  "U33urL": [
+    {
+      "type": 0,
+      "value": "Datumbereik wissen"
+    }
+  ],
+  "U7kE1U": [
+    {
+      "type": 0,
+      "value": "Ga naar de "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " en log in met je PayPal Business‑account."
+    }
+  ],
+  "U96Y45": [
+    {
+      "type": 0,
+      "value": "Kies een actie"
+    }
+  ],
+  "UFslXe": [
+    {
+      "type": 0,
+      "value": "Klik in het gedeelte Security Settings op ‘API Credentials & Keys’."
+    }
+  ],
+  "UGsmv6": [
+    {
+      "type": 0,
+      "value": "Nieuwe reservering"
+    }
+  ],
+  "UXa4EB": [
+    {
+      "type": 0,
+      "value": "De opgegeven inloggegevens zijn onjuist. Controleer je API Login ID en Transaction Key en probeer het opnieuw."
+    }
+  ],
+  "Ub1bVM": [
+    {
+      "type": 0,
+      "value": "Locatie"
+    }
+  ],
+  "Us8Yir": [
+    {
+      "type": 1,
+      "value": "userName"
+    },
+    {
+      "type": 0,
+      "value": " heeft de beschikbaarheidsstatus gewijzigd naar "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "V8cxvA": [
+    {
+      "type": 0,
+      "value": "Selecteer extra talen"
+    }
+  ],
+  "VB01E9": [
+    {
+      "type": 0,
+      "value": "Klik op ‘New Transaction Key’ of ‘Request New Key’ om je Transaction Key op te halen. Let op: hierdoor wordt de bestaande transaction key ongeldig."
+    }
+  ],
+  "VD8QDF": [
+    {
+      "type": 0,
+      "value": "Stel tarieven, minimale verblijfsduur en boekingsrestricties in voor de geselecteerde datums. Gebruik de eenvoudige modus voor consistente prijzen of de geavanceerde modus voor dag-specifieke instellingen."
+    }
+  ],
+  "VKPYTy": [
+    {
+      "type": 0,
+      "value": "Kanalen"
+    }
+  ],
+  "VKdC7r": [
+    {
+      "type": 0,
+      "value": "Terminal is verplicht"
+    }
+  ],
+  "VPF1PR": [
+    {
+      "type": 0,
+      "value": "Voorziening kon niet worden verwijderd. Probeer het opnieuw."
+    }
+  ],
+  "VS03hF": [
+    {
+      "type": 0,
+      "value": "bijv. -122.419415"
+    }
+  ],
+  "VgfswN": [
+    {
+      "type": 0,
+      "value": "Uitgelichte status bijgewerkt"
+    }
+  ],
+  "VnV1LF": [
+    {
+      "type": 0,
+      "value": "Dashboardtaal"
+    }
+  ],
+  "Vrxnkj": [
+    {
+      "type": 0,
+      "value": "Upload geslaagd!"
+    }
+  ],
+  "VttIVF": [
+    {
+      "type": 0,
+      "value": "Voorzieningen"
+    }
+  ],
+  "VvRDvN": [
+    {
+      "type": 0,
+      "value": "Klik op het tabblad ‘API Keys’ om je API-inloggegevens te openen."
+    }
+  ],
+  "Vyw+lR": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "W3sWk1": [
+    {
+      "type": 0,
+      "value": "De standaardvaluta moet zijn opgenomen in de toegestane valuta’s"
+    }
+  ],
+  "W57wea": [
+    {
+      "type": 0,
+      "value": "Controleer of je de inloggegevens voor de juiste omgeving bekijkt: gebruik ‘Production’-inloggegevens voor live betalingen, niet de ‘Test Mode’-inloggegevens."
+    }
+  ],
+  "W5v/Iw": [
+    {
+      "type": 0,
+      "value": "Alles uploaden"
+    }
+  ],
+  "WKNigj": [
+    {
+      "type": 0,
+      "value": "Dashboard"
+    }
+  ],
+  "WaOLqy": [
+    {
+      "type": 0,
+      "value": "Je Redsys-account is succesvol gekoppeld en klaar om betalingen te verwerken."
+    }
+  ],
+  "WfDKxB": [
+    {
+      "type": 0,
+      "value": "De opgegeven inloggegevens zijn onjuist. Controleer je Key ID en Key Secret en probeer het opnieuw."
+    }
+  ],
+  "WpPA+r": [
+    {
+      "type": 0,
+      "value": "Zoek op accommodatienaam"
+    }
+  ],
+  "WuulWW": [
+    {
+      "type": 0,
+      "value": "Opslaan..."
+    }
+  ],
+  "X+vN43": [
+    {
+      "type": 0,
+      "value": "Voorziening \""
+    },
+    {
+      "type": 1,
+      "value": "name"
+    },
+    {
+      "type": 0,
+      "value": "\" verwijderen"
+    }
+  ],
+  "X8DbWD": [
+    {
+      "type": 0,
+      "value": "Voer je Xmoney API-inloggegevens in vanuit je merchant-dashboard"
+    }
+  ],
+  "XDLNej": [
+    {
+      "type": 0,
+      "value": "Je PayPal‑account is succesvol gekoppeld."
+    }
+  ],
+  "XNEu/M": [
+    {
+      "type": 0,
+      "value": "Klant bekijken"
+    }
+  ],
+  "XP9hJ7": [
+    {
+      "type": 0,
+      "value": "Startdatum moet vóór "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " liggen"
+    }
+  ],
+  "XYPKf0": [
+    {
+      "type": 0,
+      "value": "Voer een app‑naam in (bijv. 'Mijn Property Management Systeem') en klik op 'Create App' (Create App)."
+    }
+  ],
+  "Xbhlim": [
+    {
+      "type": 0,
+      "value": "Ongeldig e-mailadres"
+    }
+  ],
+  "XkXjGM": [
+    {
+      "type": 0,
+      "value": "Kalender is succesvol bijgewerkt"
+    }
+  ],
+  "Xw/VVZ": [
+    {
+      "type": 0,
+      "value": "Plaats"
+    }
+  ],
+  "Xyl+wc": [
+    {
+      "type": 0,
+      "value": "Instellingen"
+    }
+  ],
+  "Xyos1g": [
+    {
+      "type": 0,
+      "value": "Straatadres is verplicht"
+    }
+  ],
+  "Y/SI/Y": [
+    {
+      "type": 0,
+      "value": "Redsys-inloggegevens"
+    }
+  ],
+  "Y0X1Ig": [
+    {
+      "type": 0,
+      "value": "Je ziet nu je Key ID (begint met ‘rzp_test_’ voor testmodus of ‘rzp_live_’ voor live-modus). Dit is je publieke sleutel. Kopieer deze waarde."
+    }
+  ],
+  "Y9jAxS": [
+    {
+      "type": 0,
+      "value": "Airbnb-commissie­structuur"
+    }
+  ],
+  "YH20C7": [
+    {
+      "type": 0,
+      "value": "Schakel met de schakelaar bovenaan over naar de modus \"Live\" (Live)."
+    }
+  ],
+  "YXHsVb": [
+    {
+      "type": 0,
+      "value": "reservering"
+    }
+  ],
+  "YXbN+o": [
+    {
+      "type": 0,
+      "value": "Bijwerken"
+    }
+  ],
+  "Yf3ND3": [
+    {
+      "type": 0,
+      "value": "Succesvol verbonden"
+    }
+  ],
+  "Yh8hMS": [
+    {
+      "type": 0,
+      "value": "Zorg dat je Live Mode-inloggegevens (u_live_api_) gebruikt voor productiebetalingen, niet de Test Mode-inloggegevens (u_test_api_)."
+    }
+  ],
+  "YouQp1": [
+    {
+      "type": 0,
+      "value": "Je ontvangt (na)"
+    }
+  ],
+  "YqBHbh": [
+    {
+      "type": 0,
+      "value": "Hulp nodig bij het vinden van je PayPal‑gegevens? Bekijk de installatie‑instructies"
+    }
+  ],
+  "Yr7Ms5": [
+    {
+      "type": 0,
+      "value": "Toestaan"
+    }
+  ],
+  "Z5m5GD": [
+    {
+      "type": 0,
+      "value": "Min. verblijf"
+    }
+  ],
+  "Z6cYcW": [
+    {
+      "type": 0,
+      "value": "Selecteer uw Airbnb-kostenstructuur om tarieven correct te synchroniseren."
+    }
+  ],
+  "Z6ymtI": [
+    {
+      "type": 0,
+      "value": "Houd je Key Secret veilig en deel deze nooit openbaar. Deze wordt gebruikt om alle API-verzoeken naar je account te authenticeren."
+    }
+  ],
+  "ZEtjaq": [
+    {
+      "type": 0,
+      "value": "Accounts zoeken..."
+    }
+  ],
+  "ZKB9Y7": [
+    {
+      "type": 0,
+      "value": "Bijv. geen schoenen binnen, buitendouche verplicht gebruiken voor strandspullen, maximaal 2 voertuigen op de oprit"
+    }
+  ],
+  "ZspUhP": [
+    {
+      "type": 0,
+      "value": "Selectie wissen"
+    }
+  ],
+  "ZuYUdv": [
+    {
+      "type": 0,
+      "value": "Klik op de knop \"Create App\" (Create App) om een nieuwe applicatie aan te maken."
+    }
+  ],
+  "a+SxgC": [
+    {
+      "type": 0,
+      "value": "Dit is de taal die je moet gebruiken bij het toevoegen van content. Je kunt optioneel vertalingen in andere talen toevoegen."
+    }
+  ],
+  "a35CJS": [
+    {
+      "type": 0,
+      "value": "Woensdag"
+    }
+  ],
+  "aA+qMl": [
+    {
+      "type": 0,
+      "value": "Status van accommodatie ingesteld op \""
+    },
+    {
+      "type": 1,
+      "value": "status"
+    },
+    {
+      "type": 0,
+      "value": "\"."
+    }
+  ],
+  "aADdjn": [
+    {
+      "type": 0,
+      "value": "Einddatum moet vóór "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " liggen"
+    }
+  ],
+  "aJ3++V": [
+    {
+      "type": 0,
+      "value": "Xmoney-account koppelen"
+    }
+  ],
+  "aPILyt": [
+    {
+      "type": 0,
+      "value": "Vorige"
+    }
+  ],
+  "aWcemL": [
+    {
+      "type": 0,
+      "value": "Bezig met uploaden..."
+    }
+  ],
+  "aXKcVp": [
+    {
+      "type": 0,
+      "value": "Rond de autorisatie af in het Stripe-venster. Dit venster wordt automatisch gesloten zodra je klaar bent."
+    }
+  ],
+  "aXmvIA": [
+    {
+      "type": 0,
+      "value": "De beschikbaarheidsstatus is gewijzigd naar "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "ab0hY/": [
+    {
+      "type": 0,
+      "value": "Key Secret"
+    }
+  ],
+  "advKPO": [
+    {
+      "type": 0,
+      "value": "Volg deze stappen om je Razorpay-inloggegevens op te halen en je betaalgateway te configureren"
+    }
+  ],
+  "aeebtJ": [
+    {
+      "type": 0,
+      "value": "Sommige accommodaties zijn gemarkeerd als co-hosted. Dit betekent dat jij niet de primaire host bent. Deze accommodaties worden wel in je dashboard geïmporteerd, maar wijzigingen die je hier aanbrengt, worden niet teruggesynchroniseerd naar Airbnb om conflicten met de instellingen van de primaire host te voorkomen."
+    }
+  ],
+  "afXEu2": [
+    {
+      "type": 0,
+      "value": "Authorize.net-account koppelen"
+    }
+  ],
+  "aht69K": [
+    {
+      "type": 0,
+      "value": "Flexibel"
+    }
+  ],
+  "amPlaW": [
+    {
+      "type": 0,
+      "value": "Kopieer je gegevens en plak ze in het formulier om je Redsys-account te koppelen."
+    }
+  ],
+  "aosPfz": [
+    {
+      "type": 0,
+      "value": "Beschrijf in uw eigen woorden"
+    }
+  ],
+  "atFgtD": [
+    {
+      "type": 0,
+      "value": "Er zijn momenteel geen betaalproviders beschikbaar om te configureren."
+    }
+  ],
+  "b1haC1": [
+    {
+      "type": 0,
+      "value": "Laden van betaalproviders mislukt"
+    }
+  ],
+  "b3sTwT": [
+    {
+      "type": 0,
+      "value": "Mijn profiel"
+    }
+  ],
+  "b3xOJ9": [
+    {
+      "type": 0,
+      "value": "Postcode"
+    }
+  ],
+  "bCNGo4": [
+    {
+      "type": 0,
+      "value": "Geen resultaten gevonden."
+    }
+  ],
+  "bVzg2H": [
+    {
+      "type": 0,
+      "value": "Zorg dat je Live Mode-inloggegevens (u_live_api_) gebruikt voor productiebetalingen, niet de Test Mode-inloggegevens (u_test_api_)."
+    }
+  ],
+  "bavx1x": [
+    {
+      "type": 0,
+      "value": "Begin met typen..."
+    }
+  ],
+  "bdgAC1": [
+    {
+      "type": 0,
+      "value": "Geen landen gevonden."
+    }
+  ],
+  "bkwL/j": [
+    {
+      "type": 0,
+      "value": "Niet-restitueerbaar"
+    }
+  ],
+  "brw6xY": [
+    {
+      "type": 0,
+      "value": "Log in op je "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " met je merchant-inloggegevens."
+    }
+  ],
+  "bszm8L": [
+    {
+      "type": 0,
+      "value": "Selecteer een beschikbaarheidsstatus"
+    }
+  ],
+  "c+rEQa": [
+    {
+      "type": 0,
+      "value": "Koppelingen"
+    }
+  ],
+  "c0M/n2": [
+    {
+      "type": 0,
+      "value": "Specifieke vereisten"
+    }
+  ],
+  "c39yv7": [
+    {
+      "type": 0,
+      "value": "Razorpay-inloggegevens"
+    }
+  ],
+  "c4y18J": [
+    {
+      "type": 0,
+      "value": "Client ID is verplicht"
+    }
+  ],
+  "c8ysE5": [
+    {
+      "type": 0,
+      "value": "Alles wissen"
+    }
+  ],
+  "cDDnbv": [
+    {
+      "type": 0,
+      "value": "Annuleringsbeleid"
+    }
+  ],
+  "cPZY1f": [
+    {
+      "type": 0,
+      "value": "Upload mislukt"
+    }
+  ],
+  "cU+Iey": [
+    {
+      "type": 0,
+      "value": "Alleen hostcommissie"
+    }
+  ],
+  "cc8ReJ": [
+    {
+      "type": 0,
+      "value": "Geheime transactiesleutel die wordt gebruikt om API-verzoeken te authenticeren. Houd deze veilig en deel hem nooit openbaar."
+    }
+  ],
+  "ccsc2K": [
+    {
+      "type": 0,
+      "value": "Voer hex-code in (bijv. #FF5733)"
+    }
+  ],
+  "ce6iAC": [
+    {
+      "type": 0,
+      "value": "gebruiker"
+    }
+  ],
+  "cjpksE": [
+    {
+      "type": 0,
+      "value": "Meer informatie"
+    }
+  ],
+  "cnVnFc": [
+    {
+      "type": 0,
+      "value": "Je unieke API-sleutel, verstrekt door Xmoney voor het authenticeren van API-verzoeken en het verwerken van cryptobetalingen"
+    }
+  ],
+  "co30zv": [
+    {
+      "type": 0,
+      "value": "De hoofdvaluta waarmee je Redsys-account is geconfigureerd. Transacties in andere valuta’s worden omgerekend naar deze valuta."
+    }
+  ],
+  "cpqeDo": [
+    {
+      "type": 0,
+      "value": "Geavanceerd"
+    }
+  ],
+  "cu+51N": [
+    {
+      "type": 0,
+      "value": "Betaallinks"
+    }
+  ],
+  "d0LNAH": [
+    {
+      "type": 0,
+      "value": "Er is een fout opgetreden"
+    }
+  ],
+  "d1EL0O": [
+    {
+      "type": 0,
+      "value": "Juridische naam is verplicht"
+    }
+  ],
+  "d1sT0D": [
+    {
+      "type": 0,
+      "value": "ma"
+    }
+  ],
+  "dPuxw6": [
+    {
+      "type": 0,
+      "value": "Houd je Transaction Key veilig en deel deze nooit openbaar. Deze wordt gebruikt om alle API-verzoeken naar je account te authenticeren."
+    }
+  ],
+  "dQLjUG": [
+    {
+      "type": 0,
+      "value": "De opgegeven inloggegevens zijn onjuist. Controleer je API Key en Webhook Secret en probeer het opnieuw."
+    }
+  ],
+  "dXpXUg": [
+    {
+      "type": 0,
+      "value": "Postcode is verplicht"
+    }
+  ],
+  "df/Qz1": [
+    {
+      "type": 0,
+      "value": "PayU.in-inloggegevens"
+    }
+  ],
+  "dlLwTR": [
+    {
+      "type": 0,
+      "value": "Zet bestand hier neer"
+    }
+  ],
+  "dlWOii": [
+    {
+      "type": 0,
+      "value": "Je API Login ID wordt nu weergegeven. Kopieer deze waarde – dit is een unieke identificatie voor je account."
+    }
+  ],
+  "dlgRJf": [
+    {
+      "type": 0,
+      "value": "Voorziening toevoegen"
+    }
+  ],
+  "dmqjA4": [
+    {
+      "type": 0,
+      "value": "Merchant Key is verplicht"
+    }
+  ],
+  "dpQveJ": [
+    {
+      "type": 0,
+      "value": "Toepassen"
+    }
+  ],
+  "ds1sfT": [
+    {
+      "type": 0,
+      "value": "De transactiesleutel wordt om veiligheidsredenen maar één keer getoond wanneer deze wordt aangemaakt. Als je hem kwijtraakt, moet je een nieuwe sleutel genereren."
+    }
+  ],
+  "eJQkpB": [
+    {
+      "type": 0,
+      "value": "Type overeenkomst"
+    }
+  ],
+  "eQr1Nt": [
+    {
+      "type": 0,
+      "value": "Zet bestand hier neer of klik om te bladeren"
+    }
+  ],
+  "eZtwZg": [
+    {
+      "type": 0,
+      "value": "Beschrijf uw aangepaste annuleringsbeleid"
+    }
+  ],
+  "edHwNb": [
+    {
+      "type": 0,
+      "value": "Places API niet ingeschakeld. Gebruik de kaart om de locatie in te stellen."
+    }
+  ],
+  "ehRkrZ": [
+    {
+      "type": 0,
+      "value": "Geschiedenis laden mislukt"
+    }
+  ],
+  "eimE5J": [
+    {
+      "type": 0,
+      "value": "bijv. Sunset Beach Rentals BV"
+    }
+  ],
+  "ezQ6SF": [
+    {
+      "type": 0,
+      "value": "Beschrijf uw aangepaste annuleringsbeleid"
+    }
+  ],
+  "f1ZlPP": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "f4qEIV": [
+    {
+      "type": 0,
+      "value": "E-mailadres is verplicht"
+    }
+  ],
+  "f598gT": [
+    {
+      "type": 0,
+      "value": "Dit is nodig zodat betaalformulieren zowel via de betaallinks als op je klantgerichte website goed werken."
+    }
+  ],
+  "fsCHeb": [
+    {
+      "type": 0,
+      "value": "Ongeldig bestand"
+    }
+  ],
+  "gGp8BG": [
+    {
+      "type": 0,
+      "value": "Geheime Merchant Salt (API Salt) die wordt gebruikt om veilige hashes voor betalingsverzoeken te genereren. Houd deze strikt vertrouwelijk en deel hem nooit openbaar."
+    }
+  ],
+  "gNizG3": [
+    {
+      "type": 0,
+      "value": "Om je Authorize.net-account te koppelen, moet je je API-gegevens ophalen uit je merchantaccount:"
+    }
+  ],
+  "gUTs9M": [
+    {
+      "type": 0,
+      "value": "Door te koppelen geef je deze applicatie toestemming om toegang te krijgen tot de gegevens van je Airbnb-account. Je kunt de koppeling op elk moment verbreken via de instellingen."
+    }
+  ],
+  "gYyW2F": [
+    {
+      "type": 0,
+      "value": "Accommodaties"
+    }
+  ],
+  "gcJzNv": [
+    {
+      "type": 0,
+      "value": "Terug"
+    }
+  ],
+  "gcogeP": [
+    {
+      "type": 0,
+      "value": "Je unieke Merchant Key (API Key) die door PayU.in wordt verstrekt voor het verifiëren van API-verzoeken"
+    }
+  ],
+  "guxn2d": [
+    {
+      "type": 0,
+      "value": "Naam"
+    }
+  ],
+  "h7MHkw": [
+    {
+      "type": 0,
+      "value": "Installatie‑instructies"
+    }
+  ],
+  "hGWNhw": [
+    {
+      "type": 0,
+      "value": "PayU.in-account koppelen"
+    }
+  ],
+  "hK+bTp": [
+    {
+      "type": 0,
+      "value": "Rechtspersoon"
+    }
+  ],
+  "hNmK/a": [
+    {
+      "type": 0,
+      "value": "Log in op je "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " met je merchantgegevens."
+    }
+  ],
+  "hcwLhe": [
+    {
+      "type": 0,
+      "value": "Terminal"
+    }
+  ],
+  "hdOUlx": [
+    {
+      "type": 0,
+      "value": "Voorzieningengroep"
+    }
+  ],
+  "hm3XWh": [
+    {
+      "type": 0,
+      "value": "Accepteer veilig creditcardbetalingen met Authorize.net, een vertrouwde betaalgateway die wereldwijd door bedrijven wordt gebruikt"
+    }
+  ],
+  "hnT+Ex": [
+    {
+      "type": 0,
+      "value": "Places API niet ingeschakeld. Schakel deze in de Google Cloud Console in of gebruik de kaart om de locatie in te stellen."
+    }
+  ],
+  "hzwyg5": [
+    {
+      "type": 0,
+      "value": "Razorpay-account koppelen"
+    }
+  ],
+  "i12iVe": [
+    {
+      "type": 0,
+      "value": "Ga naar"
+    }
+  ],
+  "i48IBK": [
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "+1 extra koppeling"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "+"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " extra koppelingen"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "i6kvwt": [
+    {
+      "type": 0,
+      "value": "Kalender"
+    }
+  ],
+  "iDYGXC": [
+    {
+      "type": 0,
+      "value": "Host: 15,5%"
+    }
+  ],
+  "iHNXRF": [
+    {
+      "type": 0,
+      "value": "Selecteer een optie"
+    }
+  ],
+  "iKXPtM": [
+    {
+      "type": 0,
+      "value": "Webhook Secret is verplicht"
+    }
+  ],
+  "iNbK2s": [
+    {
+      "type": 0,
+      "value": "Menu openen"
+    }
+  ],
+  "iVnpqX": [
+    {
+      "type": 0,
+      "value": "Ga na het inloggen in het hoofdmenu naar ‘Integrations’."
+    }
+  ],
+  "igJ6NH": [
+    {
+      "type": 0,
+      "value": "Geheime handtekeningsleutel die wordt gebruikt om transacties te verifiëren (Clave secreta de firma)"
+    }
+  ],
+  "ivMxuN": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "iwSAmy": [
+    {
+      "type": 0,
+      "value": "configuratie"
+    }
+  ],
+  "j0ZBkg": [
+    {
+      "type": 0,
+      "value": "Om je PayU.in-account te koppelen, moet je je API-gegevens ophalen uit je merchantdashboard:"
+    }
+  ],
+  "j0wmPI": [
+    {
+      "type": 0,
+      "value": "Verbinding verifiëren..."
+    }
+  ],
+  "j1rtzL": [
+    {
+      "type": 0,
+      "value": "PayU.in-account koppelen"
+    }
+  ],
+  "j7b5hy": [
+    {
+      "type": 0,
+      "value": "Deze actie is "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "onomkeerbaar"
+        }
+      ],
+      "type": 8,
+      "value": "strong"
+    },
+    {
+      "type": 0,
+      "value": ". Als je een voorziening verwijdert, wordt deze permanent uit je systeem verwijderd. Weet je zeker dat je wilt doorgaan?"
+    }
+  ],
+  "jBqjwf": [
+    {
+      "type": 0,
+      "value": "Vrijdag"
+    }
+  ],
+  "jCh/D0": [
+    {
+      "type": 0,
+      "value": "Jan"
+    }
+  ],
+  "jImZFP": [
+    {
+      "type": 0,
+      "value": "Succesvol gekoppeld"
+    }
+  ],
+  "jMo8lD": [
+    {
+      "type": 0,
+      "value": "Als u niet onder een bedrijf opereert, vul dan uw voor- en achternaam in."
+    }
+  ],
+  "jcEZpK": [
+    {
+      "type": 0,
+      "value": "Uitloggen"
+    }
+  ],
+  "jhIDCX": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "geselecteerd"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "geselecteerd"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "jvK+qk": [
+    {
+      "type": 0,
+      "value": "Volledige restitutie bij annulering 30+ dagen voor check-in"
+    }
+  ],
+  "k+FE8+": [
+    {
+      "type": 0,
+      "value": "Status"
+    }
+  ],
+  "k+yRbg": [
+    {
+      "type": 0,
+      "value": "Bestandsinvoer"
+    }
+  ],
+  "kBI7py": [
+    {
+      "type": 0,
+      "value": "Je Xmoney-account is succesvol gekoppeld en klaar om cryptobetalingen te verwerken."
+    }
+  ],
+  "kG7fT4": [
+    {
+      "type": 0,
+      "value": "accommodatie"
+    }
+  ],
+  "kHKPr2": [
+    {
+      "type": 0,
+      "value": "PayPal‑gegevens"
+    }
+  ],
+  "kQrSIK": [
+    {
+      "type": 0,
+      "value": "Voer de gegevens van je PayPal‑applicatie in"
+    }
+  ],
+  "kbQEWe": [
+    {
+      "type": 0,
+      "value": "Niet uitgelicht"
+    }
+  ],
+  "kjXDMk": [
+    {
+      "type": 0,
+      "value": "Voorziening is nu \""
+    },
+    {
+      "type": 1,
+      "value": "status"
+    },
+    {
+      "type": 0,
+      "value": "\"."
+    }
+  ],
+  "kl5YRB": [
+    {
+      "type": 0,
+      "value": "Zoeken..."
+    }
+  ],
+  "koiR5e": [
+    {
+      "type": 0,
+      "value": "Onder de Merchant Key vind je je Merchant Salt (ook wel API Salt genoemd). Dit is een geheime waarde die wordt gebruikt om veilige betalingshashes te genereren. Kopieer deze waarde zorgvuldig."
+    }
+  ],
+  "krzoKh": [
+    {
+      "type": 0,
+      "value": "Stilte-uren (22:00–08:00)"
+    }
+  ],
+  "l2G4ts": [
+    {
+      "type": 0,
+      "value": "account"
+    }
+  ],
+  "l58peo": [
+    {
+      "type": 0,
+      "value": "Authorize.net-account koppelen"
+    }
+  ],
+  "lICqky": [
+    {
+      "type": 0,
+      "value": "Zaterdag"
+    }
+  ],
+  "lLsqx/": [
+    {
+      "type": 0,
+      "value": "Eenvoudig"
+    }
+  ],
+  "lXmebi": [
+    {
+      "type": 0,
+      "value": "Geen accommodaties gevonden."
+    }
+  ],
+  "lbuhtO": [
+    {
+      "type": 0,
+      "value": "Telefoonnummer is verplicht"
+    }
+  ],
+  "lf1G7F": [
+    {
+      "type": 0,
+      "value": "zo"
+    }
+  ],
+  "lfavTr": [
+    {
+      "type": 0,
+      "value": "JavaScript SDK v6 (JavaScript SDK v6)"
+    }
+  ],
+  "lsb4H5": [
+    {
+      "type": 0,
+      "value": "10001"
+    }
+  ],
+  "lw4XRE": [
+    {
+      "type": 0,
+      "value": "Weergavetijdzone is verplicht"
+    }
+  ],
+  "m4CjvC": [
+    {
+      "type": 0,
+      "value": "Je ontvangt (voor)"
+    }
+  ],
+  "m9X8dj": [
+    {
+      "type": 0,
+      "value": "Aangepast"
+    }
+  ],
+  "mEGoCy": [
+    {
+      "type": 0,
+      "value": "Land"
+    }
+  ],
+  "mRPckU": [
+    {
+      "type": 0,
+      "value": "Plak de gegevens in het formulier om je PayPal‑account te koppelen."
+    }
+  ],
+  "mTNG6W": [
+    {
+      "type": 0,
+      "value": "Redsys-beheerportaal"
+    }
+  ],
+  "ma3FDS": [
+    {
+      "type": 0,
+      "value": "Jansen"
+    }
+  ],
+  "mc9NYQ": [
+    {
+      "type": 0,
+      "value": "Breedtegraad"
+    }
+  ],
+  "mhR7ow": [
+    {
+      "type": 0,
+      "value": "Selecteer valuta"
+    }
+  ],
+  "mhXM05": [
+    {
+      "type": 0,
+      "value": "overzicht"
+    }
+  ],
+  "mjTX/O": [
+    {
+      "type": 0,
+      "value": "Bezig met opslaan..."
+    }
+  ],
+  "mk2r03": [
+    {
+      "type": 0,
+      "value": "We konden de benodigde informatie niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "moB4X5": [
+    {
+      "type": 0,
+      "value": "Wissen"
+    }
+  ],
+  "mut/Iu": [
+    {
+      "type": 0,
+      "value": "Selecteer tijdzone"
+    }
+  ],
+  "myf6nu": [
+    {
+      "type": 0,
+      "value": "Plaats is verplicht"
+    }
+  ],
+  "n+V4Hf": [
+    {
+      "type": 0,
+      "value": "Tarieven en restricties bijwerken"
+    }
+  ],
+  "n8TPub": [
+    {
+      "type": 0,
+      "value": "Hier vind je al je accommodaties"
+    }
+  ],
+  "n8X4fP": [
+    {
+      "type": 0,
+      "value": "Je PayU.in-account is succesvol gekoppeld en klaar om betalingen te verwerken."
+    }
+  ],
+  "nE/K2O": [
+    {
+      "type": 0,
+      "value": "Succesvol verbonden"
+    }
+  ],
+  "nOHLhe": [
+    {
+      "type": 0,
+      "value": "Configuratie laden mislukt"
+    }
+  ],
+  "nPTP4o": [
+    {
+      "type": 0,
+      "value": "Beperking voor check-out"
+    }
+  ],
+  "nXPU3C": [
+    {
+      "type": 0,
+      "value": "Hulp nodig bij het vinden van je Redsys-gegevens? Bekijk de installatie-instructies"
+    }
+  ],
+  "nbKA0x": [
+    {
+      "type": 0,
+      "value": "We konden de beschikbare betaalproviders niet laden. Probeer het later opnieuw."
+    }
+  ],
+  "nhKZzR": [
+    {
+      "type": 0,
+      "value": "Zorg dat je productiesleutels gebruikt voor echte betalingen en niet de Test Mode-sleutels."
+    }
+  ],
+  "ntDrY2": [
+    {
+      "type": 0,
+      "value": "Zet bestanden hier neer"
+    }
+  ],
+  "ntIlMj": [
+    {
+      "type": 0,
+      "value": "Naam"
+    }
+  ],
+  "nyf+Nu": [
+    {
+      "type": 0,
+      "value": "Berichten"
+    }
+  ],
+  "oDbRSf": [
+    {
+      "type": 0,
+      "value": "Sleep een logo hierheen of klik om te bladeren"
+    }
+  ],
+  "oG3zop": [
+    {
+      "type": 0,
+      "value": "Telefoonnummer wissen"
+    }
+  ],
+  "oQ6S9i": [
+    {
+      "type": 0,
+      "value": "Merknaam"
+    }
+  ],
+  "ocx71s": [
+    {
+      "type": 0,
+      "value": "Boeking "
+    },
+    {
+      "type": 1,
+      "value": "bookingId"
+    },
+    {
+      "type": 0,
+      "value": " heeft beschikbaarheid aangemaakt met status "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "ogXEWD": [
+    {
+      "type": 0,
+      "value": "Accommodatie-ID kopiëren"
+    }
+  ],
+  "oo/YC7": [
+    {
+      "type": 0,
+      "value": "Terug"
+    }
+  ],
+  "p+eukQ": [
+    {
+      "type": 0,
+      "value": "Gast: 14,1–16,5%"
+    }
+  ],
+  "pBqc2F": [
+    {
+      "type": 0,
+      "value": "Merchant Code is verplicht"
+    }
+  ],
+  "pMXWp/": [
+    {
+      "type": 0,
+      "value": "Weergavetijdzone"
+    }
+  ],
+  "pXGhQw": [
+    {
+      "type": 0,
+      "value": "Ga in het bovenste menu naar ‘Account’ en kies vervolgens ‘Settings’ in het dropdownmenu."
+    }
+  ],
+  "pYdLI6": [
+    {
+      "type": 0,
+      "value": "Verbinding mislukt"
+    }
+  ],
+  "pp3eG5": [
+    {
+      "type": 0,
+      "value": "De gegevens die je hebt ingevoerd zijn onjuist. Controleer je Merchant Code, Terminal en Handtekeningsleutel en probeer het opnieuw."
+    }
+  ],
+  "q1+03r": [
+    {
+      "type": 0,
+      "value": "Selecteer extra talen"
+    }
+  ],
+  "q2UBZy": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "accommodatie geselecteerd"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "accommodaties geselecteerd"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "qB/T8g": [
+    {
+      "type": 0,
+      "value": "Voer je Authorize.net API-gegevens in uit je merchantaccount"
+    }
+  ],
+  "qErICT": [
+    {
+      "type": 0,
+      "value": "Gast betaalt (voor)"
+    }
+  ],
+  "qLSweW": [
+    {
+      "type": 0,
+      "value": "Geüpload"
+    }
+  ],
+  "qS74wR": [
+    {
+      "type": 0,
+      "value": "De Client Secret van je PayPal‑applicatie uit de Developer Dashboard"
+    }
+  ],
+  "qTk3rP": [
+    {
+      "type": 0,
+      "value": "Accepteer veilig betalingen met PayU.in, India’s toonaangevende betaalgateway met ondersteuning voor meerdere betaalmethoden, waaronder kaarten, UPI, netbanking en wallets"
+    }
+  ],
+  "qilQYG": [
+    {
+      "type": 0,
+      "value": "Voorziening succesvol verwijderd."
+    }
+  ],
+  "qpDXUm": [
+    {
+      "type": 0,
+      "value": "Ga naar de sectie ‘Virtual POS Configuration’ of ‘Configuración TPV Virtual’."
+    }
+  ],
+  "r+yQE+": [
+    {
+      "type": 0,
+      "value": "Selecteer valuta"
+    }
+  ],
+  "r4Jebe": [
+    {
+      "type": 0,
+      "value": "Bezig met laden..."
+    }
+  ],
+  "rDdMBr": [
+    {
+      "type": 0,
+      "value": "Verbinding mislukt"
+    }
+  ],
+  "rLWAAL": [
+    {
+      "type": 0,
+      "value": "Kalender"
+    }
+  ],
+  "rRpsqb": [
+    {
+      "type": 0,
+      "value": "Optioneel"
+    }
+  ],
+  "rZvg97": [
+    {
+      "type": 0,
+      "value": "− Je hostkosten (3%)"
+    }
+  ],
+  "rv6bA0": [
+    {
+      "type": 0,
+      "value": "Je unieke API Key ID die door Razorpay wordt verstrekt voor het verifiëren van API-verzoeken"
+    }
+  ],
+  "rwhoDv": [
+    {
+      "type": 0,
+      "value": "Koppelingen"
+    }
+  ],
+  "s4m994": [
+    {
+      "type": 0,
+      "value": "Exporteren"
+    }
+  ],
+  "s5dtls": [
+    {
+      "type": 0,
+      "value": "Zorg dat je Live Mode-sleutels (rzp_live_) gebruikt voor productiebetalingen en niet de Test Mode-sleutels (rzp_test_)."
+    }
+  ],
+  "s6oEjd": [
+    {
+      "type": 0,
+      "value": "Status bijwerken mislukt"
+    }
+  ],
+  "s9BGAO": [
+    {
+      "type": 0,
+      "value": "bijv. 37.774929"
+    }
+  ],
+  "sR8HuW": [
+    {
+      "type": 0,
+      "value": "Kopieer zowel de Key ID als de Key Secret en plak ze in het bovenstaande formulier om je Razorpay-account met Rentalwise te koppelen."
+    }
+  ],
+  "sTtBm4": [
+    {
+      "type": 0,
+      "value": "Xmoney-account koppelen"
+    }
+  ],
+  "sW0C5+": [
+    {
+      "type": 0,
+      "value": "Razorpay-account koppelen"
+    }
+  ],
+  "sW8CTD": [
+    {
+      "type": 0,
+      "value": "Geaccepteerd: "
+    },
+    {
+      "type": 1,
+      "value": "types"
+    }
+  ],
+  "sbeE6m": [
+    {
+      "type": 0,
+      "value": "Directe terugbetalingsverwerking"
+    }
+  ],
+  "sgXEFE": [
+    {
+      "type": 0,
+      "value": "Doorgaan"
+    }
+  ],
+  "shuc96": [
+    {
+      "type": 0,
+      "value": "Sleep hier een nieuw logo naartoe of klik om te vervangen."
+    }
+  ],
+  "soTKGn": [
+    {
+      "type": 0,
+      "value": "Volg deze stappen om je Xmoney-gegevens op te halen en je cryptobetaalgateway te configureren"
+    }
+  ],
+  "t42aKR": [
+    {
+      "type": 0,
+      "value": "Strikt (aanbevolen)"
+    }
+  ],
+  "t5xsxX": [
+    {
+      "type": 0,
+      "value": "Boekingen"
+    }
+  ],
+  "tAeD+O": [
+    {
+      "type": 0,
+      "value": "Selecteer je standaardvaluta (meestal USD voor in de VS gevestigde bedrijven) en alle valuta’s die je wilt accepteren."
+    }
+  ],
+  "tCSwzO": [
+    {
+      "type": 0,
+      "value": "Selecteer een account..."
+    }
+  ],
+  "tHJmFA": [
+    {
+      "type": 0,
+      "value": "Alle bestanden zijn succesvol geüpload!"
+    }
+  ],
+  "tN9vEy": [
+    {
+      "type": 0,
+      "value": "Voor nu overslaan"
+    }
+  ],
+  "tTrQFe": [
+    {
+      "type": 0,
+      "value": "Stripe wordt geopend"
+    }
+  ],
+  "tqRV1/": [
+    {
+      "type": 0,
+      "value": "Tarief moet een positief getal zijn"
+    }
+  ],
+  "ts0cV6": [
+    {
+      "type": 0,
+      "value": "Toepassen"
+    }
+  ],
+  "uCQNym": [
+    {
+      "type": 0,
+      "value": "Bezig met laden..."
+    }
+  ],
+  "uDc/J3": [
+    {
+      "type": 0,
+      "value": "Om je Redsys-account te koppelen, heb je de gegevens van je Virtual POS nodig uit je Redsys-account:"
+    }
+  ],
+  "uIUj6k": [
+    {
+      "type": 0,
+      "value": "Land zoeken..."
+    }
+  ],
+  "uJ7wsj": [
+    {
+      "type": 0,
+      "value": "Om je Xmoney-account te koppelen, moet je je API-gegevens ophalen uit je merchantdashboard:"
+    }
+  ],
+  "udRCBk": [
+    {
+      "type": 0,
+      "value": "Kopieer zowel de API Key als de Webhook Secret en plak ze in het bovenstaande formulier om je Xmoney-account te koppelen."
+    }
+  ],
+  "udhwJm": [
+    {
+      "type": 0,
+      "value": "Koppel je Airbnb-account om accommodaties automatisch te importeren, kalenders te synchroniseren en al je boekingen centraal te beheren."
+    }
+  ],
+  "ue2TrB": [
+    {
+      "type": 0,
+      "value": "Start"
+    }
+  ],
+  "uhZWOr": [
+    {
+      "type": 0,
+      "value": "We passen automatische opslag toe om uw inkomsten te behouden bij synchronisatie met ons PMS. "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Hoe het werkt →"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    }
+  ],
+  "uje8KK": [
+    {
+      "type": 0,
+      "value": "di"
+    }
+  ],
+  "ur0YL9": [
+    {
+      "type": 0,
+      "value": "Niet-restitueerbaar binnen 24 uur voor check-in"
+    }
+  ],
+  "uskQOw": [
+    {
+      "type": 0,
+      "value": "Het Stripe-venster voor de verbinding is door je browser geblokkeerd. Sta pop-ups voor deze site toe en probeer het opnieuw."
+    }
+  ],
+  "uxZY0q": [
+    {
+      "type": 0,
+      "value": "Volg deze stappen om je PayPal API‑gegevens op te halen"
+    }
+  ],
+  "v/zF5n": [
+    {
+      "type": 0,
+      "value": "gast"
+    }
+  ],
+  "v8XMQI": [
+    {
+      "type": 0,
+      "value": "Geen terugbetaling bij annulering, ongeacht het moment van annuleren"
+    }
+  ],
+  "vLl8sK": [
+    {
+      "type": 0,
+      "value": "wo"
+    }
+  ],
+  "vRq6TW": [
+    {
+      "type": 0,
+      "value": "50% restitutie bij annulering 7–30 dagen voor check-in"
+    }
+  ],
+  "vg4y7u": [
+    {
+      "type": 0,
+      "value": "Host: ~3%"
+    }
+  ],
+  "vt+Kki": [
+    {
+      "type": 0,
+      "value": "Selecteer land"
+    }
+  ],
+  "vzVrA1": [
+    {
+      "type": 0,
+      "value": "Maak in enkele seconden een aangepaste huurovereenkomst met AI en pas deze daarna aan uw wensen aan."
+    }
+  ],
+  "w/sV1T": [
+    {
+      "type": 0,
+      "value": "Pagina's"
+    }
+  ],
+  "wS0SOT": [
+    {
+      "type": 0,
+      "value": "Gast betaalt (na)"
+    }
+  ],
+  "wb519+": [
+    {
+      "type": 0,
+      "value": "Als je API Key en Webhook Secret nog niet zichtbaar zijn, klik dan op de knop ‘Generate secrets’."
+    }
+  ],
+  "wiPTGZ": [
+    {
+      "type": 0,
+      "value": "Redsys-account koppelen"
+    }
+  ],
+  "wvKs1e": [
+    {
+      "type": 0,
+      "value": "Uitgelichte status bijwerken mislukt"
+    }
+  ],
+  "wyAmDY": [
+    {
+      "type": 0,
+      "value": "Accepteer veilig betalingen met Razorpay, India’s toonaangevende betaalgateway met ondersteuning voor meerdere betaalmethoden, waaronder kaarten, UPI, netbanking en digitale wallets"
+    }
+  ],
+  "x1zJ+4": [
+    {
+      "type": 0,
+      "value": "Uploaden"
+    }
+  ],
+  "x4fZqk": [
+    {
+      "type": 0,
+      "value": "Bewaar je Handtekeningsleutel veilig en deel deze nooit openbaar. De sleutel wordt gebruikt om alle transacties te verifiëren."
+    }
+  ],
+  "xPxl8b": [
+    {
+      "type": 0,
+      "value": "Betaalmethoden opslaan"
+    }
+  ],
+  "xUHkcy": [
+    {
+      "type": 0,
+      "value": "Merknaam is verplicht"
+    }
+  ],
+  "xjxLNM": [
+    {
+      "type": 0,
+      "value": "Verbinding mislukt"
+    }
+  ],
+  "xpO5Wj": [
+    {
+      "type": 0,
+      "value": "Er verandert niets, alleen waar de kosten worden getoond"
+    }
+  ],
+  "xy7KyL": [
+    {
+      "type": 0,
+      "value": "Accounts laden mislukt. Probeer het opnieuw."
+    }
+  ],
+  "y53dco": [
+    {
+      "type": 0,
+      "value": "Selecteer onder ‘Type of integration’ de optie ‘Custom’ in het dropdownmenu."
+    }
+  ],
+  "y6/xbw": [
+    {
+      "type": 0,
+      "value": "Primaire host"
+    }
+  ],
+  "yO01eS": [
+    {
+      "type": 0,
+      "value": "Controleer het formulier op fouten"
+    }
+  ],
+  "yf0n+T": [
+    {
+      "type": 0,
+      "value": "Terug"
+    }
+  ],
+  "ykVfMx": [
+    {
+      "type": 0,
+      "value": "Naam"
+    }
+  ],
+  "yspnIi": [
+    {
+      "type": 0,
+      "value": "Xmoney-account"
+    }
+  ],
+  "yv1I7k": [
+    {
+      "type": 0,
+      "value": "Ga terug"
+    }
+  ],
+  "yzg2T4": [
+    {
+      "type": 0,
+      "value": "Selecteer uw voorkeursbetalingsprovider"
+    }
+  ],
+  "z7saLl": [
+    {
+      "type": 0,
+      "value": "De opgegeven gegevens zijn onjuist. Controleer je Merchant Key en Merchant Salt en probeer het opnieuw."
+    }
+  ],
+  "zBjeyG": [
+    {
+      "type": 0,
+      "value": "Client Secret is verplicht"
+    }
+  ],
+  "zCEFXQ": [
+    {
+      "type": 0,
+      "value": "Einddatum moet na de startdatum liggen"
+    }
+  ],
+  "zOoftm": [
+    {
+      "type": 0,
+      "value": "profiel"
+    }
+  ],
+  "zSDtWg": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "taal"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "talen"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " geselecteerd"
+    }
+  ],
+  "zpO4iy": [
+    {
+      "type": 0,
+      "value": "Beschrijf eventuele andere specifieke clausules, voorwaarden of details die u in de overeenkomst wilt opnemen"
+    }
+  ],
+  "zqYE4R": [
+    {
+      "type": 0,
+      "value": "Bezetting"
+    }
+  ],
+  "zsf2V4": [
+    {
+      "type": 0,
+      "value": "bijv. Sunset Beach Rentals"
+    }
+  ],
+  "zv3k/l": [
+    {
+      "type": 0,
+      "value": "PayPal‑account koppelen"
+    }
+  ]
+}

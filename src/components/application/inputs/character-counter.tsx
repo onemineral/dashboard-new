@@ -9,6 +9,8 @@ export interface CharacterCounterProps {
   characterCount: number;
   /** Maximum character limit (optional) */
   maxCharacters?: number;
+  /** Minimum character requirement (optional) */
+  minCharacters?: number;
   /** Show character count */
   showCount?: boolean;
   /** Warning threshold percentage (0-1) */
@@ -36,20 +38,27 @@ export interface CharacterCounterProps {
  *   characterCount={250}
  *   maxCharacters={500}
  * />
- * 
+ *
+ * // With min and max characters
+ * <CharacterCounter
+ *   characterCount={25}
+ *   minCharacters={10}
+ *   maxCharacters={500}
+ * />
+ *
  * // With warning threshold
  * <CharacterCounter
  *   characterCount={450}
  *   maxCharacters={500}
  *   warningThreshold={0.8}
  * />
- * 
+ *
  * // Just show count without limit
  * <CharacterCounter
  *   characterCount={100}
  *   showCount={true}
  * />
- * 
+ *
  * // Disabled state
  * <CharacterCounter
  *   characterCount={50}
@@ -64,6 +73,7 @@ export const CharacterCounter = React.memo(
       {
         characterCount,
         maxCharacters,
+        minCharacters,
         showCount = true,
         warningThreshold = 0.8,
         disabled = false,
@@ -94,27 +104,39 @@ export const CharacterCounter = React.memo(
         [maxCharacters, characterCount, validatedWarningThreshold]
       );
 
-      // Show counter if showCount is true or maxCharacters is defined
-      const shouldShowCounter = showCount || maxCharacters !== undefined;
+      // Determine if below minimum requirement
+      const isBelowMinimum = React.useMemo(
+        () => minCharacters !== undefined && characterCount < minCharacters,
+        [minCharacters, characterCount]
+      );
+
+      // Show counter if showCount is true or maxCharacters/minCharacters is defined
+      const shouldShowCounter = showCount || maxCharacters !== undefined || minCharacters !== undefined;
 
       // Get counter text
       const counterText = React.useMemo(() => {
+        if (maxCharacters !== undefined && minCharacters !== undefined) {
+          return `${characterCount} / ${minCharacters}-${maxCharacters}`;
+        }
         if (maxCharacters !== undefined) {
           return `${characterCount} / ${maxCharacters}`;
         }
+        if (minCharacters !== undefined) {
+          return `${characterCount} / ${minCharacters}+`;
+        }
         return `${characterCount} characters`;
-      }, [characterCount, maxCharacters]);
+      }, [characterCount, maxCharacters, minCharacters]);
 
       // Get counter color classes
       const counterColorClass = React.useMemo(() => {
-        if (isOverLimit) {
+        if (isOverLimit || isBelowMinimum) {
           return "text-destructive";
         }
         if (isApproachingLimit) {
           return "text-amber-600";
         }
         return "text-muted-foreground";
-      }, [isOverLimit, isApproachingLimit]);
+      }, [isOverLimit, isApproachingLimit, isBelowMinimum]);
 
       if (!shouldShowCounter) {
         return null;

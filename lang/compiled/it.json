@@ -1,0 +1,4207 @@
+{
+  "++Xb5Q": [
+    {
+      "type": 0,
+      "value": "Il tuo identificativo univoco di esercente (FUC) fornito da Redsys, in genere composto da 9 cifre"
+    }
+  ],
+  "+0teqB": [
+    {
+      "type": 0,
+      "value": "Numero di terminale assegnato da Redsys (di solito \"1\" per configurazioni con un solo terminale)"
+    }
+  ],
+  "+TZnSI": [
+    {
+      "type": 0,
+      "value": "alloggio"
+    }
+  ],
+  "+crfr6": [
+    {
+      "type": 0,
+      "value": "Mantieni il tuo Merchant Salt al sicuro e non condividerlo mai pubblicamente. Viene utilizzato per generare hash sicuri per tutte le richieste di pagamento sul tuo account."
+    }
+  ],
+  "+dSPvA": [
+    {
+      "type": 0,
+      "value": "Dashboard Sviluppatore PayPal"
+    }
+  ],
+  "+efOJ6": [
+    {
+      "type": 0,
+      "value": "Sab"
+    }
+  ],
+  "+mL9Gz": [
+    {
+      "type": 0,
+      "value": "Aggiorna disponibilità"
+    }
+  ],
+  "+o1ZCY": [
+    {
+      "type": 0,
+      "value": "Telefono"
+    }
+  ],
+  "+qKl8A": [
+    {
+      "type": 0,
+      "value": "Reimposta"
+    }
+  ],
+  "+sCbso": [
+    {
+      "type": 0,
+      "value": "Partita IVA / Codice fiscale"
+    }
+  ],
+  "+sFjDr": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "+ssSkh": [
+    {
+      "type": 0,
+      "value": "Hai bisogno di aiuto per trovare le tue credenziali Xmoney? Vedi le istruzioni di configurazione"
+    }
+  ],
+  "+uGQkt": [
+    {
+      "type": 0,
+      "value": "*"
+    }
+  ],
+  "/12tKm": [
+    {
+      "type": 0,
+      "value": "API Login ID obbligatorio"
+    }
+  ],
+  "/8YgtH": [
+    {
+      "type": 0,
+      "value": "Successivo"
+    }
+  ],
+  "/LSOfM": [
+    {
+      "type": 0,
+      "value": "Il tuo API Login ID univoco fornito da Authorize.net per l’autenticazione API"
+    }
+  ],
+  "/XtBEU": [
+    {
+      "type": 0,
+      "value": "Per collegare il tuo account Razorpay, devi recuperare le credenziali API dal tuo dashboard:"
+    }
+  ],
+  "/fzYxb": [
+    {
+      "type": 0,
+      "value": "Nessuna valuta disponibile"
+    }
+  ],
+  "/myRRj": [
+    {
+      "type": 0,
+      "value": "Accedi al tuo "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " utilizzando le credenziali da merchant."
+    }
+  ],
+  "/qhPPc": [
+    {
+      "type": 0,
+      "value": "Rimuovi file"
+    }
+  ],
+  "/rTtyJ": [
+    {
+      "type": 0,
+      "value": "Cognome"
+    }
+  ],
+  "0/tQuf": [
+    {
+      "type": 0,
+      "value": "Quando colleghi l’account tramite API, Airbnb passa automaticamente i tuoi annunci alla struttura di commissioni solo host (15,5% invece del 3%). Noi compensiamo adeguando i tuoi prezzi, così l’ospite paga lo stesso importo e tu ricevi lo stesso incasso."
+    }
+  ],
+  "05N7am": [
+    {
+      "type": 0,
+      "value": "cliente"
+    }
+  ],
+  "0GT0SI": [
+    {
+      "type": 0,
+      "value": "Annulla"
+    }
+  ],
+  "0ICrVM": [
+    {
+      "type": 0,
+      "value": "Key ID obbligatorio"
+    }
+  ],
+  "0KIYiv": [
+    {
+      "type": 0,
+      "value": "analisi"
+    }
+  ],
+  "0TZhGi": [
+    {
+      "type": 0,
+      "value": "agenda"
+    }
+  ],
+  "0U3uEj": [
+    {
+      "type": 0,
+      "value": "Se non hai ancora alcuna chiave API, fai clic su \"Generate Key\" per creare una nuova coppia di chiavi."
+    }
+  ],
+  "0d4QCF": [
+    {
+      "type": 0,
+      "value": "Commissione condivisa"
+    }
+  ],
+  "0f/taE": [
+    {
+      "type": 0,
+      "value": "Seleziona la tua valuta predefinita (in genere EUR per la Spagna) e tutte le valute che desideri accettare."
+    }
+  ],
+  "0kZeTh": [
+    {
+      "type": 0,
+      "value": "Collega account Redsys"
+    }
+  ],
+  "0lWa8l": [
+    {
+      "type": 0,
+      "value": "Ecco perché modificare i tuoi prezzi su Airbnb non cambia nulla per te né per i tuoi ospiti."
+    }
+  ],
+  "0lgY8w": [
+    {
+      "type": 0,
+      "value": "Salvare i metodi di pagamento (Save payment methods) (per memorizzare i metodi di pagamento)"
+    }
+  ],
+  "0mhGN1": [
+    {
+      "type": 0,
+      "value": "Fai clic su \"Account Credentials\" o \"API Keys\" nella sezione Settings."
+    }
+  ],
+  "0nDVG5": [
+    {
+      "type": 0,
+      "value": "API Key"
+    }
+  ],
+  "0uEyPn": [
+    {
+      "type": 0,
+      "value": "Regole principali della casa"
+    }
+  ],
+  "1+Njhd": [
+    {
+      "type": 0,
+      "value": "Valuta di visualizzazione"
+    }
+  ],
+  "1IwVJ/": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "1ME8gM": [
+    {
+      "type": 0,
+      "value": "Salvataggio in corso..."
+    }
+  ],
+  "1c7Eg9": [
+    {
+      "type": 0,
+      "value": "Ospite: 0%"
+    }
+  ],
+  "1dOd3r": [
+    {
+      "type": 0,
+      "value": "Individua il tuo \"Merchant Code\" (FUC - Código de comercio), in genere un numero di 9 cifre."
+    }
+  ],
+  "1kryhX": [
+    {
+      "type": 0,
+      "value": "Client ID"
+    }
+  ],
+  "1qWnpo": [
+    {
+      "type": 0,
+      "value": "Vedrai la tua Merchant Key (chiamata anche API Key). È un identificatore univoco per il tuo account merchant. Copia questo valore."
+    }
+  ],
+  "1tn+ul": [
+    {
+      "type": 0,
+      "value": "+ Commissione ospite Airbnb"
+    }
+  ],
+  "1zU6LU": [
+    {
+      "type": 0,
+      "value": "Coordinata di latitudine"
+    }
+  ],
+  "29UOKo": [
+    {
+      "type": 0,
+      "value": "Prima"
+    }
+  ],
+  "2BRner": [
+    {
+      "type": 0,
+      "value": "Contratto di locazione turistica"
+    }
+  ],
+  "2HHm1c": [
+    {
+      "type": 0,
+      "value": "Hai bisogno di aiuto per trovare le tue credenziali Authorize.net? Vedi le istruzioni di configurazione"
+    }
+  ],
+  "2XJblv": [
+    {
+      "type": 0,
+      "value": "In evidenza"
+    }
+  ],
+  "2YpiUO": [
+    {
+      "type": 0,
+      "value": "Key Secret obbligatoria"
+    }
+  ],
+  "2kAsyS": [
+    {
+      "type": 0,
+      "value": "Dopo l’accesso, vai su \"Settings\" dal menu laterale sinistro."
+    }
+  ],
+  "2n0X8r": [
+    {
+      "type": 0,
+      "value": "Segui questi passaggi per ottenere le tue credenziali Authorize.net e configurare il tuo gateway di pagamento"
+    }
+  ],
+  "3+LMGK": [
+    {
+      "type": 0,
+      "value": "Co-host"
+    }
+  ],
+  "30erry": [
+    {
+      "type": 0,
+      "value": "PayU.in Merchant Dashboard"
+    }
+  ],
+  "356Com": [
+    {
+      "type": 0,
+      "value": "Restrizione check-in"
+    }
+  ],
+  "3FLph+": [
+    {
+      "type": 0,
+      "value": "Dimensione max: "
+    },
+    {
+      "type": 1,
+      "value": "size"
+    }
+  ],
+  "3K7lCg": [
+    {
+      "type": 0,
+      "value": "Fai clic su \"API Keys\" nella sezione Settings."
+    }
+  ],
+  "3KbOCN": [
+    {
+      "type": 0,
+      "value": "Configuriamo le tue impostazioni principali"
+    }
+  ],
+  "3OaIGu": [
+    {
+      "type": 0,
+      "value": "Proprietà"
+    }
+  ],
+  "3QtHMq": [
+    {
+      "type": 0,
+      "value": "Hai bisogno di aiuto per trovare le tue credenziali PayU.in? Vedi le istruzioni di configurazione"
+    }
+  ],
+  "3UtT5H": [
+    {
+      "type": 0,
+      "value": "Continua"
+    }
+  ],
+  "3VDEsx": [
+    {
+      "type": 0,
+      "value": "In evidenza"
+    }
+  ],
+  "3Zued9": [
+    {
+      "type": 0,
+      "value": "Cancella file"
+    }
+  ],
+  "3kCp+u": [
+    {
+      "type": 0,
+      "value": "Segui questi passaggi per ottenere le tue credenziali Redsys e configurare il tuo gateway di pagamento"
+    }
+  ],
+  "3kEEA8": [
+    {
+      "type": 0,
+      "value": "Elaborazione carte di credito da OTA"
+    }
+  ],
+  "3kIgh3": [
+    {
+      "type": 0,
+      "value": "Nome"
+    }
+  ],
+  "3mStAG": [
+    {
+      "type": 0,
+      "value": "Applica"
+    }
+  ],
+  "3s3IxJ": [
+    {
+      "type": 0,
+      "value": "L’importazione iCal da "
+    },
+    {
+      "type": 1,
+      "value": "icalName"
+    },
+    {
+      "type": 0,
+      "value": " ha aggiornato lo stato di disponibilità a "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "42j2Yl": [
+    {
+      "type": 0,
+      "value": "Importa e gestisci le prenotazioni senza interruzioni"
+    }
+  ],
+  "4Ap+k9": [
+    {
+      "type": 0,
+      "value": "Connessione in corso..."
+    }
+  ],
+  "4DvW3w": [
+    {
+      "type": 0,
+      "value": "Contratto pensato per gli ospiti, ideale per soggiorni brevi (1–30 notti). Perfetto per prenotazioni tramite Airbnb, VRBO o dirette. Copre depositi, politica di cancellazione, procedure di check-in/check-out, regolamento della casa e responsabilità degli ospiti."
+    }
+  ],
+  "4Gg0C7": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "4JR3Dt": [
+    {
+      "type": 0,
+      "value": "Connessione non riuscita"
+    }
+  ],
+  "4JuKSp": [
+    {
+      "type": 0,
+      "value": "Cronologia disponibilità"
+    }
+  ],
+  "4Nlmyz": [
+    {
+      "type": 0,
+      "value": "Seleziona il paese"
+    }
+  ],
+  "4SR2Qh": [
+    {
+      "type": 0,
+      "value": "Giorno"
+    }
+  ],
+  "4Ucygo": [
+    {
+      "type": 0,
+      "value": "Connessione in corso..."
+    }
+  ],
+  "4ZLWca": [
+    {
+      "type": 0,
+      "value": "Cerca indirizzo..."
+    }
+  ],
+  "4ZNYGb": [
+    {
+      "type": 0,
+      "value": "Ven"
+    }
+  ],
+  "4gfoGt": [
+    {
+      "type": 0,
+      "value": "ID"
+    }
+  ],
+  "4hPHpa": [
+    {
+      "type": 0,
+      "value": "Transaction Key obbligatoria"
+    }
+  ],
+  "4vuqmI": [
+    {
+      "type": 0,
+      "value": "Benvenuto a bordo! Configuriamo il sistema"
+    }
+  ],
+  "5+u2og": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare gli stati di disponibilità"
+    }
+  ],
+  "55mCjK": [
+    {
+      "type": 0,
+      "value": "Cerca proprietà..."
+    }
+  ],
+  "56bErq": [
+    {
+      "type": 0,
+      "value": "Data di fine non valida"
+    }
+  ],
+  "5DkMof": [
+    {
+      "type": 0,
+      "value": "Seleziona la lingua dell’interfaccia"
+    }
+  ],
+  "5EFbSV": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti in modo sicuro con PayPal"
+    }
+  ],
+  "5G+3FI": [
+    {
+      "type": 0,
+      "value": "Nessun account trovato."
+    }
+  ],
+  "5LH+O5": [
+    {
+      "type": 0,
+      "value": "La tariffa deve essere un numero valido"
+    }
+  ],
+  "5OlbLO": [
+    {
+      "type": 0,
+      "value": "Indietro"
+    }
+  ],
+  "5PMMrN": [
+    {
+      "type": 0,
+      "value": "Il nome del brand deve contenere almeno 2 caratteri"
+    }
+  ],
+  "5UlhKh": [
+    {
+      "type": 0,
+      "value": "Indirizzo dell’attività"
+    }
+  ],
+  "5WWihP": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "file"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "file"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " selezionato"
+    }
+  ],
+  "5iOMya": [
+    {
+      "type": 0,
+      "value": "Nessun paese trovato."
+    }
+  ],
+  "5rFDAN": [
+    {
+      "type": 0,
+      "value": "Descrivi il tuo tipo di contratto personalizzato"
+    }
+  ],
+  "65M3eA": [
+    {
+      "type": 0,
+      "value": "Descrivi le condizioni di cancellazione e la politica di rimborso"
+    }
+  ],
+  "66+pWG": [
+    {
+      "type": 0,
+      "value": "Altre regole della casa"
+    }
+  ],
+  "66uz/9": [
+    {
+      "type": 0,
+      "value": "Dopo"
+    }
+  ],
+  "6BVS0B": [
+    {
+      "type": 0,
+      "value": "Chiave di firma (SHA-256)"
+    }
+  ],
+  "6CXY7+": [
+    {
+      "type": 0,
+      "value": "La data di inizio deve essere successiva a "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "6CZ2VT": [
+    {
+      "type": 0,
+      "value": "I tuoi guadagni restano invariati"
+    }
+  ],
+  "6QOz2B": [
+    {
+      "type": 0,
+      "value": "Valute consentite"
+    }
+  ],
+  "6V7n+L": [
+    {
+      "type": 0,
+      "value": "Reimposta"
+    }
+  ],
+  "6YI4kg": [
+    {
+      "type": 0,
+      "value": "Dal menu in alto, vai a \"App & Credentials\" (Apps & Credentials)."
+    }
+  ],
+  "6aZ6oU": [
+    {
+      "type": 0,
+      "value": "Seleziona tutte le valute che questo gateway di pagamento può elaborare. Gli importi in altre valute verranno convertiti nella valuta predefinita al momento dell’elaborazione."
+    }
+  ],
+  "6hqX55": [
+    {
+      "type": 0,
+      "value": "Rimuovi "
+    },
+    {
+      "type": 1,
+      "value": "fileName"
+    }
+  ],
+  "6jBqKO": [
+    {
+      "type": 0,
+      "value": "Connessione non riuscita"
+    }
+  ],
+  "6oqioY": [
+    {
+      "type": 0,
+      "value": "Sì"
+    }
+  ],
+  "6tO6oi": [
+    {
+      "type": 0,
+      "value": "Il tuo prezzo pubblicato"
+    }
+  ],
+  "70DkFz": [
+    {
+      "type": 0,
+      "value": "Personalizzata"
+    }
+  ],
+  "735/I6": [
+    {
+      "type": 0,
+      "value": "Lingue aggiuntive"
+    }
+  ],
+  "764Jrf": [
+    {
+      "type": 0,
+      "value": "Chiave segreta utilizzata per verificare l’autenticità dei webhook e mettere in sicurezza le notifiche di pagamento. Mantienila riservata e non condividerla mai pubblicamente."
+    }
+  ],
+  "79R694": [
+    {
+      "type": 0,
+      "value": "Impossibile aggiornare la disponibilità"
+    }
+  ],
+  "7LCyD2": [
+    {
+      "type": 0,
+      "value": "Seleziona la lingua predefinita"
+    }
+  ],
+  "7RfiVr": [
+    {
+      "type": 0,
+      "value": "Popup bloccato"
+    }
+  ],
+  "7S9iXq": [
+    {
+      "type": 0,
+      "value": "Inserisci le credenziali API PayU.in dal tuo merchant dashboard"
+    }
+  ],
+  "7T1liF": [
+    {
+      "type": 0,
+      "value": "Merchant Salt obbligatorio"
+    }
+  ],
+  "7U1n7w": [
+    {
+      "type": 0,
+      "value": "Genera il tuo contratto di locazione"
+    }
+  ],
+  "7eul9b": [
+    {
+      "type": 0,
+      "value": "Webhook Secret"
+    }
+  ],
+  "7jmAkN": [
+    {
+      "type": 0,
+      "value": "Hai bisogno di aiuto per trovare le tue credenziali Razorpay? Vedi le istruzioni di configurazione"
+    }
+  ],
+  "7qDNyf": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare la configurazione"
+    }
+  ],
+  "82It5E": [
+    {
+      "type": 0,
+      "value": "Seleziona una proprietà..."
+    }
+  ],
+  "88kNaO": [
+    {
+      "type": 0,
+      "value": "Connessione non riuscita"
+    }
+  ],
+  "88zIRQ": [
+    {
+      "type": 0,
+      "value": "Apertura della finestra di autorizzazione Stripe..."
+    }
+  ],
+  "8C+PAW": [
+    {
+      "type": 0,
+      "value": "Codice esadecimale"
+    }
+  ],
+  "8FdIpV": [
+    {
+      "type": 0,
+      "value": "Connessione in corso..."
+    }
+  ],
+  "8H9gfX": [
+    {
+      "type": 0,
+      "value": "Vietato fumare"
+    }
+  ],
+  "8LIDP6": [
+    {
+      "type": 0,
+      "value": "Transaction Key"
+    }
+  ],
+  "8TIbvo": [
+    {
+      "type": 0,
+      "value": "Questa politica si applicherà alle prenotazioni dal tuo sito web e da VRBO. Altre OTA come Airbnb e Booking.com hanno le proprie politiche di cancellazione, che verranno applicate al loro posto."
+    }
+  ],
+  "8U6PX5": [
+    {
+      "type": 0,
+      "value": "Selettore intervallo di date"
+    }
+  ],
+  "8WjQyt": [
+    {
+      "type": 0,
+      "value": "Accedi al tuo "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " utilizzando le credenziali del tuo home banking."
+    }
+  ],
+  "8f+bQB": [
+    {
+      "type": 0,
+      "value": "Logo del brand"
+    }
+  ],
+  "8jvJ2a": [
+    {
+      "type": 0,
+      "value": "prenotazione"
+    }
+  ],
+  "8khNNy": [
+    {
+      "type": 0,
+      "value": "Commissione a carico di host e ospite"
+    }
+  ],
+  "8m2mNb": [
+    {
+      "type": 0,
+      "value": "Collega Airbnb"
+    }
+  ],
+  "8rC+q+": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le chiavi dell’ambiente corretto: usa le chiavi in \"Live Mode\" (rzp_live_) per i pagamenti in produzione, non le chiavi in \"Test Mode\" (rzp_test_)."
+    }
+  ],
+  "8rPgs4": [
+    {
+      "type": 0,
+      "value": "Inserisci le credenziali esercente Redsys dalla configurazione del tuo POS virtuale"
+    }
+  ],
+  "957I9k": [
+    {
+      "type": 0,
+      "value": "Seleziona paese"
+    }
+  ],
+  "95bDjd": [
+    {
+      "type": 0,
+      "value": "Il tuo account Authorize.net è stato collegato correttamente ed è pronto per elaborare i pagamenti."
+    }
+  ],
+  "9GzCSL": [
+    {
+      "type": 0,
+      "value": "Stato aggiornato"
+    }
+  ],
+  "9HQrgV": [
+    {
+      "type": 0,
+      "value": "Lascia vuoto se non operi tramite una società."
+    }
+  ],
+  "9JT9XF": [
+    {
+      "type": 0,
+      "value": "Credenziali Authorize.net"
+    }
+  ],
+  "9M/Nz4": [
+    {
+      "type": 0,
+      "value": "Nome"
+    }
+  ],
+  "9YTW5G": [
+    {
+      "type": 0,
+      "value": "Altre pagine"
+    }
+  ],
+  "9Zp2R9": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "9ahmSP": [
+    {
+      "type": 0,
+      "value": "Copia le tue credenziali e incollale nel modulo per collegare il tuo account Authorize.net."
+    }
+  ],
+  "9kRCfP": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti in modo sicuro con Stripe, la principale piattaforma di pagamento che supporta carte di credito, carte di debito, wallet digitali e metodi di pagamento locali in tutto il mondo"
+    }
+  ],
+  "9kq+V8": [
+    {
+      "type": 0,
+      "value": "Collega Airbnb"
+    }
+  ],
+  "9xRnJR": [
+    {
+      "type": 0,
+      "value": "Come vuoi gestire le date selezionate?"
+    }
+  ],
+  "A+xeP3": [
+    {
+      "type": 0,
+      "value": "Stato proprietà"
+    }
+  ],
+  "AJ3+Af": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti in criptovaluta con Xmoney, che supporta Bitcoin, Ethereum, USDT e altre principali criptovalute con regolamento immediato"
+    }
+  ],
+  "ARaLjq": [
+    {
+      "type": 0,
+      "value": "Whitelist del dominio richiesta"
+    }
+  ],
+  "AqvmOj": [
+    {
+      "type": 0,
+      "value": "Calendario"
+    }
+  ],
+  "ArD4uQ": [
+    {
+      "type": 0,
+      "value": "es. IT12345678901 o EIN 12-3456789"
+    }
+  ],
+  "Aso6At": [
+    {
+      "type": 0,
+      "value": "Assicurati che il tuo POS virtuale sia configurato con la modalità di integrazione \"REST API\"."
+    }
+  ],
+  "AvzD7r": [
+    {
+      "type": 0,
+      "value": "Caricamento paesi in corso..."
+    }
+  ],
+  "B34Ye5": [
+    {
+      "type": 0,
+      "value": "es. includi le regole di sicurezza per l’idromassaggio, specifica la politica parcheggio per 2 auto, aggiungi una clausola sul rispetto del vicinato, spiega i costi per il riscaldamento della piscina..."
+    }
+  ],
+  "B3EMvw": [
+    {
+      "type": 0,
+      "value": "Individua il tuo numero di \"Terminal\" (Número de terminal), di solito \"1\" per le configurazioni standard."
+    }
+  ],
+  "B4uXBC": [
+    {
+      "type": 0,
+      "value": "La permanenza minima deve essere un numero valido"
+    }
+  ],
+  "B7m04Z": [
+    {
+      "type": 0,
+      "value": "Data di inizio non valida"
+    }
+  ],
+  "BEWkMT": [
+    {
+      "type": 0,
+      "value": "disponibilità"
+    }
+  ],
+  "BFYTcS": [
+    {
+      "type": 0,
+      "value": "Collega il tuo account Airbnb per sincronizzare automaticamente annunci e prenotazioni."
+    }
+  ],
+  "BJM1Kd": [
+    {
+      "type": 0,
+      "value": "Ora vedrai la tua API Key (inizia con \"u_live_api_\" per la modalità live o \"u_test_api_\" per la modalità test). Copia questo valore."
+    }
+  ],
+  "BQCp+E": [
+    {
+      "type": 0,
+      "value": "Connessione riuscita"
+    }
+  ],
+  "BSWE9u": [
+    {
+      "type": 0,
+      "value": "dati"
+    }
+  ],
+  "Ba3d8z": [
+    {
+      "type": 0,
+      "value": "Il mio profilo"
+    }
+  ],
+  "BcQIVG": [
+    {
+      "type": 0,
+      "value": "Cerca paesi..."
+    }
+  ],
+  "Bi53tf": [
+    {
+      "type": 0,
+      "value": "Personalizzato"
+    }
+  ],
+  "BlmJHz": [
+    {
+      "type": 0,
+      "value": "Carica file"
+    }
+  ],
+  "BogP+d": [
+    {
+      "type": 0,
+      "value": "Animali non ammessi"
+    }
+  ],
+  "BtvSd5": [
+    {
+      "type": 0,
+      "value": "La chiave di firma è obbligatoria"
+    }
+  ],
+  "Bza8Ck": [
+    {
+      "type": 0,
+      "value": "ospite"
+    }
+  ],
+  "C5WQ1D": [
+    {
+      "type": 0,
+      "value": "Devi inserire in whitelist il dominio "
+    },
+    {
+      "children": [
+        {
+          "type": 1,
+          "value": "currentDomain"
+        }
+      ],
+      "type": 8,
+      "value": "strong"
+    },
+    {
+      "type": 0,
+      "value": " e il dominio del tuo sito web nel tuo Razorpay Dashboard (Settings → API Keys → Whitelist Domains)."
+    }
+  ],
+  "C6mSpf": [
+    {
+      "type": 0,
+      "value": "Il Client ID della tua applicazione PayPal dal Developer Dashboard"
+    }
+  ],
+  "CA/i/C": [
+    {
+      "type": 0,
+      "value": "Authorize.net Merchant Interface"
+    }
+  ],
+  "CCUbxX": [
+    {
+      "type": 0,
+      "value": "Valuta predefinita"
+    }
+  ],
+  "CJ7o0o": [
+    {
+      "type": 0,
+      "value": "Utilizzata per mostrare i dati finanziari aggregati su tutte le strutture. Ogni struttura avrà la propria valuta di prenotazione."
+    }
+  ],
+  "CNTZll": [
+    {
+      "type": 0,
+      "value": "Tu incassi"
+    }
+  ],
+  "CYPLf9": [
+    {
+      "type": 0,
+      "value": "contatto@example.com"
+    }
+  ],
+  "CYqfVo": [
+    {
+      "type": 0,
+      "value": "Il nome è obbligatorio"
+    }
+  ],
+  "CbGXs2": [
+    {
+      "type": 0,
+      "value": "Oggi"
+    }
+  ],
+  "CgIj0s": [
+    {
+      "type": 0,
+      "value": "Cancella selezione"
+    }
+  ],
+  "Cm/acF": [
+    {
+      "type": 0,
+      "value": "Client Secret"
+    }
+  ],
+  "CphCmr": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le credenziali dell’ambiente Live per i pagamenti in produzione."
+    }
+  ],
+  "Cw1PUM": [
+    {
+      "type": 0,
+      "value": "Accedi al tuo "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " utilizzando le credenziali da merchant."
+    }
+  ],
+  "D+X/Qj": [
+    {
+      "type": 0,
+      "value": "Copia il \"Client ID\" e il \"Secret\" dalla pagina dei dettagli dell’app."
+    }
+  ],
+  "DJ7TGX": [
+    {
+      "type": 0,
+      "value": "Key ID"
+    }
+  ],
+  "DNXfj7": [
+    {
+      "type": 0,
+      "value": "Nella sezione \"Features\" (Features), assicurati che le seguenti autorizzazioni siano abilitate:"
+    }
+  ],
+  "Dsr5qL": [
+    {
+      "type": 0,
+      "value": "Nessun rimborso se la cancellazione avviene a meno di 7 giorni dal check-in"
+    }
+  ],
+  "DuOTim": [
+    {
+      "type": 0,
+      "value": "Il cognome è obbligatorio"
+    }
+  ],
+  "E8suJo": [
+    {
+      "type": 0,
+      "value": "Domenica"
+    }
+  ],
+  "EInxH0": [
+    {
+      "type": 0,
+      "value": "Checkout avanzato (Expanded checkout)"
+    }
+  ],
+  "EJMuPX": [
+    {
+      "type": 0,
+      "value": "Salva modifiche"
+    }
+  ],
+  "EJqOKf": [
+    {
+      "type": 0,
+      "value": "Aggiungi proprietà"
+    }
+  ],
+  "EOtRjL": [
+    {
+      "type": 0,
+      "value": "Roma"
+    }
+  ],
+  "EOvdde": [
+    {
+      "type": 0,
+      "value": "Modifica"
+    }
+  ],
+  "EcOwTg": [
+    {
+      "type": 0,
+      "value": "Intervallo valido: da -180 a 180"
+    }
+  ],
+  "EnF3EM": [
+    {
+      "type": 0,
+      "value": "Utilizzato per visualizzare gli orari in tutta la dashboard. Ogni struttura avrà il proprio fuso orario."
+    }
+  ],
+  "ErBvSd": [
+    {
+      "type": 0,
+      "value": "Per collegare il tuo conto PayPal, devi creare un’applicazione PayPal e ottenere le tue credenziali API:"
+    }
+  ],
+  "F4LIQL": [
+    {
+      "type": 0,
+      "value": "Connessione in corso..."
+    }
+  ],
+  "F6lZL3": [
+    {
+      "type": 0,
+      "value": "In attesa di autorizzazione"
+    }
+  ],
+  "FEfTVi": [
+    {
+      "type": 0,
+      "value": "API Key obbligatoria"
+    }
+  ],
+  "FHrDtj": [
+    {
+      "type": 0,
+      "value": "Gio"
+    }
+  ],
+  "FIGyto": [
+    {
+      "type": 0,
+      "value": "Questa è la lingua utilizzata per tutti i menu, pulsanti e elementi dell’interfaccia."
+    }
+  ],
+  "FUcnBP": [
+    {
+      "type": 0,
+      "value": "Gestisci messaggi, richieste, pre-approvazioni e offerte speciali"
+    }
+  ],
+  "FYhbnJ": [
+    {
+      "type": 0,
+      "value": "Secret API Key utilizzata per autenticare e autorizzare le richieste API. Mantienila riservata e non condividerla mai pubblicamente."
+    }
+  ],
+  "Fte18l": [
+    {
+      "type": 0,
+      "value": "Disponibilità"
+    }
+  ],
+  "Fvrx4V": [
+    {
+      "type": 0,
+      "value": "Prezzo adeguato"
+    }
+  ],
+  "G17Zwg": [
+    {
+      "type": 0,
+      "value": "Massimo "
+    },
+    {
+      "type": 1,
+      "value": "maxFiles"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "file"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "file"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "maxFiles"
+    },
+    {
+      "type": 0,
+      "value": " consentito"
+    }
+  ],
+  "G258Qr": [
+    {
+      "type": 0,
+      "value": "Applica"
+    }
+  ],
+  "GDI8mK": [
+    {
+      "type": 0,
+      "value": "Razorpay Dashboard"
+    }
+  ],
+  "GHNpa4": [
+    {
+      "type": 0,
+      "value": "Cancella tutti i file"
+    }
+  ],
+  "GJz/Ju": [
+    {
+      "type": 0,
+      "value": "− La tua commissione host (15,5%)"
+    }
+  ],
+  "GV4liN": [
+    {
+      "type": 0,
+      "value": "Sotto l’API Key vedrai il tuo Webhook Secret. Copia con attenzione questo valore, perché viene utilizzato per verificare l’autenticità dei webhook."
+    }
+  ],
+  "Gvd55t": [
+    {
+      "type": 0,
+      "value": "API Login ID"
+    }
+  ],
+  "H67iMU": [
+    {
+      "type": 0,
+      "value": "Fai clic sull’icona a forma di occhio o sul pulsante \"Show\" accanto alla Key Secret per visualizzarla. Questa è la tua chiave segreta utilizzata per l’autenticazione. Copia con attenzione questo valore."
+    }
+  ],
+  "H9EL3M": [
+    {
+      "type": 0,
+      "value": "Ragione sociale"
+    }
+  ],
+  "HBAXMq": [
+    {
+      "type": 0,
+      "value": "Nome"
+    }
+  ],
+  "HD0jtN": [
+    {
+      "type": 0,
+      "value": "In attesa di autorizzazione..."
+    }
+  ],
+  "HEXBfz": [
+    {
+      "type": 0,
+      "value": "Selezione rapida"
+    }
+  ],
+  "HOym9z": [
+    {
+      "type": 0,
+      "value": "Il paese è obbligatorio"
+    }
+  ],
+  "HThB82": [
+    {
+      "type": 0,
+      "value": "Merchant Salt"
+    }
+  ],
+  "I/Rbi1": [
+    {
+      "type": 0,
+      "value": "Tariffa"
+    }
+  ],
+  "I8mQRn": [
+    {
+      "type": 0,
+      "value": "Martedì"
+    }
+  ],
+  "IejaKr": [
+    {
+      "type": 0,
+      "value": "No"
+    }
+  ],
+  "IhL/yX": [
+    {
+      "type": 0,
+      "value": "Visualizza tutte le modifiche alla disponibilità per le date selezionate"
+    }
+  ],
+  "ImL7iD": [
+    {
+      "type": 0,
+      "value": "Rimborso completo se la cancellazione avviene almeno 24 ore prima del check-in"
+    }
+  ],
+  "Iv5u44": [
+    {
+      "type": 0,
+      "value": "Lunedì"
+    }
+  ],
+  "J81fbb": [
+    {
+      "type": 0,
+      "value": "Nessuna cronologia disponibile"
+    }
+  ],
+  "JWwnVm": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare le valute"
+    }
+  ],
+  "JeNf5C": [
+    {
+      "type": 0,
+      "value": "Hai raggiunto il massimo di 5 lingue aggiuntive"
+    }
+  ],
+  "JmUKsE": [
+    {
+      "type": 0,
+      "value": "In evidenza"
+    }
+  ],
+  "Jn6vdr": [
+    {
+      "type": 0,
+      "value": "Intervallo valido: da -90 a 90"
+    }
+  ],
+  "Jo6yop": [
+    {
+      "type": 0,
+      "value": "Non riuscito"
+    }
+  ],
+  "Jx1XL/": [
+    {
+      "type": 0,
+      "value": "Nessun gateway di pagamento disponibile"
+    }
+  ],
+  "K133NN": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare l’elenco dei paesi. Riprova."
+    }
+  ],
+  "KBbI2C": [
+    {
+      "type": 0,
+      "value": "Nessuna modifica"
+    }
+  ],
+  "KC3rcq": [
+    {
+      "type": 0,
+      "value": "Email"
+    }
+  ],
+  "KFGwsm": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare le proprietà. Riprova."
+    }
+  ],
+  "KRYLvD": [
+    {
+      "type": 0,
+      "value": "Disponibilità aggiornata correttamente"
+    }
+  ],
+  "KfDaoT": [
+    {
+      "type": 0,
+      "value": "Limita"
+    }
+  ],
+  "KgIF6j": [
+    {
+      "type": 0,
+      "value": "Caricamento configurazione non riuscito"
+    }
+  ],
+  "Kmskqc": [
+    {
+      "type": 0,
+      "value": "Sfoglia e gestisci tutti i servizi disponibili nel tuo sistema."
+    }
+  ],
+  "Kq0VZ6": [
+    {
+      "type": 0,
+      "value": "Salta per ora"
+    }
+  ],
+  "KsklO8": [
+    {
+      "type": 0,
+      "value": "Assicurati che il tuo account sia impostato in modalità produzione, e non in modalità test, per i pagamenti live."
+    }
+  ],
+  "KxKL+n": [
+    {
+      "type": 0,
+      "value": "Prenotazioni"
+    }
+  ],
+  "L14TDm": [
+    {
+      "type": 0,
+      "value": "Non sono ancora state apportate modifiche per questo intervallo di date"
+    }
+  ],
+  "L42aHo": [
+    {
+      "type": 0,
+      "value": "Per prima cosa: scegli le lingue dell’interfaccia e dei contenuti."
+    }
+  ],
+  "LAbvMA": [
+    {
+      "type": 0,
+      "value": "Le tue tariffe verranno sincronizzate così come sono. Già ottimizzate per l’uso con il PMS."
+    }
+  ],
+  "LDUyG4": [
+    {
+      "type": 0,
+      "value": "La data di fine deve essere successiva a "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "LHZI5Y": [
+    {
+      "type": 0,
+      "value": "Connessione riuscita"
+    }
+  ],
+  "LHg/un": [
+    {
+      "type": 0,
+      "value": "Visualizza cronologia"
+    }
+  ],
+  "LQEcMx": [
+    {
+      "type": 0,
+      "value": "Sincronizzazione in tempo reale di disponibilità e tariffe"
+    }
+  ],
+  "LT4CJg": [
+    {
+      "type": 0,
+      "value": "Lo stato di disponibilità è obbligatorio"
+    }
+  ],
+  "LaKRvO": [
+    {
+      "type": 0,
+      "value": "Caricamento configurazione non riuscito"
+    }
+  ],
+  "Lg4Fi9": [
+    {
+      "type": 0,
+      "value": "Importante"
+    }
+  ],
+  "Lhbbcw": [
+    {
+      "type": 0,
+      "value": "Cerca per nome proprietà"
+    }
+  ],
+  "LqNWNm": [
+    {
+      "type": 0,
+      "value": "Le credenziali fornite non sono corrette. Verifica il tuo Client ID e Client Secret e riprova."
+    }
+  ],
+  "M92dZr": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le credenziali di produzione, non quelle di test, per i pagamenti reali."
+    }
+  ],
+  "MCAh17": [
+    {
+      "type": 0,
+      "value": "Credenziali API Xmoney"
+    }
+  ],
+  "MLQakG": [
+    {
+      "type": 0,
+      "value": "Si è verificato un errore."
+    }
+  ],
+  "MXtKEO": [
+    {
+      "type": 0,
+      "value": "Modifica lo stato di disponibilità per le date selezionate. Puoi contrassegnare le date come disponibili o non disponibili per le prenotazioni. Facoltativamente, aggiungi delle note per tenere traccia del motivo della modifica."
+    }
+  ],
+  "MfrEpx": [
+    {
+      "type": 0,
+      "value": "Aggiorna la disponibilità per le date selezionate"
+    }
+  ],
+  "MmX1j5": [
+    {
+      "type": 0,
+      "value": "Applica"
+    }
+  ],
+  "MqJtIe": [
+    {
+      "type": 0,
+      "value": "Ospiti"
+    }
+  ],
+  "MsOMSR": [
+    {
+      "type": 0,
+      "value": "Sincronizza automaticamente annunci e dettagli delle proprietà"
+    }
+  ],
+  "N+75uC": [
+    {
+      "type": 0,
+      "value": "Commissione solo host"
+    }
+  ],
+  "N0sIXl": [
+    {
+      "type": 0,
+      "value": "Giovedì"
+    }
+  ],
+  "N2OYyx": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "NDEfG/": [
+    {
+      "type": 0,
+      "value": "Connessione riuscita"
+    }
+  ],
+  "NJGmr+": [
+    {
+      "type": 0,
+      "value": "File max: "
+    },
+    {
+      "type": 1,
+      "value": "count"
+    }
+  ],
+  "NTyqYb": [
+    {
+      "type": 0,
+      "value": "preferenze"
+    }
+  ],
+  "NZZi1d": [
+    {
+      "type": 0,
+      "value": "Importa annunci Airbnb"
+    }
+  ],
+  "NZwqC9": [
+    {
+      "type": 0,
+      "value": "home"
+    }
+  ],
+  "NfG5Dv": [
+    {
+      "type": 0,
+      "value": "Merchant Key"
+    }
+  ],
+  "Nty3JH": [
+    {
+      "type": 0,
+      "value": "Connessione in corso..."
+    }
+  ],
+  "NxALzL": [
+    {
+      "type": 0,
+      "value": "Longitudine"
+    }
+  ],
+  "O/8GDW": [
+    {
+      "type": 0,
+      "value": "Imposta il nome del brand, la valuta e le altre impostazioni principali."
+    }
+  ],
+  "O2TvYO": [
+    {
+      "type": 0,
+      "value": "Esempio: per un annuncio a 100 $/notte"
+    }
+  ],
+  "O4G22V": [
+    {
+      "type": 0,
+      "value": "Seleziona fuso orario"
+    }
+  ],
+  "O4JbH7": [
+    {
+      "type": 0,
+      "value": "Conferma la generazione e copia immediatamente la nuova Transaction Key: per motivi di sicurezza verrà mostrata solo una volta."
+    }
+  ],
+  "O8g76z": [
+    {
+      "type": 0,
+      "value": "Aggiorna tariffe e restrizioni"
+    }
+  ],
+  "OCVZ6a": [
+    {
+      "type": 0,
+      "value": "Fatto"
+    }
+  ],
+  "OGLvM4": [
+    {
+      "type": 0,
+      "value": "La permanenza minima deve essere un numero positivo"
+    }
+  ],
+  "Oax1XH": [
+    {
+      "type": 0,
+      "value": "Carica file"
+    }
+  ],
+  "OeHpB+": [
+    {
+      "type": 0,
+      "value": "statistiche"
+    }
+  ],
+  "Ono6nG": [
+    {
+      "type": 0,
+      "value": "Via Roma 123"
+    }
+  ],
+  "Oubdq/": [
+    {
+      "type": 0,
+      "value": "Rilascia i file qui o fai clic per sfogliare"
+    }
+  ],
+  "OwgPg/": [
+    {
+      "type": 0,
+      "value": "Lingua principale dei contenuti"
+    }
+  ],
+  "P76X5R": [
+    {
+      "type": 0,
+      "value": "Salva"
+    }
+  ],
+  "PHnbNG": [
+    {
+      "type": 0,
+      "value": "Il mio sito web"
+    }
+  ],
+  "PT0PoN": [
+    {
+      "type": 0,
+      "value": "La valuta predefinita è obbligatoria"
+    }
+  ],
+  "PYORN9": [
+    {
+      "type": 0,
+      "value": "Il tuo account Razorpay è stato collegato correttamente ed è pronto per elaborare i pagamenti."
+    }
+  ],
+  "PYUO/D": [
+    {
+      "type": 0,
+      "value": "Genera o recupera la tua \"Signature Key SHA-256\" (Clave secreta de firma). Se non ne hai una, dovrai generarla nella sezione di sicurezza."
+    }
+  ],
+  "PZO/Vm": [
+    {
+      "type": 0,
+      "value": "Coordinata di longitudine"
+    }
+  ],
+  "PZgJFD": [
+    {
+      "type": 0,
+      "value": "Il nome della tua azienda o struttura mostrato nelle comunicazioni con gli ospiti e nei link di pagamento."
+    }
+  ],
+  "PeSZfT": [
+    {
+      "type": 0,
+      "value": "Proprietà"
+    }
+  ],
+  "Q7u+VV": [
+    {
+      "type": 0,
+      "value": "annuncio"
+    }
+  ],
+  "QFItoI": [
+    {
+      "type": 0,
+      "value": "Nome mappatura"
+    }
+  ],
+  "QSt/yx": [
+    {
+      "type": 0,
+      "value": "Scegli un gateway di pagamento per accettare pagamenti online, gestire le prenotazioni e inviare link di pagamento sicuri ai tuoi ospiti."
+    }
+  ],
+  "QcRAOz": [
+    {
+      "type": 0,
+      "value": "Inserisci il numero di telefono"
+    }
+  ],
+  "QhExZh": [
+    {
+      "type": 0,
+      "value": "Totale pagato dall’ospite"
+    }
+  ],
+  "QkU8pF": [
+    {
+      "type": 0,
+      "value": "Report"
+    }
+  ],
+  "QrrLMn": [
+    {
+      "type": 0,
+      "value": "Mantieni la tua API Key e il tuo Webhook Secret al sicuro e non condividerli mai pubblicamente. Vengono utilizzati per autenticare tutte le richieste API e verificare l’autenticità dei webhook."
+    }
+  ],
+  "R26oUq": [
+    {
+      "type": 0,
+      "value": "La valuta di visualizzazione è obbligatoria"
+    }
+  ],
+  "RAoXEd": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti con carta di credito in modo sicuro con Redsys, il principale gateway di pagamento in Spagna"
+    }
+  ],
+  "RBGdAu": [
+    {
+      "type": 0,
+      "value": "Fai clic sulla mappa per impostare la posizione"
+    }
+  ],
+  "RJf6QP": [
+    {
+      "type": 0,
+      "value": "cliente"
+    }
+  ],
+  "RLi2kv": [
+    {
+      "type": 0,
+      "value": "Predefiniti"
+    }
+  ],
+  "RN2TV/": [
+    {
+      "type": 0,
+      "value": "Mostrato nei link di pagamento e nelle comunicazioni con gli ospiti."
+    }
+  ],
+  "RQPIrX": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "RaGXAl": [
+    {
+      "type": 0,
+      "value": "Caricamento cronologia..."
+    }
+  ],
+  "Rx858S": [
+    {
+      "type": 0,
+      "value": "Segui questi passaggi per ottenere le tue credenziali PayU.in e configurare il tuo gateway di pagamento"
+    }
+  ],
+  "Rywutb": [
+    {
+      "type": 0,
+      "value": "Connessione in corso..."
+    }
+  ],
+  "S/W8wt": [
+    {
+      "type": 0,
+      "value": "Cerca per nome servizio"
+    }
+  ],
+  "S0jR0w": [
+    {
+      "type": 0,
+      "value": "Non in evidenza"
+    }
+  ],
+  "STkUKY": [
+    {
+      "type": 0,
+      "value": "Copia sia la Merchant Key che il Merchant Salt, quindi incollali nel modulo qui sopra per collegare il tuo account PayU.in a Rentalwise."
+    }
+  ],
+  "SUSpIj": [
+    {
+      "type": 0,
+      "value": "Chiave API di Google Maps non configurata"
+    }
+  ],
+  "Sv2doR": [
+    {
+      "type": 0,
+      "value": "Vietato organizzare feste/eventi"
+    }
+  ],
+  "T4AJRc": [
+    {
+      "type": 0,
+      "value": "Pre-autorizzazione del deposito cauzionale"
+    }
+  ],
+  "T7FKbK": [
+    {
+      "type": 0,
+      "value": "Inserisci le credenziali API Razorpay dal tuo dashboard"
+    }
+  ],
+  "TAQtsp": [
+    {
+      "type": 0,
+      "value": "In evidenza"
+    }
+  ],
+  "TNt0xR": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare l’elenco dei paesi"
+    }
+  ],
+  "TP9+uy": [
+    {
+      "type": 0,
+      "value": "Come funziona →"
+    }
+  ],
+  "TPRG4x": [
+    {
+      "type": 0,
+      "value": "Scegli fino a 5 lingue aggiuntive per i tuoi contenuti. Clicca su una lingua per selezionarla o deselezionarla."
+    }
+  ],
+  "TX4nd7": [
+    {
+      "type": 0,
+      "value": "Visualizza dettagli pagamento"
+    }
+  ],
+  "Tc801C": [
+    {
+      "type": 0,
+      "value": "Impossibile aggiornare il calendario"
+    }
+  ],
+  "Tj93Dw": [
+    {
+      "type": 0,
+      "value": "Merchant Code"
+    }
+  ],
+  "TnFf7r": [
+    {
+      "type": 0,
+      "value": "Seleziona un intervallo di date"
+    }
+  ],
+  "U+BpmB": [
+    {
+      "type": 0,
+      "value": "Nessuno stato di disponibilità disponibile"
+    }
+  ],
+  "U+Ld/N": [
+    {
+      "type": 0,
+      "value": "Collega conto PayPal"
+    }
+  ],
+  "U33urL": [
+    {
+      "type": 0,
+      "value": "Cancella intervallo di date"
+    }
+  ],
+  "U7kE1U": [
+    {
+      "type": 0,
+      "value": "Vai a "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " ed effettua l’accesso con il tuo conto PayPal Business."
+    }
+  ],
+  "U96Y45": [
+    {
+      "type": 0,
+      "value": "Scegli un'azione"
+    }
+  ],
+  "UFslXe": [
+    {
+      "type": 0,
+      "value": "Fai clic su \"API Credentials & Keys\" nella sezione Security Settings."
+    }
+  ],
+  "UGsmv6": [
+    {
+      "type": 0,
+      "value": "Nuova prenotazione"
+    }
+  ],
+  "UXa4EB": [
+    {
+      "type": 0,
+      "value": "Le credenziali fornite non sono corrette. Verifica il tuo API Login ID e la tua Transaction Key e riprova."
+    }
+  ],
+  "Ub1bVM": [
+    {
+      "type": 0,
+      "value": "Località"
+    }
+  ],
+  "Us8Yir": [
+    {
+      "type": 1,
+      "value": "userName"
+    },
+    {
+      "type": 0,
+      "value": " ha aggiornato lo stato di disponibilità a "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "V8cxvA": [
+    {
+      "type": 0,
+      "value": "Seleziona lingue aggiuntive"
+    }
+  ],
+  "VB01E9": [
+    {
+      "type": 0,
+      "value": "Per ottenere la tua Transaction Key, fai clic su \"New Transaction Key\" o \"Request New Key\". Nota: questa operazione invaliderà qualsiasi transaction key esistente."
+    }
+  ],
+  "VD8QDF": [
+    {
+      "type": 0,
+      "value": "Imposta tariffe, requisiti di soggiorno minimo e restrizioni di prenotazione per le date selezionate. Usa la modalità semplice per una tariffazione uniforme oppure la modalità avanzata per impostazioni specifiche per giorno."
+    }
+  ],
+  "VKPYTy": [
+    {
+      "type": 0,
+      "value": "Canali"
+    }
+  ],
+  "VKdC7r": [
+    {
+      "type": 0,
+      "value": "Il terminale è obbligatorio"
+    }
+  ],
+  "VPF1PR": [
+    {
+      "type": 0,
+      "value": "Impossibile eliminare il servizio. Riprova."
+    }
+  ],
+  "VS03hF": [
+    {
+      "type": 0,
+      "value": "es. -122.419415"
+    }
+  ],
+  "VgfswN": [
+    {
+      "type": 0,
+      "value": "Stato in evidenza aggiornato"
+    }
+  ],
+  "VnV1LF": [
+    {
+      "type": 0,
+      "value": "Lingua della dashboard"
+    }
+  ],
+  "Vrxnkj": [
+    {
+      "type": 0,
+      "value": "Caricamento riuscito!"
+    }
+  ],
+  "VttIVF": [
+    {
+      "type": 0,
+      "value": "Servizi"
+    }
+  ],
+  "VvRDvN": [
+    {
+      "type": 0,
+      "value": "Fai clic sulla scheda \"API Keys\" per accedere alle tue credenziali API."
+    }
+  ],
+  "Vyw+lR": [
+    {
+      "type": 0,
+      "value": "Caricamento configurazione non riuscito"
+    }
+  ],
+  "W3sWk1": [
+    {
+      "type": 0,
+      "value": "La valuta predefinita deve essere inclusa tra le valute consentite"
+    }
+  ],
+  "W57wea": [
+    {
+      "type": 0,
+      "value": "Assicurati di visualizzare le credenziali per l’ambiente corretto: usa le credenziali \"Production\" per i pagamenti live, non le credenziali in \"Test Mode\"."
+    }
+  ],
+  "W5v/Iw": [
+    {
+      "type": 0,
+      "value": "Carica tutto"
+    }
+  ],
+  "WKNigj": [
+    {
+      "type": 0,
+      "value": "Dashboard"
+    }
+  ],
+  "WaOLqy": [
+    {
+      "type": 0,
+      "value": "Il tuo account Redsys è stato collegato correttamente ed è pronto per elaborare i pagamenti."
+    }
+  ],
+  "WfDKxB": [
+    {
+      "type": 0,
+      "value": "Le credenziali fornite non sono corrette. Verifica il tuo Key ID e la tua Key Secret e riprova."
+    }
+  ],
+  "WpPA+r": [
+    {
+      "type": 0,
+      "value": "Cerca per nome struttura"
+    }
+  ],
+  "WuulWW": [
+    {
+      "type": 0,
+      "value": "Salvataggio in corso..."
+    }
+  ],
+  "X+vN43": [
+    {
+      "type": 0,
+      "value": "Elimina servizio \""
+    },
+    {
+      "type": 1,
+      "value": "name"
+    },
+    {
+      "type": 0,
+      "value": "\""
+    }
+  ],
+  "X8DbWD": [
+    {
+      "type": 0,
+      "value": "Inserisci le credenziali API Xmoney dal tuo merchant dashboard"
+    }
+  ],
+  "XDLNej": [
+    {
+      "type": 0,
+      "value": "Il tuo conto PayPal è stato collegato correttamente."
+    }
+  ],
+  "XNEu/M": [
+    {
+      "type": 0,
+      "value": "Vedi cliente"
+    }
+  ],
+  "XP9hJ7": [
+    {
+      "type": 0,
+      "value": "La data di inizio deve essere precedente a "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "XYPKf0": [
+    {
+      "type": 0,
+      "value": "Inserisci un nome per l’app (ad es. \"My Property Management System\") e fai clic su \"Create App\" (Create App)."
+    }
+  ],
+  "Xbhlim": [
+    {
+      "type": 0,
+      "value": "Indirizzo email non valido"
+    }
+  ],
+  "XkXjGM": [
+    {
+      "type": 0,
+      "value": "Calendario aggiornato correttamente"
+    }
+  ],
+  "Xw/VVZ": [
+    {
+      "type": 0,
+      "value": "Città"
+    }
+  ],
+  "Xyl+wc": [
+    {
+      "type": 0,
+      "value": "Impostazioni"
+    }
+  ],
+  "Xyos1g": [
+    {
+      "type": 0,
+      "value": "L’indirizzo è obbligatorio"
+    }
+  ],
+  "Y/SI/Y": [
+    {
+      "type": 0,
+      "value": "Credenziali Redsys"
+    }
+  ],
+  "Y0X1Ig": [
+    {
+      "type": 0,
+      "value": "Vedrai il tuo Key ID (inizia con \"rzp_test_\" per la modalità test o \"rzp_live_\" per la modalità live). Questa è la tua chiave pubblica. Copia questo valore."
+    }
+  ],
+  "Y9jAxS": [
+    {
+      "type": 0,
+      "value": "Struttura delle commissioni Airbnb"
+    }
+  ],
+  "YH20C7": [
+    {
+      "type": 0,
+      "value": "Passa alla modalità \"Live\" (Live) utilizzando l’interruttore in alto."
+    }
+  ],
+  "YXHsVb": [
+    {
+      "type": 0,
+      "value": "prenotazione"
+    }
+  ],
+  "YXbN+o": [
+    {
+      "type": 0,
+      "value": "Aggiorna"
+    }
+  ],
+  "Yf3ND3": [
+    {
+      "type": 0,
+      "value": "Connessione riuscita"
+    }
+  ],
+  "Yh8hMS": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le credenziali in Live Mode (u_live_api_) per i pagamenti in produzione, non le credenziali in Test Mode (u_test_api_)."
+    }
+  ],
+  "YouQp1": [
+    {
+      "type": 0,
+      "value": "Tu incassi (dopo)"
+    }
+  ],
+  "YqBHbh": [
+    {
+      "type": 0,
+      "value": "Hai bisogno di aiuto per trovare le tue credenziali PayPal? Visualizza le istruzioni di configurazione"
+    }
+  ],
+  "Yr7Ms5": [
+    {
+      "type": 0,
+      "value": "Consenti"
+    }
+  ],
+  "Z5m5GD": [
+    {
+      "type": 0,
+      "value": "Soggiorno min."
+    }
+  ],
+  "Z6cYcW": [
+    {
+      "type": 0,
+      "value": "Seleziona la struttura delle commissioni Airbnb per sincronizzare correttamente le tariffe."
+    }
+  ],
+  "Z6ymtI": [
+    {
+      "type": 0,
+      "value": "Mantieni la tua Key Secret al sicuro e non condividerla mai pubblicamente. Viene utilizzata per autenticare tutte le richieste API al tuo account."
+    }
+  ],
+  "ZEtjaq": [
+    {
+      "type": 0,
+      "value": "Cerca account..."
+    }
+  ],
+  "ZKB9Y7": [
+    {
+      "type": 0,
+      "value": "es. niente scarpe in casa, utilizzare la doccia esterna per l’attrezzatura da spiaggia, massimo 2 veicoli nel vialetto"
+    }
+  ],
+  "ZspUhP": [
+    {
+      "type": 0,
+      "value": "Cancella selezione"
+    }
+  ],
+  "ZuYUdv": [
+    {
+      "type": 0,
+      "value": "Fai clic sul pulsante \"Create App\" (Create App) per creare una nuova applicazione."
+    }
+  ],
+  "a+SxgC": [
+    {
+      "type": 0,
+      "value": "Questa è la lingua che devi usare quando aggiungi contenuti. Puoi facoltativamente aggiungere traduzioni in altre lingue."
+    }
+  ],
+  "a35CJS": [
+    {
+      "type": 0,
+      "value": "Mercoledì"
+    }
+  ],
+  "aA+qMl": [
+    {
+      "type": 0,
+      "value": "Stato della struttura impostato su \""
+    },
+    {
+      "type": 1,
+      "value": "status"
+    },
+    {
+      "type": 0,
+      "value": "\"."
+    }
+  ],
+  "aADdjn": [
+    {
+      "type": 0,
+      "value": "La data di fine deve essere precedente a "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "aJ3++V": [
+    {
+      "type": 0,
+      "value": "Collega account Xmoney"
+    }
+  ],
+  "aPILyt": [
+    {
+      "type": 0,
+      "value": "Precedente"
+    }
+  ],
+  "aWcemL": [
+    {
+      "type": 0,
+      "value": "Caricamento in corso..."
+    }
+  ],
+  "aXKcVp": [
+    {
+      "type": 0,
+      "value": "Completa l’autorizzazione nella finestra Stripe. Questa finestra si chiuderà automaticamente al termine."
+    }
+  ],
+  "aXmvIA": [
+    {
+      "type": 0,
+      "value": "Lo stato di disponibilità è stato aggiornato a "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "ab0hY/": [
+    {
+      "type": 0,
+      "value": "Key Secret"
+    }
+  ],
+  "advKPO": [
+    {
+      "type": 0,
+      "value": "Segui questi passaggi per ottenere le tue credenziali Razorpay e configurare il tuo gateway di pagamento"
+    }
+  ],
+  "aeebtJ": [
+    {
+      "type": 0,
+      "value": "Alcune proprietà sono contrassegnate come co-gestite, il che significa che non sei l’host principale. Queste proprietà verranno importate nella tua dashboard, ma le modifiche effettuate qui non verranno sincronizzate con Airbnb per evitare conflitti con le impostazioni dell’host principale."
+    }
+  ],
+  "afXEu2": [
+    {
+      "type": 0,
+      "value": "Collega account Authorize.net"
+    }
+  ],
+  "aht69K": [
+    {
+      "type": 0,
+      "value": "Flessibile"
+    }
+  ],
+  "amPlaW": [
+    {
+      "type": 0,
+      "value": "Copia le tue credenziali e incollale nel modulo per collegare il tuo account Redsys."
+    }
+  ],
+  "aosPfz": [
+    {
+      "type": 0,
+      "value": "Descrivi con parole tue"
+    }
+  ],
+  "atFgtD": [
+    {
+      "type": 0,
+      "value": "Al momento non ci sono gateway di pagamento disponibili da configurare."
+    }
+  ],
+  "b1haC1": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare i gateway di pagamento"
+    }
+  ],
+  "b3sTwT": [
+    {
+      "type": 0,
+      "value": "Il mio profilo"
+    }
+  ],
+  "b3xOJ9": [
+    {
+      "type": 0,
+      "value": "CAP"
+    }
+  ],
+  "bCNGo4": [
+    {
+      "type": 0,
+      "value": "Nessun risultato trovato."
+    }
+  ],
+  "bVzg2H": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le credenziali in Live Mode (u_live_api_) per i pagamenti in produzione, non le credenziali in Test Mode (u_test_api_)."
+    }
+  ],
+  "bavx1x": [
+    {
+      "type": 0,
+      "value": "Inizia a scrivere..."
+    }
+  ],
+  "bdgAC1": [
+    {
+      "type": 0,
+      "value": "Nessun paese trovato."
+    }
+  ],
+  "bkwL/j": [
+    {
+      "type": 0,
+      "value": "Non rimborsabile"
+    }
+  ],
+  "brw6xY": [
+    {
+      "type": 0,
+      "value": "Accedi al tuo "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " utilizzando le credenziali da merchant."
+    }
+  ],
+  "bszm8L": [
+    {
+      "type": 0,
+      "value": "Seleziona stato di disponibilità"
+    }
+  ],
+  "c+rEQa": [
+    {
+      "type": 0,
+      "value": "Integrazioni"
+    }
+  ],
+  "c0M/n2": [
+    {
+      "type": 0,
+      "value": "Requisiti specifici"
+    }
+  ],
+  "c39yv7": [
+    {
+      "type": 0,
+      "value": "Credenziali Razorpay"
+    }
+  ],
+  "c4y18J": [
+    {
+      "type": 0,
+      "value": "Il Client ID è obbligatorio"
+    }
+  ],
+  "c8ysE5": [
+    {
+      "type": 0,
+      "value": "Cancella tutto"
+    }
+  ],
+  "cDDnbv": [
+    {
+      "type": 0,
+      "value": "Politica di cancellazione"
+    }
+  ],
+  "cPZY1f": [
+    {
+      "type": 0,
+      "value": "Caricamento non riuscito"
+    }
+  ],
+  "cU+Iey": [
+    {
+      "type": 0,
+      "value": "Commissione solo host"
+    }
+  ],
+  "cc8ReJ": [
+    {
+      "type": 0,
+      "value": "Chiave di transazione segreta utilizzata per autenticare le richieste API. Mantienila al sicuro e non condividerla mai pubblicamente."
+    }
+  ],
+  "ccsc2K": [
+    {
+      "type": 0,
+      "value": "Inserisci il codice esadecimale (es. #FF5733)"
+    }
+  ],
+  "ce6iAC": [
+    {
+      "type": 0,
+      "value": "utente"
+    }
+  ],
+  "cjpksE": [
+    {
+      "type": 0,
+      "value": "Ulteriori informazioni"
+    }
+  ],
+  "cnVnFc": [
+    {
+      "type": 0,
+      "value": "La tua API Key univoca fornita da Xmoney per autenticare le richieste API ed elaborare i pagamenti in criptovaluta"
+    }
+  ],
+  "co30zv": [
+    {
+      "type": 0,
+      "value": "La valuta principale con cui è configurato il tuo account Redsys. Le transazioni in altre valute verranno convertite in questa valuta."
+    }
+  ],
+  "cpqeDo": [
+    {
+      "type": 0,
+      "value": "Avanzata"
+    }
+  ],
+  "cu+51N": [
+    {
+      "type": 0,
+      "value": "Link di pagamento"
+    }
+  ],
+  "d0LNAH": [
+    {
+      "type": 0,
+      "value": "Si è verificato un errore"
+    }
+  ],
+  "d1EL0O": [
+    {
+      "type": 0,
+      "value": "La ragione sociale è obbligatoria"
+    }
+  ],
+  "d1sT0D": [
+    {
+      "type": 0,
+      "value": "Lun"
+    }
+  ],
+  "dPuxw6": [
+    {
+      "type": 0,
+      "value": "Mantieni la tua Transaction Key al sicuro e non condividerla mai pubblicamente. Viene utilizzata per autenticare tutte le richieste API al tuo account."
+    }
+  ],
+  "dQLjUG": [
+    {
+      "type": 0,
+      "value": "Le credenziali fornite non sono corrette. Verifica la tua API Key e il tuo Webhook Secret e riprova."
+    }
+  ],
+  "dXpXUg": [
+    {
+      "type": 0,
+      "value": "Il CAP è obbligatorio"
+    }
+  ],
+  "df/Qz1": [
+    {
+      "type": 0,
+      "value": "Credenziali PayU.in"
+    }
+  ],
+  "dlLwTR": [
+    {
+      "type": 0,
+      "value": "Rilascia il file qui"
+    }
+  ],
+  "dlWOii": [
+    {
+      "type": 0,
+      "value": "Il tuo API Login ID verrà visualizzato. Copia questo valore: è un identificatore univoco per il tuo account."
+    }
+  ],
+  "dlgRJf": [
+    {
+      "type": 0,
+      "value": "Aggiungi servizio"
+    }
+  ],
+  "dmqjA4": [
+    {
+      "type": 0,
+      "value": "Merchant Key obbligatoria"
+    }
+  ],
+  "dpQveJ": [
+    {
+      "type": 0,
+      "value": "Applica"
+    }
+  ],
+  "ds1sfT": [
+    {
+      "type": 0,
+      "value": "La Transaction Key può essere visualizzata una sola volta al momento della creazione. Se la perdi, dovrai generarne una nuova."
+    }
+  ],
+  "eJQkpB": [
+    {
+      "type": 0,
+      "value": "Tipo di contratto"
+    }
+  ],
+  "eQr1Nt": [
+    {
+      "type": 0,
+      "value": "Rilascia il file qui o clicca per cercare"
+    }
+  ],
+  "eZtwZg": [
+    {
+      "type": 0,
+      "value": "Descrivi la tua politica di cancellazione personalizzata"
+    }
+  ],
+  "edHwNb": [
+    {
+      "type": 0,
+      "value": "Places API non abilitata. Usa la mappa per impostare la posizione."
+    }
+  ],
+  "ehRkrZ": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare la cronologia"
+    }
+  ],
+  "eimE5J": [
+    {
+      "type": 0,
+      "value": "es. Sunset Beach Rentals SRL"
+    }
+  ],
+  "ezQ6SF": [
+    {
+      "type": 0,
+      "value": "Descrivi la tua politica di cancellazione personalizzata"
+    }
+  ],
+  "f1ZlPP": [
+    {
+      "type": 0,
+      "value": "Caricamento configurazione non riuscito"
+    }
+  ],
+  "f4qEIV": [
+    {
+      "type": 0,
+      "value": "L’email è obbligatoria"
+    }
+  ],
+  "f598gT": [
+    {
+      "type": 0,
+      "value": "Questo è necessario affinché i moduli di pagamento funzionino sia sui payment link che sul tuo sito web rivolto ai clienti."
+    }
+  ],
+  "fsCHeb": [
+    {
+      "type": 0,
+      "value": "File non valido"
+    }
+  ],
+  "gGp8BG": [
+    {
+      "type": 0,
+      "value": "Secret Merchant Salt (API Salt) utilizzato per generare hash sicuri per le richieste di pagamento. Mantienilo riservato e non condividerlo mai pubblicamente."
+    }
+  ],
+  "gNizG3": [
+    {
+      "type": 0,
+      "value": "Per collegare il tuo account Authorize.net, devi recuperare le credenziali API dal tuo account esercente:"
+    }
+  ],
+  "gUTs9M": [
+    {
+      "type": 0,
+      "value": "Collegando l’account, autorizzi questa applicazione ad accedere ai dati del tuo account Airbnb. Puoi disconnetterlo in qualsiasi momento dalle impostazioni."
+    }
+  ],
+  "gYyW2F": [
+    {
+      "type": 0,
+      "value": "Strutture"
+    }
+  ],
+  "gcJzNv": [
+    {
+      "type": 0,
+      "value": "Indietro"
+    }
+  ],
+  "gcogeP": [
+    {
+      "type": 0,
+      "value": "Il tuo Merchant Key univoco (API Key) fornito da PayU.in per autenticare le richieste API"
+    }
+  ],
+  "guxn2d": [
+    {
+      "type": 0,
+      "value": "Nome"
+    }
+  ],
+  "h7MHkw": [
+    {
+      "type": 0,
+      "value": "Istruzioni di configurazione"
+    }
+  ],
+  "hGWNhw": [
+    {
+      "type": 0,
+      "value": "Collega account PayU.in"
+    }
+  ],
+  "hK+bTp": [
+    {
+      "type": 0,
+      "value": "Entità legale"
+    }
+  ],
+  "hNmK/a": [
+    {
+      "type": 0,
+      "value": "Accedi al tuo "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " utilizzando le credenziali da esercente."
+    }
+  ],
+  "hcwLhe": [
+    {
+      "type": 0,
+      "value": "Terminal"
+    }
+  ],
+  "hdOUlx": [
+    {
+      "type": 0,
+      "value": "Gruppo di servizi"
+    }
+  ],
+  "hm3XWh": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti con carta di credito in modo sicuro con Authorize.net, un gateway di pagamento affidabile utilizzato da aziende in tutto il mondo"
+    }
+  ],
+  "hnT+Ex": [
+    {
+      "type": 0,
+      "value": "Places API non abilitata. Abilitala nella Google Cloud Console oppure usa la mappa per impostare la posizione."
+    }
+  ],
+  "hzwyg5": [
+    {
+      "type": 0,
+      "value": "Collega account Razorpay"
+    }
+  ],
+  "i12iVe": [
+    {
+      "type": 0,
+      "value": "Vai a"
+    }
+  ],
+  "i48IBK": [
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "+1 altra connessione"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "+"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " altre connessioni"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "i6kvwt": [
+    {
+      "type": 0,
+      "value": "Calendario"
+    }
+  ],
+  "iDYGXC": [
+    {
+      "type": 0,
+      "value": "Host: 15,5%"
+    }
+  ],
+  "iHNXRF": [
+    {
+      "type": 0,
+      "value": "Seleziona un’opzione"
+    }
+  ],
+  "iKXPtM": [
+    {
+      "type": 0,
+      "value": "Il Webhook Secret è obbligatorio"
+    }
+  ],
+  "iNbK2s": [
+    {
+      "type": 0,
+      "value": "Apri menu"
+    }
+  ],
+  "iVnpqX": [
+    {
+      "type": 0,
+      "value": "Dopo l’accesso, dal menu principale vai su \"Integrations\"."
+    }
+  ],
+  "igJ6NH": [
+    {
+      "type": 0,
+      "value": "Chiave segreta di firma utilizzata per autenticare le transazioni (Clave secreta de firma)"
+    }
+  ],
+  "ivMxuN": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare la configurazione"
+    }
+  ],
+  "iwSAmy": [
+    {
+      "type": 0,
+      "value": "configurazione"
+    }
+  ],
+  "j0ZBkg": [
+    {
+      "type": 0,
+      "value": "Per collegare il tuo account PayU.in, devi recuperare le credenziali API dalla tua dashboard esercente:"
+    }
+  ],
+  "j0wmPI": [
+    {
+      "type": 0,
+      "value": "Verifica della connessione in corso..."
+    }
+  ],
+  "j1rtzL": [
+    {
+      "type": 0,
+      "value": "Collega account PayU.in"
+    }
+  ],
+  "j7b5hy": [
+    {
+      "type": 0,
+      "value": "Questa azione è "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "irreversibile"
+        }
+      ],
+      "type": 8,
+      "value": "strong"
+    },
+    {
+      "type": 0,
+      "value": ". L’eliminazione di un servizio lo rimuoverà in modo permanente dal tuo sistema. Sei sicuro di voler continuare?"
+    }
+  ],
+  "jBqjwf": [
+    {
+      "type": 0,
+      "value": "Venerdì"
+    }
+  ],
+  "jCh/D0": [
+    {
+      "type": 0,
+      "value": "Mario"
+    }
+  ],
+  "jImZFP": [
+    {
+      "type": 0,
+      "value": "Connessione riuscita"
+    }
+  ],
+  "jMo8lD": [
+    {
+      "type": 0,
+      "value": "Se non operi tramite una società, inserisci nome e cognome."
+    }
+  ],
+  "jcEZpK": [
+    {
+      "type": 0,
+      "value": "Logout"
+    }
+  ],
+  "jhIDCX": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "selezionato"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "selezionati"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "jvK+qk": [
+    {
+      "type": 0,
+      "value": "Rimborso totale se la cancellazione avviene 30 o più giorni prima del check-in"
+    }
+  ],
+  "k+FE8+": [
+    {
+      "type": 0,
+      "value": "Stato"
+    }
+  ],
+  "k+yRbg": [
+    {
+      "type": 0,
+      "value": "Input file"
+    }
+  ],
+  "kBI7py": [
+    {
+      "type": 0,
+      "value": "Il tuo account Xmoney è stato collegato correttamente ed è pronto per elaborare pagamenti in criptovaluta."
+    }
+  ],
+  "kG7fT4": [
+    {
+      "type": 0,
+      "value": "struttura"
+    }
+  ],
+  "kHKPr2": [
+    {
+      "type": 0,
+      "value": "Credenziali PayPal"
+    }
+  ],
+  "kQrSIK": [
+    {
+      "type": 0,
+      "value": "Inserisci le credenziali della tua applicazione PayPal"
+    }
+  ],
+  "kbQEWe": [
+    {
+      "type": 0,
+      "value": "Non in evidenza"
+    }
+  ],
+  "kjXDMk": [
+    {
+      "type": 0,
+      "value": "Il servizio è ora \""
+    },
+    {
+      "type": 1,
+      "value": "status"
+    },
+    {
+      "type": 0,
+      "value": "\"."
+    }
+  ],
+  "kl5YRB": [
+    {
+      "type": 0,
+      "value": "Cerca..."
+    }
+  ],
+  "koiR5e": [
+    {
+      "type": 0,
+      "value": "Sotto il Merchant Key troverai il tuo Merchant Salt (chiamato anche API Salt). Si tratta di un valore segreto utilizzato per generare hash di pagamento sicuri. Copia questo valore con attenzione."
+    }
+  ],
+  "krzoKh": [
+    {
+      "type": 0,
+      "value": "Orari di silenzio (22:00–8:00)"
+    }
+  ],
+  "l2G4ts": [
+    {
+      "type": 0,
+      "value": "account"
+    }
+  ],
+  "l58peo": [
+    {
+      "type": 0,
+      "value": "Collega account Authorize.net"
+    }
+  ],
+  "lICqky": [
+    {
+      "type": 0,
+      "value": "Sabato"
+    }
+  ],
+  "lLsqx/": [
+    {
+      "type": 0,
+      "value": "Semplice"
+    }
+  ],
+  "lXmebi": [
+    {
+      "type": 0,
+      "value": "Nessuna struttura trovata."
+    }
+  ],
+  "lbuhtO": [
+    {
+      "type": 0,
+      "value": "Il numero di telefono è obbligatorio"
+    }
+  ],
+  "lf1G7F": [
+    {
+      "type": 0,
+      "value": "Dom"
+    }
+  ],
+  "lfavTr": [
+    {
+      "type": 0,
+      "value": "JavaScript SDK v6 (JavaScript SDK v6)"
+    }
+  ],
+  "lsb4H5": [
+    {
+      "type": 0,
+      "value": "00100"
+    }
+  ],
+  "lw4XRE": [
+    {
+      "type": 0,
+      "value": "Il fuso orario di visualizzazione è obbligatorio"
+    }
+  ],
+  "m4CjvC": [
+    {
+      "type": 0,
+      "value": "Tu incassi (prima)"
+    }
+  ],
+  "m9X8dj": [
+    {
+      "type": 0,
+      "value": "Personalizzato"
+    }
+  ],
+  "mEGoCy": [
+    {
+      "type": 0,
+      "value": "Paese"
+    }
+  ],
+  "mRPckU": [
+    {
+      "type": 0,
+      "value": "Incolla le credenziali nel modulo per collegare il tuo conto PayPal."
+    }
+  ],
+  "mTNG6W": [
+    {
+      "type": 0,
+      "value": "Pannello di amministrazione Redsys"
+    }
+  ],
+  "ma3FDS": [
+    {
+      "type": 0,
+      "value": "Rossi"
+    }
+  ],
+  "mc9NYQ": [
+    {
+      "type": 0,
+      "value": "Latitudine"
+    }
+  ],
+  "mhR7ow": [
+    {
+      "type": 0,
+      "value": "Seleziona valuta"
+    }
+  ],
+  "mhXM05": [
+    {
+      "type": 0,
+      "value": "panoramica"
+    }
+  ],
+  "mjTX/O": [
+    {
+      "type": 0,
+      "value": "Salvataggio in corso..."
+    }
+  ],
+  "mk2r03": [
+    {
+      "type": 0,
+      "value": "Non siamo riusciti a caricare le informazioni necessarie. Riprova più tardi."
+    }
+  ],
+  "moB4X5": [
+    {
+      "type": 0,
+      "value": "Pulisci"
+    }
+  ],
+  "mut/Iu": [
+    {
+      "type": 0,
+      "value": "Seleziona fuso orario"
+    }
+  ],
+  "myf6nu": [
+    {
+      "type": 0,
+      "value": "La città è obbligatoria"
+    }
+  ],
+  "n+V4Hf": [
+    {
+      "type": 0,
+      "value": "Aggiorna tariffe e restrizioni"
+    }
+  ],
+  "n8TPub": [
+    {
+      "type": 0,
+      "value": "Qui trovi tutte le tue strutture"
+    }
+  ],
+  "n8X4fP": [
+    {
+      "type": 0,
+      "value": "Il tuo account PayU.in è stato collegato correttamente ed è pronto per elaborare pagamenti."
+    }
+  ],
+  "nE/K2O": [
+    {
+      "type": 0,
+      "value": "Connessione riuscita"
+    }
+  ],
+  "nOHLhe": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare la configurazione"
+    }
+  ],
+  "nPTP4o": [
+    {
+      "type": 0,
+      "value": "Restrizione check-out"
+    }
+  ],
+  "nXPU3C": [
+    {
+      "type": 0,
+      "value": "Hai bisogno di aiuto per trovare le tue credenziali Redsys? Visualizza le istruzioni di configurazione"
+    }
+  ],
+  "nbKA0x": [
+    {
+      "type": 0,
+      "value": "Non è stato possibile caricare i gateway di pagamento disponibili. Riprova più tardi."
+    }
+  ],
+  "nhKZzR": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le credenziali di Produzione per i pagamenti reali, e non le credenziali della modalità Test."
+    }
+  ],
+  "ntDrY2": [
+    {
+      "type": 0,
+      "value": "Rilascia i file qui"
+    }
+  ],
+  "ntIlMj": [
+    {
+      "type": 0,
+      "value": "Nome"
+    }
+  ],
+  "nyf+Nu": [
+    {
+      "type": 0,
+      "value": "Messaggistica"
+    }
+  ],
+  "oDbRSf": [
+    {
+      "type": 0,
+      "value": "Trascina qui il logo o fai clic per cercare"
+    }
+  ],
+  "oG3zop": [
+    {
+      "type": 0,
+      "value": "Cancella numero di telefono"
+    }
+  ],
+  "oQ6S9i": [
+    {
+      "type": 0,
+      "value": "Nome del brand"
+    }
+  ],
+  "ocx71s": [
+    {
+      "type": 0,
+      "value": "La prenotazione "
+    },
+    {
+      "type": 1,
+      "value": "bookingId"
+    },
+    {
+      "type": 0,
+      "value": " ha impostato la disponibilità con stato "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "ogXEWD": [
+    {
+      "type": 0,
+      "value": "Copia ID struttura"
+    }
+  ],
+  "oo/YC7": [
+    {
+      "type": 0,
+      "value": "Indietro"
+    }
+  ],
+  "p+eukQ": [
+    {
+      "type": 0,
+      "value": "Ospite: 14,1 - 16,5%"
+    }
+  ],
+  "pBqc2F": [
+    {
+      "type": 0,
+      "value": "Il Merchant Code è obbligatorio"
+    }
+  ],
+  "pMXWp/": [
+    {
+      "type": 0,
+      "value": "Fuso orario di visualizzazione"
+    }
+  ],
+  "pXGhQw": [
+    {
+      "type": 0,
+      "value": "Dal menu in alto vai su \"Account\", quindi seleziona \"Settings\" dal menu a discesa."
+    }
+  ],
+  "pYdLI6": [
+    {
+      "type": 0,
+      "value": "Connessione non riuscita"
+    }
+  ],
+  "pp3eG5": [
+    {
+      "type": 0,
+      "value": "Le credenziali fornite non sono corrette. Verifica il tuo Merchant Code, il Terminal e la Signature Key e riprova."
+    }
+  ],
+  "q1+03r": [
+    {
+      "type": 0,
+      "value": "Seleziona lingue aggiuntive"
+    }
+  ],
+  "q2UBZy": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "struttura selezionata"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "strutture selezionate"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "qB/T8g": [
+    {
+      "type": 0,
+      "value": "Inserisci le credenziali API Authorize.net del tuo account esercente"
+    }
+  ],
+  "qErICT": [
+    {
+      "type": 0,
+      "value": "Pagato dall’ospite (prima)"
+    }
+  ],
+  "qLSweW": [
+    {
+      "type": 0,
+      "value": "Caricato"
+    }
+  ],
+  "qS74wR": [
+    {
+      "type": 0,
+      "value": "Il Client Secret della tua applicazione PayPal dal Developer Dashboard"
+    }
+  ],
+  "qTk3rP": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti in modo sicuro con PayU.in, il principale gateway di pagamento in India che supporta diversi metodi di pagamento, tra cui carte, UPI, net banking e wallet"
+    }
+  ],
+  "qilQYG": [
+    {
+      "type": 0,
+      "value": "Servizio eliminato correttamente."
+    }
+  ],
+  "qpDXUm": [
+    {
+      "type": 0,
+      "value": "Vai alla sezione \"Virtual POS Configuration\" o \"Configuración TPV Virtual\"."
+    }
+  ],
+  "r+yQE+": [
+    {
+      "type": 0,
+      "value": "Seleziona valuta"
+    }
+  ],
+  "r4Jebe": [
+    {
+      "type": 0,
+      "value": "Caricamento in corso..."
+    }
+  ],
+  "rDdMBr": [
+    {
+      "type": 0,
+      "value": "Connessione non riuscita"
+    }
+  ],
+  "rLWAAL": [
+    {
+      "type": 0,
+      "value": "Calendario"
+    }
+  ],
+  "rRpsqb": [
+    {
+      "type": 0,
+      "value": "Facoltativo"
+    }
+  ],
+  "rZvg97": [
+    {
+      "type": 0,
+      "value": "− La tua commissione host (3%)"
+    }
+  ],
+  "rv6bA0": [
+    {
+      "type": 0,
+      "value": "Il tuo Key ID API univoco fornito da Razorpay per autenticare le richieste API"
+    }
+  ],
+  "rwhoDv": [
+    {
+      "type": 0,
+      "value": "Integrazioni"
+    }
+  ],
+  "s4m994": [
+    {
+      "type": 0,
+      "value": "Esporta"
+    }
+  ],
+  "s5dtls": [
+    {
+      "type": 0,
+      "value": "Assicurati di utilizzare le chiavi in Live Mode (rzp_live_) per i pagamenti in produzione, e non le chiavi in Test Mode (rzp_test_)."
+    }
+  ],
+  "s6oEjd": [
+    {
+      "type": 0,
+      "value": "Impossibile aggiornare lo stato"
+    }
+  ],
+  "s9BGAO": [
+    {
+      "type": 0,
+      "value": "es. 37.774929"
+    }
+  ],
+  "sR8HuW": [
+    {
+      "type": 0,
+      "value": "Copia sia il Key ID che il Key Secret, quindi incollali nel modulo qui sopra per collegare il tuo account Razorpay a Rentalwise."
+    }
+  ],
+  "sTtBm4": [
+    {
+      "type": 0,
+      "value": "Collega account Xmoney"
+    }
+  ],
+  "sW0C5+": [
+    {
+      "type": 0,
+      "value": "Collega account Razorpay"
+    }
+  ],
+  "sW8CTD": [
+    {
+      "type": 0,
+      "value": "Accettati: "
+    },
+    {
+      "type": 1,
+      "value": "types"
+    }
+  ],
+  "sbeE6m": [
+    {
+      "type": 0,
+      "value": "Gestione diretta dei rimborsi"
+    }
+  ],
+  "sgXEFE": [
+    {
+      "type": 0,
+      "value": "Continua"
+    }
+  ],
+  "shuc96": [
+    {
+      "type": 0,
+      "value": "Trascina qui il nuovo logo o clicca per sostituirlo."
+    }
+  ],
+  "soTKGn": [
+    {
+      "type": 0,
+      "value": "Segui questi passaggi per ottenere le tue credenziali Xmoney e configurare il tuo gateway di pagamento in criptovaluta"
+    }
+  ],
+  "t42aKR": [
+    {
+      "type": 0,
+      "value": "Rigida (consigliata)"
+    }
+  ],
+  "t5xsxX": [
+    {
+      "type": 0,
+      "value": "Prenotazioni"
+    }
+  ],
+  "tAeD+O": [
+    {
+      "type": 0,
+      "value": "Seleziona la tua valuta predefinita (in genere USD per le aziende con sede negli Stati Uniti) e tutte le valute che desideri accettare."
+    }
+  ],
+  "tCSwzO": [
+    {
+      "type": 0,
+      "value": "Seleziona un account..."
+    }
+  ],
+  "tHJmFA": [
+    {
+      "type": 0,
+      "value": "Tutti i file sono stati caricati correttamente!"
+    }
+  ],
+  "tN9vEy": [
+    {
+      "type": 0,
+      "value": "Salta per ora"
+    }
+  ],
+  "tTrQFe": [
+    {
+      "type": 0,
+      "value": "Apertura di Stripe in corso"
+    }
+  ],
+  "tqRV1/": [
+    {
+      "type": 0,
+      "value": "La tariffa deve essere un numero positivo"
+    }
+  ],
+  "ts0cV6": [
+    {
+      "type": 0,
+      "value": "Applica"
+    }
+  ],
+  "uCQNym": [
+    {
+      "type": 0,
+      "value": "Caricamento in corso..."
+    }
+  ],
+  "uDc/J3": [
+    {
+      "type": 0,
+      "value": "Per collegare il tuo account Redsys, devi recuperare le credenziali del tuo POS virtuale dal tuo account Redsys:"
+    }
+  ],
+  "uIUj6k": [
+    {
+      "type": 0,
+      "value": "Cerca paese..."
+    }
+  ],
+  "uJ7wsj": [
+    {
+      "type": 0,
+      "value": "Per collegare il tuo account Xmoney, devi recuperare le credenziali API dalla tua dashboard esercente:"
+    }
+  ],
+  "udRCBk": [
+    {
+      "type": 0,
+      "value": "Copia sia l’API Key che il Webhook Secret, quindi incollali nel modulo qui sopra per collegare il tuo account Xmoney."
+    }
+  ],
+  "udhwJm": [
+    {
+      "type": 0,
+      "value": "Collega il tuo account Airbnb per importare automaticamente le proprietà, sincronizzare i calendari e gestire tutte le prenotazioni da un’unica piattaforma."
+    }
+  ],
+  "ue2TrB": [
+    {
+      "type": 0,
+      "value": "Home"
+    }
+  ],
+  "uhZWOr": [
+    {
+      "type": 0,
+      "value": "Applicheremo un ricarico automatico per mantenere i tuoi guadagni quando sincronizzi con il nostro PMS. "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Come funziona →"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    }
+  ],
+  "uje8KK": [
+    {
+      "type": 0,
+      "value": "Mar"
+    }
+  ],
+  "ur0YL9": [
+    {
+      "type": 0,
+      "value": "Non rimborsabile nelle 24 ore precedenti il check-in"
+    }
+  ],
+  "uskQOw": [
+    {
+      "type": 0,
+      "value": "La finestra di connessione a Stripe è stata bloccata dal tuo browser. Consenti i popup per questo sito e riprova."
+    }
+  ],
+  "uxZY0q": [
+    {
+      "type": 0,
+      "value": "Segui questi passaggi per ottenere le tue credenziali API PayPal"
+    }
+  ],
+  "v/zF5n": [
+    {
+      "type": 0,
+      "value": "ospite"
+    }
+  ],
+  "v8XMQI": [
+    {
+      "type": 0,
+      "value": "Nessun rimborso per cancellazioni effettuate in qualsiasi momento"
+    }
+  ],
+  "vLl8sK": [
+    {
+      "type": 0,
+      "value": "Mer"
+    }
+  ],
+  "vRq6TW": [
+    {
+      "type": 0,
+      "value": "Rimborso del 50% se la cancellazione avviene tra 7 e 30 giorni prima del check-in"
+    }
+  ],
+  "vg4y7u": [
+    {
+      "type": 0,
+      "value": "Host: ~3%"
+    }
+  ],
+  "vt+Kki": [
+    {
+      "type": 0,
+      "value": "Seleziona il paese"
+    }
+  ],
+  "vzVrA1": [
+    {
+      "type": 0,
+      "value": "Crea in pochi secondi un contratto di locazione personalizzato con l’AI e poi adattalo alle tue esigenze."
+    }
+  ],
+  "w/sV1T": [
+    {
+      "type": 0,
+      "value": "Pagine"
+    }
+  ],
+  "wS0SOT": [
+    {
+      "type": 0,
+      "value": "Pagato dall’ospite (dopo)"
+    }
+  ],
+  "wb519+": [
+    {
+      "type": 0,
+      "value": "Se l’API Key e il Webhook Secret non sono ancora visibili, fai clic sul pulsante \"Generate secrets\"."
+    }
+  ],
+  "wiPTGZ": [
+    {
+      "type": 0,
+      "value": "Collega account Redsys"
+    }
+  ],
+  "wvKs1e": [
+    {
+      "type": 0,
+      "value": "Impossibile aggiornare lo stato in evidenza"
+    }
+  ],
+  "wyAmDY": [
+    {
+      "type": 0,
+      "value": "Accetta pagamenti in modo sicuro con Razorpay, il principale gateway di pagamento in India che supporta diversi metodi di pagamento, tra cui carte, UPI, net banking e wallet digitali"
+    }
+  ],
+  "x1zJ+4": [
+    {
+      "type": 0,
+      "value": "Carica"
+    }
+  ],
+  "x4fZqk": [
+    {
+      "type": 0,
+      "value": "Mantieni la tua Signature Key al sicuro e non condividerla mai pubblicamente. Viene utilizzata per autenticare tutte le transazioni."
+    }
+  ],
+  "xPxl8b": [
+    {
+      "type": 0,
+      "value": "Salvataggio dei metodi di pagamento"
+    }
+  ],
+  "xUHkcy": [
+    {
+      "type": 0,
+      "value": "Il nome del brand è obbligatorio"
+    }
+  ],
+  "xjxLNM": [
+    {
+      "type": 0,
+      "value": "Connessione non riuscita"
+    }
+  ],
+  "xpO5Wj": [
+    {
+      "type": 0,
+      "value": "Non cambia nulla, cambia solo dove compare la commissione"
+    }
+  ],
+  "xy7KyL": [
+    {
+      "type": 0,
+      "value": "Impossibile caricare gli account. Riprova."
+    }
+  ],
+  "y53dco": [
+    {
+      "type": 0,
+      "value": "Alla voce \"Type of integration\", seleziona \"Custom\" dal menu a discesa."
+    }
+  ],
+  "y6/xbw": [
+    {
+      "type": 0,
+      "value": "Host principale"
+    }
+  ],
+  "yO01eS": [
+    {
+      "type": 0,
+      "value": "Controlla il modulo: sono presenti errori"
+    }
+  ],
+  "yf0n+T": [
+    {
+      "type": 0,
+      "value": "Indietro"
+    }
+  ],
+  "ykVfMx": [
+    {
+      "type": 0,
+      "value": "Nome"
+    }
+  ],
+  "yspnIi": [
+    {
+      "type": 0,
+      "value": "Account Xmoney"
+    }
+  ],
+  "yv1I7k": [
+    {
+      "type": 0,
+      "value": "Torna indietro"
+    }
+  ],
+  "yzg2T4": [
+    {
+      "type": 0,
+      "value": "Seleziona il tuo provider di pagamento preferito"
+    }
+  ],
+  "z7saLl": [
+    {
+      "type": 0,
+      "value": "Le credenziali inserite non sono corrette. Verifica il tuo Merchant Key e il tuo Merchant Salt e riprova."
+    }
+  ],
+  "zBjeyG": [
+    {
+      "type": 0,
+      "value": "Il Client Secret è obbligatorio"
+    }
+  ],
+  "zCEFXQ": [
+    {
+      "type": 0,
+      "value": "La data di fine deve essere successiva alla data di inizio"
+    }
+  ],
+  "zOoftm": [
+    {
+      "type": 0,
+      "value": "profilo"
+    }
+  ],
+  "zSDtWg": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "lingua"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "lingue"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " selezionata/e"
+    }
+  ],
+  "zpO4iy": [
+    {
+      "type": 0,
+      "value": "Descrivi eventuali altre clausole specifiche, politiche o dettagli che desideri includere nel contratto"
+    }
+  ],
+  "zqYE4R": [
+    {
+      "type": 0,
+      "value": "Occupazione"
+    }
+  ],
+  "zsf2V4": [
+    {
+      "type": 0,
+      "value": "es. Sunset Beach Rentals"
+    }
+  ],
+  "zv3k/l": [
+    {
+      "type": 0,
+      "value": "Collega conto PayPal"
+    }
+  ]
+}

@@ -31,6 +31,8 @@ export interface MultiLanguageTextareaProps {
     rows?: number;
     /** Maximum character limit per language */
     maxCharacters?: number;
+    /** Minimum character requirement per language */
+    minCharacters?: number;
     /** Show character count */
     showCount?: boolean;
     /** Warning threshold percentage (0-1) */
@@ -52,11 +54,11 @@ export interface MultiLanguageTextareaProps {
  * - Visual indicator (dot) for tabs with content
  * - Character counter with limit validation (per language)
  * - Visual feedback (warning/error states) for character limits
- * - Vertical tab layout using LanguageTabs component
+ * - Horizontal tab layout (tabs on top)
  * - Content preserved when switching languages
  * - Works with React Hook Form and InputWrapper
  * - Fully accessible with ARIA attributes
- * - Mobile responsive with language label
+ * - Mobile responsive
  *
  * @example
  * ```tsx
@@ -77,6 +79,7 @@ export interface MultiLanguageTextareaProps {
  * <MultiLanguageTextarea
  *   value={value}
  *   onChange={setValue}
+ *   minCharacters={10}
  *   maxCharacters={500}
  *   placeholder="Enter description..."
  * />
@@ -124,6 +127,7 @@ export const MultiLanguageTextarea = React.memo(
                 maxHeight,
                 rows = 4,
                 maxCharacters,
+                minCharacters,
                 showCount = true,
                 warningThreshold = 0.8,
                 "data-testid": dataTestId,
@@ -170,7 +174,10 @@ export const MultiLanguageTextarea = React.memo(
                     onChange={setSelectedLocale}
                     disabled={disabled}
                     error={error}
+                    orientation="horizontal"
                     className={className}
+                    minCharacters={minCharacters}
+                    maxCharacters={maxCharacters}
                     data-testid={dataTestId}
                 >
                     <textarea
@@ -200,6 +207,7 @@ export const MultiLanguageTextarea = React.memo(
                     {/* Character Counter */}
                     <CharacterCounter
                         characterCount={currentText?.length || 0}
+                        minCharacters={minCharacters}
                         maxCharacters={maxCharacters}
                         showCount={showCount}
                         warningThreshold={warningThreshold}

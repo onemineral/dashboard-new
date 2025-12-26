@@ -1,0 +1,43 @@
+{
+    "name": "@onemineral/pms-js-sdk",
+    "version": "0.2.5",
+    "description": "One Mineral PMS Javascript SDK",
+    "type": "module",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "typings": "dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.cts",
+                "default": "./dist/cjs/index.cjs"
+            }
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist/"
+    ],
+    "author": "team@onemineral.com",
+    "license": "MIT",
+    "scripts": {
+        "generate": "pms-js-sdk-generator --schema ./data/schema.json --tsConfig tsconfig-base.json",
+        "format": "",
+        "build": "rm -rf dist/* && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json && node ./scripts/fix-imports.js && node ./scripts/rename-cjs.js"
+    },
+    "devDependencies": {
+        "@onemineral/pms-js-sdk-generator": "file:../generator",
+        "@types/lodash.merge": "^4.6.6",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "form-data": "^4.0.0",
+        "lodash.merge": "^4.6.2",
+        "tslib": "^2.3.1"
+    }
+}

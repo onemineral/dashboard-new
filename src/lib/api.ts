@@ -1,5 +1,5 @@
-import { newPmsClient } from '@onemineral/pms-js-sdk';
 import {config} from "@/config.ts";
+import {newPmsClient} from "@sdk/index";
 
 const api = newPmsClient({
     baseURL: config.appUrl + '/rest/',

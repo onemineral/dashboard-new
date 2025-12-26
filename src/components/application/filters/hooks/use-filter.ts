@@ -6,7 +6,7 @@ export function useFilter() {
 
     const remove = ()=> {
         if(settings.featured) {
-            addFilter(null, null);
+            addFilter(undefined, undefined);
         } else {
             removeFilter();
         }

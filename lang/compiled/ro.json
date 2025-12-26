@@ -1,0 +1,4199 @@
+{
+  "++Xb5Q": [
+    {
+      "type": 0,
+      "value": "Identificatorul unic de comerciant (FUC) furnizat de Redsys, de obicei format din 9 cifre"
+    }
+  ],
+  "+0teqB": [
+    {
+      "type": 0,
+      "value": "Numărul de terminal atribuit de Redsys (de obicei „1” pentru configurațiile cu un singur terminal)"
+    }
+  ],
+  "+TZnSI": [
+    {
+      "type": 0,
+      "value": "cazare"
+    }
+  ],
+  "+crfr6": [
+    {
+      "type": 0,
+      "value": "Păstrați Merchant Salt în siguranță și nu îl distribuiți niciodată public. Este folosit pentru a genera hash‑uri securizate pentru toate solicitările de plată către contul dvs."
+    }
+  ],
+  "+dSPvA": [
+    {
+      "type": 0,
+      "value": "Panoul de dezvoltare PayPal (PayPal Developer Dashboard)"
+    }
+  ],
+  "+efOJ6": [
+    {
+      "type": 0,
+      "value": "Sâm"
+    }
+  ],
+  "+mL9Gz": [
+    {
+      "type": 0,
+      "value": "Actualizează disponibilitatea"
+    }
+  ],
+  "+o1ZCY": [
+    {
+      "type": 0,
+      "value": "Telefon"
+    }
+  ],
+  "+qKl8A": [
+    {
+      "type": 0,
+      "value": "Resetează"
+    }
+  ],
+  "+sCbso": [
+    {
+      "type": 0,
+      "value": "Cod fiscal / Cod TVA"
+    }
+  ],
+  "+sFjDr": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu."
+    }
+  ],
+  "+ssSkh": [
+    {
+      "type": 0,
+      "value": "Aveți nevoie de ajutor pentru a găsi datele de autentificare Xmoney? Consultați instrucțiunile de configurare"
+    }
+  ],
+  "+uGQkt": [
+    {
+      "type": 0,
+      "value": "*"
+    }
+  ],
+  "/12tKm": [
+    {
+      "type": 0,
+      "value": "API Login ID este obligatoriu"
+    }
+  ],
+  "/8YgtH": [
+    {
+      "type": 0,
+      "value": "Înainte"
+    }
+  ],
+  "/LSOfM": [
+    {
+      "type": 0,
+      "value": "ID-ul unic API Login furnizat de Authorize.net pentru autentificarea prin API"
+    }
+  ],
+  "/XtBEU": [
+    {
+      "type": 0,
+      "value": "Pentru a conecta contul Razorpay, trebuie să obțineți datele API din panoul dvs. de control:"
+    }
+  ],
+  "/fzYxb": [
+    {
+      "type": 0,
+      "value": "Nu există monede disponibile"
+    }
+  ],
+  "/myRRj": [
+    {
+      "type": 0,
+      "value": "Autentificați-vă în "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " folosind datele dvs. de comerciant."
+    }
+  ],
+  "/qhPPc": [
+    {
+      "type": 0,
+      "value": "Elimină fișierul"
+    }
+  ],
+  "/rTtyJ": [
+    {
+      "type": 0,
+      "value": "Nume de familie"
+    }
+  ],
+  "0/tQuf": [
+    {
+      "type": 0,
+      "value": "La conectarea prin API, Airbnb trece automat anunțurile tale pe structura de comision doar pentru gazdă (15,5% în loc de 3%). Noi compensăm prin ajustarea prețurilor, astfel încât oaspeții să plătească aceeași sumă, iar tu să încasezi același venit."
+    }
+  ],
+  "05N7am": [
+    {
+      "type": 0,
+      "value": "client"
+    }
+  ],
+  "0GT0SI": [
+    {
+      "type": 0,
+      "value": "Anulează"
+    }
+  ],
+  "0ICrVM": [
+    {
+      "type": 0,
+      "value": "Key ID este obligatoriu"
+    }
+  ],
+  "0KIYiv": [
+    {
+      "type": 0,
+      "value": "analize"
+    }
+  ],
+  "0TZhGi": [
+    {
+      "type": 0,
+      "value": "program"
+    }
+  ],
+  "0U3uEj": [
+    {
+      "type": 0,
+      "value": "Dacă nu aveți încă nicio cheie API, faceți clic pe „Generate Key” pentru a crea o nouă pereche de chei."
+    }
+  ],
+  "0d4QCF": [
+    {
+      "type": 0,
+      "value": "Comision împărțit"
+    }
+  ],
+  "0f/taE": [
+    {
+      "type": 0,
+      "value": "Selectează moneda ta implicită (de obicei EUR pentru Spania) și toate monedele pe care vrei să le accepți."
+    }
+  ],
+  "0kZeTh": [
+    {
+      "type": 0,
+      "value": "Conectează contul Redsys"
+    }
+  ],
+  "0lWa8l": [
+    {
+      "type": 0,
+      "value": "Iată de ce ajustarea prețurilor tale pe Airbnb nu schimbă nimic pentru tine sau pentru oaspeți."
+    }
+  ],
+  "0lgY8w": [
+    {
+      "type": 0,
+      "value": "Salvare metode de plată (Save payment methods – pentru stocarea metodelor de plată)"
+    }
+  ],
+  "0mhGN1": [
+    {
+      "type": 0,
+      "value": "Faceți clic pe „Account Credentials” sau „API Keys” în secțiunea Settings."
+    }
+  ],
+  "0nDVG5": [
+    {
+      "type": 0,
+      "value": "Cheie API"
+    }
+  ],
+  "0uEyPn": [
+    {
+      "type": 0,
+      "value": "Reguli principale ale casei"
+    }
+  ],
+  "1+Njhd": [
+    {
+      "type": 0,
+      "value": "Monedă de afișare"
+    }
+  ],
+  "1IwVJ/": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu."
+    }
+  ],
+  "1ME8gM": [
+    {
+      "type": 0,
+      "value": "Se salvează..."
+    }
+  ],
+  "1c7Eg9": [
+    {
+      "type": 0,
+      "value": "Oaspete: 0%"
+    }
+  ],
+  "1dOd3r": [
+    {
+      "type": 0,
+      "value": "Găsește „Merchant Code” (FUC - Código de comercio), de obicei un număr din 9 cifre."
+    }
+  ],
+  "1kryhX": [
+    {
+      "type": 0,
+      "value": "Client ID"
+    }
+  ],
+  "1qWnpo": [
+    {
+      "type": 0,
+      "value": "Veți vedea Merchant Key (numită și API Key). Aceasta este o identificare unică pentru contul dvs. de comerciant. Copiați această valoare."
+    }
+  ],
+  "1tn+ul": [
+    {
+      "type": 0,
+      "value": "+ comision oaspete Airbnb"
+    }
+  ],
+  "1zU6LU": [
+    {
+      "type": 0,
+      "value": "Coordonată latitudine"
+    }
+  ],
+  "29UOKo": [
+    {
+      "type": 0,
+      "value": "Înainte"
+    }
+  ],
+  "2BRner": [
+    {
+      "type": 0,
+      "value": "Contract de închiriere în regim hotelier"
+    }
+  ],
+  "2HHm1c": [
+    {
+      "type": 0,
+      "value": "Aveți nevoie de ajutor pentru a găsi datele de autentificare Authorize.net? Consultați instrucțiunile de configurare"
+    }
+  ],
+  "2XJblv": [
+    {
+      "type": 0,
+      "value": "Recomandată"
+    }
+  ],
+  "2YpiUO": [
+    {
+      "type": 0,
+      "value": "Key Secret este obligatoriu"
+    }
+  ],
+  "2kAsyS": [
+    {
+      "type": 0,
+      "value": "După autentificare, accesați „Settings” din meniul din bara laterală stângă."
+    }
+  ],
+  "2n0X8r": [
+    {
+      "type": 0,
+      "value": "Urmați acești pași pentru a obține datele de autentificare Authorize.net și pentru a configura procesatorul de plăți"
+    }
+  ],
+  "3+LMGK": [
+    {
+      "type": 0,
+      "value": "Cohost"
+    }
+  ],
+  "30erry": [
+    {
+      "type": 0,
+      "value": "Panou comerciant PayU.in"
+    }
+  ],
+  "356Com": [
+    {
+      "type": 0,
+      "value": "Restricție check-in"
+    }
+  ],
+  "3FLph+": [
+    {
+      "type": 0,
+      "value": "Dimensiune maximă: "
+    },
+    {
+      "type": 1,
+      "value": "size"
+    }
+  ],
+  "3K7lCg": [
+    {
+      "type": 0,
+      "value": "Faceți clic pe „API Keys” în secțiunea Settings."
+    }
+  ],
+  "3KbOCN": [
+    {
+      "type": 0,
+      "value": "Să configurăm setările principale"
+    }
+  ],
+  "3OaIGu": [
+    {
+      "type": 0,
+      "value": "Proprietăți"
+    }
+  ],
+  "3QtHMq": [
+    {
+      "type": 0,
+      "value": "Aveți nevoie de ajutor pentru a găsi datele de autentificare PayU.in? Consultați instrucțiunile de configurare"
+    }
+  ],
+  "3UtT5H": [
+    {
+      "type": 0,
+      "value": "Continuă"
+    }
+  ],
+  "3VDEsx": [
+    {
+      "type": 0,
+      "value": "Recomandată"
+    }
+  ],
+  "3Zued9": [
+    {
+      "type": 0,
+      "value": "Șterge fișierul"
+    }
+  ],
+  "3kCp+u": [
+    {
+      "type": 0,
+      "value": "Urmează acești pași pentru a obține datele tale de conectare Redsys și pentru a configura procesatorul de plăți"
+    }
+  ],
+  "3kEEA8": [
+    {
+      "type": 0,
+      "value": "Procesare carduri de credit OTA"
+    }
+  ],
+  "3kIgh3": [
+    {
+      "type": 0,
+      "value": "Prenume"
+    }
+  ],
+  "3mStAG": [
+    {
+      "type": 0,
+      "value": "Aplică"
+    }
+  ],
+  "3s3IxJ": [
+    {
+      "type": 0,
+      "value": "Importul iCal din "
+    },
+    {
+      "type": 1,
+      "value": "icalName"
+    },
+    {
+      "type": 0,
+      "value": " a actualizat starea disponibilității la "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "42j2Yl": [
+    {
+      "type": 0,
+      "value": "Importă și gestionează rezervările fără efort"
+    }
+  ],
+  "4Ap+k9": [
+    {
+      "type": 0,
+      "value": "Se conectează..."
+    }
+  ],
+  "4DvW3w": [
+    {
+      "type": 0,
+      "value": "Contract prietenos pentru oaspeți, destinat sejururilor scurte (1–30 nopți). Ideal pentru rezervări prin Airbnb, VRBO sau direct. Acoperă garanțiile, politica de anulare, procedurile de check-in/check-out, regulile casei și responsabilitățile oaspeților."
+    }
+  ],
+  "4Gg0C7": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Te rugăm să încerci din nou mai târziu."
+    }
+  ],
+  "4JR3Dt": [
+    {
+      "type": 0,
+      "value": "Conectare eșuată"
+    }
+  ],
+  "4JuKSp": [
+    {
+      "type": 0,
+      "value": "Istoric disponibilitate"
+    }
+  ],
+  "4Nlmyz": [
+    {
+      "type": 0,
+      "value": "Selectează țara"
+    }
+  ],
+  "4SR2Qh": [
+    {
+      "type": 0,
+      "value": "Zi"
+    }
+  ],
+  "4Ucygo": [
+    {
+      "type": 0,
+      "value": "Se conectează..."
+    }
+  ],
+  "4ZLWca": [
+    {
+      "type": 0,
+      "value": "Caută adresă..."
+    }
+  ],
+  "4ZNYGb": [
+    {
+      "type": 0,
+      "value": "Vin"
+    }
+  ],
+  "4gfoGt": [
+    {
+      "type": 0,
+      "value": "ID"
+    }
+  ],
+  "4hPHpa": [
+    {
+      "type": 0,
+      "value": "Transaction Key este obligatoriu"
+    }
+  ],
+  "4vuqmI": [
+    {
+      "type": 0,
+      "value": "Bine ai venit la bord! Să facem setările inițiale"
+    }
+  ],
+  "5+u2og": [
+    {
+      "type": 0,
+      "value": "Nu s-au putut încărca statusurile de disponibilitate"
+    }
+  ],
+  "55mCjK": [
+    {
+      "type": 0,
+      "value": "Caută proprietăți..."
+    }
+  ],
+  "56bErq": [
+    {
+      "type": 0,
+      "value": "Dată de sfârșit invalidă"
+    }
+  ],
+  "5DkMof": [
+    {
+      "type": 0,
+      "value": "Selectează limba interfeței"
+    }
+  ],
+  "5EFbSV": [
+    {
+      "type": 0,
+      "value": "Acceptă plăți în siguranță cu PayPal"
+    }
+  ],
+  "5G+3FI": [
+    {
+      "type": 0,
+      "value": "Nu a fost găsit niciun cont."
+    }
+  ],
+  "5LH+O5": [
+    {
+      "type": 0,
+      "value": "Tariful trebuie să fie un număr valid"
+    }
+  ],
+  "5OlbLO": [
+    {
+      "type": 0,
+      "value": "Înapoi"
+    }
+  ],
+  "5PMMrN": [
+    {
+      "type": 0,
+      "value": "Numele brandului trebuie să aibă cel puțin 2 caractere"
+    }
+  ],
+  "5UlhKh": [
+    {
+      "type": 0,
+      "value": "Adresă companie"
+    }
+  ],
+  "5WWihP": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "fișier selectat"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "fișiere selectate"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "5iOMya": [
+    {
+      "type": 0,
+      "value": "Nu a fost găsită nicio țară."
+    }
+  ],
+  "5rFDAN": [
+    {
+      "type": 0,
+      "value": "Descrieți tipul de contract personalizat"
+    }
+  ],
+  "65M3eA": [
+    {
+      "type": 0,
+      "value": "Descrieți termenii de anulare și politica de rambursare"
+    }
+  ],
+  "66+pWG": [
+    {
+      "type": 0,
+      "value": "Reguli suplimentare ale casei"
+    }
+  ],
+  "66uz/9": [
+    {
+      "type": 0,
+      "value": "După"
+    }
+  ],
+  "6BVS0B": [
+    {
+      "type": 0,
+      "value": "Cheie de semnătură (SHA-256)"
+    }
+  ],
+  "6CXY7+": [
+    {
+      "type": 0,
+      "value": "Data de început trebuie să fie după "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "6CZ2VT": [
+    {
+      "type": 0,
+      "value": "Câștigurile tale rămân neschimbate"
+    }
+  ],
+  "6QOz2B": [
+    {
+      "type": 0,
+      "value": "Monede acceptate"
+    }
+  ],
+  "6V7n+L": [
+    {
+      "type": 0,
+      "value": "Resetează"
+    }
+  ],
+  "6YI4kg": [
+    {
+      "type": 0,
+      "value": "Navighează la „Aplicații și credențiale” (Apps & Credentials) din meniul de sus."
+    }
+  ],
+  "6aZ6oU": [
+    {
+      "type": 0,
+      "value": "Selectează toate monedele pe care acest procesator de plăți le poate accepta. Sumele în alte monede vor fi convertite în moneda implicită în momentul procesării."
+    }
+  ],
+  "6hqX55": [
+    {
+      "type": 0,
+      "value": "Elimină "
+    },
+    {
+      "type": 1,
+      "value": "fileName"
+    }
+  ],
+  "6jBqKO": [
+    {
+      "type": 0,
+      "value": "Conectare eșuată"
+    }
+  ],
+  "6oqioY": [
+    {
+      "type": 0,
+      "value": "Da"
+    }
+  ],
+  "6tO6oi": [
+    {
+      "type": 0,
+      "value": "Tariful tău afișat"
+    }
+  ],
+  "70DkFz": [
+    {
+      "type": 0,
+      "value": "Personalizat"
+    }
+  ],
+  "735/I6": [
+    {
+      "type": 0,
+      "value": "Limbi suplimentare"
+    }
+  ],
+  "764Jrf": [
+    {
+      "type": 0,
+      "value": "Cheie secretă folosită pentru a verifica autenticitatea webhook-urilor și pentru a securiza notificările de plată. Păstrați-o confidențială și nu o distribuiți niciodată public."
+    }
+  ],
+  "79R694": [
+    {
+      "type": 0,
+      "value": "Actualizarea disponibilității a eșuat"
+    }
+  ],
+  "7LCyD2": [
+    {
+      "type": 0,
+      "value": "Selectează limba implicită"
+    }
+  ],
+  "7RfiVr": [
+    {
+      "type": 0,
+      "value": "Fereastră pop-up blocată"
+    }
+  ],
+  "7S9iXq": [
+    {
+      "type": 0,
+      "value": "Introduceți datele API PayU.in din panoul dvs. de comerciant"
+    }
+  ],
+  "7T1liF": [
+    {
+      "type": 0,
+      "value": "Merchant Salt este obligatoriu"
+    }
+  ],
+  "7U1n7w": [
+    {
+      "type": 0,
+      "value": "Generează contractul tău de închiriere"
+    }
+  ],
+  "7eul9b": [
+    {
+      "type": 0,
+      "value": "Webhook Secret"
+    }
+  ],
+  "7jmAkN": [
+    {
+      "type": 0,
+      "value": "Aveți nevoie de ajutor pentru a găsi datele de autentificare Razorpay? Consultați instrucțiunile de configurare"
+    }
+  ],
+  "7qDNyf": [
+    {
+      "type": 0,
+      "value": "Configurarea nu a putut fi încărcată"
+    }
+  ],
+  "82It5E": [
+    {
+      "type": 0,
+      "value": "Selectează o proprietate..."
+    }
+  ],
+  "88kNaO": [
+    {
+      "type": 0,
+      "value": "Conectare eșuată"
+    }
+  ],
+  "88zIRQ": [
+    {
+      "type": 0,
+      "value": "Se deschide fereastra de autorizare Stripe..."
+    }
+  ],
+  "8C+PAW": [
+    {
+      "type": 0,
+      "value": "Cod hex"
+    }
+  ],
+  "8FdIpV": [
+    {
+      "type": 0,
+      "value": "Se conectează..."
+    }
+  ],
+  "8H9gfX": [
+    {
+      "type": 0,
+      "value": "Fără fumat"
+    }
+  ],
+  "8LIDP6": [
+    {
+      "type": 0,
+      "value": "Transaction Key"
+    }
+  ],
+  "8TIbvo": [
+    {
+      "type": 0,
+      "value": "Această politică se va aplica rezervărilor de pe site-ul tău și de pe VRBO. Alte OTA-uri, precum Airbnb și Booking.com, au propriile politici de anulare, care se vor aplica în schimb."
+    }
+  ],
+  "8U6PX5": [
+    {
+      "type": 0,
+      "value": "Selector interval de date"
+    }
+  ],
+  "8WjQyt": [
+    {
+      "type": 0,
+      "value": "Autentifică-te în "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " folosind datele tale bancare."
+    }
+  ],
+  "8f+bQB": [
+    {
+      "type": 0,
+      "value": "Logo brand"
+    }
+  ],
+  "8jvJ2a": [
+    {
+      "type": 0,
+      "value": "rezervare"
+    }
+  ],
+  "8khNNy": [
+    {
+      "type": 0,
+      "value": "Structură de comision împărțit"
+    }
+  ],
+  "8m2mNb": [
+    {
+      "type": 0,
+      "value": "Conectează-te la Airbnb"
+    }
+  ],
+  "8rC+q+": [
+    {
+      "type": 0,
+      "value": "Asigurați-vă că folosiți cheile pentru mediul corect: pentru plăți în producție utilizați cheile de „Live Mode” (rzp_live_), nu cheile de „Test Mode” (rzp_test_)."
+    }
+  ],
+  "8rPgs4": [
+    {
+      "type": 0,
+      "value": "Introdu datele de comerciant Redsys din configurația TPV-ului tău virtual (Virtual POS)"
+    }
+  ],
+  "957I9k": [
+    {
+      "type": 0,
+      "value": "Selectează țara"
+    }
+  ],
+  "95bDjd": [
+    {
+      "type": 0,
+      "value": "Contul dvs. Authorize.net a fost conectat cu succes și este gata să proceseze plăți."
+    }
+  ],
+  "9GzCSL": [
+    {
+      "type": 0,
+      "value": "Stare actualizată"
+    }
+  ],
+  "9HQrgV": [
+    {
+      "type": 0,
+      "value": "Lăsați necompletat dacă nu operați printr-o firmă."
+    }
+  ],
+  "9JT9XF": [
+    {
+      "type": 0,
+      "value": "Date de autentificare Authorize.net"
+    }
+  ],
+  "9M/Nz4": [
+    {
+      "type": 0,
+      "value": "Nume"
+    }
+  ],
+  "9YTW5G": [
+    {
+      "type": 0,
+      "value": "Mai multe pagini"
+    }
+  ],
+  "9Zp2R9": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu."
+    }
+  ],
+  "9ahmSP": [
+    {
+      "type": 0,
+      "value": "Copiați datele de autentificare și inserați-le în formular pentru a vă conecta contul Authorize.net."
+    }
+  ],
+  "9kRCfP": [
+    {
+      "type": 0,
+      "value": "Acceptați plăți în siguranță cu Stripe, una dintre principalele platforme de plăți, cu suport pentru carduri de credit, carduri de debit, portofele digitale și metode locale de plată la nivel global"
+    }
+  ],
+  "9kq+V8": [
+    {
+      "type": 0,
+      "value": "Conectează-te la Airbnb"
+    }
+  ],
+  "9xRnJR": [
+    {
+      "type": 0,
+      "value": "Cum doriți să gestionați datele selectate?"
+    }
+  ],
+  "A+xeP3": [
+    {
+      "type": 0,
+      "value": "Stare proprietate"
+    }
+  ],
+  "AJ3+Af": [
+    {
+      "type": 0,
+      "value": "Acceptați plăți în criptomonede cu Xmoney, cu suport pentru Bitcoin, Ethereum, USDT și alte criptomonede importante, cu decontare instantanee"
+    }
+  ],
+  "ARaLjq": [
+    {
+      "type": 0,
+      "value": "Este necesară includerea domeniilor în lista albă"
+    }
+  ],
+  "AqvmOj": [
+    {
+      "type": 0,
+      "value": "Calendar"
+    }
+  ],
+  "ArD4uQ": [
+    {
+      "type": 0,
+      "value": "ex.: RO123456789 sau EIN 12-3456789"
+    }
+  ],
+  "Aso6At": [
+    {
+      "type": 0,
+      "value": "Asigură-te că TPV-ul tău virtual este configurat în modul de integrare „REST API”."
+    }
+  ],
+  "AvzD7r": [
+    {
+      "type": 0,
+      "value": "Se încarcă lista de țări..."
+    }
+  ],
+  "B34Ye5": [
+    {
+      "type": 0,
+      "value": "ex.: includeți reguli de siguranță pentru jacuzzi, menționați politica de parcare pentru 2 mașini, adăugați o clauză despre respectarea vecinilor, explicați taxele pentru încălzirea piscinei..."
+    }
+  ],
+  "B3EMvw": [
+    {
+      "type": 0,
+      "value": "Găsește numărul „Terminal” (Número de terminal), de obicei „1” pentru configurațiile standard."
+    }
+  ],
+  "B4uXBC": [
+    {
+      "type": 0,
+      "value": "Sejurul minim trebuie să fie un număr valid"
+    }
+  ],
+  "B7m04Z": [
+    {
+      "type": 0,
+      "value": "Dată de început invalidă"
+    }
+  ],
+  "BEWkMT": [
+    {
+      "type": 0,
+      "value": "disponibilitate"
+    }
+  ],
+  "BFYTcS": [
+    {
+      "type": 0,
+      "value": "Conectează-ți contul Airbnb pentru a sincroniza automat proprietățile și rezervările."
+    }
+  ],
+  "BJM1Kd": [
+    {
+      "type": 0,
+      "value": "Veți vedea acum API Key (începe cu „u_live_api_” pentru modul live sau „u_test_api_” pentru modul de test). Copiați această valoare."
+    }
+  ],
+  "BQCp+E": [
+    {
+      "type": 0,
+      "value": "Conectat cu succes"
+    }
+  ],
+  "BSWE9u": [
+    {
+      "type": 0,
+      "value": "date"
+    }
+  ],
+  "Ba3d8z": [
+    {
+      "type": 0,
+      "value": "Profilul meu"
+    }
+  ],
+  "BcQIVG": [
+    {
+      "type": 0,
+      "value": "Caută țări..."
+    }
+  ],
+  "Bi53tf": [
+    {
+      "type": 0,
+      "value": "Personalizat"
+    }
+  ],
+  "BlmJHz": [
+    {
+      "type": 0,
+      "value": "Încarcă fișier"
+    }
+  ],
+  "BogP+d": [
+    {
+      "type": 0,
+      "value": "Fără animale de companie"
+    }
+  ],
+  "BtvSd5": [
+    {
+      "type": 0,
+      "value": "Cheia de semnătură este obligatorie"
+    }
+  ],
+  "Bza8Ck": [
+    {
+      "type": 0,
+      "value": "oaspete"
+    }
+  ],
+  "C5WQ1D": [
+    {
+      "type": 0,
+      "value": "Trebuie să adăugați în lista albă domeniul "
+    },
+    {
+      "children": [
+        {
+          "type": 1,
+          "value": "currentDomain"
+        }
+      ],
+      "type": 8,
+      "value": "strong"
+    },
+    {
+      "type": 0,
+      "value": " și domeniul site-ului dvs. web în panoul Razorpay (Settings → API Keys → Whitelist Domains)."
+    }
+  ],
+  "C6mSpf": [
+    {
+      "type": 0,
+      "value": "Client ID-ul aplicației tale PayPal din Developer Dashboard"
+    }
+  ],
+  "CA/i/C": [
+    {
+      "type": 0,
+      "value": "Interfață comerciant Authorize.net"
+    }
+  ],
+  "CCUbxX": [
+    {
+      "type": 0,
+      "value": "Monedă implicită"
+    }
+  ],
+  "CJ7o0o": [
+    {
+      "type": 0,
+      "value": "Folosită pentru afișarea datelor financiare agregate pentru toate proprietățile. Fiecare proprietate va avea propria monedă de rezervare."
+    }
+  ],
+  "CNTZll": [
+    {
+      "type": 0,
+      "value": "Primești"
+    }
+  ],
+  "CYPLf9": [
+    {
+      "type": 0,
+      "value": "contact@example.com"
+    }
+  ],
+  "CYqfVo": [
+    {
+      "type": 0,
+      "value": "Prenumele este obligatoriu"
+    }
+  ],
+  "CbGXs2": [
+    {
+      "type": 0,
+      "value": "Astăzi"
+    }
+  ],
+  "CgIj0s": [
+    {
+      "type": 0,
+      "value": "Șterge selecția"
+    }
+  ],
+  "Cm/acF": [
+    {
+      "type": 0,
+      "value": "Client Secret"
+    }
+  ],
+  "CphCmr": [
+    {
+      "type": 0,
+      "value": "Asigură-te că folosești credențiale din mediul Live pentru plățile din producție."
+    }
+  ],
+  "Cw1PUM": [
+    {
+      "type": 0,
+      "value": "Autentificați-vă în "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " folosind datele dvs. de comerciant."
+    }
+  ],
+  "D+X/Qj": [
+    {
+      "type": 0,
+      "value": "Copiază „Client ID” și „Secret” de pe pagina cu detaliile aplicației."
+    }
+  ],
+  "DJ7TGX": [
+    {
+      "type": 0,
+      "value": "Key ID"
+    }
+  ],
+  "DNXfj7": [
+    {
+      "type": 0,
+      "value": "În secțiunea „Funcționalități” (Features), asigură-te că următoarele permisiuni sunt activate:"
+    }
+  ],
+  "Dsr5qL": [
+    {
+      "type": 0,
+      "value": "Fără rambursare dacă rezervarea este anulată cu mai puțin de 7 zile înainte de check-in"
+    }
+  ],
+  "DuOTim": [
+    {
+      "type": 0,
+      "value": "Numele de familie este obligatoriu"
+    }
+  ],
+  "E8suJo": [
+    {
+      "type": 0,
+      "value": "Duminică"
+    }
+  ],
+  "EInxH0": [
+    {
+      "type": 0,
+      "value": "Checkout extins (Expanded checkout)"
+    }
+  ],
+  "EJMuPX": [
+    {
+      "type": 0,
+      "value": "Salvează modificările"
+    }
+  ],
+  "EJqOKf": [
+    {
+      "type": 0,
+      "value": "Adaugă proprietate"
+    }
+  ],
+  "EOtRjL": [
+    {
+      "type": 0,
+      "value": "New York"
+    }
+  ],
+  "EOvdde": [
+    {
+      "type": 0,
+      "value": "Editează"
+    }
+  ],
+  "EcOwTg": [
+    {
+      "type": 0,
+      "value": "Interval valid: de la -180 la 180"
+    }
+  ],
+  "EnF3EM": [
+    {
+      "type": 0,
+      "value": "Folosit pentru afișarea orelor în întregul panou de control. Fiecare proprietate va avea propriul fus orar."
+    }
+  ],
+  "ErBvSd": [
+    {
+      "type": 0,
+      "value": "Pentru a-ți conecta contul PayPal, trebuie să creezi o aplicație PayPal și să obții credențialele API:"
+    }
+  ],
+  "F4LIQL": [
+    {
+      "type": 0,
+      "value": "Se conectează..."
+    }
+  ],
+  "F6lZL3": [
+    {
+      "type": 0,
+      "value": "Se așteaptă autorizarea"
+    }
+  ],
+  "FEfTVi": [
+    {
+      "type": 0,
+      "value": "Cheia API este obligatorie"
+    }
+  ],
+  "FHrDtj": [
+    {
+      "type": 0,
+      "value": "Joi"
+    }
+  ],
+  "FIGyto": [
+    {
+      "type": 0,
+      "value": "Aceasta este limba folosită pentru toate meniurile, butoanele și elementele de interfață."
+    }
+  ],
+  "FUcnBP": [
+    {
+      "type": 0,
+      "value": "Gestionează mesajele, solicitările, pre-aprobările și ofertele speciale"
+    }
+  ],
+  "FYhbnJ": [
+    {
+      "type": 0,
+      "value": "Cheie API secretă folosită pentru autentificarea și autorizarea solicitărilor API. Păstrați-o confidențială și nu o distribuiți niciodată public."
+    }
+  ],
+  "Fte18l": [
+    {
+      "type": 0,
+      "value": "Disponibilitate"
+    }
+  ],
+  "Fvrx4V": [
+    {
+      "type": 0,
+      "value": "Preț ajustat"
+    }
+  ],
+  "G17Zwg": [
+    {
+      "type": 0,
+      "value": "Maximum "
+    },
+    {
+      "type": 1,
+      "value": "maxFiles"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "fișier permis"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "fișiere permise"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "maxFiles"
+    }
+  ],
+  "G258Qr": [
+    {
+      "type": 0,
+      "value": "Aplică"
+    }
+  ],
+  "GDI8mK": [
+    {
+      "type": 0,
+      "value": "Panou Razorpay"
+    }
+  ],
+  "GHNpa4": [
+    {
+      "type": 0,
+      "value": "Șterge toate fișierele"
+    }
+  ],
+  "GJz/Ju": [
+    {
+      "type": 0,
+      "value": "− Comisionul tău de gazdă (15,5%)"
+    }
+  ],
+  "GV4liN": [
+    {
+      "type": 0,
+      "value": "Sub API Key veți vedea Webhook Secret. Copiați cu atenție această valoare, deoarece este folosită pentru a verifica autenticitatea webhook-urilor."
+    }
+  ],
+  "Gvd55t": [
+    {
+      "type": 0,
+      "value": "API Login ID"
+    }
+  ],
+  "H67iMU": [
+    {
+      "type": 0,
+      "value": "Faceți clic pe pictograma „ochi” sau pe butonul „Show” de lângă Key Secret pentru a o afișa. Aceasta este cheia dvs. secretă folosită pentru autentificare. Copiați cu atenție această valoare."
+    }
+  ],
+  "H9EL3M": [
+    {
+      "type": 0,
+      "value": "Denumire legală companie"
+    }
+  ],
+  "HBAXMq": [
+    {
+      "type": 0,
+      "value": "Nume"
+    }
+  ],
+  "HD0jtN": [
+    {
+      "type": 0,
+      "value": "Se așteaptă autorizarea..."
+    }
+  ],
+  "HEXBfz": [
+    {
+      "type": 0,
+      "value": "Selectare rapidă"
+    }
+  ],
+  "HOym9z": [
+    {
+      "type": 0,
+      "value": "Țara este obligatorie"
+    }
+  ],
+  "HThB82": [
+    {
+      "type": 0,
+      "value": "Merchant Salt"
+    }
+  ],
+  "I/Rbi1": [
+    {
+      "type": 0,
+      "value": "Tarif"
+    }
+  ],
+  "I8mQRn": [
+    {
+      "type": 0,
+      "value": "Marți"
+    }
+  ],
+  "IejaKr": [
+    {
+      "type": 0,
+      "value": "Nu"
+    }
+  ],
+  "IhL/yX": [
+    {
+      "type": 0,
+      "value": "Vezi toate modificările făcute disponibilității pentru datele selectate"
+    }
+  ],
+  "ImL7iD": [
+    {
+      "type": 0,
+      "value": "Rambursare integrală dacă se anulează cu cel puțin 24 de ore înainte de check-in"
+    }
+  ],
+  "Iv5u44": [
+    {
+      "type": 0,
+      "value": "Luni"
+    }
+  ],
+  "J81fbb": [
+    {
+      "type": 0,
+      "value": "Nu există istoric"
+    }
+  ],
+  "JWwnVm": [
+    {
+      "type": 0,
+      "value": "Nu s-au putut încărca monedele"
+    }
+  ],
+  "JeNf5C": [
+    {
+      "type": 0,
+      "value": "Ai atins numărul maxim de 5 limbi suplimentare"
+    }
+  ],
+  "JmUKsE": [
+    {
+      "type": 0,
+      "value": "Recomandată"
+    }
+  ],
+  "Jn6vdr": [
+    {
+      "type": 0,
+      "value": "Interval valid: de la -90 la 90"
+    }
+  ],
+  "Jo6yop": [
+    {
+      "type": 0,
+      "value": "Eșuat"
+    }
+  ],
+  "Jx1XL/": [
+    {
+      "type": 0,
+      "value": "Nu există niciun procesator de plăți disponibil"
+    }
+  ],
+  "K133NN": [
+    {
+      "type": 0,
+      "value": "Nu s-a putut încărca lista de țări. Încearcă din nou."
+    }
+  ],
+  "KBbI2C": [
+    {
+      "type": 0,
+      "value": "Fără modificare"
+    }
+  ],
+  "KC3rcq": [
+    {
+      "type": 0,
+      "value": "Email"
+    }
+  ],
+  "KFGwsm": [
+    {
+      "type": 0,
+      "value": "Proprietățile nu au putut fi încărcate. Încearcă din nou."
+    }
+  ],
+  "KRYLvD": [
+    {
+      "type": 0,
+      "value": "Disponibilitatea a fost actualizată cu succes"
+    }
+  ],
+  "KfDaoT": [
+    {
+      "type": 0,
+      "value": "Restricționează"
+    }
+  ],
+  "KgIF6j": [
+    {
+      "type": 0,
+      "value": "Configurarea nu a putut fi încărcată"
+    }
+  ],
+  "Kmskqc": [
+    {
+      "type": 0,
+      "value": "Răsfoiește și gestionează toate facilitățile disponibile în sistem."
+    }
+  ],
+  "Kq0VZ6": [
+    {
+      "type": 0,
+      "value": "Omite pentru moment"
+    }
+  ],
+  "KsklO8": [
+    {
+      "type": 0,
+      "value": "Asigurați-vă că contul este setat în modul de producție, nu în modul de test, pentru plăți reale."
+    }
+  ],
+  "KxKL+n": [
+    {
+      "type": 0,
+      "value": "Rezervări"
+    }
+  ],
+  "L14TDm": [
+    {
+      "type": 0,
+      "value": "Nu s-au făcut încă modificări pentru acest interval de date"
+    }
+  ],
+  "L42aHo": [
+    {
+      "type": 0,
+      "value": "Începem cu alegerea limbilor pentru interfață și conținut."
+    }
+  ],
+  "LAbvMA": [
+    {
+      "type": 0,
+      "value": "Tarifele tale se vor sincroniza ca atare. Deja optimizate pentru utilizarea cu PMS."
+    }
+  ],
+  "LDUyG4": [
+    {
+      "type": 0,
+      "value": "Data de sfârșit trebuie să fie după "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "LHZI5Y": [
+    {
+      "type": 0,
+      "value": "Conectare reușită"
+    }
+  ],
+  "LHg/un": [
+    {
+      "type": 0,
+      "value": "Vezi istoricul"
+    }
+  ],
+  "LQEcMx": [
+    {
+      "type": 0,
+      "value": "Sincronizare în timp real a disponibilității și a tarifelor"
+    }
+  ],
+  "LT4CJg": [
+    {
+      "type": 0,
+      "value": "Statusul de disponibilitate este obligatoriu"
+    }
+  ],
+  "LaKRvO": [
+    {
+      "type": 0,
+      "value": "Configurarea nu a putut fi încărcată"
+    }
+  ],
+  "Lg4Fi9": [
+    {
+      "type": 0,
+      "value": "Important"
+    }
+  ],
+  "Lhbbcw": [
+    {
+      "type": 0,
+      "value": "Caută după numele proprietății"
+    }
+  ],
+  "LqNWNm": [
+    {
+      "type": 0,
+      "value": "Credențialele furnizate sunt incorecte. Verifică Client ID și Client Secret și încearcă din nou."
+    }
+  ],
+  "M92dZr": [
+    {
+      "type": 0,
+      "value": "Asigură-te că folosești datele de producție, nu date de test, pentru plățile reale."
+    }
+  ],
+  "MCAh17": [
+    {
+      "type": 0,
+      "value": "Date API Xmoney"
+    }
+  ],
+  "MLQakG": [
+    {
+      "type": 0,
+      "value": "A apărut o eroare."
+    }
+  ],
+  "MXtKEO": [
+    {
+      "type": 0,
+      "value": "Schimbă starea disponibilității pentru datele selectate. Poți marca datele ca disponibile sau indisponibile pentru rezervări. Opțional, adaugă note pentru a urmări motivul modificării."
+    }
+  ],
+  "MfrEpx": [
+    {
+      "type": 0,
+      "value": "Actualizează disponibilitatea pentru datele selectate"
+    }
+  ],
+  "MmX1j5": [
+    {
+      "type": 0,
+      "value": "Aplică"
+    }
+  ],
+  "MqJtIe": [
+    {
+      "type": 0,
+      "value": "Oaspeți"
+    }
+  ],
+  "MsOMSR": [
+    {
+      "type": 0,
+      "value": "Sincronizează automat anunțurile și detaliile proprietăților"
+    }
+  ],
+  "N+75uC": [
+    {
+      "type": 0,
+      "value": "Comision doar pentru gazdă"
+    }
+  ],
+  "N0sIXl": [
+    {
+      "type": 0,
+      "value": "Joi"
+    }
+  ],
+  "N2OYyx": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu."
+    }
+  ],
+  "NDEfG/": [
+    {
+      "type": 0,
+      "value": "Conectare reușită"
+    }
+  ],
+  "NJGmr+": [
+    {
+      "type": 0,
+      "value": "Număr maxim de fișiere: "
+    },
+    {
+      "type": 1,
+      "value": "count"
+    }
+  ],
+  "NTyqYb": [
+    {
+      "type": 0,
+      "value": "preferințe"
+    }
+  ],
+  "NZZi1d": [
+    {
+      "type": 0,
+      "value": "Importă anunțuri Airbnb"
+    }
+  ],
+  "NZwqC9": [
+    {
+      "type": 0,
+      "value": "acasă"
+    }
+  ],
+  "NfG5Dv": [
+    {
+      "type": 0,
+      "value": "Merchant Key"
+    }
+  ],
+  "Nty3JH": [
+    {
+      "type": 0,
+      "value": "Se conectează..."
+    }
+  ],
+  "NxALzL": [
+    {
+      "type": 0,
+      "value": "Longitudine"
+    }
+  ],
+  "O/8GDW": [
+    {
+      "type": 0,
+      "value": "Configurați numele brandului, moneda și alte setări esențiale."
+    }
+  ],
+  "O2TvYO": [
+    {
+      "type": 0,
+      "value": "Exemplu: Pentru un anunț de 100 $/noapte"
+    }
+  ],
+  "O4G22V": [
+    {
+      "type": 0,
+      "value": "Selectați fusul orar"
+    }
+  ],
+  "O4JbH7": [
+    {
+      "type": 0,
+      "value": "Confirmați generarea și copiați imediat noul Transaction Key – va fi afișat o singură dată din motive de securitate."
+    }
+  ],
+  "O8g76z": [
+    {
+      "type": 0,
+      "value": "Actualizează tarifele și restricțiile"
+    }
+  ],
+  "OCVZ6a": [
+    {
+      "type": 0,
+      "value": "Gata"
+    }
+  ],
+  "OGLvM4": [
+    {
+      "type": 0,
+      "value": "Sejurul minim trebuie să fie un număr pozitiv"
+    }
+  ],
+  "Oax1XH": [
+    {
+      "type": 0,
+      "value": "Încarcă fișiere"
+    }
+  ],
+  "OeHpB+": [
+    {
+      "type": 0,
+      "value": "statistici"
+    }
+  ],
+  "Ono6nG": [
+    {
+      "type": 0,
+      "value": "Strada Principală 123"
+    }
+  ],
+  "Oubdq/": [
+    {
+      "type": 0,
+      "value": "Plasează fișierele aici sau dă click pentru a le selecta"
+    }
+  ],
+  "OwgPg/": [
+    {
+      "type": 0,
+      "value": "Limba principală a conținutului"
+    }
+  ],
+  "P76X5R": [
+    {
+      "type": 0,
+      "value": "Salvează"
+    }
+  ],
+  "PHnbNG": [
+    {
+      "type": 0,
+      "value": "Site-ul meu"
+    }
+  ],
+  "PT0PoN": [
+    {
+      "type": 0,
+      "value": "Moneda implicită este obligatorie"
+    }
+  ],
+  "PYORN9": [
+    {
+      "type": 0,
+      "value": "Contul dvs. Razorpay a fost conectat cu succes și este gata să proceseze plăți."
+    }
+  ],
+  "PYUO/D": [
+    {
+      "type": 0,
+      "value": "Generează sau recuperează „Signature Key SHA-256” (Clave secreta de firma). Dacă nu ai una, va trebui să o generezi în secțiunea de securitate."
+    }
+  ],
+  "PZO/Vm": [
+    {
+      "type": 0,
+      "value": "Coordonată longitudine"
+    }
+  ],
+  "PZgJFD": [
+    {
+      "type": 0,
+      "value": "Numele companiei sau al proprietății afișat în comunicările cu oaspeții și pe linkurile de plată."
+    }
+  ],
+  "PeSZfT": [
+    {
+      "type": 0,
+      "value": "Proprietăți"
+    }
+  ],
+  "Q7u+VV": [
+    {
+      "type": 0,
+      "value": "anunț"
+    }
+  ],
+  "QFItoI": [
+    {
+      "type": 0,
+      "value": "Nume mapare"
+    }
+  ],
+  "QSt/yx": [
+    {
+      "type": 0,
+      "value": "Alegeți un procesator de plăți pentru a accepta plăți online, a procesa rezervări și a trimite oaspeților linkuri de plată securizate."
+    }
+  ],
+  "QcRAOz": [
+    {
+      "type": 0,
+      "value": "Introdu numărul de telefon"
+    }
+  ],
+  "QhExZh": [
+    {
+      "type": 0,
+      "value": "Total plătit de oaspete"
+    }
+  ],
+  "QkU8pF": [
+    {
+      "type": 0,
+      "value": "Rapoarte"
+    }
+  ],
+  "QrrLMn": [
+    {
+      "type": 0,
+      "value": "Păstrați API Key și Webhook Secret în siguranță și nu le distribuiți niciodată public. Sunt folosite pentru a autentifica toate solicitările API și pentru a verifica autenticitatea webhook-urilor."
+    }
+  ],
+  "R26oUq": [
+    {
+      "type": 0,
+      "value": "Moneda de afișare este obligatorie"
+    }
+  ],
+  "RAoXEd": [
+    {
+      "type": 0,
+      "value": "Acceptă în siguranță plăți cu cardul prin Redsys, principalul procesator de plăți din Spania"
+    }
+  ],
+  "RBGdAu": [
+    {
+      "type": 0,
+      "value": "Dă click pe hartă pentru a seta locația"
+    }
+  ],
+  "RJf6QP": [
+    {
+      "type": 0,
+      "value": "client"
+    }
+  ],
+  "RLi2kv": [
+    {
+      "type": 0,
+      "value": "Presetări"
+    }
+  ],
+  "RN2TV/": [
+    {
+      "type": 0,
+      "value": "Afișat pe linkurile de plată și în comunicările cu oaspeții."
+    }
+  ],
+  "RQPIrX": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Te rugăm să încerci din nou mai târziu."
+    }
+  ],
+  "RaGXAl": [
+    {
+      "type": 0,
+      "value": "Se încarcă istoricul..."
+    }
+  ],
+  "Rx858S": [
+    {
+      "type": 0,
+      "value": "Urmați acești pași pentru a obține datele de autentificare PayU.in și pentru a configura procesatorul de plăți"
+    }
+  ],
+  "Rywutb": [
+    {
+      "type": 0,
+      "value": "Se conectează..."
+    }
+  ],
+  "S/W8wt": [
+    {
+      "type": 0,
+      "value": "Caută după numele facilității"
+    }
+  ],
+  "S0jR0w": [
+    {
+      "type": 0,
+      "value": "Nerecomandată"
+    }
+  ],
+  "STkUKY": [
+    {
+      "type": 0,
+      "value": "Copiați atât Merchant Key, cât și Merchant Salt, apoi inserați-le în formularul de mai sus pentru a conecta contul PayU.in la Rentalwise."
+    }
+  ],
+  "SUSpIj": [
+    {
+      "type": 0,
+      "value": "Cheia Google Maps API nu este configurată"
+    }
+  ],
+  "Sv2doR": [
+    {
+      "type": 0,
+      "value": "Fără petreceri/evenimente"
+    }
+  ],
+  "T4AJRc": [
+    {
+      "type": 0,
+      "value": "Preautorizare depozit de garanție"
+    }
+  ],
+  "T7FKbK": [
+    {
+      "type": 0,
+      "value": "Introduceți datele API Razorpay din panoul dvs. de control"
+    }
+  ],
+  "TAQtsp": [
+    {
+      "type": 0,
+      "value": "Recomandată"
+    }
+  ],
+  "TNt0xR": [
+    {
+      "type": 0,
+      "value": "Nu s-a putut încărca lista de țări"
+    }
+  ],
+  "TP9+uy": [
+    {
+      "type": 0,
+      "value": "Cum funcționează →"
+    }
+  ],
+  "TPRG4x": [
+    {
+      "type": 0,
+      "value": "Alegeți până la 5 limbi suplimentare pentru conținutul dvs. Faceți clic pe o limbă pentru a o selecta sau deselecta."
+    }
+  ],
+  "TX4nd7": [
+    {
+      "type": 0,
+      "value": "Vezi detaliile plății"
+    }
+  ],
+  "Tc801C": [
+    {
+      "type": 0,
+      "value": "Actualizarea calendarului a eșuat"
+    }
+  ],
+  "Tj93Dw": [
+    {
+      "type": 0,
+      "value": "Merchant Code"
+    }
+  ],
+  "TnFf7r": [
+    {
+      "type": 0,
+      "value": "Te rugăm să selectezi un interval de date"
+    }
+  ],
+  "U+BpmB": [
+    {
+      "type": 0,
+      "value": "Nu există statusuri de disponibilitate"
+    }
+  ],
+  "U+Ld/N": [
+    {
+      "type": 0,
+      "value": "Conectează contul PayPal"
+    }
+  ],
+  "U33urL": [
+    {
+      "type": 0,
+      "value": "Șterge intervalul de date"
+    }
+  ],
+  "U7kE1U": [
+    {
+      "type": 0,
+      "value": "Accesează "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " și autentifică-te cu contul tău PayPal Business."
+    }
+  ],
+  "U96Y45": [
+    {
+      "type": 0,
+      "value": "Alegeți o acțiune"
+    }
+  ],
+  "UFslXe": [
+    {
+      "type": 0,
+      "value": "Faceți clic pe „API Credentials & Keys” în secțiunea Security Settings."
+    }
+  ],
+  "UGsmv6": [
+    {
+      "type": 0,
+      "value": "Rezervare nouă"
+    }
+  ],
+  "UXa4EB": [
+    {
+      "type": 0,
+      "value": "Datele de autentificare introduse sunt incorecte. Verificați API Login ID și Transaction Key și încercați din nou."
+    }
+  ],
+  "Ub1bVM": [
+    {
+      "type": 0,
+      "value": "Locație"
+    }
+  ],
+  "Us8Yir": [
+    {
+      "type": 1,
+      "value": "userName"
+    },
+    {
+      "type": 0,
+      "value": " a actualizat starea disponibilității la "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "V8cxvA": [
+    {
+      "type": 0,
+      "value": "Selectați limbi suplimentare"
+    }
+  ],
+  "VB01E9": [
+    {
+      "type": 0,
+      "value": "Pentru a obține Transaction Key, faceți clic pe „New Transaction Key” sau „Request New Key”. Notă: aceasta va invalida orice cheie de tranzacție existentă."
+    }
+  ],
+  "VD8QDF": [
+    {
+      "type": 0,
+      "value": "Setează tarifele, cerințele privind sejurul minim și restricțiile de rezervare pentru datele selectate. Folosește modul simplu pentru prețuri uniforme sau modul avansat pentru setări specifice fiecărei zile."
+    }
+  ],
+  "VKPYTy": [
+    {
+      "type": 0,
+      "value": "Canale"
+    }
+  ],
+  "VKdC7r": [
+    {
+      "type": 0,
+      "value": "Terminalul este obligatoriu"
+    }
+  ],
+  "VPF1PR": [
+    {
+      "type": 0,
+      "value": "Facilitatea nu a putut fi ștearsă. Încearcă din nou."
+    }
+  ],
+  "VS03hF": [
+    {
+      "type": 0,
+      "value": "ex.: -122.419415"
+    }
+  ],
+  "VgfswN": [
+    {
+      "type": 0,
+      "value": "Starea de evidențiere a fost actualizată"
+    }
+  ],
+  "VnV1LF": [
+    {
+      "type": 0,
+      "value": "Limba panoului de control"
+    }
+  ],
+  "Vrxnkj": [
+    {
+      "type": 0,
+      "value": "Încărcare reușită!"
+    }
+  ],
+  "VttIVF": [
+    {
+      "type": 0,
+      "value": "Facilități"
+    }
+  ],
+  "VvRDvN": [
+    {
+      "type": 0,
+      "value": "Faceți clic pe fila „API Keys” pentru a accesa datele dvs. API."
+    }
+  ],
+  "Vyw+lR": [
+    {
+      "type": 0,
+      "value": "Configurarea nu a putut fi încărcată"
+    }
+  ],
+  "W3sWk1": [
+    {
+      "type": 0,
+      "value": "Moneda implicită trebuie să fie inclusă în lista de monede acceptate"
+    }
+  ],
+  "W57wea": [
+    {
+      "type": 0,
+      "value": "Asigurați-vă că vizualizați datele de autentificare pentru mediul corect: pentru plăți reale folosiți datele de „Production”, nu datele de „Test Mode”."
+    }
+  ],
+  "W5v/Iw": [
+    {
+      "type": 0,
+      "value": "Încarcă tot"
+    }
+  ],
+  "WKNigj": [
+    {
+      "type": 0,
+      "value": "Panou de control"
+    }
+  ],
+  "WaOLqy": [
+    {
+      "type": 0,
+      "value": "Contul tău Redsys a fost conectat cu succes și este pregătit să proceseze plăți."
+    }
+  ],
+  "WfDKxB": [
+    {
+      "type": 0,
+      "value": "Datele de autentificare introduse sunt incorecte. Verificați Key ID și Key Secret și încercați din nou."
+    }
+  ],
+  "WpPA+r": [
+    {
+      "type": 0,
+      "value": "Caută după numele proprietății"
+    }
+  ],
+  "WuulWW": [
+    {
+      "type": 0,
+      "value": "Se salvează..."
+    }
+  ],
+  "X+vN43": [
+    {
+      "type": 0,
+      "value": "Șterge facilitatea „"
+    },
+    {
+      "type": 1,
+      "value": "name"
+    },
+    {
+      "type": 0,
+      "value": "”"
+    }
+  ],
+  "X8DbWD": [
+    {
+      "type": 0,
+      "value": "Introduceți datele API Xmoney din panoul dvs. de comerciant"
+    }
+  ],
+  "XDLNej": [
+    {
+      "type": 0,
+      "value": "Contul tău PayPal a fost conectat cu succes."
+    }
+  ],
+  "XNEu/M": [
+    {
+      "type": 0,
+      "value": "Vezi clientul"
+    }
+  ],
+  "XP9hJ7": [
+    {
+      "type": 0,
+      "value": "Data de început trebuie să fie înainte de "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "XYPKf0": [
+    {
+      "type": 0,
+      "value": "Introdu un nume pentru aplicație (de ex. „Sistemul meu de administrare proprietăți”) și apasă „Creează aplicație” (Create App)."
+    }
+  ],
+  "Xbhlim": [
+    {
+      "type": 0,
+      "value": "Adresă de email invalidă"
+    }
+  ],
+  "XkXjGM": [
+    {
+      "type": 0,
+      "value": "Calendarul a fost actualizat cu succes"
+    }
+  ],
+  "Xw/VVZ": [
+    {
+      "type": 0,
+      "value": "Oraș"
+    }
+  ],
+  "Xyl+wc": [
+    {
+      "type": 0,
+      "value": "Setări"
+    }
+  ],
+  "Xyos1g": [
+    {
+      "type": 0,
+      "value": "Adresa este obligatorie"
+    }
+  ],
+  "Y/SI/Y": [
+    {
+      "type": 0,
+      "value": "Date de conectare Redsys"
+    }
+  ],
+  "Y0X1Ig": [
+    {
+      "type": 0,
+      "value": "Veți vedea Key ID (începe cu „rzp_test_” pentru modul de test sau „rzp_live_” pentru modul live). Aceasta este cheia dvs. publică. Copiați această valoare."
+    }
+  ],
+  "Y9jAxS": [
+    {
+      "type": 0,
+      "value": "Structura de comision Airbnb"
+    }
+  ],
+  "YH20C7": [
+    {
+      "type": 0,
+      "value": "Comută în modul „Live” (Live) folosind comutatorul din partea de sus."
+    }
+  ],
+  "YXHsVb": [
+    {
+      "type": 0,
+      "value": "rezervare"
+    }
+  ],
+  "YXbN+o": [
+    {
+      "type": 0,
+      "value": "Actualizează"
+    }
+  ],
+  "Yf3ND3": [
+    {
+      "type": 0,
+      "value": "Conectare reușită"
+    }
+  ],
+  "Yh8hMS": [
+    {
+      "type": 0,
+      "value": "Asigurați-vă că folosiți date de autentificare pentru Live Mode (u_live_api_) pentru plăți în producție, nu date pentru Test Mode (u_test_api_)."
+    }
+  ],
+  "YouQp1": [
+    {
+      "type": 0,
+      "value": "Primești (după)"
+    }
+  ],
+  "YqBHbh": [
+    {
+      "type": 0,
+      "value": "Ai nevoie de ajutor pentru a găsi credențialele PayPal? Vezi instrucțiunile de configurare"
+    }
+  ],
+  "Yr7Ms5": [
+    {
+      "type": 0,
+      "value": "Permite"
+    }
+  ],
+  "Z5m5GD": [
+    {
+      "type": 0,
+      "value": "Sejur minim"
+    }
+  ],
+  "Z6cYcW": [
+    {
+      "type": 0,
+      "value": "Selectați structura de comision Airbnb pentru a sincroniza corect tarifele."
+    }
+  ],
+  "Z6ymtI": [
+    {
+      "type": 0,
+      "value": "Păstrați Key Secret în siguranță și nu o distribuiți niciodată public. Este folosită pentru a autentifica toate solicitările API către contul dvs."
+    }
+  ],
+  "ZEtjaq": [
+    {
+      "type": 0,
+      "value": "Caută conturi..."
+    }
+  ],
+  "ZKB9Y7": [
+    {
+      "type": 0,
+      "value": "ex.: fără pantofi în interior, dușul exterior trebuie folosit pentru echipamente de plajă, maximum 2 vehicule în alee"
+    }
+  ],
+  "ZspUhP": [
+    {
+      "type": 0,
+      "value": "Șterge selecția"
+    }
+  ],
+  "ZuYUdv": [
+    {
+      "type": 0,
+      "value": "Apasă butonul „Creează aplicație” (Create App) pentru a crea o aplicație nouă."
+    }
+  ],
+  "a+SxgC": [
+    {
+      "type": 0,
+      "value": "Aceasta este limba în care trebuie să adaugi conținutul. Opțional, poți adăuga traduceri și în alte limbi."
+    }
+  ],
+  "a35CJS": [
+    {
+      "type": 0,
+      "value": "Miercuri"
+    }
+  ],
+  "aA+qMl": [
+    {
+      "type": 0,
+      "value": "Starea proprietății a fost setată la „"
+    },
+    {
+      "type": 1,
+      "value": "status"
+    },
+    {
+      "type": 0,
+      "value": "”."
+    }
+  ],
+  "aADdjn": [
+    {
+      "type": 0,
+      "value": "Data de sfârșit trebuie să fie înainte de "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    }
+  ],
+  "aJ3++V": [
+    {
+      "type": 0,
+      "value": "Conectează contul Xmoney"
+    }
+  ],
+  "aPILyt": [
+    {
+      "type": 0,
+      "value": "Înapoi"
+    }
+  ],
+  "aWcemL": [
+    {
+      "type": 0,
+      "value": "Se încarcă..."
+    }
+  ],
+  "aXKcVp": [
+    {
+      "type": 0,
+      "value": "Finalizați autorizarea în fereastra Stripe. Această fereastră se va închide automat după ce terminați."
+    }
+  ],
+  "aXmvIA": [
+    {
+      "type": 0,
+      "value": "Starea disponibilității a fost actualizată la "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "ab0hY/": [
+    {
+      "type": 0,
+      "value": "Key Secret"
+    }
+  ],
+  "advKPO": [
+    {
+      "type": 0,
+      "value": "Urmați acești pași pentru a obține datele de autentificare Razorpay și pentru a configura procesatorul de plăți"
+    }
+  ],
+  "aeebtJ": [
+    {
+      "type": 0,
+      "value": "Unele proprietăți sunt marcate ca având co-gazdă, ceea ce înseamnă că nu ești gazda principală. Aceste proprietăți vor fi importate în panoul tău de control, însă orice modificări făcute aici nu vor fi sincronizate înapoi cu Airbnb, pentru a evita conflictele cu setările gazdei principale."
+    }
+  ],
+  "afXEu2": [
+    {
+      "type": 0,
+      "value": "Conectează contul Authorize.net"
+    }
+  ],
+  "aht69K": [
+    {
+      "type": 0,
+      "value": "Flexibilă"
+    }
+  ],
+  "amPlaW": [
+    {
+      "type": 0,
+      "value": "Copiază datele de conectare și lipește-le în formular pentru a-ți conecta contul Redsys."
+    }
+  ],
+  "aosPfz": [
+    {
+      "type": 0,
+      "value": "Descrieți în cuvintele dvs."
+    }
+  ],
+  "atFgtD": [
+    {
+      "type": 0,
+      "value": "Momentan nu există niciun procesator de plăți disponibil pentru configurare."
+    }
+  ],
+  "b1haC1": [
+    {
+      "type": 0,
+      "value": "Nu s-au putut încărca procesatorii de plăți"
+    }
+  ],
+  "b3sTwT": [
+    {
+      "type": 0,
+      "value": "Profilul meu"
+    }
+  ],
+  "b3xOJ9": [
+    {
+      "type": 0,
+      "value": "Cod poștal"
+    }
+  ],
+  "bCNGo4": [
+    {
+      "type": 0,
+      "value": "Nu s-au găsit rezultate."
+    }
+  ],
+  "bVzg2H": [
+    {
+      "type": 0,
+      "value": "Asigurați-vă că folosiți date de autentificare pentru Live Mode (u_live_api_) pentru plăți în producție, nu date pentru Test Mode (u_test_api_)."
+    }
+  ],
+  "bavx1x": [
+    {
+      "type": 0,
+      "value": "Începe să tastezi..."
+    }
+  ],
+  "bdgAC1": [
+    {
+      "type": 0,
+      "value": "Nu a fost găsită nicio țară."
+    }
+  ],
+  "bkwL/j": [
+    {
+      "type": 0,
+      "value": "Nerambursabilă"
+    }
+  ],
+  "brw6xY": [
+    {
+      "type": 0,
+      "value": "Autentificați-vă în "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " folosind datele dvs. de comerciant."
+    }
+  ],
+  "bszm8L": [
+    {
+      "type": 0,
+      "value": "Selectează statusul de disponibilitate"
+    }
+  ],
+  "c+rEQa": [
+    {
+      "type": 0,
+      "value": "Integrări"
+    }
+  ],
+  "c0M/n2": [
+    {
+      "type": 0,
+      "value": "Cerințe specifice"
+    }
+  ],
+  "c39yv7": [
+    {
+      "type": 0,
+      "value": "Date de autentificare Razorpay"
+    }
+  ],
+  "c4y18J": [
+    {
+      "type": 0,
+      "value": "Client ID este obligatoriu"
+    }
+  ],
+  "c8ysE5": [
+    {
+      "type": 0,
+      "value": "Șterge tot"
+    }
+  ],
+  "cDDnbv": [
+    {
+      "type": 0,
+      "value": "Politică de anulare"
+    }
+  ],
+  "cPZY1f": [
+    {
+      "type": 0,
+      "value": "Încărcare eșuată"
+    }
+  ],
+  "cU+Iey": [
+    {
+      "type": 0,
+      "value": "Comision doar pentru gazdă"
+    }
+  ],
+  "cc8ReJ": [
+    {
+      "type": 0,
+      "value": "Cheie de tranzacție secretă folosită pentru autentificarea solicitărilor API. Păstrați-o în siguranță și nu o distribuiți niciodată public."
+    }
+  ],
+  "ccsc2K": [
+    {
+      "type": 0,
+      "value": "Introdu codul hex (ex.: #FF5733)"
+    }
+  ],
+  "ce6iAC": [
+    {
+      "type": 0,
+      "value": "utilizator"
+    }
+  ],
+  "cjpksE": [
+    {
+      "type": 0,
+      "value": "Mai multe informații"
+    }
+  ],
+  "cnVnFc": [
+    {
+      "type": 0,
+      "value": "Cheia API unică furnizată de Xmoney pentru autentificarea solicitărilor API și procesarea plăților în criptomonede"
+    }
+  ],
+  "co30zv": [
+    {
+      "type": 0,
+      "value": "Moneda principală cu care este configurat contul tău Redsys. Tranzacțiile în alte monede vor fi convertite în această monedă."
+    }
+  ],
+  "cpqeDo": [
+    {
+      "type": 0,
+      "value": "Avansat"
+    }
+  ],
+  "cu+51N": [
+    {
+      "type": 0,
+      "value": "Linkuri de plată"
+    }
+  ],
+  "d0LNAH": [
+    {
+      "type": 0,
+      "value": "A apărut o eroare"
+    }
+  ],
+  "d1EL0O": [
+    {
+      "type": 0,
+      "value": "Denumirea legală este obligatorie"
+    }
+  ],
+  "d1sT0D": [
+    {
+      "type": 0,
+      "value": "Lun"
+    }
+  ],
+  "dPuxw6": [
+    {
+      "type": 0,
+      "value": "Păstrați Transaction Key în siguranță și nu îl distribuiți niciodată public. Este folosit pentru a autentifica toate solicitările API către contul dvs."
+    }
+  ],
+  "dQLjUG": [
+    {
+      "type": 0,
+      "value": "Datele de autentificare introduse sunt incorecte. Verificați API Key și Webhook Secret și încercați din nou."
+    }
+  ],
+  "dXpXUg": [
+    {
+      "type": 0,
+      "value": "Codul poștal este obligatoriu"
+    }
+  ],
+  "df/Qz1": [
+    {
+      "type": 0,
+      "value": "Date de autentificare PayU.in"
+    }
+  ],
+  "dlLwTR": [
+    {
+      "type": 0,
+      "value": "Plasează fișierul aici"
+    }
+  ],
+  "dlWOii": [
+    {
+      "type": 0,
+      "value": "API Login ID va fi afișat. Copiați această valoare – este un identificator unic pentru contul dvs."
+    }
+  ],
+  "dlgRJf": [
+    {
+      "type": 0,
+      "value": "Adaugă facilitate"
+    }
+  ],
+  "dmqjA4": [
+    {
+      "type": 0,
+      "value": "Merchant Key este obligatoriu"
+    }
+  ],
+  "dpQveJ": [
+    {
+      "type": 0,
+      "value": "Aplică"
+    }
+  ],
+  "ds1sfT": [
+    {
+      "type": 0,
+      "value": "Cheia de tranzacție poate fi afișată o singură dată, în momentul generării. Dacă o pierzi, va trebui să generezi una nouă."
+    }
+  ],
+  "eJQkpB": [
+    {
+      "type": 0,
+      "value": "Tip de contract"
+    }
+  ],
+  "eQr1Nt": [
+    {
+      "type": 0,
+      "value": "Plasează fișierul aici sau fă clic pentru a căuta"
+    }
+  ],
+  "eZtwZg": [
+    {
+      "type": 0,
+      "value": "Descrieți politica de anulare personalizată"
+    }
+  ],
+  "edHwNb": [
+    {
+      "type": 0,
+      "value": "Places API nu este activat. Folosește harta pentru a seta locația."
+    }
+  ],
+  "ehRkrZ": [
+    {
+      "type": 0,
+      "value": "Încărcarea istoricului a eșuat"
+    }
+  ],
+  "eimE5J": [
+    {
+      "type": 0,
+      "value": "ex.: Sunset Beach Rentals SRL"
+    }
+  ],
+  "ezQ6SF": [
+    {
+      "type": 0,
+      "value": "Descrieți, vă rugăm, politica dvs. personalizată de anulare"
+    }
+  ],
+  "f1ZlPP": [
+    {
+      "type": 0,
+      "value": "Configurarea nu a putut fi încărcată"
+    }
+  ],
+  "f4qEIV": [
+    {
+      "type": 0,
+      "value": "Emailul este obligatoriu"
+    }
+  ],
+  "f598gT": [
+    {
+      "type": 0,
+      "value": "Acest lucru este necesar pentru ca formularele de plată să funcționeze atât pentru linkurile de plată, cât și pe site-ul tău web pentru clienți."
+    }
+  ],
+  "fsCHeb": [
+    {
+      "type": 0,
+      "value": "Fișier invalid"
+    }
+  ],
+  "gGp8BG": [
+    {
+      "type": 0,
+      "value": "Merchant Salt secret (API Salt) folosit pentru a genera hash-uri sigure pentru solicitările de plată. Păstrează această informație confidențială și nu o distribui public."
+    }
+  ],
+  "gNizG3": [
+    {
+      "type": 0,
+      "value": "Pentru a-ți conecta contul Authorize.net, trebuie să obții datele API din contul tău de comerciant:"
+    }
+  ],
+  "gUTs9M": [
+    {
+      "type": 0,
+      "value": "Prin conectare, autorizezi această aplicație să acceseze datele contului tău Airbnb. Poți întrerupe conexiunea oricând din setări."
+    }
+  ],
+  "gYyW2F": [
+    {
+      "type": 0,
+      "value": "Proprietăți"
+    }
+  ],
+  "gcJzNv": [
+    {
+      "type": 0,
+      "value": "Înapoi"
+    }
+  ],
+  "gcogeP": [
+    {
+      "type": 0,
+      "value": "Merchant Key (API Key) unic(ă), furnizat(ă) de PayU.in pentru autentificarea solicitărilor API"
+    }
+  ],
+  "guxn2d": [
+    {
+      "type": 0,
+      "value": "Nume"
+    }
+  ],
+  "h7MHkw": [
+    {
+      "type": 0,
+      "value": "Instrucțiuni de configurare"
+    }
+  ],
+  "hGWNhw": [
+    {
+      "type": 0,
+      "value": "Conectează contul PayU.in"
+    }
+  ],
+  "hK+bTp": [
+    {
+      "type": 0,
+      "value": "Entitate juridică"
+    }
+  ],
+  "hNmK/a": [
+    {
+      "type": 0,
+      "value": "Autentifică-te în "
+    },
+    {
+      "type": 1,
+      "value": "link"
+    },
+    {
+      "type": 0,
+      "value": " folosind datele tale de comerciant."
+    }
+  ],
+  "hcwLhe": [
+    {
+      "type": 0,
+      "value": "Terminal"
+    }
+  ],
+  "hdOUlx": [
+    {
+      "type": 0,
+      "value": "Grup de facilități"
+    }
+  ],
+  "hm3XWh": [
+    {
+      "type": 0,
+      "value": "Acceptă plăți cu cardul de credit în siguranță prin Authorize.net, un procesator de plăți de încredere, folosit de companii din întreaga lume"
+    }
+  ],
+  "hnT+Ex": [
+    {
+      "type": 0,
+      "value": "Places API nu este activat. Te rugăm să îl activezi în Google Cloud Console sau folosește harta pentru a seta locația."
+    }
+  ],
+  "hzwyg5": [
+    {
+      "type": 0,
+      "value": "Conectează contul Razorpay"
+    }
+  ],
+  "i12iVe": [
+    {
+      "type": 0,
+      "value": "Mergi la"
+    }
+  ],
+  "i48IBK": [
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "+1 conexiune în plus"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "+"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "value": " conexiuni în plus"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "i6kvwt": [
+    {
+      "type": 0,
+      "value": "Calendar"
+    }
+  ],
+  "iDYGXC": [
+    {
+      "type": 0,
+      "value": "Gazdă: 15,5%"
+    }
+  ],
+  "iHNXRF": [
+    {
+      "type": 0,
+      "value": "Selectează o opțiune"
+    }
+  ],
+  "iKXPtM": [
+    {
+      "type": 0,
+      "value": "Webhook Secret este obligatoriu"
+    }
+  ],
+  "iNbK2s": [
+    {
+      "type": 0,
+      "value": "Deschide meniul"
+    }
+  ],
+  "iVnpqX": [
+    {
+      "type": 0,
+      "value": "După autentificare, mergi la „Integrations” din meniul principal."
+    }
+  ],
+  "igJ6NH": [
+    {
+      "type": 0,
+      "value": "Cheie secretă de semnătură folosită pentru autentificarea tranzacțiilor (Clave secreta de firma)"
+    }
+  ],
+  "ivMxuN": [
+    {
+      "type": 0,
+      "value": "Nu s-a putut încărca configurația"
+    }
+  ],
+  "iwSAmy": [
+    {
+      "type": 0,
+      "value": "configurare"
+    }
+  ],
+  "j0ZBkg": [
+    {
+      "type": 0,
+      "value": "Pentru a-ți conecta contul PayU.in, trebuie să obții datele API din panoul tău de comerciant:"
+    }
+  ],
+  "j0wmPI": [
+    {
+      "type": 0,
+      "value": "Se verifică conexiunea..."
+    }
+  ],
+  "j1rtzL": [
+    {
+      "type": 0,
+      "value": "Conectează contul PayU.in"
+    }
+  ],
+  "j7b5hy": [
+    {
+      "type": 0,
+      "value": "Această acțiune este "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "ireversibilă"
+        }
+      ],
+      "type": 8,
+      "value": "strong"
+    },
+    {
+      "type": 0,
+      "value": ". Ștergerea unei facilități o va elimina definitiv din sistem. Sigur vrei să continui?"
+    }
+  ],
+  "jBqjwf": [
+    {
+      "type": 0,
+      "value": "Vineri"
+    }
+  ],
+  "jCh/D0": [
+    {
+      "type": 0,
+      "value": "Ion"
+    }
+  ],
+  "jImZFP": [
+    {
+      "type": 0,
+      "value": "Conectare reușită"
+    }
+  ],
+  "jMo8lD": [
+    {
+      "type": 0,
+      "value": "Dacă nu operați printr-o firmă, introduceți numele și prenumele."
+    }
+  ],
+  "jcEZpK": [
+    {
+      "type": 0,
+      "value": "Deconectare"
+    }
+  ],
+  "jhIDCX": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "selectat"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "selectate"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    }
+  ],
+  "jvK+qk": [
+    {
+      "type": 0,
+      "value": "Rambursare integrală dacă rezervarea este anulată cu cel puțin 30 de zile înainte de check-in"
+    }
+  ],
+  "k+FE8+": [
+    {
+      "type": 0,
+      "value": "Stare"
+    }
+  ],
+  "k+yRbg": [
+    {
+      "type": 0,
+      "value": "Câmp fișier"
+    }
+  ],
+  "kBI7py": [
+    {
+      "type": 0,
+      "value": "Contul tău Xmoney a fost conectat cu succes și este pregătit să proceseze plăți în criptomonede."
+    }
+  ],
+  "kG7fT4": [
+    {
+      "type": 0,
+      "value": "proprietate"
+    }
+  ],
+  "kHKPr2": [
+    {
+      "type": 0,
+      "value": "Credențiale PayPal"
+    }
+  ],
+  "kQrSIK": [
+    {
+      "type": 0,
+      "value": "Introdu credențialele aplicației tale PayPal"
+    }
+  ],
+  "kbQEWe": [
+    {
+      "type": 0,
+      "value": "Nefavorizată"
+    }
+  ],
+  "kjXDMk": [
+    {
+      "type": 0,
+      "value": "Facilitatea este acum „"
+    },
+    {
+      "type": 1,
+      "value": "status"
+    },
+    {
+      "type": 0,
+      "value": "”."
+    }
+  ],
+  "kl5YRB": [
+    {
+      "type": 0,
+      "value": "Caută..."
+    }
+  ],
+  "koiR5e": [
+    {
+      "type": 0,
+      "value": "Sub Merchant Key vei găsi Merchant Salt (numit și API Salt). Aceasta este o valoare secretă folosită pentru generarea de hash-uri de plată sigure. Copiază această valoare cu atenție."
+    }
+  ],
+  "krzoKh": [
+    {
+      "type": 0,
+      "value": "Ore de liniște (22:00-08:00)"
+    }
+  ],
+  "l2G4ts": [
+    {
+      "type": 0,
+      "value": "cont"
+    }
+  ],
+  "l58peo": [
+    {
+      "type": 0,
+      "value": "Conectează contul Authorize.net"
+    }
+  ],
+  "lICqky": [
+    {
+      "type": 0,
+      "value": "Sâmbătă"
+    }
+  ],
+  "lLsqx/": [
+    {
+      "type": 0,
+      "value": "Simplu"
+    }
+  ],
+  "lXmebi": [
+    {
+      "type": 0,
+      "value": "Nu a fost găsită nicio proprietate."
+    }
+  ],
+  "lbuhtO": [
+    {
+      "type": 0,
+      "value": "Numărul de telefon este obligatoriu"
+    }
+  ],
+  "lf1G7F": [
+    {
+      "type": 0,
+      "value": "Dum"
+    }
+  ],
+  "lfavTr": [
+    {
+      "type": 0,
+      "value": "JavaScript SDK v6 (JavaScript SDK v6)"
+    }
+  ],
+  "lsb4H5": [
+    {
+      "type": 0,
+      "value": "10001"
+    }
+  ],
+  "lw4XRE": [
+    {
+      "type": 0,
+      "value": "Fusul orar de afișare este obligatoriu"
+    }
+  ],
+  "m4CjvC": [
+    {
+      "type": 0,
+      "value": "Primești (înainte)"
+    }
+  ],
+  "m9X8dj": [
+    {
+      "type": 0,
+      "value": "Personalizat"
+    }
+  ],
+  "mEGoCy": [
+    {
+      "type": 0,
+      "value": "Țară"
+    }
+  ],
+  "mRPckU": [
+    {
+      "type": 0,
+      "value": "Lipește credențialele în formular pentru a-ți conecta contul PayPal."
+    }
+  ],
+  "mTNG6W": [
+    {
+      "type": 0,
+      "value": "Panou de administrare Redsys"
+    }
+  ],
+  "ma3FDS": [
+    {
+      "type": 0,
+      "value": "Popescu"
+    }
+  ],
+  "mc9NYQ": [
+    {
+      "type": 0,
+      "value": "Latitudine"
+    }
+  ],
+  "mhR7ow": [
+    {
+      "type": 0,
+      "value": "Selectați moneda"
+    }
+  ],
+  "mhXM05": [
+    {
+      "type": 0,
+      "value": "prezentare generală"
+    }
+  ],
+  "mjTX/O": [
+    {
+      "type": 0,
+      "value": "Se salvează..."
+    }
+  ],
+  "mk2r03": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca informațiile necesare. Te rugăm să încerci din nou mai târziu."
+    }
+  ],
+  "moB4X5": [
+    {
+      "type": 0,
+      "value": "Golește"
+    }
+  ],
+  "mut/Iu": [
+    {
+      "type": 0,
+      "value": "Selectați fusul orar"
+    }
+  ],
+  "myf6nu": [
+    {
+      "type": 0,
+      "value": "Orașul este obligatoriu"
+    }
+  ],
+  "n+V4Hf": [
+    {
+      "type": 0,
+      "value": "Actualizați tarifele și restricțiile"
+    }
+  ],
+  "n8TPub": [
+    {
+      "type": 0,
+      "value": "Aici vei găsi toate proprietățile tale"
+    }
+  ],
+  "n8X4fP": [
+    {
+      "type": 0,
+      "value": "Contul tău PayU.in a fost conectat cu succes și este pregătit să proceseze plăți."
+    }
+  ],
+  "nE/K2O": [
+    {
+      "type": 0,
+      "value": "Conectare reușită"
+    }
+  ],
+  "nOHLhe": [
+    {
+      "type": 0,
+      "value": "Nu s-a putut încărca configurația"
+    }
+  ],
+  "nPTP4o": [
+    {
+      "type": 0,
+      "value": "Restricție check-out"
+    }
+  ],
+  "nXPU3C": [
+    {
+      "type": 0,
+      "value": "Ai nevoie de ajutor pentru a găsi datele tale Redsys? Vezi instrucțiunile de configurare"
+    }
+  ],
+  "nbKA0x": [
+    {
+      "type": 0,
+      "value": "Nu am putut încărca procesatorii de plăți disponibili. Te rugăm să încerci din nou mai târziu."
+    }
+  ],
+  "nhKZzR": [
+    {
+      "type": 0,
+      "value": "Asigură-te că folosești datele de producție pentru plăți reale, nu datele pentru modul de test."
+    }
+  ],
+  "ntDrY2": [
+    {
+      "type": 0,
+      "value": "Plasează fișierele aici"
+    }
+  ],
+  "ntIlMj": [
+    {
+      "type": 0,
+      "value": "Nume"
+    }
+  ],
+  "nyf+Nu": [
+    {
+      "type": 0,
+      "value": "Mesagerie"
+    }
+  ],
+  "oDbRSf": [
+    {
+      "type": 0,
+      "value": "Trageți logo-ul aici sau faceți clic pentru a selecta"
+    }
+  ],
+  "oG3zop": [
+    {
+      "type": 0,
+      "value": "Șterge numărul de telefon"
+    }
+  ],
+  "oQ6S9i": [
+    {
+      "type": 0,
+      "value": "Numele brandului"
+    }
+  ],
+  "ocx71s": [
+    {
+      "type": 0,
+      "value": "Rezervarea "
+    },
+    {
+      "type": 1,
+      "value": "bookingId"
+    },
+    {
+      "type": 0,
+      "value": " a creat disponibilitate cu starea "
+    },
+    {
+      "type": 1,
+      "value": "status"
+    }
+  ],
+  "ogXEWD": [
+    {
+      "type": 0,
+      "value": "Copiază ID-ul proprietății"
+    }
+  ],
+  "oo/YC7": [
+    {
+      "type": 0,
+      "value": "Înapoi"
+    }
+  ],
+  "p+eukQ": [
+    {
+      "type": 0,
+      "value": "Oaspete: 14,1 - 16,5%"
+    }
+  ],
+  "pBqc2F": [
+    {
+      "type": 0,
+      "value": "Merchant Code este obligatoriu"
+    }
+  ],
+  "pMXWp/": [
+    {
+      "type": 0,
+      "value": "Fus orar de afișare"
+    }
+  ],
+  "pXGhQw": [
+    {
+      "type": 0,
+      "value": "Mergi la „Account” în meniul de sus, apoi selectează „Settings” din lista derulantă."
+    }
+  ],
+  "pYdLI6": [
+    {
+      "type": 0,
+      "value": "Conectare eșuată"
+    }
+  ],
+  "pp3eG5": [
+    {
+      "type": 0,
+      "value": "Datele introduse sunt incorecte. Verifică Merchant Code, Terminal și Signature Key și încearcă din nou."
+    }
+  ],
+  "q1+03r": [
+    {
+      "type": 0,
+      "value": "Selectați limbi suplimentare"
+    }
+  ],
+  "q2UBZy": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "proprietate selectată"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "proprietăți selectate"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": "."
+    }
+  ],
+  "qB/T8g": [
+    {
+      "type": 0,
+      "value": "Introdu datele API Authorize.net din contul tău de comerciant"
+    }
+  ],
+  "qErICT": [
+    {
+      "type": 0,
+      "value": "Plătit de oaspete (înainte)"
+    }
+  ],
+  "qLSweW": [
+    {
+      "type": 0,
+      "value": "Încărcat"
+    }
+  ],
+  "qS74wR": [
+    {
+      "type": 0,
+      "value": "Client Secret-ul aplicației tale PayPal din Developer Dashboard"
+    }
+  ],
+  "qTk3rP": [
+    {
+      "type": 0,
+      "value": "Acceptă plăți în siguranță cu PayU.in, principalul procesator de plăți din India, care suportă multiple metode de plată, inclusiv carduri, UPI, net banking și portofele electronice"
+    }
+  ],
+  "qilQYG": [
+    {
+      "type": 0,
+      "value": "Facilitatea a fost ștearsă cu succes."
+    }
+  ],
+  "qpDXUm": [
+    {
+      "type": 0,
+      "value": "Navighează la secțiunea „Virtual POS Configuration” sau „Configuración TPV Virtual”."
+    }
+  ],
+  "r+yQE+": [
+    {
+      "type": 0,
+      "value": "Selectați moneda"
+    }
+  ],
+  "r4Jebe": [
+    {
+      "type": 0,
+      "value": "Se încarcă..."
+    }
+  ],
+  "rDdMBr": [
+    {
+      "type": 0,
+      "value": "Conectare eșuată"
+    }
+  ],
+  "rLWAAL": [
+    {
+      "type": 0,
+      "value": "Calendar"
+    }
+  ],
+  "rRpsqb": [
+    {
+      "type": 0,
+      "value": "Opțional"
+    }
+  ],
+  "rZvg97": [
+    {
+      "type": 0,
+      "value": "− Comisionul tău de gazdă (3%)"
+    }
+  ],
+  "rv6bA0": [
+    {
+      "type": 0,
+      "value": "ID-ul unic al cheii API (Key ID) furnizat de Razorpay pentru autentificarea solicitărilor API"
+    }
+  ],
+  "rwhoDv": [
+    {
+      "type": 0,
+      "value": "Integrări"
+    }
+  ],
+  "s4m994": [
+    {
+      "type": 0,
+      "value": "Exportă"
+    }
+  ],
+  "s5dtls": [
+    {
+      "type": 0,
+      "value": "Asigură-te că folosești cheile pentru Live Mode (rzp_live_) pentru plăți în producție, nu cheile pentru Test Mode (rzp_test_)."
+    }
+  ],
+  "s6oEjd": [
+    {
+      "type": 0,
+      "value": "Actualizarea stării a eșuat"
+    }
+  ],
+  "s9BGAO": [
+    {
+      "type": 0,
+      "value": "ex.: 37.774929"
+    }
+  ],
+  "sR8HuW": [
+    {
+      "type": 0,
+      "value": "Copiază atât Key ID, cât și Key Secret, apoi lipește-le în formularul de mai sus pentru a-ți conecta contul Razorpay la Rentalwise."
+    }
+  ],
+  "sTtBm4": [
+    {
+      "type": 0,
+      "value": "Conectează contul Xmoney"
+    }
+  ],
+  "sW0C5+": [
+    {
+      "type": 0,
+      "value": "Conectează contul Razorpay"
+    }
+  ],
+  "sW8CTD": [
+    {
+      "type": 0,
+      "value": "Acceptate: "
+    },
+    {
+      "type": 1,
+      "value": "types"
+    }
+  ],
+  "sbeE6m": [
+    {
+      "type": 0,
+      "value": "Procesare rambursări direct din sistem"
+    }
+  ],
+  "sgXEFE": [
+    {
+      "type": 0,
+      "value": "Continuă"
+    }
+  ],
+  "shuc96": [
+    {
+      "type": 0,
+      "value": "Trageți noul logo aici sau faceți clic pentru a-l înlocui."
+    }
+  ],
+  "soTKGn": [
+    {
+      "type": 0,
+      "value": "Urmează pașii de mai jos pentru a obține datele Xmoney și a configura procesatorul tău de plăți în criptomonede"
+    }
+  ],
+  "t42aKR": [
+    {
+      "type": 0,
+      "value": "Strictă (recomandată)"
+    }
+  ],
+  "t5xsxX": [
+    {
+      "type": 0,
+      "value": "Rezervări"
+    }
+  ],
+  "tAeD+O": [
+    {
+      "type": 0,
+      "value": "Selectează moneda implicită (de obicei USD pentru companiile din SUA) și toate monedele pe care vrei să le accepți."
+    }
+  ],
+  "tCSwzO": [
+    {
+      "type": 0,
+      "value": "Selectează un cont..."
+    }
+  ],
+  "tHJmFA": [
+    {
+      "type": 0,
+      "value": "Toate fișierele au fost încărcate cu succes!"
+    }
+  ],
+  "tN9vEy": [
+    {
+      "type": 0,
+      "value": "Omite pentru moment"
+    }
+  ],
+  "tTrQFe": [
+    {
+      "type": 0,
+      "value": "Se deschide Stripe"
+    }
+  ],
+  "tqRV1/": [
+    {
+      "type": 0,
+      "value": "Tariful trebuie să fie un număr pozitiv"
+    }
+  ],
+  "ts0cV6": [
+    {
+      "type": 0,
+      "value": "Aplică"
+    }
+  ],
+  "uCQNym": [
+    {
+      "type": 0,
+      "value": "Se încarcă..."
+    }
+  ],
+  "uDc/J3": [
+    {
+      "type": 0,
+      "value": "Pentru a-ți conecta contul Redsys, trebuie să obții datele TPV-ului virtual (Virtual POS) din contul tău Redsys:"
+    }
+  ],
+  "uIUj6k": [
+    {
+      "type": 0,
+      "value": "Caută țara..."
+    }
+  ],
+  "uJ7wsj": [
+    {
+      "type": 0,
+      "value": "Pentru a-ți conecta contul Xmoney, trebuie să obții datele API din panoul tău de comerciant:"
+    }
+  ],
+  "udRCBk": [
+    {
+      "type": 0,
+      "value": "Copiază atât API Key, cât și Webhook Secret, apoi lipește-le în formularul de mai sus pentru a-ți conecta contul Xmoney."
+    }
+  ],
+  "udhwJm": [
+    {
+      "type": 0,
+      "value": "Conectează-ți contul Airbnb pentru a importa automat proprietățile, a sincroniza calendarele și a gestiona rezervările dintr-un singur loc."
+    }
+  ],
+  "ue2TrB": [
+    {
+      "type": 0,
+      "value": "Acasă"
+    }
+  ],
+  "uhZWOr": [
+    {
+      "type": 0,
+      "value": "Vom aplica un adaos automat pentru a vă menține câștigurile atunci când sincronizați cu PMS-ul nostru. "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Cum funcționează →"
+        }
+      ],
+      "type": 8,
+      "value": "link"
+    }
+  ],
+  "uje8KK": [
+    {
+      "type": 0,
+      "value": "Mar"
+    }
+  ],
+  "ur0YL9": [
+    {
+      "type": 0,
+      "value": "Nerambursabil în intervalul de 24 de ore înainte de check-in"
+    }
+  ],
+  "uskQOw": [
+    {
+      "type": 0,
+      "value": "Fereastra de conectare Stripe a fost blocată de browserul tău. Te rugăm să permiți ferestre pop-up pentru acest site și să încerci din nou."
+    }
+  ],
+  "uxZY0q": [
+    {
+      "type": 0,
+      "value": "Urmează acești pași pentru a obține credențialele tale API PayPal"
+    }
+  ],
+  "v/zF5n": [
+    {
+      "type": 0,
+      "value": "oaspete"
+    }
+  ],
+  "v8XMQI": [
+    {
+      "type": 0,
+      "value": "Fără rambursare pentru anulări, indiferent de momentul acestora"
+    }
+  ],
+  "vLl8sK": [
+    {
+      "type": 0,
+      "value": "Mie"
+    }
+  ],
+  "vRq6TW": [
+    {
+      "type": 0,
+      "value": "Rambursare de 50% dacă rezervarea este anulată cu 7–30 de zile înainte de check-in"
+    }
+  ],
+  "vg4y7u": [
+    {
+      "type": 0,
+      "value": "Gazdă: ~3%"
+    }
+  ],
+  "vt+Kki": [
+    {
+      "type": 0,
+      "value": "Selectează țara"
+    }
+  ],
+  "vzVrA1": [
+    {
+      "type": 0,
+      "value": "Creați în câteva secunde un contract de închiriere personalizat cu ajutorul AI, apoi ajustați-l după nevoile dvs."
+    }
+  ],
+  "w/sV1T": [
+    {
+      "type": 0,
+      "value": "Pagini"
+    }
+  ],
+  "wS0SOT": [
+    {
+      "type": 0,
+      "value": "Plătit de oaspete (după)"
+    }
+  ],
+  "wb519+": [
+    {
+      "type": 0,
+      "value": "Dacă API Key și Webhook Secret nu sunt încă vizibile, apasă butonul „Generate secrets”."
+    }
+  ],
+  "wiPTGZ": [
+    {
+      "type": 0,
+      "value": "Conectează contul Redsys"
+    }
+  ],
+  "wvKs1e": [
+    {
+      "type": 0,
+      "value": "Actualizarea stării de evidențiere a eșuat"
+    }
+  ],
+  "wyAmDY": [
+    {
+      "type": 0,
+      "value": "Acceptă plăți în siguranță cu Razorpay, principalul procesator de plăți din India, care suportă multiple metode de plată, inclusiv carduri, UPI, net banking și portofele digitale"
+    }
+  ],
+  "x1zJ+4": [
+    {
+      "type": 0,
+      "value": "Încarcă"
+    }
+  ],
+  "x4fZqk": [
+    {
+      "type": 0,
+      "value": "Păstrează Cheia de semnătură în siguranță și nu o distribui niciodată public. Este folosită pentru autentificarea tuturor tranzacțiilor."
+    }
+  ],
+  "xPxl8b": [
+    {
+      "type": 0,
+      "value": "Salvare metode de plată"
+    }
+  ],
+  "xUHkcy": [
+    {
+      "type": 0,
+      "value": "Numele brandului este obligatoriu"
+    }
+  ],
+  "xjxLNM": [
+    {
+      "type": 0,
+      "value": "Conectare eșuată"
+    }
+  ],
+  "xpO5Wj": [
+    {
+      "type": 0,
+      "value": "Nu se schimbă nimic, doar unde apare comisionul"
+    }
+  ],
+  "xy7KyL": [
+    {
+      "type": 0,
+      "value": "Încărcarea conturilor a eșuat. Te rugăm să încerci din nou."
+    }
+  ],
+  "y53dco": [
+    {
+      "type": 0,
+      "value": "La „Type of integration”, selectează „Custom” din meniul derulant."
+    }
+  ],
+  "y6/xbw": [
+    {
+      "type": 0,
+      "value": "Gazdă principală"
+    }
+  ],
+  "yO01eS": [
+    {
+      "type": 0,
+      "value": "Te rugăm să verifici formularul pentru erori"
+    }
+  ],
+  "yf0n+T": [
+    {
+      "type": 0,
+      "value": "Înapoi"
+    }
+  ],
+  "ykVfMx": [
+    {
+      "type": 0,
+      "value": "Nume"
+    }
+  ],
+  "yspnIi": [
+    {
+      "type": 0,
+      "value": "Cont Xmoney"
+    }
+  ],
+  "yv1I7k": [
+    {
+      "type": 0,
+      "value": "Înapoi"
+    }
+  ],
+  "yzg2T4": [
+    {
+      "type": 0,
+      "value": "Selectați furnizorul de plăți preferat"
+    }
+  ],
+  "z7saLl": [
+    {
+      "type": 0,
+      "value": "Datele introduse sunt incorecte. Te rugăm să verifici Merchant Key și Merchant Salt și să încerci din nou."
+    }
+  ],
+  "zBjeyG": [
+    {
+      "type": 0,
+      "value": "Client Secret este obligatoriu"
+    }
+  ],
+  "zCEFXQ": [
+    {
+      "type": 0,
+      "value": "Data de sfârșit trebuie să fie după data de început"
+    }
+  ],
+  "zOoftm": [
+    {
+      "type": 0,
+      "value": "profil"
+    }
+  ],
+  "zSDtWg": [
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "offset": 0,
+      "options": {
+        "one": {
+          "value": [
+            {
+              "type": 0,
+              "value": "limbă"
+            }
+          ]
+        },
+        "other": {
+          "value": [
+            {
+              "type": 0,
+              "value": "limbi"
+            }
+          ]
+        }
+      },
+      "pluralType": "cardinal",
+      "type": 6,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": " selectate"
+    }
+  ],
+  "zpO4iy": [
+    {
+      "type": 0,
+      "value": "Descrieți orice alte clauze, politici sau detalii specifice pe care doriți să le includem în contract"
+    }
+  ],
+  "zqYE4R": [
+    {
+      "type": 0,
+      "value": "Capacitate"
+    }
+  ],
+  "zsf2V4": [
+    {
+      "type": 0,
+      "value": "ex.: Sunset Beach Rentals"
+    }
+  ],
+  "zv3k/l": [
+    {
+      "type": 0,
+      "value": "Conectează contul PayPal"
+    }
+  ]
+}

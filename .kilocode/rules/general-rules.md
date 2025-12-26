@@ -7,3 +7,7 @@
 7. Do not create additional component example files.
 8. Do not create additional markdown documentation files.
 9. You must add examples and documentation comments in the component file only
+10. You must use react-intl package to translate all text using the FormattedMessage components or the useIntl() hook. Do not use id prop and always use the direct text and a short description for the text.
+11. Plurals in react-intl are defined like this: <FormattedMessage defaultMessage={`{count} {count, plural, one {property selected} other {properties selected}}.`} values={{ count: selectedProperties.length }} description={'The number of selected properties'} />
+12. Always use plurals when working with counters (like '{count} selected'). While in english you might not need plurals, in other languages you do.
+13. all components are rendered in a div with a @container class (think tailwind container queries). We must use @xl:, @2xl:, @lg: etc. for responsive layouts instead of the generic lg:, md: etc.  

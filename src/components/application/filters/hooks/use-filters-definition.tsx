@@ -5,7 +5,6 @@ import Schema from "@/models/Schema.ts";
 import Field from "@/models/field.tsx";
 import PicklistFilter from "@/components/application/filters/types/picklist-filter";
 import CheckboxListFilter from "@/components/application/filters/types/checkbox-list-filter";
-import RadioFilter from "@/components/application/filters/types/radio-filter";
 import BooleanRadioFilter from "../types/boolean-radio-filter";
 
 type FilterDefinition = {

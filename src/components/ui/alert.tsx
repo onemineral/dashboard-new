@@ -4,13 +4,19 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const alertVariants = cva(
-  "relative w-full rounded-lg border px-4 py-3 text-sm grid has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[>svg]:gap-x-3 gap-y-0.5 items-start [&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current",
+  "relative w-full rounded-lg px-4 py-3 text-sm grid has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[>svg]:gap-x-3 gap-y-0.5 items-start [&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current",
   {
     variants: {
       variant: {
-        default: "bg-card text-card-foreground",
+        default: "border bg-card text-card-foreground",
         destructive:
-          "text-destructive bg-card [&>svg]:text-current *:data-[slot=alert-description]:text-destructive/90",
+          "border-none bg-destructive/10 text-destructive [&>svg]:text-current *:data-[slot=alert-description]:text-destructive/90 dark:bg-destructive/10 dark:text-destructive",
+        warning:
+          "border-none bg-amber-600/10 text-amber-600 [&>svg]:text-current *:data-[slot=alert-description]:text-amber-600/90 dark:bg-amber-400/10 dark:text-amber-400",
+        info:
+          "border-none bg-sky-600/10 text-sky-600 [&>svg]:text-current *:data-[slot=alert-description]:text-sky-600/90 dark:bg-sky-400/10 dark:text-sky-400",
+        success:
+          "border-none bg-green-600/10 text-green-600 [&>svg]:text-current *:data-[slot=alert-description]:text-green-600/90 dark:bg-green-400/10 dark:text-green-400",
       },
     },
     defaultVariants: {

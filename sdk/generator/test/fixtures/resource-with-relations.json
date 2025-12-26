@@ -1,0 +1,56 @@
+{
+    "resource": {
+        "fields": {
+            "belongs_to_resource": {
+                "type": "belongs-to",
+                "name": "belongs_to_resource",
+                "label": "Belongs to resource",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "belongs-to-resource"
+            },
+            "belongs_to_many_resource": {
+                "type": "belongs-to-many",
+                "name": "belongs_to_many_resource",
+                "label": "Belongs to many resource",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "belongs-to-many-resource"
+            },
+            "has_one": {
+                "type": "has-one",
+                "name": "has_one",
+                "label": "Has one",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "has-one"
+            },
+            "has_many": {
+                "type": "has-many",
+                "name": "has_many",
+                "label": "Has Many",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "has-many"
+            },
+            "ancestors": {
+                "type": "ancestors",
+                "name": "ancestors",
+                "label": "Hierarchy",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "ancestor"
+            }
+        }
+    }
+}

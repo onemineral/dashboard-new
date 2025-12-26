@@ -4,6 +4,7 @@ import {
   ChevronRightIcon,
   MoreHorizontalIcon,
 } from "lucide-react"
+import { FormattedMessage } from "react-intl"
 
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
@@ -77,7 +78,12 @@ function PaginationPrevious({
       {...props}
     >
       <ChevronLeftIcon />
-      <span className="hidden sm:block">Previous</span>
+      <span className="hidden sm:block">
+        <FormattedMessage
+          defaultMessage="Previous"
+          description="Label for pagination previous button"
+        />
+      </span>
     </PaginationLink>
   )
 }
@@ -93,7 +99,12 @@ function PaginationNext({
       className={cn("gap-1 px-2.5 sm:pr-2.5", className)}
       {...props}
     >
-      <span className="hidden sm:block">Next</span>
+      <span className="hidden sm:block">
+        <FormattedMessage
+          defaultMessage="Next"
+          description="Label for pagination next button"
+        />
+      </span>
       <ChevronRightIcon />
     </PaginationLink>
   )
@@ -111,7 +122,12 @@ function PaginationEllipsis({
       {...props}
     >
       <MoreHorizontalIcon className="size-4" />
-      <span className="sr-only">More pages</span>
+      <span className="sr-only">
+        <FormattedMessage
+          defaultMessage="More pages"
+          description="Screen reader text for pagination ellipsis"
+        />
+      </span>
     </span>
   )
 }

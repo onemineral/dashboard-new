@@ -13,7 +13,6 @@ export type MultiCalendarStore = {
     eventData: {[key: number]: CalendarEventInfo[]},
     resources: CalendarResource[],
     rowSizes: {[key: number]: number},
-    resourcesIdToIndex: {[key: number|string]: number},
     dates: CalendarDate[],
     dateStringsToIndex: {[key: string]: number},
     datesGroupedByMonth: {firstDayOfMonth: Date, days: CalendarDate[]}[],
@@ -39,7 +38,9 @@ export type MultiCalendarStore = {
     setDates: (start: Date, end: Date) => void;
     addDaysAndEventData: (data: CalendarResourceDayData[]) => void;
 
-    getMissingDataToLoad: (resourceIndexes: number[], startDayIndex: number, endDayIndex: number) => CalendarMissingData | null;
+    clearDaysData: (resourceIndex: number, startDate: string, endDate: string) => void;
+
+    getMissingDataToLoad: () => CalendarMissingData | null;
     getEventsForResource: (resourceIndex: number, datesIndexes: number[]) => {maxOverlappingEvents: number; events: CalendarEventInfo[]};
 };
 
@@ -98,16 +99,14 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
 
     setResources: (resources) => {
         const dayData: {[key: number]: {[key: number]: CalendarDayInfo}} = {};
-        const resourcesIdToIndex: {[key: number|string]: number} = {};
         const eventData: {[key: number]: CalendarEventInfo[]} = {};
 
-        resources.forEach((resource: any, key) => {
-            dayData[key] = {};
-            resourcesIdToIndex[resource.id] = key;
-            eventData[key] = [];
+        resources.forEach((resource: any) => {
+            dayData[resource.id] = {};
+            eventData[resource.id] = [];
         });
 
-        set({resources, eventData, dayData, resourcesIdToIndex});
+        set({resources, eventData, dayData});
     },
 
     setResourceRowSize: (index: number, size: number) => {
@@ -144,7 +143,7 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
     },
 
     addDaysAndEventData: (data) => {
-        const {dayData, resourcesIdToIndex, dateStringsToIndex, eventData} = get();
+        const {dayData, dateStringsToIndex, eventData} = get();
 
         const newDayData: {[key: number]: {[key: number]: CalendarDayInfo}} = {
             ...dayData,
@@ -155,7 +154,7 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
         };
 
         data.forEach((resourceData) => {
-            const resourceIndex = resourcesIdToIndex[resourceData.id];
+            const resourceIndex = resourceData.id as number;
             const newDayInfo: {[key: number]: CalendarDayInfo} = {};
             resourceData.dayData.forEach((dayInfo: CalendarDayInfo) => {
                 newDayInfo[dateStringsToIndex[dayInfo.date]] = dayInfo;
@@ -196,17 +195,19 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
         set({visibleResourcesIndexes: indexes});
     },
 
-    getMissingDataToLoad: (resourceIndexes, startDayIndex, endDayIndex): CalendarMissingData | null => {
-        const {resources, dayData, dates} = get();
-
+    getMissingDataToLoad: (): CalendarMissingData | null => {
+        const {resources, dayData, dates, visibleResourcesIndexes, visibleDatesIndexes} = get();
+        const startDayIndex = visibleDatesIndexes[0];
+        const endDayIndex = visibleDatesIndexes[visibleDatesIndexes.length - 1];
 
         const missingResources: CalendarResource[] = [];
         let start: Date | null = null;
         let end: Date | null = null;
 
-        resourceIndexes.forEach((resourceIndex) => {
+        visibleResourcesIndexes.forEach((resourceIndex) => {
+            const resource = get().resources[resourceIndex];
             for(let i = startDayIndex; i <= endDayIndex; i++) {
-                if (!dayData[resourceIndex][i]) {
+                if (!dayData[resource.id][i]) {
                     if(!missingResources.includes(resources[resourceIndex])) {
                         missingResources.push(resources[resourceIndex]);
                     }
@@ -225,6 +226,30 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
         }
 
         return null;
+    },
+
+    clearDaysData: (resourceId, startDate, endDate) => {
+        const {dayData, dateStringsToIndex} = get();
+
+        // Parse start and end dates
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+        
+        // Get all dates in the range
+        const datesInRange = eachDayOfInterval({start, end});
+        
+        // Delete day data for each date in the range
+        datesInRange.forEach((date) => {
+            const dateString = format(date, YMD_FORMAT);
+            const dateIndex = dateStringsToIndex[dateString];
+
+            delete dayData[resourceId]?.[dateIndex];
+        });
+        
+        // Update the store
+        set({
+            dayData
+        });
     },
 
     getEventsForResource: (resourceIndex, datesIndexes) => {

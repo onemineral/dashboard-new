@@ -9,6 +9,7 @@ import {Plus} from "lucide-react";
 import {Label} from "@/components/ui/label.tsx";
 import {Checkbox} from "@/components/ui/checkbox.tsx";
 import {FilterRemoveButton} from "@/components/application/filters/filters";
+import {FormattedMessage} from "react-intl";
 
 const CheckboxListFilter = ({options, field}: { options: { [key: string]: string | ReactNode }, field: string }) => {
     const {remove, settings, set, selection} = useFilter();
@@ -33,7 +34,7 @@ const CheckboxListFilter = ({options, field}: { options: { [key: string]: string
     }
 
     return <div
-        className={cn('transition-all bg-background flex items-center group border rounded-lg hover:bg-accent shadow-xs', {
+        className={cn('transition-all  bg-background flex items-center group border rounded-lg hover:bg-accent shadow-xs', {
             'border-dashed': !selection?.value,
         })}>
         <Popover open={open} defaultOpen={open} modal onOpenChange={(o) => {
@@ -58,7 +59,11 @@ const CheckboxListFilter = ({options, field}: { options: { [key: string]: string
                                 <Badge variant="default" className="lg:hidden">{selection?.value.length}</Badge>
                                 <div className="hidden gap-1 lg:flex text-emerald-700">
                                     {selection?.value.length > 2 ? (
-                                        <span>{selection?.value.length} selected</span>
+                                        <FormattedMessage
+                                            defaultMessage="{count} {count, plural, one {selected} other {selected}}"
+                                            description="Number of items selected in checkbox filter"
+                                            values={{ count: selection?.value.length }}
+                                        />
                                     ) : Object.keys(options).filter((k) => selection?.value.includes(k)).map((k) => options[k]).join(', ')}
                                 </div>
                             </>
@@ -67,7 +72,7 @@ const CheckboxListFilter = ({options, field}: { options: { [key: string]: string
                 </Button>
             </PopoverTrigger>
 
-            <PopoverContent className={cn('mt-1 flex flex-col gap-3', {
+            <PopoverContent className={cn('mt-1 flex flex-col gap-3 dark', {
                 'ml-5': selection?.value
             })}>
                 {Object.keys(options).map((key: string) => (
@@ -94,7 +99,9 @@ const CheckboxListFilter = ({options, field}: { options: { [key: string]: string
                 <Button variant={'default'} className={'w-full mt-2'} onClick={() => {
                     updateValue();
                     setOpen(!open);
-                }}>Apply</Button>
+                }}>
+                    <FormattedMessage defaultMessage="Apply" description="Button to apply the checkbox filter selection" />
+                </Button>
             </PopoverContent>
         </Popover>
         <FilterRemoveButton onClick={() => setInternalValue([])} />

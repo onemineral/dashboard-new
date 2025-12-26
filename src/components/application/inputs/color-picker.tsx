@@ -1,5 +1,6 @@
 import * as React from "react";
 import { HexColorPicker } from "react-colorful";
+import { FormattedMessage } from "react-intl";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -174,16 +175,16 @@ export const ColorPicker = React.memo(
         [isControlled, onChange]
       );
       
-      // Handle hex input change
+      // Handle hex input change - only update input state, don't normalize while typing
       const handleHexInputChange = React.useCallback(
         (e: React.ChangeEvent<HTMLInputElement>) => {
           const input = e.target.value;
           setHexInput(input);
           
-          // Try to normalize and validate
-          const normalized = normalizeHexColor(input);
-          if (isValidHex(normalized)) {
-            handleColorChange(normalized);
+          // Don't normalize while typing - wait for blur
+          // Only validate if it's already a valid 6-char hex (without normalization)
+          if (isValidHex(input)) {
+            handleColorChange(input);
           }
         },
         [handleColorChange]
@@ -253,10 +254,10 @@ export const ColorPicker = React.memo(
               >
                 <TabsList className="w-full">
                   <TabsTrigger value="presets" className="flex-1">
-                    Presets
+                    <FormattedMessage defaultMessage="Presets" description="Color picker presets tab label" />
                   </TabsTrigger>
                   <TabsTrigger value="custom" className="flex-1">
-                    Custom
+                    <FormattedMessage defaultMessage="Custom" description="Color picker custom tab label" />
                   </TabsTrigger>
                 </TabsList>
                 
@@ -328,7 +329,7 @@ export const ColorPicker = React.memo(
                     data-testid={dataTestId ? `${dataTestId}-hex-input` : undefined}
                   >
                     <p className="text-xs font-medium text-muted-foreground">
-                      Hex Code
+                      <FormattedMessage defaultMessage="Hex Code" description="Hex color code input label" />
                     </p>
                     <div className="flex items-center gap-2">
                       <div
@@ -352,7 +353,7 @@ export const ColorPicker = React.memo(
                       />
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      Enter hex code (e.g., #FF5733)
+                      <FormattedMessage defaultMessage="Enter hex code (e.g., #FF5733)" description="Hex color code input helper text" />
                     </p>
                   </div>
                 </TabsContent>

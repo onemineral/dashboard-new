@@ -25,6 +25,10 @@ export interface LanguageTabsProps {
     className?: string;
     /** Tab orientation - vertical (left side) or horizontal (top) */
     orientation?: "vertical" | "horizontal";
+    /** Minimum character count for content validation (optional) */
+    minCharacters?: number;
+    /** Maximum character count for content validation (optional) */
+    maxCharacters?: number;
     /** Children elements (input components) */
     children: React.ReactNode;
     /** Test ID for testing */
@@ -41,7 +45,11 @@ export interface LanguageTabsProps {
  *
  * Features:
  * - Vertical or horizontal tab layout with flag emojis for supported languages
- * - Visual indicator (dot) for tabs with content
+ * - Visual indicator (dot) for tabs with content validation:
+ *   - Gray: No content
+ *   - Orange: Content below minCharacters (if specified)
+ *   - Green: Content between minCharacters and maxCharacters (or any content if no limits)
+ *   - Red: Content exceeds maxCharacters (if specified)
  * - Fully accessible with ARIA attributes from Radix UI Tabs
  * - Works with any React element as children
  * - Preserves content when switching languages
@@ -50,11 +58,13 @@ export interface LanguageTabsProps {
  *
  * @example
  * ```tsx
- * // Vertical layout (default) - for textarea
+ * // Vertical layout (default) - for textarea with validation
  * <LanguageTabs
  *   value={multiLangValue}
  *   onChange={(locale) => setSelectedLocale(locale)}
  *   orientation="vertical"
+ *   minCharacters={10}
+ *   maxCharacters={500}
  * >
  *   <textarea />
  * </LanguageTabs>
@@ -79,6 +89,8 @@ export const LanguageTabs = React.memo(
                 error = false,
                 className,
                 orientation = "vertical",
+                minCharacters,
+                maxCharacters,
                 children,
                 "data-testid": dataTestId,
             },
@@ -105,6 +117,34 @@ export const LanguageTabs = React.memo(
 
             const isVertical = orientation === "vertical";
             const isHorizontal = orientation === "horizontal";
+
+            /**
+             * Determine the indicator dot color based on content length
+             * - Gray: No content
+             * - Orange: Content below minCharacters
+             * - Green: Content within range or valid
+             * - Red: Content exceeds maxCharacters
+             */
+            const getIndicatorColor = React.useCallback((content: string | null | undefined): string => {
+                if (!content || content.trim().length === 0) {
+                    return "bg-gray-400"; // Gray for missing content
+                }
+
+                const length = content.length;
+
+                // If maxCharacters is defined and exceeded, show red
+                if (maxCharacters !== undefined && length > maxCharacters) {
+                    return "bg-red-500"; // Red for exceeding max
+                }
+
+                // If minCharacters is defined and not met, show orange
+                if (minCharacters !== undefined && length < minCharacters) {
+                    return "bg-orange-400"; // Orange for below min
+                }
+
+                // Content is valid (either within range or no limits defined)
+                return "bg-green-500"; // Green for valid content
+            }, [minCharacters, maxCharacters]);
 
             return (
                 <Tabs
@@ -148,7 +188,8 @@ export const LanguageTabs = React.memo(
                             )}
                         >
                             {LANGUAGES.map((language) => {
-                                const hasContent = value?.[language.locale];
+                                const content = value?.[language.locale];
+                                const indicatorColor = getIndicatorColor(content);
 
                                 return (
                                     <TabsTrigger
@@ -176,17 +217,24 @@ export const LanguageTabs = React.memo(
                                             {getFlagEmoji(language.iso_locale)}
                                             {isVertical && <br />}
                                         </span>
-                                        {/* Content indicator dot */}
-                                        {hasContent && (
-                                            <span
-                                                className={cn(
-                                                    "absolute size-1.5 rounded-full bg-orange-400",
-                                                    isVertical && "top-1 right-1",
-                                                    isHorizontal && "top-0.5 right-0.5"
-                                                )}
-                                                aria-label="Has content"
-                                            />
-                                        )}
+                                        {/* Content indicator dot - always shown */}
+                                        <span
+                                            className={cn(
+                                                "absolute size-1.5 rounded-full",
+                                                indicatorColor,
+                                                isVertical && "top-1 right-1",
+                                                isHorizontal && "top-0.5 right-0.5"
+                                            )}
+                                            aria-label={
+                                                !content || content.trim().length === 0
+                                                    ? "No content"
+                                                    : maxCharacters !== undefined && content.length > maxCharacters
+                                                    ? "Content exceeds maximum"
+                                                    : minCharacters !== undefined && content.length < minCharacters
+                                                    ? "Content below minimum"
+                                                    : "Content valid"
+                                            }
+                                        />
                                     </TabsTrigger>
                                 );
                             })}

@@ -1,5 +1,6 @@
 import * as React from "react";
 import {Upload, X, File, CheckCircle2, AlertCircle} from "lucide-react";
+import { useIntl } from "react-intl";
 import {cn} from "@/lib/utils";
 import {Button} from "@/components/ui/button";
 import {Progress} from "@/components/ui/progress";
@@ -11,13 +12,22 @@ import {
     getDropzoneBackgroundColor,
     createPreviewUrl,
     type FileValidation,
-    type UploadProgress,
 } from "./upload-utils";
 
 /**
  * Upload state types
  */
 export type UploadState = "idle" | "drag-over" | "uploading" | "success" | "error";
+
+/**
+ * Currently uploaded file interface
+ */
+export interface CurrentUploadedFile {
+    /** URL to access the file */
+    url: string;
+    /** Name of the file */
+    name: string;
+}
 
 /**
  * Props for the FileUpload component
@@ -29,8 +39,12 @@ export interface FileUploadProps {
     onChange?: (file: File | null) => void;
     /** Callback fired on blur for form validation */
     onBlur?: () => void;
-    /** Upload handler function - receives file and progress callback */
-    onUpload?: (file: File, onProgress: (progress: UploadProgress) => void) => Promise<void>;
+    /** Upload handler function */
+    onUpload?: (file: File) => Promise<void>;
+    /** Currently uploaded file from database */
+    currentUploadedFile?: CurrentUploadedFile | null;
+    /** Callback when removing the currently uploaded file */
+    onRemoveCurrentUploadedFile?: () => void;
     /** Accepted file types (MIME types or extensions) */
     accept?: string;
     /** Maximum file size in bytes */
@@ -66,26 +80,12 @@ export interface FileUploadProps {
  * <FileUpload value={file} onChange={setFile} />
  *
  * // With upload handler
- * const handleUpload = async (file: File, onProgress: (progress: UploadProgress) => void) => {
+ * const handleUpload = async (file: File) => {
  *   const formData = new FormData();
  *   formData.append('file', file);
- *
- *   const xhr = new XMLHttpRequest();
- *   xhr.upload.addEventListener('progress', (e) => {
- *     if (e.lengthComputable) {
- *       onProgress({
- *         percentage: (e.loaded / e.total) * 100,
- *         loaded: e.loaded,
- *         total: e.total
- *       });
- *     }
- *   });
- *
- *   return new Promise((resolve, reject) => {
- *     xhr.addEventListener('load', () => resolve());
- *     xhr.addEventListener('error', () => reject());
- *     xhr.open('POST', '/api/upload');
- *     xhr.send(formData);
+ *   await fetch('/api/upload', {
+ *     method: 'POST',
+ *     body: formData,
  *   });
  * };
  *
@@ -96,6 +96,14 @@ export interface FileUploadProps {
  *   accept="image/*,.pdf"
  *   maxSize={5 * 1024 * 1024}
  *   autoUpload
+ * />
+ *
+ * // With currently uploaded file from database
+ * <FileUpload
+ *   value={file}
+ *   onChange={setFile}
+ *   currentUploadedFile={{ url: 'https://example.com/file.pdf', name: 'document.pdf' }}
+ *   onRemoveCurrentUploadedFile={() => console.log('Remove file')}
  * />
  *
  * // With React Hook Form
@@ -122,27 +130,26 @@ export const FileUpload = React.memo(
                 onChange,
                 onBlur,
                 onUpload,
+                currentUploadedFile,
+                onRemoveCurrentUploadedFile,
                 accept,
                 maxSize,
                 validate,
                 disabled = false,
                 error = false,
                 className,
-                placeholder = "Drop file here or click to browse",
-                uploadButtonText = "Upload",
+                placeholder,
+                uploadButtonText,
                 showFileSize = true,
                 autoUpload = false,
                 "data-testid": dataTestId,
             },
             ref
         ) => {
+            const intl = useIntl();
+            
             // State management
             const [state, setState] = React.useState<UploadState>("idle");
-            const [uploadProgress, setUploadProgress] = React.useState<UploadProgress>({
-                percentage: 0,
-                loaded: 0,
-                total: 0,
-            });
             const [validationError, setValidationError] = React.useState<string>("");
             const [previewUrl, setPreviewUrl] = React.useState<string | undefined>();
             const fileInputRef = React.useRef<HTMLInputElement>(null);
@@ -192,7 +199,7 @@ export const FileUpload = React.memo(
                     const validation = validateFileWrapper(file);
 
                     if (!validation.valid) {
-                        setValidationError(validation.error || "Invalid file");
+                        setValidationError(validation.error || intl.formatMessage({ defaultMessage: "Invalid file", description: "Error message when a file is invalid" }));
                         setState("error");
                         return;
                     }
@@ -205,17 +212,15 @@ export const FileUpload = React.memo(
                     if (autoUpload && onUpload) {
                         try {
                             setState("uploading");
-                            setUploadProgress({percentage: 0, loaded: 0, total: file.size});
 
-                            await onUpload(file, (progress) => {
-                                setUploadProgress(progress);
-                            });
+                            await onUpload(file);
 
                             setState("success");
                             setTimeout(() => onBlur?.(), 0);
                         } catch (err) {
                             setState("error");
-                            setValidationError(err instanceof Error ? err.message : "Upload failed");
+                            const message = (err as any).responseBody?.message || (err as any).message;
+                            setValidationError(message || intl.formatMessage({ defaultMessage: "Upload failed", description: "Error message when file upload fails" }));
                         }
                     } else {
                         setTimeout(() => onBlur?.(), 0);
@@ -232,17 +237,15 @@ export const FileUpload = React.memo(
 
                 try {
                     setState("uploading");
-                    setUploadProgress({percentage: 0, loaded: 0, total: value.size});
 
-                    await onUpload(value, (progress) => {
-                        setUploadProgress(progress);
-                    });
+                    await onUpload(value);
 
                     setState("success");
                     setTimeout(() => onBlur?.(), 0);
                 } catch (err) {
                     setState("error");
-                    setValidationError(err instanceof Error ? err.message : "Upload failed");
+                    const message = (err as any).responseBody?.message || (err as any).message;
+                    setValidationError(message || intl.formatMessage({ defaultMessage: "Upload failed", description: "Error message when file upload fails" }));
                 }
             }, [value, onUpload, onBlur]);
 
@@ -344,7 +347,6 @@ export const FileUpload = React.memo(
                     onChange?.(null);
                     setState("idle");
                     setValidationError("");
-                    setUploadProgress({percentage: 0, loaded: 0, total: 0});
                     setPreviewUrl(undefined);
 
                     if (fileInputRef.current) {
@@ -355,6 +357,29 @@ export const FileUpload = React.memo(
                 },
                 [onChange, onBlur, previewUrl]
             );
+
+            /**
+             * Handle removing currently uploaded file
+             */
+            const handleRemoveCurrentUploadedFile = React.useCallback(
+                (e: React.MouseEvent) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    onRemoveCurrentUploadedFile?.();
+                    setTimeout(() => onBlur?.(), 0);
+                },
+                [onRemoveCurrentUploadedFile, onBlur]
+            );
+
+            /**
+             * Check if current file is an image
+             */
+            const isCurrentFileImage = React.useMemo(() => {
+                if (!currentUploadedFile) return false;
+                const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.bmp'];
+                return imageExtensions.some(ext => currentUploadedFile.name.toLowerCase().endsWith(ext));
+            }, [currentUploadedFile]);
 
 
             return (
@@ -367,7 +392,7 @@ export const FileUpload = React.memo(
                         onChange={handleInputChange}
                         className="hidden"
                         disabled={disabled}
-                        aria-label="File input"
+                        aria-label={intl.formatMessage({ defaultMessage: "File input", description: "ARIA label for the hidden file input" })}
                     />
 
                     {/* Dropzone */}
@@ -388,7 +413,7 @@ export const FileUpload = React.memo(
                         )}
                         role="button"
                         tabIndex={disabled ? -1 : 0}
-                        aria-label="Upload file"
+                        aria-label={intl.formatMessage({ defaultMessage: "Upload file", description: "ARIA label for the upload dropzone area" })}
                         aria-disabled={disabled}
                         data-testid={`${dataTestId}-dropzone`}
                     >
@@ -397,6 +422,49 @@ export const FileUpload = React.memo(
                             <CheckCircle2 className="size-12 text-green-600" aria-hidden="true"/>
                         ) : state === "error" || validationError ? (
                             <AlertCircle className="size-12 text-destructive" aria-hidden="true"/>
+                        ) : currentUploadedFile && !value ? (
+                            /* Currently Uploaded File Display */
+                            <div className="flex flex-col items-center gap-3 w-full">
+                                {/* Image Preview with Delete Button */}
+                                {isCurrentFileImage ? (
+                                    <div className="relative p-1 rounded-lg overflow-hidden border border-border group">
+                                        <img
+                                            src={currentUploadedFile.url}
+                                            alt={currentUploadedFile.name}
+                                            className="max-h-20 max-w-60"
+                                        />
+                                        {!disabled && onRemoveCurrentUploadedFile && (
+                                            <Button
+                                                type="button"
+                                                variant="destructive"
+                                                size="icon"
+                                                onClick={handleRemoveCurrentUploadedFile}
+                                                className="absolute top-2 right-2 size-8 min-w-[44px] min-h-[44px] md:min-w-[32px] md:min-h-[32px] opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                                                aria-label={intl.formatMessage({ defaultMessage: "Remove file", description: "ARIA label for remove current file button" })}
+                                            >
+                                                <X className="size-4" aria-hidden="true" />
+                                            </Button>
+                                        )}
+                                    </div>
+                                ) : (
+                                    /* Non-image file with delete button */
+                                    <div className="relative">
+                                        <File className="size-16 text-muted-foreground" aria-hidden="true" />
+                                        {!disabled && onRemoveCurrentUploadedFile && (
+                                            <Button
+                                                type="button"
+                                                variant="destructive"
+                                                size="icon"
+                                                onClick={handleRemoveCurrentUploadedFile}
+                                                className="absolute -top-2 -right-2 size-8 min-w-[44px] min-h-[44px] md:min-w-[32px] md:min-h-[32px] shadow-lg"
+                                                aria-label={intl.formatMessage({ defaultMessage: "Remove file", description: "ARIA label for remove current file button" })}
+                                            >
+                                                <X className="size-4" aria-hidden="true" />
+                                            </Button>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
                         ) : (
                             <Upload
                                 className={cn(
@@ -412,11 +480,11 @@ export const FileUpload = React.memo(
                             <div className="flex flex-col items-center gap-2 w-full">
                                 {/* Image Preview */}
                                 {previewUrl && (
-                                    <div className="relative size-24 rounded-lg overflow-hidden border border-border">
+                                    <div className="relative rounded-lg p-1 overflow-hidden border border-border">
                                         <img
                                             src={previewUrl}
                                             alt={value.name}
-                                            className="size-full object-cover"
+                                            className="max-h-20 max-w-60"
                                         />
                                     </div>
                                 )}
@@ -434,7 +502,7 @@ export const FileUpload = React.memo(
                                             size="icon"
                                             onClick={handleClear}
                                             className="size-6 min-w-[44px] min-h-[44px] md:min-w-[24px] md:min-h-[24px] -mr-2"
-                                            aria-label="Clear file"
+                                            aria-label={intl.formatMessage({ defaultMessage: "Clear file", description: "ARIA label for the clear file button" })}
                                         >
                                             <X className="size-4" aria-hidden="true"/>
                                         </Button>
@@ -447,16 +515,19 @@ export const FileUpload = React.memo(
                         ) : (
                             <div className="flex flex-col items-center gap-1 text-center">
                                 <p className="text-sm font-medium">
-                                    {state === "drag-over" ? "Drop file here" : placeholder}
+                                    {state === "drag-over"
+                                        ? intl.formatMessage({ defaultMessage: "Drop file here", description: "Message shown when dragging a file over the dropzone" })
+                                        : placeholder || intl.formatMessage({ defaultMessage: "Drop file here or click to browse", description: "Placeholder text for the file upload dropzone" })
+                                    }
                                 </p>
                                 {accept && (
                                     <p className="text-xs text-muted-foreground">
-                                        Accepted: {accept.split(",").join(", ")}
+                                        {intl.formatMessage({ defaultMessage: "Accepted: {types}", description: "Label showing accepted file types" }, { types: accept.split(",").join(", ") })}
                                     </p>
                                 )}
                                 {maxSize && (
                                     <p className="text-xs text-muted-foreground">
-                                        Max size: {formatFileSize(maxSize)}
+                                        {intl.formatMessage({ defaultMessage: "Max size: {size}", description: "Label showing maximum file size" }, { size: formatFileSize(maxSize) })}
                                     </p>
                                 )}
                             </div>
@@ -465,22 +536,18 @@ export const FileUpload = React.memo(
                         {/* Upload Progress */}
                         {state === "uploading" && (
                             <div className="w-full max-w-xs space-y-2">
-                                <Progress value={uploadProgress.percentage} indeterminate={!uploadProgress.percentage}
-                                          className="h-2"/>
-                                {uploadProgress.percentage ?
-                                    <div className="flex items-center justify-between text-xs text-muted-foreground">
-                                        <span>{Math.round(uploadProgress.percentage)}%</span>
-                                        <span>
-                                        {formatFileSize(uploadProgress.loaded)} / {formatFileSize(uploadProgress.total)}
-                                      </span>
-                                    </div>
-                                    : null}
+                                <Progress indeterminate className="h-2"/>
+                                <div className="flex items-center justify-center text-xs text-muted-foreground">
+                                    <span>{intl.formatMessage({ defaultMessage: "Uploading...", description: "Status text while file is uploading" })}</span>
+                                </div>
                             </div>
                         )}
 
                         {/* Success Message */}
                         {state === "success" && (
-                            <p className="text-sm text-green-600 font-medium">Upload successful!</p>
+                            <p className="text-sm text-green-600 font-medium">
+                                {intl.formatMessage({ defaultMessage: "Upload successful!", description: "Success message when file upload completes" })}
+                            </p>
                         )}
                     </div>
 
@@ -494,7 +561,7 @@ export const FileUpload = React.memo(
                             data-testid={`${dataTestId}-upload-button`}
                         >
                             <Upload className="size-4" aria-hidden="true"/>
-                            {uploadButtonText}
+                            {uploadButtonText || intl.formatMessage({ defaultMessage: "Upload", description: "Button text to upload the selected file" })}
                         </Button>
                     )}
 
@@ -520,4 +587,4 @@ FileUpload.displayName = "FileUpload";
 /**
  * Export types for external use
  */
-export type {UploadState as FileUploadState, FileValidation, UploadProgress};
+export type {UploadState as FileUploadState, FileValidation};

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import {Dot} from "lucide-react";
 import { cva, type VariantProps } from "class-variance-authority";
+import { AppContext } from "@/contexts/app-context";
 
 /**
  * All possible booking statuses from the backend
@@ -21,10 +22,9 @@ export type BookingStatus =
   | "relocated";
 
 /**
- * Status definition with display properties
+ * Status definition with display properties (without label)
  */
 interface BookingStatusDefinition {
-  label: string;
   icon: React.ElementType;
   colorClass: string;
 }
@@ -34,57 +34,46 @@ interface BookingStatusDefinition {
  */
 const BOOKING_STATUS_CONFIG: Record<BookingStatus, BookingStatusDefinition> = {
   confirmed: {
-    label: "Confirmed",
     icon: Dot,
     colorClass: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400",
   },
   completed: {
-    label: "Completed",
     icon: Dot,
     colorClass: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400",
   },
   cancelled: {
-    label: "Cancelled",
     icon: Dot,
     colorClass: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400",
   },
   expired_hold: {
-    label: "Expired Hold",
     icon: Dot,
     colorClass: "bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-400",
   },
   expired_host_confirmation: {
-    label: "Expired Confirmation",
     icon: Dot,
     colorClass: "bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-400",
   },
   hold: {
-    label: "Hold",
     icon: Dot,
     colorClass: "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400",
   },
   pending_host_confirmation: {
-    label: "Pending Confirmation",
     icon: Dot,
     colorClass: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400",
   },
   pending_payment: {
-    label: "Pending Payment",
     icon: Dot,
     colorClass: "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400",
   },
   rejected_by_host: {
-    label: "Rejected",
     icon: Dot,
     colorClass: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400",
   },
   voided_by_customer: {
-    label: "Voided",
     icon: Dot,
     colorClass: "bg-gray-100 text-gray-700 dark:bg-gray-800/50 dark:text-gray-400",
   },
   relocated: {
-    label: "Relocated",
     icon: Dot,
     colorClass: "bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400",
   },
@@ -132,22 +121,16 @@ export interface BookingStatusBadgeProps
  */
 export const BookingStatusBadge = React.memo<BookingStatusBadgeProps>(
   ({ status, size = "default", showLabel = true, showIcon = true, className, "data-testid": testId, ...props }) => {
+    const { schema } = React.useContext(AppContext);
+    const bookingStatusField = schema.findField('booking', 'status');
     const config = BOOKING_STATUS_CONFIG[status];
 
     if (!config) {
-      return (
-        <Badge
-          variant="secondary"
-          className={cn("opacity-60", bookingBadgeVariants({ size }), className)}
-          data-testid={testId}
-          {...props}
-        >
-          Unknown
-        </Badge>
-      );
+      return null;
     }
 
     const Icon = config.icon;
+    const label = bookingStatusField?.possibleValues[status] || status;
 
     return (
       <Badge
@@ -161,7 +144,7 @@ export const BookingStatusBadge = React.memo<BookingStatusBadgeProps>(
         {...props}
       >
         {showIcon && <Icon className={cn("shrink-0", config.colorClass)} aria-hidden="true" />}
-        {showLabel && <span className={'pr-2'}>{config.label}</span>}
+        {showLabel && <span className={'pr-2'}>{label}</span>}
       </Badge>
     );
   }

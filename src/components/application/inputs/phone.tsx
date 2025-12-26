@@ -3,7 +3,8 @@ import { Phone as PhoneIcon, ChevronDown, X } from "lucide-react";
 import { parsePhoneNumberFromString, isValidPhoneNumber, CountryCode, getCountryCallingCode, AsYouType } from "libphonenumber-js";
 import countries from "i18n-iso-countries";
 import enCountries from "i18n-iso-countries/langs/en.json";
-import { cn } from "@/lib/utils";
+import { useIntl } from "react-intl";
+import {cn, getFlagEmoji} from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -54,17 +55,6 @@ interface CountryItem {
   dialCode: string;
   flag: string;
 }
-
-/**
- * Get flag emoji for a country code
- */
-const getFlagEmoji = (countryCode: string): string => {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt(0));
-  return String.fromCodePoint(...codePoints);
-};
 
 /**
  * Get all available countries with their info
@@ -171,7 +161,7 @@ export const PhoneInput = React.memo(
         defaultValue,
         onChange,
         onBlur,
-        placeholder = "Enter phone number",
+        placeholder,
         disabled = false,
         error = false,
         defaultCountry,
@@ -183,6 +173,8 @@ export const PhoneInput = React.memo(
       },
       ref
     ) => {
+      const intl = useIntl();
+      
       // State management
       const [open, setOpen] = React.useState(false);
       const [searchQuery, setSearchQuery] = React.useState("");
@@ -195,6 +187,28 @@ export const PhoneInput = React.memo(
       const [hasInvalidPhoneNumber, setHasInvalidPhoneNumber] = React.useState(false);
       const [isTyping, setIsTyping] = React.useState(false);
       const isMobile = useIsMobile();
+      
+      // Translated strings
+      const placeholderText = placeholder || intl.formatMessage({
+        defaultMessage: "Enter phone number",
+        description: "Placeholder text for phone number input"
+      });
+      const selectCountryLabel = intl.formatMessage({
+        defaultMessage: "Select country",
+        description: "Aria label for country selector button"
+      });
+      const searchCountryPlaceholder = intl.formatMessage({
+        defaultMessage: "Search country...",
+        description: "Placeholder for country search input"
+      });
+      const noCountryFound = intl.formatMessage({
+        defaultMessage: "No country found.",
+        description: "Message when no countries match the search"
+      });
+      const clearPhoneLabel = intl.formatMessage({
+        defaultMessage: "Clear phone number",
+        description: "Aria label for clear phone number button"
+      });
       
       // Ref for cursor position management
       const inputRef = React.useRef<HTMLInputElement | null>(null);
@@ -662,7 +676,7 @@ export const PhoneInput = React.memo(
                   variant="outline"
                   role="combobox"
                   aria-expanded={open}
-                  aria-label="Select country"
+                  aria-label={selectCountryLabel}
                   disabled={disabled}
                   className={cn(
                     "px-3 gap-2 shrink-0 justify-start",
@@ -681,12 +695,12 @@ export const PhoneInput = React.memo(
               >
                 <Command>
                   <CommandInput
-                    placeholder="Search country..."
+                    placeholder={searchCountryPlaceholder}
                     value={searchQuery}
                     onValueChange={setSearchQuery}
                   />
                   <CommandList>
-                    <CommandEmpty>No country found.</CommandEmpty>
+                    <CommandEmpty>{noCountryFound}</CommandEmpty>
                     <CommandGroup>
                       {filteredCountries.map((country) => (
                         <CommandItem
@@ -720,7 +734,7 @@ export const PhoneInput = React.memo(
                 onChange={handleInputChange}
                 onBlur={handleBlur}
                 onKeyDown={handleKeyDown}
-                placeholder={placeholder}
+                placeholder={placeholderText}
                 disabled={disabled}
                 aria-invalid={error || hasInvalidCountryCode || hasInvalidPhoneNumber}
                 className={cn(
@@ -739,7 +753,7 @@ export const PhoneInput = React.memo(
                     "min-w-[44px] min-h-[44px] md:min-w-[20px] md:min-h-[20px]",
                     "flex items-center justify-center"
                   )}
-                  aria-label="Clear phone number"
+                  aria-label={clearPhoneLabel}
                   tabIndex={-1}
                 >
                   <X className="size-4 shrink-0" aria-hidden="true" />

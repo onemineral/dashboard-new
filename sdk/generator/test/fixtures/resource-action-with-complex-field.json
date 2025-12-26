@@ -1,0 +1,148 @@
+{
+    "resource-complex-action": {
+        "fields": {
+            "id": {
+                "type": "id",
+                "name": "id",
+                "label": "ID",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "name": {
+                "type": "text",
+                "name": "name",
+                "label": "Name",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {}
+            }
+        },
+        "actions": {
+            "sync": {
+                "name": "sync",
+                "args": {
+                    "property": {
+                        "type": "id",
+                        "name": "property",
+                        "label": "Property ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "rooms": {
+                        "type": "list-of",
+                        "name": "rooms",
+                        "label": "Rooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "composed",
+                                "name": "rooms",
+                                "label": "Rooms",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": {
+                                    "name": {
+                                        "type": "translated-text",
+                                        "name": "name",
+                                        "label": "Room name",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": {
+                                            "html": false,
+                                            "multiline": false
+                                        }
+                                    },
+                                    "description": {
+                                        "type": "translated-text",
+                                        "name": "description",
+                                        "label": "Description",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": {
+                                            "html": false,
+                                            "multiline": true
+                                        }
+                                    },
+                                    "en_suite_bath": {
+                                        "type": "boolean",
+                                        "name": "en_suite_bath",
+                                        "label": "Has bathroom",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": []
+                                    },
+                                    "type": {
+                                        "type": "picklist",
+                                        "name": "type",
+                                        "label": "Room type",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "living_room": "Living room",
+                                            "bedroom": "Bedroom"
+                                        },
+                                        "multivalue": false
+                                    },
+                                    "beds": {
+                                        "type": "list-of",
+                                        "name": "beds",
+                                        "label": "Beds",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": {
+                                            "field": {
+                                                "type": "composed",
+                                                "name": "beds",
+                                                "label": "Beds",
+                                                "description": "",
+                                                "default_value": null,
+                                                "hints": null,
+                                                "options": [],
+                                                "fields": [
+                                                    {
+                                                        "type": "integer",
+                                                        "name": "bed_count",
+                                                        "label": "Number of beds",
+                                                        "description": "",
+                                                        "default_value": null,
+                                                        "hints": null,
+                                                        "options": []
+                                                    },
+                                                    {
+                                                        "type": "belongs-to",
+                                                        "name": "bed_type",
+                                                        "label": "Bed type ID",
+                                                        "description": "",
+                                                        "default_value": null,
+                                                        "hints": null,
+                                                        "options": [],
+                                                        "relates_to": "bed-type"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

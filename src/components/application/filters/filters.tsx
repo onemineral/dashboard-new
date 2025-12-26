@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu.tsx";
 import {FilterContext} from "@/contexts/filter-context.tsx";
 import {useFilter} from "@/components/application/filters/hooks/use-filter";
+import {FormattedMessage} from "react-intl";
 
 export type FilterSelection = {
     name: string;
@@ -105,7 +106,10 @@ export function Filters({className, onFiltersChange, availableFilters, selectedF
                 ...f,
                 body: null
             })))
-        }}><X className={'size-3'}/> Reset</Button>}
+        }}>
+            <X className={'size-3'}/>
+            <FormattedMessage defaultMessage="Reset" description="Button to reset all filters" />
+        </Button>}
     </div>
 }
 

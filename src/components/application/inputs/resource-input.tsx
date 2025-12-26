@@ -12,6 +12,12 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import {
+    InputGroup,
+    InputGroupAddon,
+    InputGroupInput,
+    InputGroupText,
+} from "@/components/ui/input-group";
 import {DateRangePicker} from "./daterange-picker";
 import {ColorPicker} from "./color-picker";
 import {PercentageInput} from "./percentage-input";
@@ -23,10 +29,10 @@ import {MultiLanguageTextarea} from "./multi-language-textarea";
 import {AccountSelect} from "./account-select";
 import {PropertySelect} from "./property-select";
 import {BookingSelect} from "./booking-select";
-import {InputWrapper} from "./input-wrapper";
+import {InputField} from "./input-field.tsx";
 import {TextareaTiptap} from "@/components/application/inputs/textarea-tiptap.tsx";
-import {cn} from "@/lib/utils.ts";
-import {Currency} from "@onemineral/pms-js-sdk";
+import {cn, formatDate} from "@/lib/utils.ts";
+import {Currency} from "@sdk/generated";
 
 /**
  * Props for the ResourceInput component
@@ -54,6 +60,8 @@ export interface ResourceInputProps {
     placeholder?: string;
     /** Error message to display */
     error?: string | boolean;
+    /** Display error as tooltip with icon instead of inline message */
+    errorsAsTooltip?: boolean;
     /** Hide the label (useful when used in custom layouts) */
     hideLabel?: boolean;
     /** Custom label (overrides field label) */
@@ -117,22 +125,70 @@ const INPUT_TYPE_MAP: Record<
             type="number"
             step="1"
             {...props}
+            className={cn(props.className, "[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none")}
+            onWheel={(e) => e.currentTarget.blur()}
         />
     ),
     decimal: (props) => (
         <Input
             type="number"
-            step="0.01"
+            step="1"
             {...props}
+            className={cn(props.className, "[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none")}
+            onWheel={(e) => e.currentTarget.blur()}
         />
     ),
-    price: (props) => (
-        <Input
-            type="number"
-            step="0.01"
-            {...props}
-        />
-    ),
+    price: (props) => {
+        // If currency is provided in options, use InputGroup with currency symbol
+        if (props.currency) {
+            const currencyCode = typeof props.currency === 'string'
+                ? props.currency
+                : props.currency?.iso_code;
+            
+            // Get currency symbol using toLocaleString
+            const currencySymbol = (0).toLocaleString(
+                'en-US',
+                {
+                    style: 'currency',
+                    currency: currencyCode,
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                }
+            ).replace(/\d/g, '').trim();
+            
+            return (
+                <InputGroup className={props.className} aria-invalid={!!props.error}>
+                    <InputGroupAddon align="inline-start">
+                        <InputGroupText className={'text-foreground font-normal'}>{currencySymbol}</InputGroupText>
+                    </InputGroupAddon>
+                    <InputGroupInput
+                        aria-invalid={!!props.error}
+                        type="number"
+                        step="1"
+                        value={props.value}
+                        onChange={props.onChange}
+                        onBlur={props.onBlur}
+                        onWheel={(e) => e.currentTarget.blur()}
+                        disabled={props.disabled}
+                        placeholder={props.placeholder}
+                        className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        data-testid={props["data-testid"]}
+                    />
+                </InputGroup>
+            );
+        }
+        
+        // Default behavior without currency
+        return (
+            <Input
+                type="number"
+                step="1"
+                {...props}
+                className={cn(props.className, "[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none")}
+                onWheel={(e) => e.currentTarget.blur()}
+            />
+        );
+    },
 
     // Specialized inputs
     percent: (props) => <PercentageInput {...props} />,
@@ -148,7 +204,10 @@ const INPUT_TYPE_MAP: Record<
             {...props}
         />
     ),
-    daterange: (props) => <DateRangePicker {...props} />,
+    daterange: (props) => <DateRangePicker {...props} onChange={(range) => props.onChange?.(range?.start && range?.end ? {
+        start: formatDate(range.start),
+        end: formatDate(range.end)
+    } : undefined)} />,
 
     // Boolean inputs
     boolean: (props) => (
@@ -161,9 +220,19 @@ const INPUT_TYPE_MAP: Record<
     ),
 
     // Picklist/Select
-    picklist: (props, field) => (
-        // @todo: implement logic to display radio list if only a few options exist, or specify through custom options
-        <Select
+    picklist: (props, field) => {
+        if (Object.keys(field.possibleValues).length <= 3) {
+            // implement a Radio group list here
+            return <></>;
+        }
+
+        if(Object.keys(field.possibleValues).length >= 20) {
+            // implement a searchable select
+            return <></>;
+        }
+
+
+        return <Select
             value={props.value}
             onValueChange={props.onChange}
             disabled={props.disabled}
@@ -181,8 +250,8 @@ const INPUT_TYPE_MAP: Record<
                     </SelectItem>
                 ))}
             </SelectContent>
-        </Select>
-    ),
+        </Select>;
+    },
 
     // Translated/Multi-language inputs
     "translated-text": (props, field) => {
@@ -206,14 +275,7 @@ const INPUT_TYPE_MAP: Record<
             case "booking":
                 return <BookingSelect {...props} />;
             default:
-                // @todo: implement generic belongs-to relation select
-                return (
-                    <Input
-                        type="text"
-                        placeholder={`Select ${relatesTo}...`}
-                        {...props}
-                    />
-                );
+                return null;
         }
     },
 };
@@ -289,6 +351,7 @@ export const ResourceInput = React.memo<ResourceInputProps>(
          inputClassName,
          placeholder,
          error,
+         errorsAsTooltip = false,
          hideLabel = false,
          label: customLabel,
          description: customDescription,
@@ -323,12 +386,28 @@ export const ResourceInput = React.memo<ResourceInputProps>(
             value: value ?? (field.defaultValue ?? ''),
             onChange: (e: any) => {
               if(typeof e == 'object' && e.target) {
-                onChange?.(e.target.value);
+                let newValue = e.target.value;
+                
+                // Convert to number for numeric field types
+                if (['integer', 'decimal', 'price'].includes(field.type)) {
+                  // Handle empty string as undefined/null for optional fields
+                  if (newValue === '' || newValue === null) {
+                    newValue = undefined;
+                  } else {
+                    // Parse as number
+                    const parsed = field.type === 'integer' ? parseInt(newValue, 10) : parseFloat(newValue);
+                    // Only use parsed value if it's a valid number
+                    newValue = isNaN(parsed) ? undefined : parsed;
+                  }
+                }
+                
+                onChange?.(newValue);
               } else {
                   onChange?.(e);
               }
             },
             onBlur,
+            error,
             disabled,
             className: inputClassName,
             placeholder,
@@ -337,18 +416,19 @@ export const ResourceInput = React.memo<ResourceInputProps>(
 
         // Render the appropriate input component wrapped with InputWrapper
         return (
-            <InputWrapper
+            <InputField
                 label={hideLabel ? undefined : (customLabel ?? field.label)}
                 description={customDescription ?? field.description}
                 required={field.isRequired}
                 disabled={disabled}
                 error={error}
+                errorsAsTooltip={errorsAsTooltip}
                 infoTooltip={infoTooltip}
                 className={className}
                 data-testid={dataTestId ? `${dataTestId}-wrapper` : undefined}
             >
                 {renderer(inputProps, field)}
-            </InputWrapper>
+            </InputField>
         );
     }
 );

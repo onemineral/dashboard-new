@@ -1,4 +1,4 @@
-# InputWrapper Component
+# InputField Component
 
 A universal, production-ready wrapper component for form inputs that provides consistent layout, validation states, error handling, and accessibility features across all form elements.
 
@@ -24,18 +24,18 @@ The component is part of your project's input components and uses existing UI pr
 ## Basic Usage
 
 ```tsx
-import { InputWrapper } from "@/components/application/inputs/input-wrapper";
+import { InputField } from "@/components/application/inputs/input-field";
 import { Input } from "@/components/ui/input";
 
 function MyForm() {
   return (
-    <InputWrapper
+    <InputField
       label="Email Address"
       required
       description="We'll never share your email"
     >
       <Input type="email" placeholder="john@example.com" />
-    </InputWrapper>
+    </InputField>
   );
 }
 ```
@@ -54,18 +54,13 @@ function MyForm() {
 | `required` | `boolean` | `false` | Whether the field is required |
 | `optional` | `boolean` | `false` | Whether the field is optional (shows badge) |
 | `disabled` | `boolean` | `false` | Whether the field is disabled |
-| `layout` | `"stacked" \| "inline"` | `"stacked"` | Layout orientation |
-| `state` | `"default" \| "error" \| "success" \| "warning"` | - | Validation state |
+| `orientation` | `"vertical" \| "responsive"` | `"vertical"` | Layout orientation |
 | `infoTooltip` | `ReactNode` | - | Info tooltip content |
-| `prefix` | `ReactNode` | - | Prefix content (icons, text) |
-| `suffix` | `ReactNode` | - | Suffix content (icons, buttons) |
 | `className` | `string` | - | Additional className for the wrapper |
 | `labelClassName` | `string` | - | Additional className for the label |
-| `inputContainerClassName` | `string` | - | Additional className for the input container |
 | `errorClassName` | `string` | - | Additional className for the error message |
 | `descriptionClassName` | `string` | - | Additional className for the description |
 | `children` | `ReactNode` | - | Input component |
-| `disableErrorAnimation` | `boolean` | `false` | Hide error animation |
 | `data-testid` | `string` | - | Test ID for testing |
 
 ## Examples
@@ -76,7 +71,7 @@ function MyForm() {
 const [email, setEmail] = useState("");
 const [error, setError] = useState("");
 
-<InputWrapper
+<InputField
   label="Email Address"
   required
   error={error}
@@ -87,7 +82,7 @@ const [error, setError] = useState("");
     value={email}
     onChange={(e) => setEmail(e.target.value)}
   />
-</InputWrapper>
+</InputField>
 ```
 
 ### DateRangePicker Integration
@@ -95,7 +90,7 @@ const [error, setError] = useState("");
 ```tsx
 const [dateRange, setDateRange] = useState<DateRangeValue | null>(null);
 
-<InputWrapper
+<InputField
   label="Booking Period"
   required
   description="Select check-in and check-out dates"
@@ -106,7 +101,7 @@ const [dateRange, setDateRange] = useState<DateRangeValue | null>(null);
     onChange={setDateRange}
     minDate={new Date()}
   />
-</InputWrapper>
+</InputField>
 ```
 
 ### AccountSelect Integration
@@ -114,7 +109,7 @@ const [dateRange, setDateRange] = useState<DateRangeValue | null>(null);
 ```tsx
 const [account, setAccount] = useState(null);
 
-<InputWrapper
+<InputField
   label="Guest Account"
   required
   description="Search and select a guest"
@@ -125,82 +120,32 @@ const [account, setAccount] = useState(null);
     placeholder="Search for a guest..."
     type="guest"
   />
-</InputWrapper>
-```
-
-### Input with Prefix and Suffix
-
-```tsx
-<InputWrapper
-  label="Website URL"
-  prefix={<Globe className="size-4" />}
-  suffix={<Button size="sm">Verify</Button>}
->
-  <Input type="url" placeholder="https://example.com" />
-</InputWrapper>
+</InputField>
 ```
 
 ### Validation States
 
 ```tsx
 // Error State
-<InputWrapper
+<InputField
   label="Username"
   state="error"
   error="Username is already taken"
 >
   <Input value="john123" />
-</InputWrapper>
-
-// Success State
-<InputWrapper
-  label="Email"
-  state="success"
-  successMessage="Email is available"
->
-  <Input value="john@example.com" />
-</InputWrapper>
-
-// Warning State
-<InputWrapper
-  label="Password"
-  state="warning"
-  warningMessage="Password is weak"
->
-  <Input type="password" value="password" />
-</InputWrapper>
+</InputField>
 ```
 
-### Inline Layout
+### Responsive Layout
 
 ```tsx
-<InputWrapper label="First Name" layout="inline" required>
+<InputField label="First Name" orientation="responsive" required>
   <Input placeholder="John" />
-</InputWrapper>
+</InputField>
 
-<InputWrapper label="Last Name" layout="inline" required>
+<InputField label="Last Name" orientation="responsive" required>
   <Input placeholder="Doe" />
-</InputWrapper>
-```
-
-### Custom Error Renderer
-
-```tsx
-const errors = ["At least 8 characters", "One uppercase letter"];
-
-<InputWrapper
-  label="Password"
-  error={errors.length > 0}
-  renderError={() => (
-    <ul className="list-disc list-inside">
-      {errors.map((err, i) => (
-        <li key={i}>{err}</li>
-      ))}
-    </ul>
-  )}
->
-  <Input type="password" />
-</InputWrapper>
+</InputField>
 ```
 
 ### React Hook Form Integration
@@ -220,7 +165,7 @@ function MyForm() {
   return (
     <form>
       {/* Regular Input */}
-      <InputWrapper
+      <InputField
         label="Email"
         required
         error={errors.email?.message}
@@ -235,7 +180,7 @@ function MyForm() {
             },
           })}
         />
-      </InputWrapper>
+      </InputField>
 
       {/* DateRangePicker with Controller */}
       <Controller
@@ -243,7 +188,7 @@ function MyForm() {
         control={control}
         rules={{ required: "Date range is required" }}
         render={({ field, fieldState }) => (
-          <InputWrapper
+          <InputField
             label="Booking Dates"
             required
             error={fieldState.error?.message}
@@ -253,7 +198,7 @@ function MyForm() {
               onChange={field.onChange}
               onBlur={field.onBlur}
             />
-          </InputWrapper>
+          </InputField>
         )}
       />
 
@@ -263,7 +208,7 @@ function MyForm() {
         control={control}
         rules={{ required: "Account is required" }}
         render={({ field, fieldState }) => (
-          <InputWrapper
+          <InputField
             label="Guest Account"
             required
             error={fieldState.error?.message}
@@ -273,46 +218,12 @@ function MyForm() {
               onChange={field.onChange}
               onBlur={field.onBlur}
             />
-          </InputWrapper>
+          </InputField>
         )}
       />
     </form>
   );
 }
-```
-
-### Checkbox with Wrapper
-
-```tsx
-<InputWrapper description="Subscribe to newsletter">
-  <div className="flex items-center gap-2">
-    <Checkbox id="newsletter" />
-    <Label htmlFor="newsletter">
-      Receive updates
-    </Label>
-  </div>
-</InputWrapper>
-```
-
-### Radio Group with Wrapper
-
-```tsx
-<InputWrapper
-  label="Payment Method"
-  required
-  description="Choose payment method"
->
-  <RadioGroup value={value} onValueChange={setValue}>
-    <div className="flex items-center space-x-2">
-      <RadioGroupItem value="card" id="card" />
-      <Label htmlFor="card">Credit Card</Label>
-    </div>
-    <div className="flex items-center space-x-2">
-      <RadioGroupItem value="paypal" id="paypal" />
-      <Label htmlFor="paypal">PayPal</Label>
-    </div>
-  </RadioGroup>
-</InputWrapper>
 ```
 
 ## Accessibility
@@ -342,42 +253,26 @@ The component follows WCAG 2.1 AA guidelines:
 <p id="email-error" role="alert" aria-live="polite">Error message</p>
 ```
 
-## Validation States
-
-The component supports four validation states:
-
-1. **Default** - Normal state with no validation feedback
-2. **Error** - Red styling with error icon and message
-3. **Success** - Green styling with success icon and message
-4. **Warning** - Amber styling with warning icon and message
-
-States are automatically determined based on props:
-- If `error` prop is set → Error state
-- If `successMessage` prop is set → Success state
-- If `warningMessage` prop is set → Warning state
-- If `state` prop is explicitly set → Uses that state
-- Otherwise → Default state
-
 ## Layout Modes
 
-### Stacked Layout (Default)
+### Vertical Layout (Default)
 
 Label and input are vertically stacked:
 
 ```tsx
-<InputWrapper label="Email" layout="stacked">
+<InputField label="Email" orientation="vertical">
   <Input type="email" />
-</InputWrapper>
+</InputField>
 ```
 
-### Inline Layout
+### Responsive Layout
 
-Label and input are horizontally aligned:
+Label and input are horizontally aligned on larger screens, vertical on mobile:
 
 ```tsx
-<InputWrapper label="Email" layout="inline">
+<InputField label="Email" orientation="responsive">
   <Input type="email" />
-</InputWrapper>
+</InputField>
 ```
 
 Good for forms with many short inputs or space-constrained layouts.
@@ -394,15 +289,14 @@ The component uses Tailwind CSS and follows your project's design system:
 ### Custom Styling
 
 ```tsx
-<InputWrapper
+<InputField
   className="my-custom-wrapper"
   labelClassName="text-lg font-bold"
-  inputContainerClassName="bg-gray-50"
   errorClassName="text-red-600"
   descriptionClassName="text-gray-500"
 >
   <Input />
-</InputWrapper>
+</InputField>
 ```
 
 ## Testing
@@ -410,9 +304,9 @@ The component uses Tailwind CSS and follows your project's design system:
 The component includes `data-testid` attributes for testing:
 
 ```tsx
-<InputWrapper data-testid="email-wrapper" label="Email">
+<InputField data-testid="email-wrapper" label="Email">
   <Input />
-</InputWrapper>
+</InputField>
 
 // In tests
 const wrapper = screen.getByTestId("email-wrapper");
@@ -453,37 +347,13 @@ Optimizations included:
 
 ```tsx
 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  <InputWrapper label="First Name" required>
+  <InputField label="First Name" required>
     <Input />
-  </InputWrapper>
-  <InputWrapper label="Last Name" required>
+  </InputField>
+  <InputField label="Last Name" required>
     <Input />
-  </InputWrapper>
+  </InputField>
 </div>
-```
-
-### Search Input
-
-```tsx
-<InputWrapper
-  label="Search"
-  prefix={<Search className="size-4" />}
->
-  <Input type="search" placeholder="Search..." />
-</InputWrapper>
-```
-
-### Password with Strength Indicator
-
-```tsx
-<InputWrapper
-  label="Password"
-  state={strength === "weak" ? "warning" : "success"}
-  warningMessage={strength === "weak" ? "Weak password" : undefined}
-  successMessage={strength === "strong" ? "Strong password" : undefined}
->
-  <Input type="password" />
-</InputWrapper>
 ```
 
 ## Troubleshooting

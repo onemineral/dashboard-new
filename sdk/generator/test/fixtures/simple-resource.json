@@ -1,0 +1,3618 @@
+{
+    "property": {
+        "actions": {
+            "query": {
+                "name": "query",
+                "args": {
+                    "sort": {
+                        "type": "composed",
+                        "name": "sort",
+                        "label": "Sort results",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": {
+                            "id": {
+                                "type": "composed",
+                                "name": "id",
+                                "label": "ID",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "name": {
+                                "type": "composed",
+                                "name": "name",
+                                "label": "Name",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    },
+                                    {
+                                        "type": "picklist",
+                                        "name": "locale",
+                                        "label": "Locale",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": [],
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "internal_name": {
+                                "type": "composed",
+                                "name": "internal_name",
+                                "label": "Internal name",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "headline": {
+                                "type": "composed",
+                                "name": "headline",
+                                "label": "Headline",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    },
+                                    {
+                                        "type": "picklist",
+                                        "name": "locale",
+                                        "label": "Locale",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": [],
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "status": {
+                                "type": "composed",
+                                "name": "status",
+                                "label": "Status",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "bedrooms": {
+                                "type": "composed",
+                                "name": "bedrooms",
+                                "label": "Bedrooms",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "bathrooms": {
+                                "type": "composed",
+                                "name": "bathrooms",
+                                "label": "Bathrooms",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "toilets": {
+                                "type": "composed",
+                                "name": "toilets",
+                                "label": "Toilets",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "max_occupancy": {
+                                "type": "composed",
+                                "name": "max_occupancy",
+                                "label": "Max. occupancy",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "comfortable_occupancy": {
+                                "type": "composed",
+                                "name": "comfortable_occupancy",
+                                "label": "Comfortable occupancy",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "registration_number": {
+                                "type": "composed",
+                                "name": "registration_number",
+                                "label": "Registration number",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "address": {
+                                "type": "composed",
+                                "name": "address",
+                                "label": "Address",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "postcode": {
+                                "type": "composed",
+                                "name": "postcode",
+                                "label": "Postal code",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "show_exact_address": {
+                                "type": "composed",
+                                "name": "show_exact_address",
+                                "label": "Show exact address",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "external_id": {
+                                "type": "composed",
+                                "name": "external_id",
+                                "label": "External ID",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "marketing_price": {
+                                "type": "composed",
+                                "name": "marketing_price",
+                                "label": "Marketing price",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "checkin_category": {
+                                "type": "composed",
+                                "name": "checkin_category",
+                                "label": "Checkin category",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "reviews_count": {
+                                "type": "composed",
+                                "name": "reviews_count",
+                                "label": "Reviews count",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "reviews_rating": {
+                                "type": "composed",
+                                "name": "reviews_rating",
+                                "label": "Reviews rating",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "website_visible": {
+                                "type": "composed",
+                                "name": "website_visible",
+                                "label": "Visible on website",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "rates_updated_at": {
+                                "type": "composed",
+                                "name": "rates_updated_at",
+                                "label": "Rates updated at",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "availability_updated_at": {
+                                "type": "composed",
+                                "name": "availability_updated_at",
+                                "label": "Availability updated at",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "created_at": {
+                                "type": "composed",
+                                "name": "created_at",
+                                "label": "Created",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            },
+                            "updated_at": {
+                                "type": "composed",
+                                "name": "updated_at",
+                                "label": "Last updated",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "paginate": {
+                        "type": "composed",
+                        "name": "paginate",
+                        "label": "Pagination",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "integer",
+                                "name": "page",
+                                "label": "Page",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            },
+                            {
+                                "type": "integer",
+                                "name": "perpage",
+                                "label": "Results per page",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            }
+                        ]
+                    },
+                    "with": {
+                        "type": "list-of",
+                        "name": "with",
+                        "label": "With relations",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "text",
+                                "name": "with",
+                                "label": "With relations",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "html": false,
+                                    "multiline": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "fetch": {
+                "name": "fetch",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "with": {
+                        "type": "list-of",
+                        "name": "with",
+                        "label": "With relations",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "text",
+                                "name": "with",
+                                "label": "With relations",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "html": false,
+                                    "multiline": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "create": {
+                "name": "create",
+                "args": {
+                    "name": {
+                        "type": "translated-text",
+                        "name": "name",
+                        "label": "Name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "internal_name": {
+                        "type": "text",
+                        "name": "internal_name",
+                        "label": "Internal name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "headline": {
+                        "type": "translated-text",
+                        "name": "headline",
+                        "label": "Headline",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "short_description": {
+                        "type": "translated-text",
+                        "name": "short_description",
+                        "label": "Short description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "description": {
+                        "type": "translated-text",
+                        "name": "description",
+                        "label": "Description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "house_rules": {
+                        "type": "translated-text",
+                        "name": "house_rules",
+                        "label": "House rules",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "surroundings": {
+                        "type": "translated-text",
+                        "name": "surroundings",
+                        "label": "Surroundings",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "unique_benefits": {
+                        "type": "translated-text",
+                        "name": "unique_benefits",
+                        "label": "Unique benefits",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "location": {
+                        "type": "belongs-to",
+                        "name": "location",
+                        "label": "Location",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "location"
+                    },
+                    "property_type": {
+                        "type": "belongs-to",
+                        "name": "property_type",
+                        "label": "Property type",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property-type"
+                    },
+                    "currency": {
+                        "type": "belongs-to",
+                        "name": "currency",
+                        "label": "Currency",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "currency"
+                    },
+                    "bedrooms": {
+                        "type": "integer",
+                        "name": "bedrooms",
+                        "label": "Bedrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "bathrooms": {
+                        "type": "integer",
+                        "name": "bathrooms",
+                        "label": "Bathrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "toilets": {
+                        "type": "integer",
+                        "name": "toilets",
+                        "label": "Toilets",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "max_occupancy": {
+                        "type": "integer",
+                        "name": "max_occupancy",
+                        "label": "Max. occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "comfortable_occupancy": {
+                        "type": "integer",
+                        "name": "comfortable_occupancy",
+                        "label": "Comfortable occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "registration_number": {
+                        "type": "text",
+                        "name": "registration_number",
+                        "label": "Registration number",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "address": {
+                        "type": "text",
+                        "name": "address",
+                        "label": "Address",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "postcode": {
+                        "type": "text",
+                        "name": "postcode",
+                        "label": "Postal code",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "geo": {
+                        "type": "geo",
+                        "name": "geo",
+                        "label": "Geolocation",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "show_exact_address": {
+                        "type": "boolean",
+                        "name": "show_exact_address",
+                        "label": "Show exact address",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "external_id": {
+                        "type": "text",
+                        "name": "external_id",
+                        "label": "External ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "marketing_price": {
+                        "type": "price",
+                        "name": "marketing_price",
+                        "label": "Marketing price",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "checkin_category": {
+                        "type": "picklist",
+                        "name": "checkin_category",
+                        "label": "Checkin category",
+                        "description": "",
+                        "default_value": "other_checkin",
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "doorman_entry": "Someone is available 24 hours a day to let guests in",
+                            "lockbox": "Lockbox",
+                            "smartlock": "Smart lock",
+                            "keypad": "A keypad must be available 24 hours a day to provide entry to your listing for the guests",
+                            "host_checkin": "Host greets you",
+                            "other_checkin": "Other"
+                        },
+                        "multivalue": false
+                    },
+                    "checkin_instructions": {
+                        "type": "translated-text",
+                        "name": "checkin_instructions",
+                        "label": "Checkin instructions",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "home_truths": {
+                        "type": "translated-text",
+                        "name": "home_truths",
+                        "label": "Home truths",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "website_visible": {
+                        "type": "boolean",
+                        "name": "website_visible",
+                        "label": "Visible on website",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "amenities": {
+                        "type": "belongs-to-many",
+                        "name": "amenities",
+                        "label": "Amenities",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "amenity"
+                    },
+                    "users": {
+                        "type": "belongs-to-many",
+                        "name": "users",
+                        "label": "Users",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "user"
+                    },
+                    "discounts": {
+                        "type": "belongs-to-many",
+                        "name": "discounts",
+                        "label": "Discounts",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "discount"
+                    },
+                    "legal_entity": {
+                        "type": "belongs-to",
+                        "name": "legal_entity",
+                        "label": "Legal entity",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "legal-entity"
+                    },
+                    "related_properties": {
+                        "type": "belongs-to-many",
+                        "name": "related_properties",
+                        "label": "Related properties",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property"
+                    },
+                    "collections": {
+                        "type": "belongs-to-many",
+                        "name": "collections",
+                        "label": "Collections",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "collection"
+                    },
+                    "rental_agreement": {
+                        "type": "belongs-to",
+                        "name": "rental_agreement",
+                        "label": "Rental agreement",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "rental-agreement"
+                    }
+                }
+            },
+            "update": {
+                "name": "update",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "name": {
+                        "type": "translated-text",
+                        "name": "name",
+                        "label": "Name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "internal_name": {
+                        "type": "text",
+                        "name": "internal_name",
+                        "label": "Internal name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "headline": {
+                        "type": "translated-text",
+                        "name": "headline",
+                        "label": "Headline",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "short_description": {
+                        "type": "translated-text",
+                        "name": "short_description",
+                        "label": "Short description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "description": {
+                        "type": "translated-text",
+                        "name": "description",
+                        "label": "Description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "house_rules": {
+                        "type": "translated-text",
+                        "name": "house_rules",
+                        "label": "House rules",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "surroundings": {
+                        "type": "translated-text",
+                        "name": "surroundings",
+                        "label": "Surroundings",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "unique_benefits": {
+                        "type": "translated-text",
+                        "name": "unique_benefits",
+                        "label": "Unique benefits",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "location": {
+                        "type": "belongs-to",
+                        "name": "location",
+                        "label": "Location",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "location"
+                    },
+                    "property_type": {
+                        "type": "belongs-to",
+                        "name": "property_type",
+                        "label": "Property type",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property-type"
+                    },
+                    "currency": {
+                        "type": "belongs-to",
+                        "name": "currency",
+                        "label": "Currency",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "currency"
+                    },
+                    "bedrooms": {
+                        "type": "integer",
+                        "name": "bedrooms",
+                        "label": "Bedrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "bathrooms": {
+                        "type": "integer",
+                        "name": "bathrooms",
+                        "label": "Bathrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "toilets": {
+                        "type": "integer",
+                        "name": "toilets",
+                        "label": "Toilets",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "max_occupancy": {
+                        "type": "integer",
+                        "name": "max_occupancy",
+                        "label": "Max. occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "comfortable_occupancy": {
+                        "type": "integer",
+                        "name": "comfortable_occupancy",
+                        "label": "Comfortable occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "registration_number": {
+                        "type": "text",
+                        "name": "registration_number",
+                        "label": "Registration number",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "address": {
+                        "type": "text",
+                        "name": "address",
+                        "label": "Address",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "postcode": {
+                        "type": "text",
+                        "name": "postcode",
+                        "label": "Postal code",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "geo": {
+                        "type": "geo",
+                        "name": "geo",
+                        "label": "Geolocation",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "show_exact_address": {
+                        "type": "boolean",
+                        "name": "show_exact_address",
+                        "label": "Show exact address",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "external_id": {
+                        "type": "text",
+                        "name": "external_id",
+                        "label": "External ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "marketing_price": {
+                        "type": "price",
+                        "name": "marketing_price",
+                        "label": "Marketing price",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "checkin_category": {
+                        "type": "picklist",
+                        "name": "checkin_category",
+                        "label": "Checkin category",
+                        "description": "",
+                        "default_value": "other_checkin",
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "doorman_entry": "Someone is available 24 hours a day to let guests in",
+                            "lockbox": "Lockbox",
+                            "smartlock": "Smart lock",
+                            "keypad": "A keypad must be available 24 hours a day to provide entry to your listing for the guests",
+                            "host_checkin": "Host greets you",
+                            "other_checkin": "Other"
+                        },
+                        "multivalue": false
+                    },
+                    "checkin_instructions": {
+                        "type": "translated-text",
+                        "name": "checkin_instructions",
+                        "label": "Checkin instructions",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "home_truths": {
+                        "type": "translated-text",
+                        "name": "home_truths",
+                        "label": "Home truths",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "website_visible": {
+                        "type": "boolean",
+                        "name": "website_visible",
+                        "label": "Visible on website",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "amenities": {
+                        "type": "belongs-to-many",
+                        "name": "amenities",
+                        "label": "Amenities",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "amenity"
+                    },
+                    "users": {
+                        "type": "belongs-to-many",
+                        "name": "users",
+                        "label": "Users",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "user"
+                    },
+                    "discounts": {
+                        "type": "belongs-to-many",
+                        "name": "discounts",
+                        "label": "Discounts",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "discount"
+                    },
+                    "legal_entity": {
+                        "type": "belongs-to",
+                        "name": "legal_entity",
+                        "label": "Legal entity",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "legal-entity"
+                    },
+                    "related_properties": {
+                        "type": "belongs-to-many",
+                        "name": "related_properties",
+                        "label": "Related properties",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property"
+                    },
+                    "collections": {
+                        "type": "belongs-to-many",
+                        "name": "collections",
+                        "label": "Collections",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "collection"
+                    },
+                    "rental_agreement": {
+                        "type": "belongs-to",
+                        "name": "rental_agreement",
+                        "label": "Rental agreement",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "rental-agreement"
+                    }
+                }
+            },
+            "set-status": {
+                "name": "set-status",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "status": {
+                        "type": "picklist",
+                        "name": "status",
+                        "label": "Status",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "enabled": "Enabled",
+                            "pending": "Pending",
+                            "disabled": "Disabled"
+                        },
+                        "multivalue": false
+                    }
+                }
+            },
+            "history": {
+                "name": "history",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "with": {
+                        "type": "list-of",
+                        "name": "with",
+                        "label": "With relations",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "text",
+                                "name": "with",
+                                "label": "With relations",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "html": false,
+                                    "multiline": false
+                                }
+                            }
+                        }
+                    },
+                    "paginate": {
+                        "type": "composed",
+                        "name": "paginate",
+                        "label": "Pagination",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "integer",
+                                "name": "page",
+                                "label": "Page",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            },
+                            {
+                                "type": "integer",
+                                "name": "perpage",
+                                "label": "Results per page",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "upload-image": {
+                "name": "upload-image",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record Id",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "description": {
+                        "type": "text",
+                        "name": "description",
+                        "label": "Description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "file": {
+                        "type": "file",
+                        "name": "file",
+                        "label": "File",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "delete-image": {
+                "name": "delete-image",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "update-image": {
+                "name": "update-image",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "name": {
+                        "type": "translated-text",
+                        "name": "name",
+                        "label": "Name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "internal_name": {
+                        "type": "text",
+                        "name": "internal_name",
+                        "label": "Internal name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "headline": {
+                        "type": "translated-text",
+                        "name": "headline",
+                        "label": "Headline",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "short_description": {
+                        "type": "translated-text",
+                        "name": "short_description",
+                        "label": "Short description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "description": {
+                        "type": "translated-text",
+                        "name": "description",
+                        "label": "Description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "house_rules": {
+                        "type": "translated-text",
+                        "name": "house_rules",
+                        "label": "House rules",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "surroundings": {
+                        "type": "translated-text",
+                        "name": "surroundings",
+                        "label": "Surroundings",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "unique_benefits": {
+                        "type": "translated-text",
+                        "name": "unique_benefits",
+                        "label": "Unique benefits",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "status": {
+                        "type": "picklist",
+                        "name": "status",
+                        "label": "Status",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "enabled": "Enabled",
+                            "pending": "Pending",
+                            "disabled": "Disabled"
+                        },
+                        "multivalue": false
+                    },
+                    "location": {
+                        "type": "belongs-to",
+                        "name": "location",
+                        "label": "Location",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "location"
+                    },
+                    "property_type": {
+                        "type": "belongs-to",
+                        "name": "property_type",
+                        "label": "Property type",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property-type"
+                    },
+                    "currency": {
+                        "type": "belongs-to",
+                        "name": "currency",
+                        "label": "Currency",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "currency"
+                    },
+                    "bedrooms": {
+                        "type": "integer",
+                        "name": "bedrooms",
+                        "label": "Bedrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "bathrooms": {
+                        "type": "integer",
+                        "name": "bathrooms",
+                        "label": "Bathrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "toilets": {
+                        "type": "integer",
+                        "name": "toilets",
+                        "label": "Toilets",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "max_occupancy": {
+                        "type": "integer",
+                        "name": "max_occupancy",
+                        "label": "Max. occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "comfortable_occupancy": {
+                        "type": "integer",
+                        "name": "comfortable_occupancy",
+                        "label": "Comfortable occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "registration_number": {
+                        "type": "text",
+                        "name": "registration_number",
+                        "label": "Registration number",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "address": {
+                        "type": "text",
+                        "name": "address",
+                        "label": "Address",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "postcode": {
+                        "type": "text",
+                        "name": "postcode",
+                        "label": "Postal code",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "geo": {
+                        "type": "geo",
+                        "name": "geo",
+                        "label": "Geolocation",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "show_exact_address": {
+                        "type": "boolean",
+                        "name": "show_exact_address",
+                        "label": "Show exact address",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "external_id": {
+                        "type": "text",
+                        "name": "external_id",
+                        "label": "External ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "marketing_price": {
+                        "type": "price",
+                        "name": "marketing_price",
+                        "label": "Marketing price",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "checkin_category": {
+                        "type": "picklist",
+                        "name": "checkin_category",
+                        "label": "Checkin category",
+                        "description": "",
+                        "default_value": "other_checkin",
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "doorman_entry": "Someone is available 24 hours a day to let guests in",
+                            "lockbox": "Lockbox",
+                            "smartlock": "Smart lock",
+                            "keypad": "A keypad must be available 24 hours a day to provide entry to your listing for the guests",
+                            "host_checkin": "Host greets you",
+                            "other_checkin": "Other"
+                        },
+                        "multivalue": false
+                    },
+                    "checkin_instructions": {
+                        "type": "translated-text",
+                        "name": "checkin_instructions",
+                        "label": "Checkin instructions",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "home_truths": {
+                        "type": "translated-text",
+                        "name": "home_truths",
+                        "label": "Home truths",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "website_visible": {
+                        "type": "boolean",
+                        "name": "website_visible",
+                        "label": "Visible on website",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "amenities": {
+                        "type": "belongs-to-many",
+                        "name": "amenities",
+                        "label": "Amenities",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "amenity"
+                    },
+                    "users": {
+                        "type": "belongs-to-many",
+                        "name": "users",
+                        "label": "Users",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "user"
+                    },
+                    "discounts": {
+                        "type": "belongs-to-many",
+                        "name": "discounts",
+                        "label": "Discounts",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "discount"
+                    },
+                    "legal_entity": {
+                        "type": "belongs-to",
+                        "name": "legal_entity",
+                        "label": "Legal entity",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "legal-entity"
+                    },
+                    "related_properties": {
+                        "type": "belongs-to-many",
+                        "name": "related_properties",
+                        "label": "Related properties",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property"
+                    },
+                    "collections": {
+                        "type": "belongs-to-many",
+                        "name": "collections",
+                        "label": "Collections",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "collection"
+                    },
+                    "rental_agreement": {
+                        "type": "belongs-to",
+                        "name": "rental_agreement",
+                        "label": "Rental agreement",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "rental-agreement"
+                    }
+                }
+            },
+            "order-images": {
+                "name": "order-images",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "order": {
+                        "type": "list-of",
+                        "name": "order",
+                        "label": "Items order",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "id",
+                                "name": "order",
+                                "label": "Items order",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            }
+                        }
+                    }
+                }
+            },
+            "set-availability": {
+                "name": "set-availability",
+                "args": {
+                    "property": {
+                        "type": "id",
+                        "name": "property",
+                        "label": "Property",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "daterange": {
+                        "type": "daterange",
+                        "name": "daterange",
+                        "label": "Date Range",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "allow_past": true,
+                            "allow_null": false
+                        }
+                    },
+                    "availability_status": {
+                        "type": "picklist",
+                        "name": "availability_status",
+                        "label": "Availability status",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": [],
+                        "multivalue": false
+                    },
+                    "booking": {
+                        "type": "id",
+                        "name": "booking",
+                        "label": "Booking",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "notes": {
+                        "type": "text",
+                        "name": "notes",
+                        "label": "Notes",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "external_id": {
+                        "type": "text",
+                        "name": "external_id",
+                        "label": "External id",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "property_ical": {
+                        "type": "belongs-to",
+                        "name": "property_ical",
+                        "label": "Property iCal",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property-ical"
+                    },
+                    "source": {
+                        "type": "text",
+                        "name": "source",
+                        "label": "Source",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    }
+                }
+            },
+            "delete-availability": {
+                "name": "delete-availability",
+                "args": {
+                    "booking": {
+                        "type": "id",
+                        "name": "booking",
+                        "label": "Booking ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Availability ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "refresh-availability": {
+                "name": "refresh-availability",
+                "args": {
+                    "property": {
+                        "type": "id",
+                        "name": "property",
+                        "label": "Property ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "sync-blocked-availability": {
+                "name": "sync-blocked-availability",
+                "args": {
+                    "property": {
+                        "type": "id",
+                        "name": "property",
+                        "label": "Property ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "availability_status": {
+                        "type": "picklist",
+                        "name": "availability_status",
+                        "label": "Availability status",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": [],
+                        "multivalue": false
+                    },
+                    "blocks": {
+                        "type": "list-of",
+                        "name": "blocks",
+                        "label": "Availability blocks",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "composed",
+                                "name": "blocks",
+                                "label": "Availability blocks",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "daterange",
+                                        "name": "daterange",
+                                        "label": "Date range",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": {
+                                            "allow_past": true,
+                                            "allow_null": false
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "name": "notes",
+                                        "label": "Notes",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": {
+                                            "html": false,
+                                            "multiline": false
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "source": {
+                        "type": "text",
+                        "name": "source",
+                        "label": "Source",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "property_ical": {
+                        "type": "id",
+                        "name": "property_ical",
+                        "label": "Property iCal ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "get-unavailability": {
+                "name": "get-unavailability",
+                "args": {
+                    "property": {
+                        "type": "id",
+                        "name": "property",
+                        "label": "Property",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "daterange": {
+                        "type": "daterange",
+                        "name": "daterange",
+                        "label": "Date interval",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "allow_past": false,
+                            "allow_null": false
+                        }
+                    }
+                }
+            },
+            "update-policies": {
+                "name": "update-policies",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "booking_category": {
+                        "type": "picklist",
+                        "name": "booking_category",
+                        "label": "Allowed booking category",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "request_to_book": "Request to book",
+                            "instant_booking": "Instant booking"
+                        },
+                        "multivalue": false
+                    },
+                    "babies_allowed": {
+                        "type": "boolean",
+                        "name": "babies_allowed",
+                        "label": "Babies allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "children_allowed": {
+                        "type": "boolean",
+                        "name": "children_allowed",
+                        "label": "Children allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "pets_allowed": {
+                        "type": "boolean",
+                        "name": "pets_allowed",
+                        "label": "Pets allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "smoking_allowed": {
+                        "type": "boolean",
+                        "name": "smoking_allowed",
+                        "label": "Smoking allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "parties_allowed": {
+                        "type": "boolean",
+                        "name": "parties_allowed",
+                        "label": "Parties allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "checkin_window": {
+                        "type": "composed",
+                        "name": "checkin_window",
+                        "label": "Checkin window",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "picklist",
+                                "name": "from",
+                                "label": "From",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "possible_values": {
+                                    "flexible": "flexible",
+                                    "0": "00:00",
+                                    "1": "01:00",
+                                    "2": "02:00",
+                                    "3": "03:00",
+                                    "4": "04:00",
+                                    "5": "05:00",
+                                    "6": "06:00",
+                                    "7": "07:00",
+                                    "8": "08:00",
+                                    "9": "09:00",
+                                    "10": "10:00",
+                                    "11": "11:00",
+                                    "12": "12:00",
+                                    "13": "13:00",
+                                    "14": "14:00",
+                                    "15": "15:00",
+                                    "16": "16:00",
+                                    "17": "17:00",
+                                    "18": "18:00",
+                                    "19": "19:00",
+                                    "20": "20:00",
+                                    "21": "21:00",
+                                    "22": "22:00",
+                                    "23": "23:00"
+                                },
+                                "multivalue": false
+                            },
+                            {
+                                "type": "picklist",
+                                "name": "to",
+                                "label": "To",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "possible_values": {
+                                    "flexible": "flexible",
+                                    "0": "00:00",
+                                    "1": "01:00",
+                                    "2": "02:00",
+                                    "3": "03:00",
+                                    "4": "04:00",
+                                    "5": "05:00",
+                                    "6": "06:00",
+                                    "7": "07:00",
+                                    "8": "08:00",
+                                    "9": "09:00",
+                                    "10": "10:00",
+                                    "11": "11:00",
+                                    "12": "12:00",
+                                    "13": "13:00",
+                                    "14": "14:00",
+                                    "15": "15:00",
+                                    "16": "16:00",
+                                    "17": "17:00",
+                                    "18": "18:00",
+                                    "19": "19:00",
+                                    "20": "20:00",
+                                    "21": "21:00",
+                                    "22": "22:00",
+                                    "23": "23:00"
+                                },
+                                "multivalue": false
+                            }
+                        ]
+                    },
+                    "checkout_time": {
+                        "type": "picklist",
+                        "name": "checkout_time",
+                        "label": "Checkout time",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "flexible": "flexible",
+                            "0": "00:00",
+                            "1": "01:00",
+                            "2": "02:00",
+                            "3": "03:00",
+                            "4": "04:00",
+                            "5": "05:00",
+                            "6": "06:00",
+                            "7": "07:00",
+                            "8": "08:00",
+                            "9": "09:00",
+                            "10": "10:00",
+                            "11": "11:00",
+                            "12": "12:00",
+                            "13": "13:00",
+                            "14": "14:00",
+                            "15": "15:00",
+                            "16": "16:00",
+                            "17": "17:00",
+                            "18": "18:00",
+                            "19": "19:00",
+                            "20": "20:00",
+                            "21": "21:00",
+                            "22": "22:00",
+                            "23": "23:00"
+                        },
+                        "multivalue": false
+                    },
+                    "max_booking_window": {
+                        "type": "composed",
+                        "name": "max_booking_window",
+                        "label": "Max. booking window",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "picklist",
+                                "name": "value",
+                                "label": "Num.",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "possible_values": {
+                                    "1": "1",
+                                    "2": "2",
+                                    "3": "3",
+                                    "4": "4",
+                                    "5": "5",
+                                    "6": "6",
+                                    "7": "7",
+                                    "8": "8",
+                                    "9": "9",
+                                    "10": "10",
+                                    "11": "11",
+                                    "12": "12",
+                                    "13": "13",
+                                    "14": "14",
+                                    "15": "15",
+                                    "16": "16",
+                                    "17": "17",
+                                    "18": "18",
+                                    "19": "19",
+                                    "20": "20",
+                                    "21": "21",
+                                    "22": "22",
+                                    "23": "23",
+                                    "24": "24"
+                                },
+                                "multivalue": false
+                            },
+                            {
+                                "type": "picklist",
+                                "name": "type",
+                                "label": "Unit",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "possible_values": {
+                                    "days": "Days",
+                                    "months": "Months"
+                                },
+                                "multivalue": false
+                            }
+                        ]
+                    },
+                    "min_prior_notify": {
+                        "type": "picklist",
+                        "name": "min_prior_notify",
+                        "label": "Min. prior notify days",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "0": "0 days",
+                            "1": "1 day",
+                            "2": "2 days",
+                            "3": "3 days",
+                            "7": "7 days"
+                        },
+                        "multivalue": false
+                    },
+                    "policy_description": {
+                        "type": "translated-text",
+                        "name": "policy_description",
+                        "label": "Description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    }
+                }
+            },
+            "update-rates-settings": {
+                "name": "update-rates-settings",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "base_occupancy": {
+                        "type": "integer",
+                        "name": "base_occupancy",
+                        "label": "Base occupancy",
+                        "description": "",
+                        "default_value": null,
+                        "hints": [
+                            "All rates defined in the calendar will accommodate this number of guests"
+                        ],
+                        "options": []
+                    },
+                    "default_availability_status": {
+                        "type": "belongs-to",
+                        "name": "default_availability_status",
+                        "label": "Default availability",
+                        "description": "",
+                        "default_value": null,
+                        "hints": [
+                            "The availability returned if not defined in the calendar"
+                        ],
+                        "options": [],
+                        "relates_to": "availability-status"
+                    },
+                    "tax_class": {
+                        "type": "belongs-to",
+                        "name": "tax_class",
+                        "label": "Tax class",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "tax-class"
+                    },
+                    "payment_schedule": {
+                        "type": "belongs-to",
+                        "name": "payment_schedule",
+                        "label": "Payment schedule",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "payment-schedule"
+                    },
+                    "min_stay": {
+                        "type": "integer",
+                        "name": "min_stay",
+                        "label": "Min. stay allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "max_stay": {
+                        "type": "integer",
+                        "name": "max_stay",
+                        "label": "Max. stay allowed",
+                        "description": "",
+                        "default_value": null,
+                        "hints": ["Leave empty for no restriction"],
+                        "options": []
+                    },
+                    "changeover_days": {
+                        "type": "picklist",
+                        "name": "changeover_days",
+                        "label": "Changeover days",
+                        "description": "",
+                        "default_value": "0",
+                        "hints": null,
+                        "options": [],
+                        "possible_values": [
+                            "No changeover days",
+                            "1 day",
+                            "2 days",
+                            "3 days"
+                        ],
+                        "multivalue": false
+                    },
+                    "automatically_authorized": {
+                        "type": "boolean",
+                        "name": "automatically_authorized",
+                        "label": "Authorize automatically",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "automatically_renew": {
+                        "type": "boolean",
+                        "name": "automatically_renew",
+                        "label": "Renew automatically",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "authorization_trigger": {
+                        "type": "text",
+                        "name": "authorization_trigger",
+                        "label": "Authorization trigger",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "release_trigger": {
+                        "type": "text",
+                        "name": "release_trigger",
+                        "label": "Release trigger",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "min_nightly_rate": {
+                        "type": "price",
+                        "name": "min_nightly_rate",
+                        "label": "Min. nightly rate",
+                        "description": "",
+                        "default_value": null,
+                        "hints": [
+                            "Any nightly rates set for this property will not be saved if lower than this value"
+                        ],
+                        "options": []
+                    },
+                    "extra_guest_rate": {
+                        "type": "price",
+                        "name": "extra_guest_rate",
+                        "label": "Extra guest rate",
+                        "description": "",
+                        "default_value": null,
+                        "hints": [
+                            "Amount per extra guest per night",
+                            "Up to the max. occupancy set at property level"
+                        ],
+                        "options": []
+                    },
+                    "security_deposit": {
+                        "type": "price",
+                        "name": "security_deposit",
+                        "label": "Security deposit",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "sync-fees": {
+                "name": "sync-fees",
+                "args": {
+                    "property": {
+                        "type": "belongs-to",
+                        "name": "property",
+                        "label": "Property",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "property"
+                    },
+                    "fees": {
+                        "type": "list-of",
+                        "name": "fees",
+                        "label": "Fees",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "composed",
+                                "name": "fees",
+                                "label": "Fees",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "belongs-to",
+                                        "name": "fee_type",
+                                        "label": "Fee type",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "relates_to": "fee-type"
+                                    },
+                                    {
+                                        "type": "price",
+                                        "name": "amount",
+                                        "label": "Amount",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": []
+                                    },
+                                    {
+                                        "type": "percent",
+                                        "name": "percent",
+                                        "label": "Percent",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": []
+                                    },
+                                    {
+                                        "type": "belongs-to",
+                                        "name": "tax_class",
+                                        "label": "Tax class",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "relates_to": "tax-class"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "overwrite": {
+                        "type": "boolean",
+                        "name": "overwrite",
+                        "label": "Overwrite",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "sync-tags": {
+                "name": "sync-tags",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Id",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "tags": {
+                        "type": "list-of",
+                        "name": "tags",
+                        "label": "Tags",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "text",
+                                "name": "tags",
+                                "label": "Tags",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "html": false,
+                                    "multiline": false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "fields": {
+            "id": {
+                "type": "id",
+                "name": "id",
+                "label": "ID",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "composed-field": {
+                "type": "composed",
+                "name": "beds",
+                "label": "Beds",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "fields": [
+                    {
+                        "type": "integer",
+                        "name": "bed_count",
+                        "label": "Number of beds",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    {
+                        "type": "belongs-to",
+                        "name": "bed_type",
+                        "label": "Bed type ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "bed-type"
+                    }
+                ]
+            },
+            "with": {
+                "type": "list-of",
+                "name": "with",
+                "label": "With relations",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "field": {
+                        "type": "text",
+                        "name": "with",
+                        "label": "With relations",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    }
+                }
+            },
+            "with_composed": {
+                "type": "list-of",
+                "name": "with_composed",
+                "label": "With composed",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "field": {
+                        "type": "composed",
+                        "name": "beds",
+                        "label": "Beds",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "integer",
+                                "name": "bed_count",
+                                "label": "Number of beds",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            },
+                            {
+                                "type": "belongs-to",
+                                "name": "bed_type",
+                                "label": "Bed type ID",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "relates_to": "bed-type"
+                            }
+                        ]
+                    }
+                }
+            },
+            "with_composed_list": {
+                "type": "list-of",
+                "name": "with_composed_list",
+                "label": "With composed",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "field": {
+                        "type": "composed",
+                        "name": "beds",
+                        "label": "Beds",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "integer",
+                                "name": "bed_count",
+                                "label": "Number of beds",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            },
+                            {
+                                "type": "morph-to",
+                                "name": "bed_type",
+                                "label": "Bed type ID",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "relates_to": ["bed-type", "sleep-type"]
+                            },
+                            {
+                                "type": "list-of",
+                                "name": "with",
+                                "label": "With relations",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "field": {
+                                        "type": "text",
+                                        "name": "with",
+                                        "label": "With relations",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": {
+                                            "html": false,
+                                            "multiline": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "type": "has-many",
+                                "name": "images",
+                                "label": "Image",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "relates_to": "image"
+                            }
+                        ]
+                    }
+                }
+            },
+            "main_image": {
+                "type": "belongs-to",
+                "name": "main_image",
+                "label": "Main image",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "image"
+            },
+            "name": {
+                "type": "translated-text",
+                "name": "name",
+                "label": "Name",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "internal_name": {
+                "type": "text",
+                "name": "internal_name",
+                "label": "Internal name",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "headline": {
+                "type": "translated-text",
+                "name": "headline",
+                "label": "Headline",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "short_description": {
+                "type": "translated-text",
+                "name": "short_description",
+                "label": "Short description",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "description": {
+                "type": "translated-text",
+                "name": "description",
+                "label": "Description",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "house_rules": {
+                "type": "translated-text",
+                "name": "house_rules",
+                "label": "House rules",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "surroundings": {
+                "type": "translated-text",
+                "name": "surroundings",
+                "label": "Surroundings",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "unique_benefits": {
+                "type": "translated-text",
+                "name": "unique_benefits",
+                "label": "Unique benefits",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "status": {
+                "type": "picklist",
+                "name": "status",
+                "label": "Status",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "possible_values": {
+                    "enabled": "Enabled",
+                    "pending": "Pending",
+                    "disabled": "Disabled"
+                },
+                "multivalue": false
+            },
+            "ical_url": {
+                "type": "url",
+                "name": "ical_url",
+                "label": "iCal url",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "brochure_url": {
+                "type": "url",
+                "name": "brochure_url",
+                "label": "Brochure",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "location": {
+                "type": "belongs-to",
+                "name": "location",
+                "label": "Location",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "location"
+            },
+            "property_type": {
+                "type": "belongs-to",
+                "name": "property_type",
+                "label": "Property type",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-type"
+            },
+            "currency": {
+                "type": "belongs-to",
+                "name": "currency",
+                "label": "Currency",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "currency"
+            },
+            "bedrooms": {
+                "type": "integer",
+                "name": "bedrooms",
+                "label": "Bedrooms",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "bathrooms": {
+                "type": "integer",
+                "name": "bathrooms",
+                "label": "Bathrooms",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "toilets": {
+                "type": "integer",
+                "name": "toilets",
+                "label": "Toilets",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "max_occupancy": {
+                "type": "integer",
+                "name": "max_occupancy",
+                "label": "Max. occupancy",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "comfortable_occupancy": {
+                "type": "integer",
+                "name": "comfortable_occupancy",
+                "label": "Comfortable occupancy",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "registration_number": {
+                "type": "text",
+                "name": "registration_number",
+                "label": "Registration number",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "address": {
+                "type": "text",
+                "name": "address",
+                "label": "Address",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "postcode": {
+                "type": "text",
+                "name": "postcode",
+                "label": "Postal code",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "geo": {
+                "type": "geo",
+                "name": "geo",
+                "label": "Geolocation",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "show_exact_address": {
+                "type": "boolean",
+                "name": "show_exact_address",
+                "label": "Show exact address",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "images": {
+                "type": "has-many",
+                "name": "images",
+                "label": "Image",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "image"
+            },
+            "external_id": {
+                "type": "text",
+                "name": "external_id",
+                "label": "External ID",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": false
+                }
+            },
+            "marketing_price": {
+                "type": "price",
+                "name": "marketing_price",
+                "label": "Marketing price",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "checkin_category": {
+                "type": "picklist",
+                "name": "checkin_category",
+                "label": "Checkin category",
+                "description": "",
+                "default_value": "other_checkin",
+                "hints": null,
+                "options": [],
+                "possible_values": {
+                    "doorman_entry": "Someone is available 24 hours a day to let guests in",
+                    "lockbox": "Lockbox",
+                    "smartlock": "Smart lock",
+                    "keypad": "A keypad must be available 24 hours a day to provide entry to your listing for the guests",
+                    "host_checkin": "Host greets you",
+                    "other_checkin": "Other"
+                },
+                "multivalue": false
+            },
+            "checkin_instructions": {
+                "type": "translated-text",
+                "name": "checkin_instructions",
+                "label": "Checkin instructions",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "home_truths": {
+                "type": "translated-text",
+                "name": "home_truths",
+                "label": "Home truths",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "html": false,
+                    "multiline": true
+                }
+            },
+            "reviews_count": {
+                "type": "integer",
+                "name": "reviews_count",
+                "label": "Reviews count",
+                "description": "",
+                "default_value": 0,
+                "hints": null,
+                "options": []
+            },
+            "reviews_rating": {
+                "type": "decimal",
+                "name": "reviews_rating",
+                "label": "Reviews rating",
+                "description": "",
+                "default_value": 0,
+                "hints": null,
+                "options": []
+            },
+            "website_visible": {
+                "type": "boolean",
+                "name": "website_visible",
+                "label": "Visible on website",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "amenities": {
+                "type": "belongs-to-many",
+                "name": "amenities",
+                "label": "Amenities",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "amenity"
+            },
+            "rates_settings": {
+                "type": "has-one",
+                "name": "rates_settings",
+                "label": "Rates settings",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-rates-settings"
+            },
+            "users": {
+                "type": "belongs-to-many",
+                "name": "users",
+                "label": "Users",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "user"
+            },
+            "discounts": {
+                "type": "belongs-to-many",
+                "name": "discounts",
+                "label": "Discounts",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "discount"
+            },
+            "rates_updated_at": {
+                "type": "datetime",
+                "name": "rates_updated_at",
+                "label": "Rates updated at",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "allow_past": false
+                }
+            },
+            "availability_updated_at": {
+                "type": "datetime",
+                "name": "availability_updated_at",
+                "label": "Availability updated at",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "allow_past": false
+                }
+            },
+            "policies": {
+                "type": "has-one",
+                "name": "policies",
+                "label": "Property policies",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-policy"
+            },
+            "fees": {
+                "type": "has-many",
+                "name": "fees",
+                "label": "Fees",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-fee"
+            },
+            "los_seasons": {
+                "type": "has-many",
+                "name": "los_seasons",
+                "label": "Los seasons",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-los-season"
+            },
+            "reviews": {
+                "type": "has-many",
+                "name": "reviews",
+                "label": "Reviews",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "review"
+            },
+            "seo": {
+                "type": "has-one",
+                "name": "seo",
+                "label": "Seo",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "seo"
+            },
+            "legal_entity": {
+                "type": "belongs-to",
+                "name": "legal_entity",
+                "label": "Legal entity",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "legal-entity"
+            },
+            "related_properties": {
+                "type": "belongs-to-many",
+                "name": "related_properties",
+                "label": "Related properties",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property"
+            },
+            "collections": {
+                "type": "belongs-to-many",
+                "name": "collections",
+                "label": "Collections",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "collection"
+            },
+            "rental_agreement": {
+                "type": "belongs-to",
+                "name": "rental_agreement",
+                "label": "Rental agreement",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "rental-agreement"
+            },
+            "tags": {
+                "type": "belongs-to-many",
+                "name": "tags",
+                "label": "Tags",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "tag"
+            },
+            "rooms": {
+                "type": "has-many",
+                "name": "rooms",
+                "label": "Rooms",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-room"
+            },
+            "property_icals": {
+                "type": "has-many",
+                "name": "property_icals",
+                "label": "iCals",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": [],
+                "relates_to": "property-ical"
+            },
+            "created_at": {
+                "type": "datetime",
+                "name": "created_at",
+                "label": "Created",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "allow_past": false
+                }
+            },
+            "updated_at": {
+                "type": "datetime",
+                "name": "updated_at",
+                "label": "Last updated",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {
+                    "allow_past": false
+                }
+            }
+        }
+    }
+}

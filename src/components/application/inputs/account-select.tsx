@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Check, ChevronsUpDown, Loader2, X } from "lucide-react";
+import { useIntl, FormattedMessage } from "react-intl";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,9 +13,9 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import api from "@/lib/api";
-import {Account} from "@onemineral/pms-js-sdk";
 import { useQuery } from "@tanstack/react-query";
 import {config} from "@/config.ts";
+import {Account} from "@sdk/generated";
 
 export interface AccountInputProps {
   value?: Account | null;
@@ -31,16 +32,22 @@ export function AccountSelect({
   value,
   onChange,
   onBlur,
-  placeholder = "Select an account...",
+  placeholder,
   disabled = false,
   className,
   error = false,
   resource_type,
 }: AccountInputProps) {
+  const intl = useIntl();
   const [open, setOpen] = React.useState(false);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [debouncedSearchQuery, setDebouncedSearchQuery] = React.useState("");
   const [selectedIndex, setSelectedIndex] = React.useState(-1);
+  
+  const defaultPlaceholder = intl.formatMessage({
+    defaultMessage: "Select an account...",
+    description: "Account select placeholder"
+  });
 
   // Debounce search query
   React.useEffect(() => {
@@ -151,7 +158,7 @@ export function AccountSelect({
           role="combobox"
           aria-expanded={open}
           aria-haspopup="listbox"
-          aria-label={placeholder}
+          aria-label={placeholder || defaultPlaceholder}
           disabled={disabled}
           className={cn(
             "w-full justify-between hover:bg-background font-normal",
@@ -170,14 +177,17 @@ export function AccountSelect({
               <span className="truncate">{value.full_name}</span>
             </div>
           ) : (
-            <span>{placeholder}</span>
+            <span>{placeholder || defaultPlaceholder}</span>
           )}
           <div className="flex items-center gap-1">
             {value && !disabled && (
               <a
                 onClick={handleClear}
                 className="rounded-sm opacity-50 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-                aria-label="Clear selection"
+                aria-label={intl.formatMessage({
+                  defaultMessage: "Clear selection",
+                  description: "Clear account selection button label"
+                })}
               >
                 <X className="size-4 shrink-0" />
               </a>
@@ -192,7 +202,10 @@ export function AccountSelect({
           <div className="flex items-center border-b px-3">
             <input
               className="placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
-              placeholder="Search accounts..."
+              placeholder={intl.formatMessage({
+                defaultMessage: "Search accounts...",
+                description: "Account search input placeholder"
+              })}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               autoFocus={false}
@@ -202,13 +215,26 @@ export function AccountSelect({
             )}
           </div>}
           <CommandList>
+            {isLoading && (
+              <div className="py-6 text-center text-sm">
+                <Loader2 className="size-4 mx-auto animate-spin opacity-50" />
+              </div>
+            )}
             {isError && (
               <div className="py-6 text-center text-sm text-destructive">
-                Failed to load accounts. Please try again.
+                <FormattedMessage
+                  defaultMessage="Failed to load accounts. Please try again."
+                  description="Account loading error message"
+                />
               </div>
             )}
             {!isError && !isLoading && accounts.length === 0 && (
-              <CommandEmpty>No accounts found.</CommandEmpty>
+              <CommandEmpty>
+                <FormattedMessage
+                  defaultMessage="No accounts found."
+                  description="No accounts found message"
+                />
+              </CommandEmpty>
             )}
             {!isError && accounts.length > 0 && (
               <CommandGroup>

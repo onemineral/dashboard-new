@@ -5,15 +5,6 @@
 import type { UploadState } from "./file-upload";
 
 /**
- * Upload progress information
- */
-export interface UploadProgress {
-  percentage: number;
-  loaded: number;
-  total: number;
-}
-
-/**
  * File validation result
  */
 export interface FileValidation {

@@ -1,0 +1,369 @@
+{
+    "resource": {
+        "fields": {
+            "id": {
+                "type": "id",
+                "name": "id",
+                "label": "ID",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": []
+            },
+            "name": {
+                "type": "text",
+                "name": "name",
+                "label": "Name",
+                "description": "",
+                "default_value": null,
+                "hints": null,
+                "options": {}
+            }
+        },
+        "actions": {
+            "query": {
+                "name": "query",
+                "args": {
+                    "sort": {
+                        "type": "composed",
+                        "name": "sort",
+                        "label": "Sort results",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {},
+                        "fields": {
+                            "id": {
+                                "type": "composed",
+                                "name": "id",
+                                "label": "ID",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "fields": [
+                                    {
+                                        "type": "picklist",
+                                        "name": "direction",
+                                        "label": "Sort direction",
+                                        "description": "",
+                                        "default_value": null,
+                                        "hints": null,
+                                        "options": [],
+                                        "possible_values": {
+                                            "asc": "Ascending",
+                                            "desc": "Descending"
+                                        },
+                                        "multivalue": false
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "paginate": {
+                        "type": "composed",
+                        "name": "paginate",
+                        "label": "Pagination",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "integer",
+                                "name": "page",
+                                "label": "Page",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            },
+                            {
+                                "type": "integer",
+                                "name": "perpage",
+                                "label": "Results per page",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": []
+                            }
+                        ]
+                    },
+                    "with": {
+                        "type": "list-of",
+                        "name": "with",
+                        "label": "With relations",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "text",
+                                "name": "with",
+                                "label": "With relations",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "html": false,
+                                    "multiline": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "fetch": {
+                "name": "fetch",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "with": {
+                        "type": "list-of",
+                        "name": "with",
+                        "label": "With relations",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "field": {
+                                "type": "text",
+                                "name": "with",
+                                "label": "With relations",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": {
+                                    "html": false,
+                                    "multiline": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "create": {
+                "name": "create",
+                "args": {
+                    "name": {
+                        "type": "translated-text",
+                        "name": "name",
+                        "label": "Name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    },
+                    "description": {
+                        "type": "translated-text",
+                        "name": "description",
+                        "label": "Description",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": true
+                        }
+                    },
+                    "bedrooms": {
+                        "type": "integer",
+                        "name": "bedrooms",
+                        "label": "Bedrooms",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "geo": {
+                        "type": "geo",
+                        "name": "geo",
+                        "label": "Geolocation",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "users": {
+                        "type": "belongs-to-many",
+                        "name": "users",
+                        "label": "Users",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "user"
+                    },
+                    "checkin_category": {
+                        "type": "picklist",
+                        "name": "checkin_category",
+                        "label": "Checkin category",
+                        "description": "",
+                        "default_value": "other_checkin",
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "doorman_entry": "Someone is available 24 hours a day to let guests in",
+                            "lockbox": "Lockbox",
+                            "smartlock": "Smart lock",
+                            "keypad": "A keypad must be available 24 hours a day to provide entry to your listing for the guests",
+                            "host_checkin": "Host greets you",
+                            "other_checkin": "Other"
+                        },
+                        "multivalue": false
+                    },
+                    "location": {
+                        "type": "belongs-to",
+                        "name": "location",
+                        "label": "Location",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "relates_to": "location"
+                    },
+                    "max_booking_window": {
+                        "type": "composed",
+                        "name": "max_booking_window",
+                        "label": "Max. booking window",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "fields": [
+                            {
+                                "type": "picklist",
+                                "name": "value",
+                                "label": "Num.",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "possible_values": {
+                                    "1": "1",
+                                    "2": "2",
+                                    "3": "3",
+                                    "4": "4",
+                                    "5": "5",
+                                    "6": "6",
+                                    "7": "7",
+                                    "8": "8",
+                                    "9": "9",
+                                    "10": "10",
+                                    "11": "11",
+                                    "12": "12",
+                                    "13": "13",
+                                    "14": "14",
+                                    "15": "15",
+                                    "16": "16",
+                                    "17": "17",
+                                    "18": "18",
+                                    "19": "19",
+                                    "20": "20",
+                                    "21": "21",
+                                    "22": "22",
+                                    "23": "23",
+                                    "24": "24"
+                                },
+                                "multivalue": false
+                            },
+                            {
+                                "type": "picklist",
+                                "name": "type",
+                                "label": "Unit",
+                                "description": "",
+                                "default_value": null,
+                                "hints": null,
+                                "options": [],
+                                "possible_values": {
+                                    "days": "Days",
+                                    "months": "Months"
+                                },
+                                "multivalue": false
+                            }
+                        ]
+                    }
+                }
+            },
+            "update": {
+                "name": "update",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "name": {
+                        "type": "translated-text",
+                        "name": "name",
+                        "label": "Name",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": {
+                            "html": false,
+                            "multiline": false
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "name": "delete",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    }
+                }
+            },
+            "set-status": {
+                "name": "set-status",
+                "args": {
+                    "id": {
+                        "type": "id",
+                        "name": "id",
+                        "label": "Record ID",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": []
+                    },
+                    "status": {
+                        "type": "picklist",
+                        "name": "status",
+                        "label": "Status",
+                        "description": "",
+                        "default_value": null,
+                        "hints": null,
+                        "options": [],
+                        "possible_values": {
+                            "enabled": "Enabled",
+                            "pending": "Pending",
+                            "disabled": "Disabled"
+                        },
+                        "multivalue": false
+                    }
+                }
+            }
+        }
+    }
+}

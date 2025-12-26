@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Upload, X, File, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { useIntl } from "react-intl";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
@@ -11,18 +12,16 @@ import {
   getDropzoneBackgroundColor,
   createPreviewUrl,
   type FileValidation,
-  type UploadProgress,
 } from "./upload-utils";
 import type { UploadState } from "./file-upload";
 
 /**
- * File item with upload state and progress
+ * File item with upload state
  */
 export interface FileItem {
   file: File;
   id: string;
   state: UploadState;
-  progress: UploadProgress;
   error?: string;
   previewUrl?: string;
 }
@@ -37,8 +36,8 @@ export interface MultiFileUploadProps {
   onChange?: (files: File[]) => void;
   /** Callback fired on blur for form validation */
   onBlur?: () => void;
-  /** Upload handler function - receives file and progress callback */
-  onUpload?: (file: File, onProgress: (progress: UploadProgress) => void) => Promise<void>;
+  /** Upload handler function */
+  onUpload?: (file: File) => Promise<void>;
   /** Accepted file types (MIME types or extensions) */
   accept?: string;
   /** Maximum file size in bytes */
@@ -73,31 +72,17 @@ export interface MultiFileUploadProps {
  * // Basic usage
  * const [files, setFiles] = useState<File[]>([]);
  * <MultiFileUpload value={files} onChange={setFiles} />
- * 
+ *
  * // With upload handler
- * const handleUpload = async (file: File, onProgress: (progress: UploadProgress) => void) => {
+ * const handleUpload = async (file: File) => {
  *   const formData = new FormData();
  *   formData.append('file', file);
- *   
- *   const xhr = new XMLHttpRequest();
- *   xhr.upload.addEventListener('progress', (e) => {
- *     if (e.lengthComputable) {
- *       onProgress({
- *         percentage: (e.loaded / e.total) * 100,
- *         loaded: e.loaded,
- *         total: e.total
- *       });
- *     }
- *   });
- *   
- *   return new Promise((resolve, reject) => {
- *     xhr.addEventListener('load', () => resolve());
- *     xhr.addEventListener('error', () => reject());
- *     xhr.open('POST', '/api/upload');
- *     xhr.send(formData);
+ *   await fetch('/api/upload', {
+ *     method: 'POST',
+ *     body: formData,
  *   });
  * };
- * 
+ *
  * <MultiFileUpload
  *   value={files}
  *   onChange={setFiles}
@@ -139,14 +124,16 @@ export const MultiFileUpload = React.memo(
         disabled = false,
         error = false,
         className,
-        placeholder = "Drop files here or click to browse",
-        uploadButtonText = "Upload All",
+        placeholder,
+        uploadButtonText,
         showFileSize = true,
         autoUpload = false,
         "data-testid": dataTestId,
       },
       ref
     ) => {
+      const intl = useIntl();
+      
       // State management
       const [fileItems, setFileItems] = React.useState<FileItem[]>([]);
       const [dragState, setDragState] = React.useState<"idle" | "drag-over">("idle");
@@ -186,7 +173,6 @@ export const MultiFileUpload = React.memo(
               file,
               id: `${file.name}-${file.size}-${Date.now()}-${Math.random()}`,
               state: "idle" as UploadState,
-              progress: { percentage: 0, loaded: 0, total: file.size },
               previewUrl: createPreviewUrl(file),
             };
           });
@@ -216,16 +202,12 @@ export const MultiFileUpload = React.memo(
             setFileItems((prev) =>
               prev.map((item) =>
                 item.id === fileId
-                  ? { ...item, state: "uploading" as UploadState, progress: { percentage: 0, loaded: 0, total: file.size } }
+                  ? { ...item, state: "uploading" as UploadState }
                   : item
               )
             );
 
-            await onUpload(file, (progress) => {
-              setFileItems((prev) =>
-                prev.map((item) => (item.id === fileId ? { ...item, progress } : item))
-              );
-            });
+            await onUpload(file);
 
             // Update state to success
             setFileItems((prev) =>
@@ -241,7 +223,7 @@ export const MultiFileUpload = React.memo(
                   ? {
                       ...item,
                       state: "error" as UploadState,
-                      error: err instanceof Error ? err.message : "Upload failed",
+                      error: err instanceof Error ? err.message : intl.formatMessage({ defaultMessage: "Upload failed", description: "Error message when file upload fails" }),
                     }
                   : item
               )
@@ -272,7 +254,7 @@ export const MultiFileUpload = React.memo(
 
           // Check max files limit
           if (maxFiles && value.length + newFiles.length > maxFiles) {
-            setValidationError(`Maximum ${maxFiles} files allowed`);
+            setValidationError(intl.formatMessage({ defaultMessage: "Maximum {maxFiles} {maxFiles, plural, one {file} other {files}} allowed", description: "Error message when maximum number of files is exceeded" }, { maxFiles }));
             return;
           }
 
@@ -283,7 +265,7 @@ export const MultiFileUpload = React.memo(
           for (const file of newFiles) {
             const validation = validateFileWrapper(file);
             if (!validation.valid) {
-              setValidationError(validation.error || "Invalid file");
+              setValidationError(validation.error || intl.formatMessage({ defaultMessage: "Invalid file", description: "Error message when a file is invalid" }));
               hasError = true;
               break;
             }
@@ -303,7 +285,6 @@ export const MultiFileUpload = React.memo(
               file,
               id: `${file.name}-${file.size}-${Date.now()}-${Math.random()}`,
               state: "idle" as UploadState,
-              progress: { percentage: 0, loaded: 0, total: file.size },
               previewUrl: createPreviewUrl(file),
             }));
 
@@ -486,7 +467,7 @@ export const MultiFileUpload = React.memo(
             className="hidden"
             disabled={disabled}
             multiple
-            aria-label="File input"
+            aria-label={intl.formatMessage({ defaultMessage: "File input", description: "ARIA label for the hidden file input" })}
           />
 
           {/* Dropzone */}
@@ -514,7 +495,7 @@ export const MultiFileUpload = React.memo(
             )}
             role="button"
             tabIndex={disabled ? -1 : 0}
-            aria-label="Upload files"
+            aria-label={intl.formatMessage({ defaultMessage: "Upload files", description: "ARIA label for the upload dropzone area" })}
             aria-disabled={disabled}
             data-testid={`${dataTestId}-dropzone`}
           >
@@ -539,22 +520,24 @@ export const MultiFileUpload = React.memo(
             {!hasFiles ? (
               <div className="flex flex-col items-center gap-1 text-center">
                 <p className="text-sm font-medium">
-                  {dragState === "drag-over" ? "Drop files here" : placeholder}
+                  {dragState === "drag-over"
+                    ? intl.formatMessage({ defaultMessage: "Drop files here", description: "Message shown when dragging files over the dropzone" })
+                    : placeholder || intl.formatMessage({ defaultMessage: "Drop files here or click to browse", description: "Placeholder text for the multi-file upload dropzone" })}
                 </p>
                 {accept && (
                   <p className="text-xs text-muted-foreground">
-                    Accepted: {accept.split(",").join(", ")}
+                    {intl.formatMessage({ defaultMessage: "Accepted: {types}", description: "Label showing accepted file types" }, { types: accept.split(",").join(", ") })}
                   </p>
                 )}
                 <div className="flex flex-col items-center gap-0.5 text-xs text-muted-foreground">
-                  {maxSize && <p>Max size: {formatFileSize(maxSize)}</p>}
-                  {maxFiles && <p>Max files: {maxFiles}</p>}
+                  {maxSize && <p>{intl.formatMessage({ defaultMessage: "Max size: {size}", description: "Label showing maximum file size" }, { size: formatFileSize(maxSize) })}</p>}
+                  {maxFiles && <p>{intl.formatMessage({ defaultMessage: "Max files: {count}", description: "Label showing maximum number of files" }, { count: maxFiles })}</p>}
                 </div>
               </div>
             ) : (
               <div className="flex items-center gap-2">
                 <p className="text-sm font-medium">
-                  {fileItems.length} {fileItems.length === 1 ? "file" : "files"} selected
+                  {intl.formatMessage({ defaultMessage: "{count} {count, plural, one {file} other {files}} selected", description: "Message showing number of files selected" }, { count: fileItems.length })}
                 </p>
                 {!disabled && !anyUploading && (
                   <Button
@@ -563,9 +546,9 @@ export const MultiFileUpload = React.memo(
                     size="sm"
                     onClick={handleClearAll}
                     className="h-auto py-1 px-2"
-                    aria-label="Clear all files"
+                    aria-label={intl.formatMessage({ defaultMessage: "Clear all files", description: "ARIA label for the clear all files button" })}
                   >
-                    Clear all
+                    {intl.formatMessage({ defaultMessage: "Clear all", description: "Button text to clear all selected files" })}
                   </Button>
                 )}
               </div>
@@ -573,7 +556,9 @@ export const MultiFileUpload = React.memo(
 
             {/* Success Message */}
             {allSuccess && (
-              <p className="text-sm text-green-600 font-medium">All files uploaded successfully!</p>
+              <p className="text-sm text-green-600 font-medium">
+                {intl.formatMessage({ defaultMessage: "All files uploaded successfully!", description: "Success message when all files are uploaded" })}
+              </p>
             )}
           </div>
 
@@ -617,7 +602,7 @@ export const MultiFileUpload = React.memo(
                           size="icon"
                           onClick={handleRemoveFile(item.id)}
                           className="size-6 min-w-[44px] min-h-[44px] md:min-w-[24px] md:min-h-[24px] shrink-0"
-                          aria-label={`Remove ${item.file.name}`}
+                          aria-label={intl.formatMessage({ defaultMessage: "Remove {fileName}", description: "ARIA label for the remove file button" }, { fileName: item.file.name })}
                         >
                           <X className="size-4" aria-hidden="true" />
                         </Button>
@@ -628,22 +613,23 @@ export const MultiFileUpload = React.memo(
                     <div className="flex items-center gap-2 text-xs text-muted-foreground">
                       {showFileSize && <span>{formatFileSize(item.file.size)}</span>}
                       {item.state === "success" && (
-                        <span className="text-green-600 font-medium">Uploaded</span>
+                        <span className="text-green-600 font-medium">
+                          {intl.formatMessage({ defaultMessage: "Uploaded", description: "Status text showing file was uploaded successfully" })}
+                        </span>
                       )}
                       {item.state === "error" && (
-                        <span className="text-destructive font-medium">Failed</span>
+                        <span className="text-destructive font-medium">
+                          {intl.formatMessage({ defaultMessage: "Failed", description: "Status text showing file upload failed" })}
+                        </span>
                       )}
                     </div>
 
                     {/* Upload Progress */}
                     {item.state === "uploading" && (
                       <div className="space-y-1">
-                        <Progress value={item.progress.percentage} indeterminate={!item.progress.percentage} className="h-1.5" />
+                        <Progress indeterminate className="h-1.5" />
                         <div className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span>{Math.round(item.progress.percentage)}%</span>
-                          <span>
-                            {formatFileSize(item.progress.loaded)} / {formatFileSize(item.progress.total)}
-                          </span>
+                          <span>{intl.formatMessage({ defaultMessage: "Uploading...", description: "Status text while file is uploading" })}</span>
                         </div>
                       </div>
                     )}
@@ -668,7 +654,7 @@ export const MultiFileUpload = React.memo(
               data-testid={`${dataTestId}-upload-button`}
             >
               <Upload className="size-4" aria-hidden="true" />
-              {uploadButtonText}
+              {uploadButtonText || intl.formatMessage({ defaultMessage: "Upload All", description: "Button text to upload all selected files" })}
             </Button>
           )}
 

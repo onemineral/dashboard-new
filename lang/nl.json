@@ -1,0 +1,2562 @@
+{
+  "++Xb5Q": {
+    "defaultMessage": "Je unieke merchant-ID (FUC) die je van Redsys hebt gekregen, meestal 9 cijfers",
+    "description": "Description for Redsys Merchant Code input"
+  },
+  "+0teqB": {
+    "defaultMessage": "Terminalnummer toegewezen door Redsys (meestal ‘1’ bij een enkele terminal)",
+    "description": "Description for Redsys Terminal input"
+  },
+  "+TZnSI": {
+    "defaultMessage": "accommodatie",
+    "description": "Search keyword for properties"
+  },
+  "+crfr6": {
+    "defaultMessage": "Houd je Merchant Salt veilig en deel deze nooit openbaar. Deze waarde wordt gebruikt om veilige hashes te genereren voor alle betalingsverzoeken naar je account.",
+    "description": "Security warning about merchant salt"
+  },
+  "+dSPvA": {
+    "defaultMessage": "PayPal Developer Dashboard",
+    "description": "Link text for PayPal Developer Dashboard"
+  },
+  "+efOJ6": {
+    "defaultMessage": "za",
+    "description": "Short day of week: Saturday"
+  },
+  "+mL9Gz": {
+    "defaultMessage": "Beschikbaarheid bijwerken",
+    "description": "Button to update availability status (open or close dates) for guests to book."
+  },
+  "+o1ZCY": {
+    "defaultMessage": "Telefoon",
+    "description": "Label for phone input"
+  },
+  "+qKl8A": {
+    "defaultMessage": "Resetten",
+    "description": "Button to reset all filters"
+  },
+  "+sCbso": {
+    "defaultMessage": "Btw-nummer / fiscaal nummer",
+    "description": "Label for tax ID input"
+  },
+  "+sFjDr": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load Stripe configuration"
+  },
+  "+ssSkh": {
+    "defaultMessage": "Hulp nodig bij het vinden van je Xmoney-inloggegevens? Bekijk de installatie-instructies",
+    "description": "Link to open setup instructions dialog"
+  },
+  "+uGQkt": {
+    "defaultMessage": "*",
+    "description": "Required field indicator"
+  },
+  "/12tKm": {
+    "defaultMessage": "API Login ID is verplicht",
+    "description": "Error message for missing Authorize.net API Login ID"
+  },
+  "/8YgtH": {
+    "defaultMessage": "Volgende",
+    "description": "Label for pagination next button"
+  },
+  "/LSOfM": {
+    "defaultMessage": "Je unieke API Login ID, verstrekt door Authorize.net voor API-authenticatie",
+    "description": "Description for Authorize.net API Login ID input"
+  },
+  "/XtBEU": {
+    "defaultMessage": "Om je Razorpay-account te koppelen, moet je je API-inloggegevens ophalen uit je dashboard:",
+    "description": "Instructions introduction"
+  },
+  "/fzYxb": {
+    "defaultMessage": "Geen valuta beschikbaar",
+    "description": "No currencies available message"
+  },
+  "/myRRj": {
+    "defaultMessage": "Log in op je {link} met je merchant-inloggegevens.",
+    "description": "Step 1: Log in to Authorize.net"
+  },
+  "/qhPPc": {
+    "defaultMessage": "Bestand verwijderen",
+    "description": "ARIA label for remove current file button"
+  },
+  "/rTtyJ": {
+    "defaultMessage": "Achternaam",
+    "description": "Label for last name input"
+  },
+  "0/tQuf": {
+    "defaultMessage": "Bij een API-koppeling schakelt Airbnb je advertenties automatisch over naar hun commissie­structuur met alleen hostkosten (15,5% in plaats van 3%). Wij compenseren dit door je prijzen aan te passen, zodat de gast hetzelfde bedrag betaalt en jij dezelfde uitbetaling ontvangt.",
+    "description": "Key takeaway explanation - clarifies Airbnb enforces this change"
+  },
+  "05N7am": {
+    "defaultMessage": "klant",
+    "description": "Search keyword for guests"
+  },
+  "0GT0SI": {
+    "defaultMessage": "Annuleren",
+    "description": "Cancel button label"
+  },
+  "0ICrVM": {
+    "defaultMessage": "Key ID is verplicht",
+    "description": "Error message for missing Razorpay Key ID"
+  },
+  "0KIYiv": {
+    "defaultMessage": "analytics",
+    "description": "Search keyword for reports"
+  },
+  "0TZhGi": {
+    "defaultMessage": "planning",
+    "description": "Search keyword for calendar"
+  },
+  "0U3uEj": {
+    "defaultMessage": "Als je nog geen API-sleutels hebt, klik dan op ‘Generate Key’ om een nieuw sleutelpaar aan te maken.",
+    "description": "Step 4: Generate API keys if needed"
+  },
+  "0d4QCF": {
+    "defaultMessage": "Gedeelde commissie",
+    "description": "Split fee option title"
+  },
+  "0f/taE": {
+    "defaultMessage": "Selecteer je standaardvaluta (meestal EUR voor Spanje) en alle valuta’s die je wilt accepteren.",
+    "description": "Step 7: Select currencies"
+  },
+  "0kZeTh": {
+    "defaultMessage": "Redsys-account koppelen",
+    "description": "Button label to connect Redsys account"
+  },
+  "0lWa8l": {
+    "defaultMessage": "Zo zorgen we ervoor dat het aanpassen van je Airbnb-prijzen niets verandert voor jou of je gasten.",
+    "description": "Dialog description"
+  },
+  "0lgY8w": {
+    "defaultMessage": "Betaalmethoden opslaan (Save payment methods) (voor het bewaren van betaalmethoden)",
+    "description": "PayPal permission: Vault. IMPORTANT: Keep 'Save payment methods' in English in parentheses after translation if it makes sense, as this is the exact permission name in PayPal's interface."
+  },
+  "0mhGN1": {
+    "defaultMessage": "Klik onder het gedeelte Instellingen op ‘Account Credentials’ of ‘API Keys’.",
+    "description": "Step 3: Find API Credentials section"
+  },
+  "0nDVG5": {
+    "defaultMessage": "API-sleutel",
+    "description": "Label for Xmoney API Key input"
+  },
+  "0uEyPn": {
+    "defaultMessage": "Belangrijkste huisregels",
+    "description": "Section heading for selecting common property rules (smoking, pets, parties, quiet hours)"
+  },
+  "1+Njhd": {
+    "defaultMessage": "Weergavevaluta",
+    "description": "Label for display currency selector"
+  },
+  "1IwVJ/": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load Xmoney configuration"
+  },
+  "1ME8gM": {
+    "defaultMessage": "Opslaan...",
+    "description": "Button text while saving the calendar updates"
+  },
+  "1c7Eg9": {
+    "defaultMessage": "Gast: 0%",
+    "description": "Host-only fee guest rate badge"
+  },
+  "1dOd3r": {
+    "defaultMessage": "Zoek je ‘Merchant Code’ (FUC - Código de comercio), meestal een nummer van 9 cijfers.",
+    "description": "Step 3: Find Merchant Code. IMPORTANT: Keep 'FUC' and 'Código de comercio' as technical terms."
+  },
+  "1kryhX": {
+    "defaultMessage": "Client ID",
+    "description": "Label for PayPal Client ID input"
+  },
+  "1qWnpo": {
+    "defaultMessage": "Je ziet nu je Merchant Key (ook wel API Key genoemd). Dit is een unieke identificatie voor je merchant-account. Kopieer deze waarde.",
+    "description": "Step 4: Copy Merchant Key"
+  },
+  "1tn+ul": {
+    "defaultMessage": "+ Airbnb-gastkosten",
+    "description": "Guest fee label"
+  },
+  "1zU6LU": {
+    "defaultMessage": "Breedtegraad-coördinaat",
+    "description": "ARIA label for latitude input"
+  },
+  "29UOKo": {
+    "defaultMessage": "Voor",
+    "description": "Before badge label"
+  },
+  "2BRner": {
+    "defaultMessage": "Vakantiehuurovereenkomst",
+    "description": "Option for a standard vacation rental agreement for short-term stays"
+  },
+  "2HHm1c": {
+    "defaultMessage": "Hulp nodig bij het vinden van je Authorize.net-inloggegevens? Bekijk de installatie-instructies",
+    "description": "Link to open setup instructions dialog"
+  },
+  "2XJblv": {
+    "defaultMessage": "Uitgelicht",
+    "description": "Label for featured amenity status"
+  },
+  "2YpiUO": {
+    "defaultMessage": "Key Secret is verplicht",
+    "description": "Error message for missing Razorpay Key Secret"
+  },
+  "2kAsyS": {
+    "defaultMessage": "Ga na het inloggen in het menu aan de linkerkant naar ‘Settings’.",
+    "description": "Step 2: Navigate to Settings"
+  },
+  "2n0X8r": {
+    "defaultMessage": "Volg deze stappen om je Authorize.net-inloggegevens op te halen en je betaalgateway te configureren",
+    "description": "Setup instructions dialog description"
+  },
+  "3+LMGK": {
+    "defaultMessage": "Co-host",
+    "description": "Secondary host badge label for airbnb property"
+  },
+  "30erry": {
+    "defaultMessage": "PayU.in Merchant Dashboard",
+    "description": "Link text for PayU.in Merchant Dashboard"
+  },
+  "356Com": {
+    "defaultMessage": "Beperking voor check-in",
+    "description": "Title for check-in restriction popover"
+  },
+  "3FLph+": {
+    "defaultMessage": "Max. grootte: {size}",
+    "description": "Label showing maximum file size"
+  },
+  "3K7lCg": {
+    "defaultMessage": "Klik onder het gedeelte Instellingen op ‘API Keys’.",
+    "description": "Step 3: Find API Keys section"
+  },
+  "3KbOCN": {
+    "defaultMessage": "Laten we uw hoofdinstellingen configureren",
+    "description": "Main settings onboarding page title"
+  },
+  "3OaIGu": {
+    "defaultMessage": "Accommodaties",
+    "description": "Properties page title"
+  },
+  "3QtHMq": {
+    "defaultMessage": "Hulp nodig bij het vinden van je PayU.in-inloggegevens? Bekijk de installatie-instructies",
+    "description": "Link to open setup instructions dialog"
+  },
+  "3UtT5H": {
+    "defaultMessage": "Doorgaan",
+    "description": "Continue button label"
+  },
+  "3VDEsx": {
+    "defaultMessage": "Uitgelicht",
+    "description": "Column header for featured amenity status"
+  },
+  "3Zued9": {
+    "defaultMessage": "Bestand wissen",
+    "description": "ARIA label for the clear file button"
+  },
+  "3kCp+u": {
+    "defaultMessage": "Volg deze stappen om je Redsys-gegevens op te halen en je betaalgateway te configureren",
+    "description": "Setup instructions dialog description"
+  },
+  "3kEEA8": {
+    "defaultMessage": "OTA-creditcardverwerking",
+    "description": "Payment gateway feature: OTA credit card processing"
+  },
+  "3kIgh3": {
+    "defaultMessage": "Voornaam",
+    "description": "Label for first name input"
+  },
+  "3mStAG": {
+    "defaultMessage": "Toepassen",
+    "description": "Button to apply the picklist filter selection"
+  },
+  "3s3IxJ": {
+    "defaultMessage": "iCal-import van {icalName} heeft de beschikbaarheidsstatus gewijzigd naar {status}",
+    "description": "Sentence describing an iCal import changing availability status"
+  },
+  "42j2Yl": {
+    "defaultMessage": "Importeer en beheer reserveringen zonder gedoe",
+    "description": "Benefit of reservation management"
+  },
+  "4Ap+k9": {
+    "defaultMessage": "Bezig met verbinden...",
+    "description": "Button label while connecting to Xmoney"
+  },
+  "4DvW3w": {
+    "defaultMessage": "Gastvriendelijke huurovereenkomst voor kort verblijf (1–30 nachten). Ideaal voor Airbnb, VRBO of directe boekingen. Behandelt borgstellingen, annuleringsvoorwaarden, in- en uitcheckprocedures, huisregels en verantwoordelijkheden van de gast.",
+    "description": "Detailed explanation of what a vacation rental agreement includes and when to use it"
+  },
+  "4Gg0C7": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load PayPal configuration"
+  },
+  "4JR3Dt": {
+    "defaultMessage": "Verbinding mislukt",
+    "description": "Error title when Redsys connection fails"
+  },
+  "4JuKSp": {
+    "defaultMessage": "Beschikbaarheidsgeschiedenis",
+    "description": "Title for availability history section"
+  },
+  "4Nlmyz": {
+    "defaultMessage": "Selecteer land",
+    "description": "Placeholder for country selector"
+  },
+  "4SR2Qh": {
+    "defaultMessage": "Dag",
+    "description": "Table header for day name"
+  },
+  "4Ucygo": {
+    "defaultMessage": "Bezig met verbinden...",
+    "description": "Button label while connecting to Razorpay"
+  },
+  "4ZLWca": {
+    "defaultMessage": "Zoek adres...",
+    "description": "Placeholder for address search input in geolocation picker"
+  },
+  "4ZNYGb": {
+    "defaultMessage": "vr",
+    "description": "Short day of week: Friday"
+  },
+  "4gfoGt": {
+    "defaultMessage": "ID",
+    "description": "Column header for amenity ID"
+  },
+  "4hPHpa": {
+    "defaultMessage": "Transaction Key is verplicht",
+    "description": "Error message for missing Authorize.net Transaction Key"
+  },
+  "4vuqmI": {
+    "defaultMessage": "Welkom aan boord! Laten we alles instellen",
+    "description": "Onboarding page title"
+  },
+  "5+u2og": {
+    "defaultMessage": "Beschikbaarheidsstatussen konden niet worden geladen",
+    "description": "Error loading availability statuses message"
+  },
+  "55mCjK": {
+    "defaultMessage": "Zoek accommodaties...",
+    "description": "Placeholder for property search input"
+  },
+  "56bErq": {
+    "defaultMessage": "Ongeldige einddatum",
+    "description": "Error message when the end date is invalid"
+  },
+  "5DkMof": {
+    "defaultMessage": "Kies UI-taal",
+    "description": "Placeholder for UI language selector"
+  },
+  "5EFbSV": {
+    "defaultMessage": "Accepteer veilig betalingen met PayPal",
+    "description": "PayPal gateway description"
+  },
+  "5G+3FI": {
+    "defaultMessage": "Geen accounts gevonden.",
+    "description": "No accounts found message"
+  },
+  "5LH+O5": {
+    "defaultMessage": "Tarief moet een geldig getal zijn",
+    "description": "Error message when rate is not a valid number"
+  },
+  "5OlbLO": {
+    "defaultMessage": "Terug",
+    "description": "Button text to go back from history view"
+  },
+  "5PMMrN": {
+    "defaultMessage": "Merknaam moet minimaal 2 tekens bevatten",
+    "description": "Brand name min length validation message"
+  },
+  "5UlhKh": {
+    "defaultMessage": "Zakelijk adres",
+    "description": "Label for address input"
+  },
+  "5WWihP": {
+    "defaultMessage": "{count} {count, plural, one {bestand} other {bestanden}} geselecteerd",
+    "description": "Message showing number of files selected"
+  },
+  "5iOMya": {
+    "defaultMessage": "Geen land gevonden.",
+    "description": "Message when no countries match the search"
+  },
+  "5rFDAN": {
+    "defaultMessage": "Beschrijf uw aangepaste type overeenkomst",
+    "description": "Error message when user selects custom agreement type but doesn't provide a description"
+  },
+  "65M3eA": {
+    "defaultMessage": "Beschrijf uw annuleringsvoorwaarden en restitutiebeleid",
+    "description": "Placeholder text prompting user to describe their custom cancellation and refund terms"
+  },
+  "66+pWG": {
+    "defaultMessage": "Aanvullende huisregels",
+    "description": "Label for text input where users can add house rules not covered by the checkboxes"
+  },
+  "66uz/9": {
+    "defaultMessage": "Na",
+    "description": "After badge label"
+  },
+  "6BVS0B": {
+    "defaultMessage": "Handtekeningsleutel (SHA-256)",
+    "description": "Label for Redsys Signature Key input"
+  },
+  "6CXY7+": {
+    "defaultMessage": "Startdatum moet na {date} liggen",
+    "description": "Error message when the start date is before the minimum date"
+  },
+  "6CZ2VT": {
+    "defaultMessage": "Je inkomsten blijven gelijk",
+    "description": "Dialog title for commission explanation"
+  },
+  "6QOz2B": {
+    "defaultMessage": "Toegestane valuta’s",
+    "description": "Label for allowed currencies selection"
+  },
+  "6V7n+L": {
+    "defaultMessage": "Resetten",
+    "description": "Reset selection button"
+  },
+  "6YI4kg": {
+    "defaultMessage": "Ga in het bovenste menu naar \"Apps & Credentials\" (Apps & Credentials).",
+    "description": "Step 2: Navigate to Apps & Credentials menu. IMPORTANT: Keep 'Apps & Credentials' in English in parentheses after translation, as users need to find this exact menu item in PayPal's interface which may be in English."
+  },
+  "6aZ6oU": {
+    "defaultMessage": "Selecteer alle valuta’s die deze betaalgateway kan verwerken. Betalingen in andere valuta worden bij de verwerking omgezet naar de standaardvaluta.",
+    "description": "Description for allowed currencies selection"
+  },
+  "6hqX55": {
+    "defaultMessage": "{fileName} verwijderen",
+    "description": "ARIA label for the remove file button"
+  },
+  "6jBqKO": {
+    "defaultMessage": "Verbinding mislukt",
+    "description": "Error title when Authorize.net connection fails"
+  },
+  "6oqioY": {
+    "defaultMessage": "Ja",
+    "description": "Boolean filter true label"
+  },
+  "6tO6oi": {
+    "defaultMessage": "Je vermelde prijs",
+    "description": "Listed price label"
+  },
+  "70DkFz": {
+    "defaultMessage": "Aangepast",
+    "description": "Option to define a custom cancellation policy in the user's own words"
+  },
+  "735/I6": {
+    "defaultMessage": "Extra talen",
+    "description": "Label for secondary languages selector"
+  },
+  "764Jrf": {
+    "defaultMessage": "Geheime sleutel om de echtheid van webhooks te verifiëren en betalingsmeldingen te beveiligen. Houd deze vertrouwelijk en deel hem nooit openbaar.",
+    "description": "Description for Xmoney Webhook Secret input"
+  },
+  "79R694": {
+    "defaultMessage": "Bijwerken van beschikbaarheid mislukt",
+    "description": "Error message when availability update fails"
+  },
+  "7LCyD2": {
+    "defaultMessage": "Selecteer standaardtaal",
+    "description": "Placeholder for default language selector"
+  },
+  "7RfiVr": {
+    "defaultMessage": "Pop-up geblokkeerd",
+    "description": "Error title when popup is blocked"
+  },
+  "7S9iXq": {
+    "defaultMessage": "Voer je PayU.in API-inloggegevens in vanuit je merchant-dashboard",
+    "description": "PayU.in credentials form description"
+  },
+  "7T1liF": {
+    "defaultMessage": "Merchant Salt is verplicht",
+    "description": "Error message for missing PayU.in Merchant Salt"
+  },
+  "7U1n7w": {
+    "defaultMessage": "Genereer uw huurovereenkomst",
+    "description": "Page title for AI-powered rental agreement generation tool during onboarding"
+  },
+  "7eul9b": {
+    "defaultMessage": "Webhook Secret",
+    "description": "Label for Xmoney Webhook Secret input"
+  },
+  "7jmAkN": {
+    "defaultMessage": "Hulp nodig bij het vinden van je Razorpay-inloggegevens? Bekijk de installatie-instructies",
+    "description": "Link to open setup instructions dialog"
+  },
+  "7qDNyf": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load PayPal configuration"
+  },
+  "82It5E": {
+    "defaultMessage": "Selecteer een accommodatie...",
+    "description": "Placeholder text for property select input"
+  },
+  "88kNaO": {
+    "defaultMessage": "Verbinding mislukt",
+    "description": "Error title when PayPal connection fails"
+  },
+  "88zIRQ": {
+    "defaultMessage": "Het Stripe-autorisatievenster wordt geopend...",
+    "description": "Loading description when opening popup"
+  },
+  "8C+PAW": {
+    "defaultMessage": "Hex-code",
+    "description": "Hex color code input label"
+  },
+  "8FdIpV": {
+    "defaultMessage": "Bezig met verbinden...",
+    "description": "Button label while connecting to Authorize.net"
+  },
+  "8H9gfX": {
+    "defaultMessage": "Niet roken",
+    "description": "Checkbox label for rule prohibiting smoking on the property"
+  },
+  "8LIDP6": {
+    "defaultMessage": "Transaction Key",
+    "description": "Label for Authorize.net Transaction Key input"
+  },
+  "8TIbvo": {
+    "defaultMessage": "Dit beleid is van toepassing op boekingen via uw eigen website en VRBO. Andere OTA’s zoals Airbnb en Booking.com hanteren hun eigen annuleringsbeleid, dat dan in plaats hiervan geldt.",
+    "description": "Note explaining that this cancellation policy only applies to direct bookings and VRBO, not to other booking platforms"
+  },
+  "8U6PX5": {
+    "defaultMessage": "Datumbereik-kiezer",
+    "description": "ARIA label for the date range picker dialog"
+  },
+  "8WjQyt": {
+    "defaultMessage": "Log in op je {link} met je bankgegevens.",
+    "description": "Step 1: Log in to Redsys"
+  },
+  "8f+bQB": {
+    "defaultMessage": "Merklogo",
+    "description": "Label for logo upload input"
+  },
+  "8jvJ2a": {
+    "defaultMessage": "boeking",
+    "description": "Search keyword for bookings"
+  },
+  "8khNNy": {
+    "defaultMessage": "Gedeelde commissie",
+    "description": "Airbnb split-fee commission structure label"
+  },
+  "8m2mNb": {
+    "defaultMessage": "Koppelen met Airbnb",
+    "description": "Airbnb connection page title"
+  },
+  "8rC+q+": {
+    "defaultMessage": "Zorg dat je de juiste sleutels voor de omgeving gebruikt: gebruik ‘Live Mode’-sleutels (rzp_live_) voor productiebetalingen, niet ‘Test Mode’-sleutels (rzp_test_).",
+    "description": "Step 7: Verify environment"
+  },
+  "8rPgs4": {
+    "defaultMessage": "Voer je Redsys-merchantgegevens in vanuit de configuratie van je Virtual POS",
+    "description": "Redsys credentials form description"
+  },
+  "957I9k": {
+    "defaultMessage": "Selecteer land",
+    "description": "Aria label for country selector button"
+  },
+  "95bDjd": {
+    "defaultMessage": "Je Authorize.net-account is succesvol gekoppeld en klaar om betalingen te verwerken.",
+    "description": "Success description when Authorize.net connection succeeds"
+  },
+  "9GzCSL": {
+    "defaultMessage": "Status bijgewerkt",
+    "description": "Success message when property status is updated"
+  },
+  "9HQrgV": {
+    "defaultMessage": "Laat leeg als u niet onder een bedrijf opereert.",
+    "description": "Description for tax ID field"
+  },
+  "9JT9XF": {
+    "defaultMessage": "Authorize.net-inloggegevens",
+    "description": "Authorize.net credentials form title"
+  },
+  "9M/Nz4": {
+    "defaultMessage": "Naam",
+    "description": "Property name column header"
+  },
+  "9YTW5G": {
+    "defaultMessage": "Meer pagina's",
+    "description": "Screen reader text for pagination ellipsis"
+  },
+  "9Zp2R9": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load Authorize.net configuration"
+  },
+  "9ahmSP": {
+    "defaultMessage": "Kopieer je inloggegevens en plak ze in het formulier om je Authorize.net-account te koppelen.",
+    "description": "Step 8: Copy credentials"
+  },
+  "9kRCfP": {
+    "defaultMessage": "Accepteer veilig betalingen met Stripe, het toonaangevende betaalplatform met ondersteuning voor creditcards, betaalpassen, digitale wallets en lokale betaalmethoden wereldwijd",
+    "description": "Stripe gateway description"
+  },
+  "9kq+V8": {
+    "defaultMessage": "Koppelen met Airbnb",
+    "description": "Connect button label"
+  },
+  "9xRnJR": {
+    "defaultMessage": "Wat wilt u doen met de geselecteerde datums?",
+    "description": "Description prompting user to select an action for the calendar dates"
+  },
+  "A+xeP3": {
+    "defaultMessage": "Objectconditie",
+    "description": "Property health score column header"
+  },
+  "AJ3+Af": {
+    "defaultMessage": "Accepteer cryptobetalingen met Xmoney, met ondersteuning voor Bitcoin, Ethereum, USDT en andere grote cryptocurrencies met directe uitbetaling",
+    "description": "Xmoney gateway description"
+  },
+  "ARaLjq": {
+    "defaultMessage": "Domein-whitelisting vereist",
+    "description": "Alert title for Razorpay domain whitelisting requirement"
+  },
+  "AqvmOj": {
+    "defaultMessage": "Kalender",
+    "description": "Navigation item for the calendar page"
+  },
+  "ArD4uQ": {
+    "defaultMessage": "bijv. BTW123456789 of EIN 12-3456789",
+    "description": "Placeholder for tax ID input"
+  },
+  "Aso6At": {
+    "defaultMessage": "Zorg dat je Virtual POS is ingesteld op de integratiemodus ‘REST API’.",
+    "description": "Step 6: Check integration mode. IMPORTANT: Keep 'REST API' as a technical term."
+  },
+  "AvzD7r": {
+    "defaultMessage": "Landen laden...",
+    "description": "Loading countries message"
+  },
+  "B34Ye5": {
+    "defaultMessage": "Bijv. regels voor veilig gebruik van de jacuzzi, toelichting op parkeervoorwaarden voor 2 auto’s, bepaling over het respecteren van buren, uitleg over kosten voor zwembadverwarming...",
+    "description": "Example text showing specific clauses users might add (hot tub safety, parking, neighbors, pool heating)"
+  },
+  "B3EMvw": {
+    "defaultMessage": "Zoek je ‘Terminal’-nummer (Número de terminal), meestal ‘1’ bij standaardinstellingen.",
+    "description": "Step 4: Find Terminal. IMPORTANT: Keep 'Número de terminal' in Spanish."
+  },
+  "B4uXBC": {
+    "defaultMessage": "Minimumverblijf moet een geldig getal zijn",
+    "description": "Error message when minimum stay is not a valid number"
+  },
+  "B7m04Z": {
+    "defaultMessage": "Ongeldige startdatum",
+    "description": "Error message when the start date is invalid"
+  },
+  "BEWkMT": {
+    "defaultMessage": "beschikbaarheid",
+    "description": "Search keyword for calendar"
+  },
+  "BFYTcS": {
+    "defaultMessage": "Koppel je Airbnb-account om je accommodaties en reserveringen automatisch te synchroniseren.",
+    "description": "Airbnb connection page description"
+  },
+  "BJM1Kd": {
+    "defaultMessage": "Je ziet nu je API Key (begint met ‘u_live_api_’ voor live-modus of ‘u_test_api_’ voor testmodus). Kopieer deze waarde.",
+    "description": "Step 6: Copy API Key"
+  },
+  "BQCp+E": {
+    "defaultMessage": "Succesvol verbonden",
+    "description": "Success title when Redsys connection succeeds"
+  },
+  "BSWE9u": {
+    "defaultMessage": "gegevens",
+    "description": "Search keyword for reports"
+  },
+  "Ba3d8z": {
+    "defaultMessage": "Mijn profiel",
+    "description": "Navigation item for the user profile page"
+  },
+  "BcQIVG": {
+    "defaultMessage": "Landen zoeken...",
+    "description": "Search countries placeholder"
+  },
+  "Bi53tf": {
+    "defaultMessage": "Aangepast",
+    "description": "Option to describe a custom rental agreement type in the user's own words"
+  },
+  "BlmJHz": {
+    "defaultMessage": "Bestand uploaden",
+    "description": "ARIA label for the upload dropzone area"
+  },
+  "BogP+d": {
+    "defaultMessage": "Geen huisdieren",
+    "description": "Checkbox label for rule prohibiting pets/animals on the property"
+  },
+  "BtvSd5": {
+    "defaultMessage": "Handtekeningsleutel is verplicht",
+    "description": "Error message for missing Redsys Signature Key"
+  },
+  "Bza8Ck": {
+    "defaultMessage": "gast",
+    "description": "Search keyword for guests"
+  },
+  "C5WQ1D": {
+    "defaultMessage": "Je moet <strong>{currentDomain}</strong> en het domein van je eigen website op de whitelist zetten in je Razorpay-dashboard (Settings → API Keys → Whitelist Domains).",
+    "description": "Description for domain whitelisting requirement"
+  },
+  "C6mSpf": {
+    "defaultMessage": "De Client ID van je PayPal‑applicatie uit de Developer Dashboard",
+    "description": "Description for PayPal Client ID input"
+  },
+  "CA/i/C": {
+    "defaultMessage": "Authorize.net Merchant Interface",
+    "description": "Link text for Authorize.net Merchant Interface"
+  },
+  "CCUbxX": {
+    "defaultMessage": "Standaardvaluta",
+    "description": "Label for default currency select"
+  },
+  "CJ7o0o": {
+    "defaultMessage": "Wordt gebruikt om geaggregeerde financiële gegevens over alle accommodaties weer te geven. Elke accommodatie heeft zijn eigen boekingsvaluta.",
+    "description": "Description for display currency field"
+  },
+  "CNTZll": {
+    "defaultMessage": "Je ontvangt",
+    "description": "Amount received label"
+  },
+  "CYPLf9": {
+    "defaultMessage": "contact@example.com",
+    "description": "Placeholder for email input"
+  },
+  "CYqfVo": {
+    "defaultMessage": "Voornaam is verplicht",
+    "description": "First name required validation message"
+  },
+  "CbGXs2": {
+    "defaultMessage": "Vandaag",
+    "description": "Label for today in a select to move the calendar to the current date"
+  },
+  "CgIj0s": {
+    "defaultMessage": "Selectie wissen",
+    "description": "Clear account selection button label"
+  },
+  "Cm/acF": {
+    "defaultMessage": "Client Secret",
+    "description": "Label for PayPal Client Secret input"
+  },
+  "CphCmr": {
+    "defaultMessage": "Zorg dat je gegevens uit de Live‑omgeving gebruikt voor betalingen in productie.",
+    "description": "Important notice about using live environment"
+  },
+  "Cw1PUM": {
+    "defaultMessage": "Log in op je {link} met je merchant-inloggegevens.",
+    "description": "Step 1: Log in to Razorpay"
+  },
+  "D+X/Qj": {
+    "defaultMessage": "Kopieer de \"Client ID\" en \"Secret\" van de app-details pagina.",
+    "description": "Step 7: Copy credentials. IMPORTANT: Keep 'Client ID' and 'Secret' in English in parentheses after translation if it makes sense, as these are the exact field labels in PayPal's interface."
+  },
+  "DJ7TGX": {
+    "defaultMessage": "Key ID",
+    "description": "Label for Razorpay Key ID input"
+  },
+  "DNXfj7": {
+    "defaultMessage": "Controleer onder 'Features' (Features) of de volgende rechten zijn ingeschakeld:",
+    "description": "Step 6: Configure permissions intro. IMPORTANT: Keep 'Features' in English in parentheses after translation, as this is the exact section name in PayPal's interface."
+  },
+  "Dsr5qL": {
+    "defaultMessage": "Geen restitutie bij annulering minder dan 7 dagen voor check-in",
+    "description": "Third rule of strict cancellation policy: no refund less than 7 days before check-in"
+  },
+  "DuOTim": {
+    "defaultMessage": "Achternaam is verplicht",
+    "description": "Last name required validation message"
+  },
+  "E8suJo": {
+    "defaultMessage": "Zondag",
+    "description": "Day of week: Sunday"
+  },
+  "EInxH0": {
+    "defaultMessage": "Uitgebreide checkout (Expanded checkout)",
+    "description": "PayPal permission: Issue refunds. IMPORTANT: Keep the English permission name in parentheses if it makes sense after translation."
+  },
+  "EJMuPX": {
+    "defaultMessage": "Wijzigingen opslaan",
+    "description": "Button text to save the form"
+  },
+  "EJqOKf": {
+    "defaultMessage": "Accommodatie toevoegen",
+    "description": "Add new property button"
+  },
+  "EOtRjL": {
+    "defaultMessage": "Amsterdam",
+    "description": "Placeholder for city input"
+  },
+  "EOvdde": {
+    "defaultMessage": "Bewerken",
+    "description": "Button to edit language selection"
+  },
+  "EcOwTg": {
+    "defaultMessage": "Geldige reeks: -180 tot 180",
+    "description": "Validation error for longitude out of range"
+  },
+  "EnF3EM": {
+    "defaultMessage": "Wordt gebruikt om tijdstempels in het hele dashboard weer te geven. Elke accommodatie heeft zijn eigen tijdzone.",
+    "description": "Description for display timezone field"
+  },
+  "ErBvSd": {
+    "defaultMessage": "Om je PayPal‑account te koppelen, moet je een PayPal‑applicatie aanmaken en je API‑gegevens ophalen:",
+    "description": "Instructions introduction"
+  },
+  "F4LIQL": {
+    "defaultMessage": "Bezig met verbinden...",
+    "description": "Button label while connecting to PayU.in"
+  },
+  "F6lZL3": {
+    "defaultMessage": "Wachten op autorisatie",
+    "description": "Loading title when waiting for Stripe authorization"
+  },
+  "FEfTVi": {
+    "defaultMessage": "API-sleutel is verplicht",
+    "description": "Error message for missing Xmoney API Key"
+  },
+  "FHrDtj": {
+    "defaultMessage": "do",
+    "description": "Short day of week: Thursday"
+  },
+  "FIGyto": {
+    "defaultMessage": "Dit is de taal voor alle menu's, knoppen en interface-elementen.",
+    "description": "Description for UI language field"
+  },
+  "FUcnBP": {
+    "defaultMessage": "Beheer berichten, aanvragen, pre-approvals en speciale aanbiedingen",
+    "description": "Benefit of messaging and inquiries management"
+  },
+  "FYhbnJ": {
+    "defaultMessage": "Geheime API-sleutel die wordt gebruikt om API-verzoeken te authenticeren en te autoriseren. Houd deze vertrouwelijk en deel hem nooit openbaar.",
+    "description": "Description for Razorpay Key Secret input"
+  },
+  "Fte18l": {
+    "defaultMessage": "Beschikbaarheid",
+    "description": "Label for availability selector (will have 2 options: available and unavailable)"
+  },
+  "Fvrx4V": {
+    "defaultMessage": "Aangepaste prijs",
+    "description": "Adjusted price label"
+  },
+  "G17Zwg": {
+    "defaultMessage": "Maximaal {maxFiles} {maxFiles, plural, one {bestand} other {bestanden}} toegestaan",
+    "description": "Error message when maximum number of files is exceeded"
+  },
+  "G258Qr": {
+    "defaultMessage": "Toepassen",
+    "description": "Button label to apply the selected date range"
+  },
+  "GDI8mK": {
+    "defaultMessage": "Razorpay Dashboard",
+    "description": "Link text for Razorpay Dashboard"
+  },
+  "GHNpa4": {
+    "defaultMessage": "Alle bestanden wissen",
+    "description": "ARIA label for the clear all files button"
+  },
+  "GJz/Ju": {
+    "defaultMessage": "− Je hostkosten (15,5%)",
+    "description": "Host fee label"
+  },
+  "GV4liN": {
+    "defaultMessage": "Onder de API Key zie je je Webhook Secret. Kopieer deze waarde zorgvuldig; deze wordt gebruikt om de echtheid van webhooks te verifiëren.",
+    "description": "Step 7: Copy Webhook Secret"
+  },
+  "Gvd55t": {
+    "defaultMessage": "API Login ID",
+    "description": "Label for Authorize.net API Login ID input"
+  },
+  "H67iMU": {
+    "defaultMessage": "Klik op het oogpictogram of de knop ‘Show’ naast de Key Secret om deze zichtbaar te maken. Dit is je geheime sleutel voor authenticatie. Kopieer deze waarde zorgvuldig.",
+    "description": "Step 6: Copy Key Secret"
+  },
+  "H9EL3M": {
+    "defaultMessage": "Juridische bedrijfsnaam",
+    "description": "Label for legal name input"
+  },
+  "HBAXMq": {
+    "defaultMessage": "Naam",
+    "description": "Label for property name filter"
+  },
+  "HD0jtN": {
+    "defaultMessage": "Wachten op autorisatie...",
+    "description": "Waiting for OAuth authorization"
+  },
+  "HEXBfz": {
+    "defaultMessage": "Snel kiezen",
+    "description": "Header for the quick date range selection presets"
+  },
+  "HOym9z": {
+    "defaultMessage": "Land is verplicht",
+    "description": "Country required validation message"
+  },
+  "HThB82": {
+    "defaultMessage": "Merchant Salt",
+    "description": "Label for PayU.in Merchant Salt input"
+  },
+  "I/Rbi1": {
+    "defaultMessage": "Tarief",
+    "description": "Table header for rate"
+  },
+  "I8mQRn": {
+    "defaultMessage": "Dinsdag",
+    "description": "Day of week: Tuesday"
+  },
+  "IejaKr": {
+    "defaultMessage": "Nee",
+    "description": "Boolean filter false label"
+  },
+  "IhL/yX": {
+    "defaultMessage": "Bekijk alle wijzigingen in de beschikbaarheid voor de geselecteerde datums",
+    "description": "Description for availability history section"
+  },
+  "ImL7iD": {
+    "defaultMessage": "Volledige terugbetaling bij annulering tot minimaal 24 uur voor check-in",
+    "description": "First rule of flexible cancellation policy: guests get full refund if canceling 24+ hours before arrival"
+  },
+  "Iv5u44": {
+    "defaultMessage": "Maandag",
+    "description": "Day of week: Monday"
+  },
+  "J81fbb": {
+    "defaultMessage": "Geen geschiedenis gevonden",
+    "description": "Title when no availability history exists"
+  },
+  "JWwnVm": {
+    "defaultMessage": "Valuta’s laden is mislukt",
+    "description": "Error loading currencies message"
+  },
+  "JeNf5C": {
+    "defaultMessage": "Maximum van 5 extra talen bereikt",
+    "description": "Message when max secondary languages selected"
+  },
+  "JmUKsE": {
+    "defaultMessage": "Uitgelicht",
+    "description": "Label for featured amenities filter option"
+  },
+  "Jn6vdr": {
+    "defaultMessage": "Geldige reeks: -90 tot 90",
+    "description": "Validation error for latitude out of range"
+  },
+  "Jo6yop": {
+    "defaultMessage": "Mislukt",
+    "description": "Status text showing file upload failed"
+  },
+  "Jx1XL/": {
+    "defaultMessage": "Geen betaalproviders beschikbaar",
+    "description": "Message when no payment gateways are available"
+  },
+  "K133NN": {
+    "defaultMessage": "Landen konden niet worden geladen. Probeer het opnieuw.",
+    "description": "Error loading countries in dropdown"
+  },
+  "KBbI2C": {
+    "defaultMessage": "Geen wijziging",
+    "description": "Option for no change in restrictions"
+  },
+  "KC3rcq": {
+    "defaultMessage": "E-mail",
+    "description": "Label for email input"
+  },
+  "KFGwsm": {
+    "defaultMessage": "Accommodaties konden niet worden geladen. Probeer het opnieuw.",
+    "description": "Error message when properties fail to load"
+  },
+  "KRYLvD": {
+    "defaultMessage": "Beschikbaarheid succesvol bijgewerkt",
+    "description": "Success message after updating availability"
+  },
+  "KfDaoT": {
+    "defaultMessage": "Beperken",
+    "description": "Option to restrict check-in or check-out"
+  },
+  "KgIF6j": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load PayU.in configuration"
+  },
+  "Kmskqc": {
+    "defaultMessage": "Bekijk en beheer alle voorzieningen die in je systeem beschikbaar zijn.",
+    "description": "Page description for amenities list"
+  },
+  "Kq0VZ6": {
+    "defaultMessage": "Voor nu overslaan",
+    "description": "Button label to skip payment gateway setup"
+  },
+  "KsklO8": {
+    "defaultMessage": "Zorg dat je account is ingesteld op productiemodus en niet op testmodus voor live betalingen.",
+    "description": "Important notice about using production environment"
+  },
+  "KxKL+n": {
+    "defaultMessage": "Boekingen",
+    "description": "Navigation item for the bookings page"
+  },
+  "L14TDm": {
+    "defaultMessage": "Er zijn nog geen wijzigingen aangebracht in deze datumperiode",
+    "description": "Description when no availability history exists"
+  },
+  "L42aHo": {
+    "defaultMessage": "Eerst: het kiezen van je UI- en contenttalen.",
+    "description": "Onboarding page description"
+  },
+  "LAbvMA": {
+    "defaultMessage": "Je tarieven worden ongewijzigd gesynchroniseerd. Al geoptimaliseerd voor gebruik met een PMS.",
+    "description": "Host-only fee note"
+  },
+  "LDUyG4": {
+    "defaultMessage": "Einddatum moet na {date} liggen",
+    "description": "Error message when the end date is before the minimum date"
+  },
+  "LHZI5Y": {
+    "defaultMessage": "Succesvol verbonden",
+    "description": "Success title when Authorize.net connection succeeds"
+  },
+  "LHg/un": {
+    "defaultMessage": "Geschiedenis bekijken",
+    "description": "Button to view the availability changes history"
+  },
+  "LQEcMx": {
+    "defaultMessage": "Synchronisatie van beschikbaarheid en tarieven in real time",
+    "description": "Benefit of calendar sync"
+  },
+  "LT4CJg": {
+    "defaultMessage": "Beschikbaarheidsstatus is verplicht",
+    "description": "Error message when availability status is required but not selected"
+  },
+  "LaKRvO": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load Razorpay configuration"
+  },
+  "Lg4Fi9": {
+    "defaultMessage": "Belangrijk",
+    "description": "Important notice title"
+  },
+  "Lhbbcw": {
+    "defaultMessage": "Zoek op accommodatienaam",
+    "description": "Placeholder for property name search input"
+  },
+  "LqNWNm": {
+    "defaultMessage": "De opgegeven gegevens zijn onjuist. Controleer je Client ID en Client Secret en probeer het opnieuw.",
+    "description": "Error description when PayPal connection fails"
+  },
+  "M92dZr": {
+    "defaultMessage": "Zorg dat je productiesleutels gebruikt, niet de testsleutels, voor echte betalingen.",
+    "description": "Important notice about using production environment"
+  },
+  "MCAh17": {
+    "defaultMessage": "Xmoney API-inloggegevens",
+    "description": "Xmoney credentials form title"
+  },
+  "MLQakG": {
+    "defaultMessage": "Er is een fout opgetreden.",
+    "description": "Generic error message"
+  },
+  "MXtKEO": {
+    "defaultMessage": "Wijzig de beschikbaarheidsstatus voor de geselecteerde datums. Je kunt datums markeren als beschikbaar of niet beschikbaar voor boekingen. Voeg eventueel notities toe om de reden van de wijziging bij te houden.",
+    "description": "Explanation text for updating availability functionality"
+  },
+  "MfrEpx": {
+    "defaultMessage": "Beschikbaarheid bijwerken voor geselecteerde datums",
+    "description": "Title for updating availability information"
+  },
+  "MmX1j5": {
+    "defaultMessage": "Toepassen",
+    "description": "Button to apply the boolean filter selection"
+  },
+  "MqJtIe": {
+    "defaultMessage": "Gasten",
+    "description": "Navigation item for the guests page"
+  },
+  "MsOMSR": {
+    "defaultMessage": "Synchroniseer accommodaties en details automatisch",
+    "description": "Benefit of syncing property listings"
+  },
+  "N+75uC": {
+    "defaultMessage": "Alleen hostkosten",
+    "description": "Host-only fee option title"
+  },
+  "N0sIXl": {
+    "defaultMessage": "Donderdag",
+    "description": "Day of week: Thursday"
+  },
+  "N2OYyx": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load Razorpay configuration"
+  },
+  "NDEfG/": {
+    "defaultMessage": "Succesvol verbonden",
+    "description": "Success title when PayU.in connection succeeds"
+  },
+  "NJGmr+": {
+    "defaultMessage": "Max. aantal bestanden: {count}",
+    "description": "Label showing maximum number of files"
+  },
+  "NTyqYb": {
+    "defaultMessage": "voorkeuren",
+    "description": "Search keyword for settings"
+  },
+  "NZZi1d": {
+    "defaultMessage": "Airbnb-advertenties importeren",
+    "description": "Import listings from airbnb title"
+  },
+  "NZwqC9": {
+    "defaultMessage": "dashboard",
+    "description": "Search keyword for dashboard"
+  },
+  "NfG5Dv": {
+    "defaultMessage": "Merchant Key",
+    "description": "Label for PayU.in Merchant Key input"
+  },
+  "Nty3JH": {
+    "defaultMessage": "Verbinden...",
+    "description": "Button label while connecting to PayPal"
+  },
+  "NxALzL": {
+    "defaultMessage": "Lengtegraad",
+    "description": "Label for longitude coordinate input"
+  },
+  "O/8GDW": {
+    "defaultMessage": "Stel uw merknaam, valuta en andere kerninstellingen in.",
+    "description": "Main settings onboarding page description"
+  },
+  "O2TvYO": {
+    "defaultMessage": "Voorbeeld: voor een advertentie van $100 per nacht",
+    "description": "Example section title"
+  },
+  "O4G22V": {
+    "defaultMessage": "Selecteer tijdzone",
+    "description": "Timezone select placeholder"
+  },
+  "O4JbH7": {
+    "defaultMessage": "Bevestig het genereren en kopieer de nieuwe Transaction Key direct – deze wordt om veiligheidsredenen maar één keer getoond.",
+    "description": "Step 6: Save Transaction Key"
+  },
+  "O8g76z": {
+    "defaultMessage": "Tarieven en restricties bijwerken",
+    "description": "Title for updating rates and restrictions"
+  },
+  "OCVZ6a": {
+    "defaultMessage": "Gereed",
+    "description": "Button to close language selection dialog"
+  },
+  "OGLvM4": {
+    "defaultMessage": "Minimumverblijf moet een positief getal zijn",
+    "description": "Error message when minimum stay is not a positive number"
+  },
+  "Oax1XH": {
+    "defaultMessage": "Bestanden uploaden",
+    "description": "ARIA label for the upload dropzone area"
+  },
+  "OeHpB+": {
+    "defaultMessage": "statistieken",
+    "description": "Search keyword for reports"
+  },
+  "Ono6nG": {
+    "defaultMessage": "Hoofdstraat 123",
+    "description": "Placeholder for address input"
+  },
+  "Oubdq/": {
+    "defaultMessage": "Zet bestanden hier neer of klik om te bladeren",
+    "description": "Placeholder text for the multi-file upload dropzone"
+  },
+  "OwgPg/": {
+    "defaultMessage": "Primaire contenttaal",
+    "description": "Label for primary language selector"
+  },
+  "P76X5R": {
+    "defaultMessage": "Opslaan",
+    "description": "Save changes button"
+  },
+  "PHnbNG": {
+    "defaultMessage": "Mijn website",
+    "description": "Navigation menu item for the website management page"
+  },
+  "PT0PoN": {
+    "defaultMessage": "Standaardvaluta is verplicht",
+    "description": "Error message for missing default currency"
+  },
+  "PYORN9": {
+    "defaultMessage": "Je Razorpay-account is succesvol gekoppeld en klaar om betalingen te verwerken.",
+    "description": "Success description when Razorpay connection succeeds"
+  },
+  "PYUO/D": {
+    "defaultMessage": "Genereer of haal je ‘Signature Key SHA-256’ (Clave secreta de firma) op. Als je er nog geen hebt, moet je deze aanmaken in de beveiligingssectie.",
+    "description": "Step 5: Get Signature Key. IMPORTANT: Keep 'SHA-256' and 'Clave secreta de firma' as technical terms."
+  },
+  "PZO/Vm": {
+    "defaultMessage": "Lengtegraad-coördinaat",
+    "description": "ARIA label for longitude input"
+  },
+  "PZgJFD": {
+    "defaultMessage": "Uw bedrijfs- of accommodatienaam die wordt getoond in gastcommunicatie en betaallinks.",
+    "description": "Description for brand name field"
+  },
+  "PeSZfT": {
+    "defaultMessage": "Accommodaties",
+    "description": "Navigation item for the properties page"
+  },
+  "Q7u+VV": {
+    "defaultMessage": "vermelding",
+    "description": "Search keyword for properties"
+  },
+  "QFItoI": {
+    "defaultMessage": "Mapping-naam",
+    "description": "Column header for amenity mapping name"
+  },
+  "QSt/yx": {
+    "defaultMessage": "Kies een betalingsprovider om online betalingen te accepteren, boekingen te verwerken en veilige betaallinks naar uw gasten te sturen.",
+    "description": "Payment gateway setup page description"
+  },
+  "QcRAOz": {
+    "defaultMessage": "Voer telefoonnummer in",
+    "description": "Placeholder text for phone number input"
+  },
+  "QhExZh": {
+    "defaultMessage": "Gast betaalt totaal",
+    "description": "Guest total label"
+  },
+  "QkU8pF": {
+    "defaultMessage": "Rapporten",
+    "description": "Navigation item for the reports page"
+  },
+  "QrrLMn": {
+    "defaultMessage": "Houd je API Key en Webhook Secret veilig en deel ze nooit openbaar. Ze worden gebruikt om alle API-verzoeken te authenticeren en de echtheid van webhooks te verifiëren.",
+    "description": "Security warning about credentials"
+  },
+  "R26oUq": {
+    "defaultMessage": "Weergavevaluta is verplicht",
+    "description": "Currency required validation message"
+  },
+  "RAoXEd": {
+    "defaultMessage": "Accepteer veilig creditcardbetalingen met Redsys, de toonaangevende betaalgateway in Spanje",
+    "description": "Redsys gateway description"
+  },
+  "RBGdAu": {
+    "defaultMessage": "Klik op de kaart om de locatie in te stellen",
+    "description": "Placeholder when Places API is not available"
+  },
+  "RJf6QP": {
+    "defaultMessage": "cliënt",
+    "description": "Search keyword for guests"
+  },
+  "RLi2kv": {
+    "defaultMessage": "Voorinstellingen",
+    "description": "Color picker presets tab label"
+  },
+  "RN2TV/": {
+    "defaultMessage": "Wordt weergegeven op betaallinks en in communicatie met gasten.",
+    "description": "Description for logo upload field"
+  },
+  "RQPIrX": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load Redsys configuration"
+  },
+  "RaGXAl": {
+    "defaultMessage": "Geschiedenis laden...",
+    "description": "Loading message for availability history"
+  },
+  "Rx858S": {
+    "defaultMessage": "Volg deze stappen om je PayU.in-inloggegevens op te halen en je betaalgateway te configureren",
+    "description": "Setup instructions dialog description"
+  },
+  "Rywutb": {
+    "defaultMessage": "Bezig met verbinden…",
+    "description": "Button label while connecting to Redsys"
+  },
+  "S/W8wt": {
+    "defaultMessage": "Zoek op naam van voorziening",
+    "description": "Placeholder for amenity name search"
+  },
+  "S0jR0w": {
+    "defaultMessage": "Niet uitgelicht",
+    "description": "Label for not featured amenity status"
+  },
+  "STkUKY": {
+    "defaultMessage": "Kopieer zowel de Merchant Key als de Merchant Salt en plak ze vervolgens in het bovenstaande formulier om je PayU.in-account met Rentalwise te verbinden.",
+    "description": "Step 7: Copy credentials"
+  },
+  "SUSpIj": {
+    "defaultMessage": "Google Maps API-sleutel niet geconfigureerd",
+    "description": "Error message when Google Maps API key is missing"
+  },
+  "Sv2doR": {
+    "defaultMessage": "Geen feesten/evenementen",
+    "description": "Checkbox label for rule prohibiting parties and events on the property"
+  },
+  "T4AJRc": {
+    "defaultMessage": "Pre-autorisatie borg",
+    "description": "Payment gateway feature: card authorization"
+  },
+  "T7FKbK": {
+    "defaultMessage": "Voer je Razorpay API-inloggegevens in vanuit je dashboard",
+    "description": "Razorpay credentials form description"
+  },
+  "TAQtsp": {
+    "defaultMessage": "Uitgelicht",
+    "description": "Filter label for featured amenities"
+  },
+  "TNt0xR": {
+    "defaultMessage": "Landen konden niet worden geladen",
+    "description": "Error loading countries message"
+  },
+  "TP9+uy": {
+    "defaultMessage": "Hoe het werkt →",
+    "description": "Link to open commission structure explanation dialog"
+  },
+  "TPRG4x": {
+    "defaultMessage": "Kies maximaal 5 extra talen voor uw content. Klik op een taal om deze te selecteren of te deselecteren.",
+    "description": "Dialog description for language selection"
+  },
+  "TX4nd7": {
+    "defaultMessage": "Betalingsdetails bekijken",
+    "description": "View payment details"
+  },
+  "Tc801C": {
+    "defaultMessage": "Bijwerken van kalender mislukt",
+    "description": "Error message when calendar update fails"
+  },
+  "Tj93Dw": {
+    "defaultMessage": "Merchant Code",
+    "description": "Label for Redsys Merchant Code input"
+  },
+  "TnFf7r": {
+    "defaultMessage": "Selecteer een datumbereik",
+    "description": "Error message when date range is required but not selected"
+  },
+  "U+BpmB": {
+    "defaultMessage": "Geen beschikbaarheidsstatussen beschikbaar",
+    "description": "No availability statuses available message"
+  },
+  "U+Ld/N": {
+    "defaultMessage": "PayPal‑account koppelen",
+    "description": "Page title for connecting PayPal account"
+  },
+  "U33urL": {
+    "defaultMessage": "Datumbereik wissen",
+    "description": "ARIA label for the clear date range button"
+  },
+  "U7kE1U": {
+    "defaultMessage": "Ga naar de {link} en log in met je PayPal Business‑account.",
+    "description": "Step 1: Navigate to PayPal Developer Portal"
+  },
+  "U96Y45": {
+    "defaultMessage": "Kies een actie",
+    "description": "Title for the action selection section in the calendar"
+  },
+  "UFslXe": {
+    "defaultMessage": "Klik in het gedeelte Security Settings op ‘API Credentials & Keys’.",
+    "description": "Step 3: Find API Credentials section"
+  },
+  "UGsmv6": {
+    "defaultMessage": "Nieuwe reservering",
+    "description": "Button to create a new reservation in the calendar"
+  },
+  "UXa4EB": {
+    "defaultMessage": "De opgegeven inloggegevens zijn onjuist. Controleer je API Login ID en Transaction Key en probeer het opnieuw.",
+    "description": "Error description when Authorize.net connection fails"
+  },
+  "Ub1bVM": {
+    "defaultMessage": "Locatie",
+    "description": "Property location column header"
+  },
+  "Us8Yir": {
+    "defaultMessage": "{userName} heeft de beschikbaarheidsstatus gewijzigd naar {status}",
+    "description": "Sentence describing a user changing availability status"
+  },
+  "V8cxvA": {
+    "defaultMessage": "Selecteer extra talen",
+    "description": "Button to open language selection dialog when empty"
+  },
+  "VB01E9": {
+    "defaultMessage": "Klik op ‘New Transaction Key’ of ‘Request New Key’ om je Transaction Key op te halen. Let op: hierdoor wordt de bestaande transaction key ongeldig.",
+    "description": "Step 5: Generate Transaction Key"
+  },
+  "VD8QDF": {
+    "defaultMessage": "Stel tarieven, minimale verblijfsduur en boekingsrestricties in voor de geselecteerde datums. Gebruik de eenvoudige modus voor consistente prijzen of de geavanceerde modus voor dag-specifieke instellingen.",
+    "description": "Explanation text for updating rates functionality"
+  },
+  "VKPYTy": {
+    "defaultMessage": "Kanalen",
+    "description": "Property channel connections column header"
+  },
+  "VKdC7r": {
+    "defaultMessage": "Terminal is verplicht",
+    "description": "Error message for missing Redsys Terminal"
+  },
+  "VPF1PR": {
+    "defaultMessage": "Voorziening kon niet worden verwijderd. Probeer het opnieuw.",
+    "description": "Error message for amenity deletion failure"
+  },
+  "VS03hF": {
+    "defaultMessage": "bijv. -122.419415",
+    "description": "Example placeholder for longitude input"
+  },
+  "VgfswN": {
+    "defaultMessage": "Uitgelichte status bijgewerkt",
+    "description": "Success message when amenity featured status is updated"
+  },
+  "VnV1LF": {
+    "defaultMessage": "Dashboardtaal",
+    "description": "Label for UI language selector"
+  },
+  "Vrxnkj": {
+    "defaultMessage": "Upload geslaagd!",
+    "description": "Success message when file upload completes"
+  },
+  "VttIVF": {
+    "defaultMessage": "Voorzieningen",
+    "description": "Page title for amenities list"
+  },
+  "VvRDvN": {
+    "defaultMessage": "Klik op het tabblad ‘API Keys’ om je API-inloggegevens te openen.",
+    "description": "Step 3: Open API Keys tab"
+  },
+  "Vyw+lR": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load Xmoney configuration"
+  },
+  "W3sWk1": {
+    "defaultMessage": "De standaardvaluta moet zijn opgenomen in de toegestane valuta’s",
+    "description": "Error message when default currency is not in allowed currencies"
+  },
+  "W57wea": {
+    "defaultMessage": "Controleer of je de inloggegevens voor de juiste omgeving bekijkt: gebruik ‘Production’-inloggegevens voor live betalingen, niet de ‘Test Mode’-inloggegevens.",
+    "description": "Step 6: Verify environment"
+  },
+  "W5v/Iw": {
+    "defaultMessage": "Alles uploaden",
+    "description": "Button text to upload all selected files"
+  },
+  "WKNigj": {
+    "defaultMessage": "Dashboard",
+    "description": "Navigation item for the dashboard page"
+  },
+  "WaOLqy": {
+    "defaultMessage": "Je Redsys-account is succesvol gekoppeld en klaar om betalingen te verwerken.",
+    "description": "Success description when Redsys connection succeeds"
+  },
+  "WfDKxB": {
+    "defaultMessage": "De opgegeven inloggegevens zijn onjuist. Controleer je Key ID en Key Secret en probeer het opnieuw.",
+    "description": "Error description when Razorpay connection fails"
+  },
+  "WpPA+r": {
+    "defaultMessage": "Zoek op accommodatienaam",
+    "description": "Search by property name placeholder"
+  },
+  "WuulWW": {
+    "defaultMessage": "Opslaan...",
+    "description": "Button text shown while api request is made"
+  },
+  "X+vN43": {
+    "defaultMessage": "Voorziening \"{name}\" verwijderen",
+    "description": "Delete amenity dialog title"
+  },
+  "X8DbWD": {
+    "defaultMessage": "Voer je Xmoney API-inloggegevens in vanuit je merchant-dashboard",
+    "description": "Xmoney credentials form description"
+  },
+  "XDLNej": {
+    "defaultMessage": "Je PayPal‑account is succesvol gekoppeld.",
+    "description": "Success description when PayPal connection succeeds"
+  },
+  "XNEu/M": {
+    "defaultMessage": "Klant bekijken",
+    "description": "View customer details"
+  },
+  "XP9hJ7": {
+    "defaultMessage": "Startdatum moet vóór {date} liggen",
+    "description": "Error message when the start date is after the maximum date"
+  },
+  "XYPKf0": {
+    "defaultMessage": "Voer een app‑naam in (bijv. 'Mijn Property Management Systeem') en klik op 'Create App' (Create App).",
+    "description": "Step 5: Name your app. IMPORTANT: Keep 'Create App' button label in English in parentheses after translation."
+  },
+  "Xbhlim": {
+    "defaultMessage": "Ongeldig e-mailadres",
+    "description": "Email pattern validation message"
+  },
+  "XkXjGM": {
+    "defaultMessage": "Kalender is succesvol bijgewerkt",
+    "description": "Success message after updating calendar rates and availability"
+  },
+  "Xw/VVZ": {
+    "defaultMessage": "Plaats",
+    "description": "Label for city input"
+  },
+  "Xyl+wc": {
+    "defaultMessage": "Instellingen",
+    "description": "Navigation item for the settings page"
+  },
+  "Xyos1g": {
+    "defaultMessage": "Straatadres is verplicht",
+    "description": "Address required validation message"
+  },
+  "Y/SI/Y": {
+    "defaultMessage": "Redsys-inloggegevens",
+    "description": "Redsys credentials form title"
+  },
+  "Y0X1Ig": {
+    "defaultMessage": "Je ziet nu je Key ID (begint met ‘rzp_test_’ voor testmodus of ‘rzp_live_’ voor live-modus). Dit is je publieke sleutel. Kopieer deze waarde.",
+    "description": "Step 5: Copy Key ID"
+  },
+  "Y9jAxS": {
+    "defaultMessage": "Airbnb-commissie­structuur",
+    "description": "Commission structure section title"
+  },
+  "YH20C7": {
+    "defaultMessage": "Schakel met de schakelaar bovenaan over naar de modus \"Live\" (Live).",
+    "description": "Step 3: Select Live environment. IMPORTANT: Keep 'Live' in English in parentheses after translation, as this is the exact label in PayPal's interface."
+  },
+  "YXHsVb": {
+    "defaultMessage": "reservering",
+    "description": "Search keyword for bookings"
+  },
+  "YXbN+o": {
+    "defaultMessage": "Bijwerken",
+    "description": "Button text to update the selected dates"
+  },
+  "Yf3ND3": {
+    "defaultMessage": "Succesvol verbonden",
+    "description": "Success title when Razorpay connection succeeds"
+  },
+  "Yh8hMS": {
+    "defaultMessage": "Zorg dat je Live Mode-inloggegevens (u_live_api_) gebruikt voor productiebetalingen, niet de Test Mode-inloggegevens (u_test_api_).",
+    "description": "Important notice about using production environment"
+  },
+  "YouQp1": {
+    "defaultMessage": "Je ontvangt (na)",
+    "description": "You receive after summary"
+  },
+  "YqBHbh": {
+    "defaultMessage": "Hulp nodig bij het vinden van je PayPal‑gegevens? Bekijk de installatie‑instructies",
+    "description": "Link to open setup instructions dialog"
+  },
+  "Yr7Ms5": {
+    "defaultMessage": "Toestaan",
+    "description": "Option to allow check-in or check-out"
+  },
+  "Z5m5GD": {
+    "defaultMessage": "Min. verblijf",
+    "description": "Table header for minimum stay"
+  },
+  "Z6cYcW": {
+    "defaultMessage": "Selecteer uw Airbnb-kostenstructuur om tarieven correct te synchroniseren.",
+    "description": "Commission structure section description"
+  },
+  "Z6ymtI": {
+    "defaultMessage": "Houd je Key Secret veilig en deel deze nooit openbaar. Deze wordt gebruikt om alle API-verzoeken naar je account te authenticeren.",
+    "description": "Security warning about key secret"
+  },
+  "ZEtjaq": {
+    "defaultMessage": "Accounts zoeken...",
+    "description": "Account search input placeholder"
+  },
+  "ZKB9Y7": {
+    "defaultMessage": "Bijv. geen schoenen binnen, buitendouche verplicht gebruiken voor strandspullen, maximaal 2 voertuigen op de oprit",
+    "description": "Example text showing the type of custom house rules users can add (shoes, outdoor shower, parking)"
+  },
+  "ZspUhP": {
+    "defaultMessage": "Selectie wissen",
+    "description": "Aria label for clear property selection button"
+  },
+  "ZuYUdv": {
+    "defaultMessage": "Klik op de knop \"Create App\" (Create App) om een nieuwe applicatie aan te maken.",
+    "description": "Step 4: Create new app. IMPORTANT: Keep 'Create App' in English in parentheses after translation, as this is the exact button label in PayPal's interface."
+  },
+  "a+SxgC": {
+    "defaultMessage": "Dit is de taal die je moet gebruiken bij het toevoegen van content. Je kunt optioneel vertalingen in andere talen toevoegen.",
+    "description": "Description for default language field"
+  },
+  "a35CJS": {
+    "defaultMessage": "Woensdag",
+    "description": "Day of week: Wednesday"
+  },
+  "aA+qMl": {
+    "defaultMessage": "Status van accommodatie ingesteld op \"{status}\".",
+    "description": "Description of the status update with the new status value"
+  },
+  "aADdjn": {
+    "defaultMessage": "Einddatum moet vóór {date} liggen",
+    "description": "Error message when the end date is after the maximum date"
+  },
+  "aJ3++V": {
+    "defaultMessage": "Xmoney-account koppelen",
+    "description": "Button label to connect Xmoney account"
+  },
+  "aPILyt": {
+    "defaultMessage": "Vorige",
+    "description": "Label for pagination previous button"
+  },
+  "aWcemL": {
+    "defaultMessage": "Bezig met uploaden...",
+    "description": "Status text while file is uploading"
+  },
+  "aXKcVp": {
+    "defaultMessage": "Rond de autorisatie af in het Stripe-venster. Dit venster wordt automatisch gesloten zodra je klaar bent.",
+    "description": "Loading description when waiting for authorization"
+  },
+  "aXmvIA": {
+    "defaultMessage": "De beschikbaarheidsstatus is gewijzigd naar {status}",
+    "description": "Sentence describing an unknown source changing availability status"
+  },
+  "ab0hY/": {
+    "defaultMessage": "Key Secret",
+    "description": "Label for Razorpay Key Secret input"
+  },
+  "advKPO": {
+    "defaultMessage": "Volg deze stappen om je Razorpay-inloggegevens op te halen en je betaalgateway te configureren",
+    "description": "Setup instructions dialog description"
+  },
+  "aeebtJ": {
+    "defaultMessage": "Sommige accommodaties zijn gemarkeerd als co-hosted. Dit betekent dat jij niet de primaire host bent. Deze accommodaties worden wel in je dashboard geïmporteerd, maar wijzigingen die je hier aanbrengt, worden niet teruggesynchroniseerd naar Airbnb om conflicten met de instellingen van de primaire host te voorkomen.",
+    "description": "Co-hosted properties information alert"
+  },
+  "afXEu2": {
+    "defaultMessage": "Authorize.net-account koppelen",
+    "description": "Button label to connect Authorize.net account"
+  },
+  "aht69K": {
+    "defaultMessage": "Flexibel",
+    "description": "Most guest-friendly cancellation policy option (full refund up to 24 hours before check-in)"
+  },
+  "amPlaW": {
+    "defaultMessage": "Kopieer je gegevens en plak ze in het formulier om je Redsys-account te koppelen.",
+    "description": "Step 8: Copy credentials"
+  },
+  "aosPfz": {
+    "defaultMessage": "Beschrijf in uw eigen woorden",
+    "description": "Placeholder text prompting user to describe their custom agreement type"
+  },
+  "atFgtD": {
+    "defaultMessage": "Er zijn momenteel geen betaalproviders beschikbaar om te configureren.",
+    "description": "Description when no payment gateways are available"
+  },
+  "b1haC1": {
+    "defaultMessage": "Laden van betaalproviders mislukt",
+    "description": "Error message when payment gateways fail to load"
+  },
+  "b3sTwT": {
+    "defaultMessage": "Mijn profiel",
+    "description": "User menu item to access profile page"
+  },
+  "b3xOJ9": {
+    "defaultMessage": "Postcode",
+    "description": "Label for postcode input"
+  },
+  "bCNGo4": {
+    "defaultMessage": "Geen resultaten gevonden.",
+    "description": "Message shown when search returns no results"
+  },
+  "bVzg2H": {
+    "defaultMessage": "Zorg dat je Live Mode-inloggegevens (u_live_api_) gebruikt voor productiebetalingen, niet de Test Mode-inloggegevens (u_test_api_).",
+    "description": "Step 8: Verify environment"
+  },
+  "bavx1x": {
+    "defaultMessage": "Begin met typen...",
+    "description": "Placeholder for text search filter input"
+  },
+  "bdgAC1": {
+    "defaultMessage": "Geen landen gevonden.",
+    "description": "No countries found message"
+  },
+  "bkwL/j": {
+    "defaultMessage": "Niet-restitueerbaar",
+    "description": "Strictest policy option: no refunds at any time (usually offered at discounted rates)"
+  },
+  "brw6xY": {
+    "defaultMessage": "Log in op je {link} met je merchant-inloggegevens.",
+    "description": "Step 1: Log in to Xmoney"
+  },
+  "bszm8L": {
+    "defaultMessage": "Selecteer een beschikbaarheidsstatus",
+    "description": "Availability status select placeholder"
+  },
+  "c+rEQa": {
+    "defaultMessage": "Koppelingen",
+    "description": "Link to property integrations"
+  },
+  "c0M/n2": {
+    "defaultMessage": "Specifieke vereisten",
+    "description": "Label for text input where users can specify custom clauses or requirements for the rental agreement"
+  },
+  "c39yv7": {
+    "defaultMessage": "Razorpay-inloggegevens",
+    "description": "Razorpay credentials form title"
+  },
+  "c4y18J": {
+    "defaultMessage": "Client ID is verplicht",
+    "description": "Error message for missing PayPal Client ID"
+  },
+  "c8ysE5": {
+    "defaultMessage": "Alles wissen",
+    "description": "Button text to clear all selected files"
+  },
+  "cDDnbv": {
+    "defaultMessage": "Annuleringsbeleid",
+    "description": "Section heading for selecting refund terms when guests cancel bookings"
+  },
+  "cPZY1f": {
+    "defaultMessage": "Upload mislukt",
+    "description": "Error message when file upload fails"
+  },
+  "cU+Iey": {
+    "defaultMessage": "Alleen hostcommissie",
+    "description": "Airbnb host-only commission structure label"
+  },
+  "cc8ReJ": {
+    "defaultMessage": "Geheime transactiesleutel die wordt gebruikt om API-verzoeken te authenticeren. Houd deze veilig en deel hem nooit openbaar.",
+    "description": "Description for Authorize.net Transaction Key input"
+  },
+  "ccsc2K": {
+    "defaultMessage": "Voer hex-code in (bijv. #FF5733)",
+    "description": "Hex color code input helper text"
+  },
+  "ce6iAC": {
+    "defaultMessage": "gebruiker",
+    "description": "Search keyword for profile"
+  },
+  "cjpksE": {
+    "defaultMessage": "Meer informatie",
+    "description": "Aria label for info tooltip button"
+  },
+  "cnVnFc": {
+    "defaultMessage": "Je unieke API-sleutel, verstrekt door Xmoney voor het authenticeren van API-verzoeken en het verwerken van cryptobetalingen",
+    "description": "Description for Xmoney API Key input"
+  },
+  "co30zv": {
+    "defaultMessage": "De hoofdvaluta waarmee je Redsys-account is geconfigureerd. Transacties in andere valuta’s worden omgerekend naar deze valuta.",
+    "description": "Description for default currency select"
+  },
+  "cpqeDo": {
+    "defaultMessage": "Geavanceerd",
+    "description": "Tab label for advanced rates update mode with day-specific settings"
+  },
+  "cu+51N": {
+    "defaultMessage": "Betaallinks",
+    "description": "Payment gateway feature: payment links"
+  },
+  "d0LNAH": {
+    "defaultMessage": "Er is een fout opgetreden",
+    "description": "Generic error message when operation fails"
+  },
+  "d1EL0O": {
+    "defaultMessage": "Juridische naam is verplicht",
+    "description": "Legal name required validation message"
+  },
+  "d1sT0D": {
+    "defaultMessage": "ma",
+    "description": "Short day of week: Monday"
+  },
+  "dPuxw6": {
+    "defaultMessage": "Houd je Transaction Key veilig en deel deze nooit openbaar. Deze wordt gebruikt om alle API-verzoeken naar je account te authenticeren.",
+    "description": "Security warning about transaction key"
+  },
+  "dQLjUG": {
+    "defaultMessage": "De opgegeven inloggegevens zijn onjuist. Controleer je API Key en Webhook Secret en probeer het opnieuw.",
+    "description": "Error description when Xmoney connection fails"
+  },
+  "dXpXUg": {
+    "defaultMessage": "Postcode is verplicht",
+    "description": "Postcode required validation message"
+  },
+  "df/Qz1": {
+    "defaultMessage": "PayU.in-inloggegevens",
+    "description": "PayU.in credentials form title"
+  },
+  "dlLwTR": {
+    "defaultMessage": "Zet bestand hier neer",
+    "description": "Message shown when dragging a file over the dropzone"
+  },
+  "dlWOii": {
+    "defaultMessage": "Je API Login ID wordt nu weergegeven. Kopieer deze waarde – dit is een unieke identificatie voor je account.",
+    "description": "Step 4: Copy API Login ID"
+  },
+  "dlgRJf": {
+    "defaultMessage": "Voorziening toevoegen",
+    "description": "Button text to add a new amenity"
+  },
+  "dmqjA4": {
+    "defaultMessage": "Merchant Key is verplicht",
+    "description": "Error message for missing PayU.in Merchant Key"
+  },
+  "dpQveJ": {
+    "defaultMessage": "Toepassen",
+    "description": "Button to apply the radio filter selection"
+  },
+  "ds1sfT": {
+    "defaultMessage": "De transactiesleutel wordt om veiligheidsredenen maar één keer getoond wanneer deze wordt aangemaakt. Als je hem kwijtraakt, moet je een nieuwe sleutel genereren.",
+    "description": "Warning about transaction key being shown only once"
+  },
+  "eJQkpB": {
+    "defaultMessage": "Type overeenkomst",
+    "description": "Section heading for selecting the type of rental agreement (vacation rental or custom)"
+  },
+  "eQr1Nt": {
+    "defaultMessage": "Zet bestand hier neer of klik om te bladeren",
+    "description": "Placeholder text for the file upload dropzone"
+  },
+  "eZtwZg": {
+    "defaultMessage": "Beschrijf uw aangepaste annuleringsbeleid",
+    "description": "Error message when user selects custom cancellation policy but doesn't provide details"
+  },
+  "edHwNb": {
+    "defaultMessage": "Places API niet ingeschakeld. Gebruik de kaart om de locatie in te stellen.",
+    "description": "Warning message when Places API is not enabled"
+  },
+  "ehRkrZ": {
+    "defaultMessage": "Geschiedenis laden mislukt",
+    "description": "Error message when history fails to load"
+  },
+  "eimE5J": {
+    "defaultMessage": "bijv. Sunset Beach Rentals BV",
+    "description": "Placeholder for legal name input"
+  },
+  "ezQ6SF": {
+    "defaultMessage": "Beschrijf uw aangepaste annuleringsbeleid",
+    "description": "Error message when user selects custom cancellation policy but doesn't provide details"
+  },
+  "f1ZlPP": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load Redsys configuration"
+  },
+  "f4qEIV": {
+    "defaultMessage": "E-mailadres is verplicht",
+    "description": "Email required validation message"
+  },
+  "f598gT": {
+    "defaultMessage": "Dit is nodig zodat betaalformulieren zowel via de betaallinks als op je klantgerichte website goed werken.",
+    "description": "Explanation for why both domains need whitelisting"
+  },
+  "fsCHeb": {
+    "defaultMessage": "Ongeldig bestand",
+    "description": "Error message when a file is invalid"
+  },
+  "gGp8BG": {
+    "defaultMessage": "Geheime Merchant Salt (API Salt) die wordt gebruikt om veilige hashes voor betalingsverzoeken te genereren. Houd deze strikt vertrouwelijk en deel hem nooit openbaar.",
+    "description": "Description for PayU.in Merchant Salt input"
+  },
+  "gNizG3": {
+    "defaultMessage": "Om je Authorize.net-account te koppelen, moet je je API-gegevens ophalen uit je merchantaccount:",
+    "description": "Instructions introduction"
+  },
+  "gUTs9M": {
+    "defaultMessage": "Door te koppelen geef je deze applicatie toestemming om toegang te krijgen tot de gegevens van je Airbnb-account. Je kunt de koppeling op elk moment verbreken via de instellingen.",
+    "description": "Authorization disclaimer"
+  },
+  "gYyW2F": {
+    "defaultMessage": "Accommodaties",
+    "description": "Navigation menu item for the properties page"
+  },
+  "gcJzNv": {
+    "defaultMessage": "Terug",
+    "description": "Button text to go back from the form"
+  },
+  "gcogeP": {
+    "defaultMessage": "Je unieke Merchant Key (API Key) die door PayU.in wordt verstrekt voor het verifiëren van API-verzoeken",
+    "description": "Description for PayU.in Merchant Key input"
+  },
+  "guxn2d": {
+    "defaultMessage": "Naam",
+    "description": "Property name filter label"
+  },
+  "h7MHkw": {
+    "defaultMessage": "Installatie‑instructies",
+    "description": "Setup instructions dialog title"
+  },
+  "hGWNhw": {
+    "defaultMessage": "PayU.in-account koppelen",
+    "description": "Page title for connecting PayU.in account"
+  },
+  "hK+bTp": {
+    "defaultMessage": "Rechtspersoon",
+    "description": "Legal entity label"
+  },
+  "hNmK/a": {
+    "defaultMessage": "Log in op je {link} met je merchantgegevens.",
+    "description": "Step 1: Log in to PayU.in"
+  },
+  "hcwLhe": {
+    "defaultMessage": "Terminal",
+    "description": "Label for Redsys Terminal input"
+  },
+  "hdOUlx": {
+    "defaultMessage": "Voorzieningengroep",
+    "description": "Column header for amenity group"
+  },
+  "hm3XWh": {
+    "defaultMessage": "Accepteer veilig creditcardbetalingen met Authorize.net, een vertrouwde betaalgateway die wereldwijd door bedrijven wordt gebruikt",
+    "description": "Authorize.net gateway description"
+  },
+  "hnT+Ex": {
+    "defaultMessage": "Places API niet ingeschakeld. Schakel deze in de Google Cloud Console in of gebruik de kaart om de locatie in te stellen.",
+    "description": "Tooltip explaining Places API is disabled"
+  },
+  "hzwyg5": {
+    "defaultMessage": "Razorpay-account koppelen",
+    "description": "Page title for connecting Razorpay account"
+  },
+  "i12iVe": {
+    "defaultMessage": "Ga naar",
+    "description": "Placeholder for month selection dropdown"
+  },
+  "i48IBK": {
+    "defaultMessage": "{count, plural, one {+1 extra koppeling} other {+# extra koppelingen}}",
+    "description": "Additional channel connections count"
+  },
+  "i6kvwt": {
+    "defaultMessage": "Kalender",
+    "description": "Link to property calendar"
+  },
+  "iDYGXC": {
+    "defaultMessage": "Host: 15,5%",
+    "description": "Host-only fee host rate badge"
+  },
+  "iHNXRF": {
+    "defaultMessage": "Selecteer een optie",
+    "description": "Placeholder for picklist filter dropdown"
+  },
+  "iKXPtM": {
+    "defaultMessage": "Webhook Secret is verplicht",
+    "description": "Error message for missing Xmoney Webhook Secret"
+  },
+  "iNbK2s": {
+    "defaultMessage": "Menu openen",
+    "description": "Open actions menu for property"
+  },
+  "iVnpqX": {
+    "defaultMessage": "Ga na het inloggen in het hoofdmenu naar ‘Integrations’.",
+    "description": "Step 2: Navigate to Integrations"
+  },
+  "igJ6NH": {
+    "defaultMessage": "Geheime handtekeningsleutel die wordt gebruikt om transacties te verifiëren (Clave secreta de firma)",
+    "description": "Description for Redsys Signature Key input"
+  },
+  "ivMxuN": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load Authorize.net configuration"
+  },
+  "iwSAmy": {
+    "defaultMessage": "configuratie",
+    "description": "Search keyword for settings"
+  },
+  "j0ZBkg": {
+    "defaultMessage": "Om je PayU.in-account te koppelen, moet je je API-gegevens ophalen uit je merchantdashboard:",
+    "description": "Instructions introduction"
+  },
+  "j0wmPI": {
+    "defaultMessage": "Verbinding verifiëren...",
+    "description": "Verifying connection status"
+  },
+  "j1rtzL": {
+    "defaultMessage": "PayU.in-account koppelen",
+    "description": "Button label to connect PayU.in account"
+  },
+  "j7b5hy": {
+    "defaultMessage": "Deze actie is <strong>onomkeerbaar</strong>. Als je een voorziening verwijdert, wordt deze permanent uit je systeem verwijderd. Weet je zeker dat je wilt doorgaan?",
+    "description": "Delete amenity confirmation message"
+  },
+  "jBqjwf": {
+    "defaultMessage": "Vrijdag",
+    "description": "Day of week: Friday"
+  },
+  "jCh/D0": {
+    "defaultMessage": "Jan",
+    "description": "Placeholder for first name input"
+  },
+  "jImZFP": {
+    "defaultMessage": "Succesvol gekoppeld",
+    "description": "Success title when Xmoney connection succeeds"
+  },
+  "jMo8lD": {
+    "defaultMessage": "Als u niet onder een bedrijf opereert, vul dan uw voor- en achternaam in.",
+    "description": "Description for legal name field"
+  },
+  "jcEZpK": {
+    "defaultMessage": "Uitloggen",
+    "description": "User menu item to log out of the application"
+  },
+  "jhIDCX": {
+    "defaultMessage": "{count} {count, plural, one {geselecteerd} other {geselecteerd}}",
+    "description": "Number of items selected in checkbox filter"
+  },
+  "jvK+qk": {
+    "defaultMessage": "Volledige restitutie bij annulering 30+ dagen voor check-in",
+    "description": "First rule of strict cancellation policy: full refund for cancellations 30+ days in advance"
+  },
+  "k+FE8+": {
+    "defaultMessage": "Status",
+    "description": "Property status column header"
+  },
+  "k+yRbg": {
+    "defaultMessage": "Bestandsinvoer",
+    "description": "ARIA label for the hidden file input"
+  },
+  "kBI7py": {
+    "defaultMessage": "Je Xmoney-account is succesvol gekoppeld en klaar om cryptobetalingen te verwerken.",
+    "description": "Success description when Xmoney connection succeeds"
+  },
+  "kG7fT4": {
+    "defaultMessage": "accommodatie",
+    "description": "Search keyword for properties"
+  },
+  "kHKPr2": {
+    "defaultMessage": "PayPal‑gegevens",
+    "description": "PayPal credentials form title"
+  },
+  "kQrSIK": {
+    "defaultMessage": "Voer de gegevens van je PayPal‑applicatie in",
+    "description": "API credentials form description"
+  },
+  "kbQEWe": {
+    "defaultMessage": "Niet uitgelicht",
+    "description": "Label for not featured amenities filter option"
+  },
+  "kjXDMk": {
+    "defaultMessage": "Voorziening is nu \"{status}\".",
+    "description": "Description of the featured status update with the new status value"
+  },
+  "kl5YRB": {
+    "defaultMessage": "Zoeken...",
+    "description": "Placeholder text for the search input"
+  },
+  "koiR5e": {
+    "defaultMessage": "Onder de Merchant Key vind je je Merchant Salt (ook wel API Salt genoemd). Dit is een geheime waarde die wordt gebruikt om veilige betalingshashes te genereren. Kopieer deze waarde zorgvuldig.",
+    "description": "Step 5: Copy Merchant Salt"
+  },
+  "krzoKh": {
+    "defaultMessage": "Stilte-uren (22:00–08:00)",
+    "description": "Checkbox label for quiet hours rule requiring guests to be quiet between 10pm and 8am"
+  },
+  "l2G4ts": {
+    "defaultMessage": "account",
+    "description": "Search keyword for profile"
+  },
+  "l58peo": {
+    "defaultMessage": "Authorize.net-account koppelen",
+    "description": "Page title for connecting Authorize.net account"
+  },
+  "lICqky": {
+    "defaultMessage": "Zaterdag",
+    "description": "Day of week: Saturday"
+  },
+  "lLsqx/": {
+    "defaultMessage": "Eenvoudig",
+    "description": "Tab label for simple rates update mode"
+  },
+  "lXmebi": {
+    "defaultMessage": "Geen accommodaties gevonden.",
+    "description": "Message shown when no properties match the search"
+  },
+  "lbuhtO": {
+    "defaultMessage": "Telefoonnummer is verplicht",
+    "description": "Phone required validation message"
+  },
+  "lf1G7F": {
+    "defaultMessage": "zo",
+    "description": "Short day of week: Sunday"
+  },
+  "lfavTr": {
+    "defaultMessage": "JavaScript SDK v6 (JavaScript SDK v6)",
+    "description": "PayPal permission: JavaScript SDK v6. IMPORTANT: Keep the English permission name in parentheses after translation if it makes sense, as these are exact permission names in PayPal's interface."
+  },
+  "lsb4H5": {
+    "defaultMessage": "10001",
+    "description": "Placeholder for postcode input"
+  },
+  "lw4XRE": {
+    "defaultMessage": "Weergavetijdzone is verplicht",
+    "description": "Timezone required validation message"
+  },
+  "m4CjvC": {
+    "defaultMessage": "Je ontvangt (voor)",
+    "description": "You receive before summary"
+  },
+  "m9X8dj": {
+    "defaultMessage": "Aangepast",
+    "description": "Color picker custom tab label"
+  },
+  "mEGoCy": {
+    "defaultMessage": "Land",
+    "description": "Label for country input"
+  },
+  "mRPckU": {
+    "defaultMessage": "Plak de gegevens in het formulier om je PayPal‑account te koppelen.",
+    "description": "Step 8: Paste credentials"
+  },
+  "mTNG6W": {
+    "defaultMessage": "Redsys-beheerportaal",
+    "description": "Link text for Redsys Admin Panel"
+  },
+  "ma3FDS": {
+    "defaultMessage": "Jansen",
+    "description": "Placeholder for last name input"
+  },
+  "mc9NYQ": {
+    "defaultMessage": "Breedtegraad",
+    "description": "Label for latitude coordinate input"
+  },
+  "mhR7ow": {
+    "defaultMessage": "Selecteer valuta",
+    "description": "Placeholder for currency selector"
+  },
+  "mhXM05": {
+    "defaultMessage": "overzicht",
+    "description": "Search keyword for dashboard"
+  },
+  "mjTX/O": {
+    "defaultMessage": "Bezig met opslaan...",
+    "description": "Button text while saving the form"
+  },
+  "mk2r03": {
+    "defaultMessage": "We konden de benodigde informatie niet laden. Probeer het later opnieuw.",
+    "description": "Error description when failing to load PayU.in configuration"
+  },
+  "moB4X5": {
+    "defaultMessage": "Wissen",
+    "description": "Button label to clear the selected date range"
+  },
+  "mut/Iu": {
+    "defaultMessage": "Selecteer tijdzone",
+    "description": "Placeholder for timezone selector"
+  },
+  "myf6nu": {
+    "defaultMessage": "Plaats is verplicht",
+    "description": "City required validation message"
+  },
+  "n+V4Hf": {
+    "defaultMessage": "Tarieven en restricties bijwerken",
+    "description": "Button to update pricing and booking restrictions in the calendar"
+  },
+  "n8TPub": {
+    "defaultMessage": "Hier vind je al je accommodaties",
+    "description": "Properties page description"
+  },
+  "n8X4fP": {
+    "defaultMessage": "Je PayU.in-account is succesvol gekoppeld en klaar om betalingen te verwerken.",
+    "description": "Success description when PayU.in connection succeeds"
+  },
+  "nE/K2O": {
+    "defaultMessage": "Succesvol verbonden",
+    "description": "Success title when PayPal connection succeeds"
+  },
+  "nOHLhe": {
+    "defaultMessage": "Configuratie laden mislukt",
+    "description": "Error title when failing to load Stripe configuration"
+  },
+  "nPTP4o": {
+    "defaultMessage": "Beperking voor check-out",
+    "description": "Title for check-out restriction popover"
+  },
+  "nXPU3C": {
+    "defaultMessage": "Hulp nodig bij het vinden van je Redsys-gegevens? Bekijk de installatie-instructies",
+    "description": "Link to open setup instructions dialog"
+  },
+  "nbKA0x": {
+    "defaultMessage": "We konden de beschikbare betaalproviders niet laden. Probeer het later opnieuw.",
+    "description": "Error description when payment gateways fail to load"
+  },
+  "nhKZzR": {
+    "defaultMessage": "Zorg dat je productiesleutels gebruikt voor echte betalingen en niet de Test Mode-sleutels.",
+    "description": "Important notice about using production environment"
+  },
+  "ntDrY2": {
+    "defaultMessage": "Zet bestanden hier neer",
+    "description": "Message shown when dragging files over the dropzone"
+  },
+  "ntIlMj": {
+    "defaultMessage": "Naam",
+    "description": "Filter label for amenity name"
+  },
+  "nyf+Nu": {
+    "defaultMessage": "Berichten",
+    "description": "Navigation menu item for the messaging inbox page"
+  },
+  "oDbRSf": {
+    "defaultMessage": "Sleep een logo hierheen of klik om te bladeren",
+    "description": "Placeholder for logo upload"
+  },
+  "oG3zop": {
+    "defaultMessage": "Telefoonnummer wissen",
+    "description": "Aria label for clear phone number button"
+  },
+  "oQ6S9i": {
+    "defaultMessage": "Merknaam",
+    "description": "Label for brand name input"
+  },
+  "ocx71s": {
+    "defaultMessage": "Boeking {bookingId} heeft beschikbaarheid aangemaakt met status {status}",
+    "description": "Sentence describing a booking creating availability"
+  },
+  "ogXEWD": {
+    "defaultMessage": "Accommodatie-ID kopiëren",
+    "description": "Copy property ID to clipboard"
+  },
+  "oo/YC7": {
+    "defaultMessage": "Terug",
+    "description": "Back button label"
+  },
+  "p+eukQ": {
+    "defaultMessage": "Gast: 14,1–16,5%",
+    "description": "Split fee guest rate badge"
+  },
+  "pBqc2F": {
+    "defaultMessage": "Merchant Code is verplicht",
+    "description": "Error message for missing Redsys Merchant Code"
+  },
+  "pMXWp/": {
+    "defaultMessage": "Weergavetijdzone",
+    "description": "Label for display timezone selector"
+  },
+  "pXGhQw": {
+    "defaultMessage": "Ga in het bovenste menu naar ‘Account’ en kies vervolgens ‘Settings’ in het dropdownmenu.",
+    "description": "Step 2: Navigate to Account Settings"
+  },
+  "pYdLI6": {
+    "defaultMessage": "Verbinding mislukt",
+    "description": "Error title when PayU.in connection fails"
+  },
+  "pp3eG5": {
+    "defaultMessage": "De gegevens die je hebt ingevoerd zijn onjuist. Controleer je Merchant Code, Terminal en Handtekeningsleutel en probeer het opnieuw.",
+    "description": "Error description when Redsys connection fails"
+  },
+  "q1+03r": {
+    "defaultMessage": "Selecteer extra talen",
+    "description": "Dialog title for language selection"
+  },
+  "q2UBZy": {
+    "defaultMessage": "{count} {count, plural, one {accommodatie geselecteerd} other {accommodaties geselecteerd}}.",
+    "description": "The number of selected properties"
+  },
+  "qB/T8g": {
+    "defaultMessage": "Voer je Authorize.net API-gegevens in uit je merchantaccount",
+    "description": "Authorize.net credentials form description"
+  },
+  "qErICT": {
+    "defaultMessage": "Gast betaalt (voor)",
+    "description": "Guest pays before summary"
+  },
+  "qLSweW": {
+    "defaultMessage": "Geüpload",
+    "description": "Status text showing file was uploaded successfully"
+  },
+  "qS74wR": {
+    "defaultMessage": "De Client Secret van je PayPal‑applicatie uit de Developer Dashboard",
+    "description": "Description for PayPal Client Secret input"
+  },
+  "qTk3rP": {
+    "defaultMessage": "Accepteer veilig betalingen met PayU.in, India’s toonaangevende betaalgateway met ondersteuning voor meerdere betaalmethoden, waaronder kaarten, UPI, netbanking en wallets",
+    "description": "PayU.in gateway description"
+  },
+  "qilQYG": {
+    "defaultMessage": "Voorziening succesvol verwijderd.",
+    "description": "Success message for amenity deletion"
+  },
+  "qpDXUm": {
+    "defaultMessage": "Ga naar de sectie ‘Virtual POS Configuration’ of ‘Configuración TPV Virtual’.",
+    "description": "Step 2: Navigate to Virtual POS Configuration. IMPORTANT: Keep 'Configuración TPV Virtual' in Spanish as users need to find this menu item which may be in Spanish."
+  },
+  "r+yQE+": {
+    "defaultMessage": "Selecteer valuta",
+    "description": "Currency select placeholder"
+  },
+  "r4Jebe": {
+    "defaultMessage": "Bezig met laden...",
+    "description": "Loading currencies message"
+  },
+  "rDdMBr": {
+    "defaultMessage": "Verbinding mislukt",
+    "description": "Error title when Xmoney connection fails"
+  },
+  "rLWAAL": {
+    "defaultMessage": "Kalender",
+    "description": "Navigation menu item for the calendar page"
+  },
+  "rRpsqb": {
+    "defaultMessage": "Optioneel",
+    "description": "Badge text for optional form fields"
+  },
+  "rZvg97": {
+    "defaultMessage": "− Je hostkosten (3%)",
+    "description": "Host fee label"
+  },
+  "rv6bA0": {
+    "defaultMessage": "Je unieke API Key ID die door Razorpay wordt verstrekt voor het verifiëren van API-verzoeken",
+    "description": "Description for Razorpay Key ID input"
+  },
+  "rwhoDv": {
+    "defaultMessage": "Koppelingen",
+    "description": "Navigation menu item for the app integrations page"
+  },
+  "s4m994": {
+    "defaultMessage": "Exporteren",
+    "description": "Export properties button"
+  },
+  "s5dtls": {
+    "defaultMessage": "Zorg dat je Live Mode-sleutels (rzp_live_) gebruikt voor productiebetalingen en niet de Test Mode-sleutels (rzp_test_).",
+    "description": "Important notice about using production environment"
+  },
+  "s6oEjd": {
+    "defaultMessage": "Status bijwerken mislukt",
+    "description": "Error message when property status update fails"
+  },
+  "s9BGAO": {
+    "defaultMessage": "bijv. 37.774929",
+    "description": "Example placeholder for latitude input"
+  },
+  "sR8HuW": {
+    "defaultMessage": "Kopieer zowel de Key ID als de Key Secret en plak ze in het bovenstaande formulier om je Razorpay-account met Rentalwise te koppelen.",
+    "description": "Step 8: Copy credentials"
+  },
+  "sTtBm4": {
+    "defaultMessage": "Xmoney-account koppelen",
+    "description": "Page title for connecting Xmoney account"
+  },
+  "sW0C5+": {
+    "defaultMessage": "Razorpay-account koppelen",
+    "description": "Button label to connect Razorpay account"
+  },
+  "sW8CTD": {
+    "defaultMessage": "Geaccepteerd: {types}",
+    "description": "Label showing accepted file types"
+  },
+  "sbeE6m": {
+    "defaultMessage": "Directe terugbetalingsverwerking",
+    "description": "Payment gateway feature: process refunds"
+  },
+  "sgXEFE": {
+    "defaultMessage": "Doorgaan",
+    "description": "Button text"
+  },
+  "shuc96": {
+    "defaultMessage": "Sleep hier een nieuw logo naartoe of klik om te vervangen.",
+    "description": "Placeholder for logo upload when logo exists"
+  },
+  "soTKGn": {
+    "defaultMessage": "Volg deze stappen om je Xmoney-gegevens op te halen en je cryptobetaalgateway te configureren",
+    "description": "Setup instructions dialog description"
+  },
+  "t42aKR": {
+    "defaultMessage": "Strikt (aanbevolen)",
+    "description": "Balanced cancellation policy option with moderate protection (recommended for most hosts)"
+  },
+  "t5xsxX": {
+    "defaultMessage": "Boekingen",
+    "description": "Navigation menu item for the bookings page"
+  },
+  "tAeD+O": {
+    "defaultMessage": "Selecteer je standaardvaluta (meestal USD voor in de VS gevestigde bedrijven) en alle valuta’s die je wilt accepteren.",
+    "description": "Step 7: Select currencies"
+  },
+  "tCSwzO": {
+    "defaultMessage": "Selecteer een account...",
+    "description": "Account select placeholder"
+  },
+  "tHJmFA": {
+    "defaultMessage": "Alle bestanden zijn succesvol geüpload!",
+    "description": "Success message when all files are uploaded"
+  },
+  "tN9vEy": {
+    "defaultMessage": "Voor nu overslaan",
+    "description": "Skip button label"
+  },
+  "tTrQFe": {
+    "defaultMessage": "Stripe wordt geopend",
+    "description": "Loading title when opening Stripe"
+  },
+  "tqRV1/": {
+    "defaultMessage": "Tarief moet een positief getal zijn",
+    "description": "Error message when rate is not a positive number"
+  },
+  "ts0cV6": {
+    "defaultMessage": "Toepassen",
+    "description": "Button to apply the checkbox filter selection"
+  },
+  "uCQNym": {
+    "defaultMessage": "Bezig met laden...",
+    "description": "Loading availability statuses message"
+  },
+  "uDc/J3": {
+    "defaultMessage": "Om je Redsys-account te koppelen, heb je de gegevens van je Virtual POS nodig uit je Redsys-account:",
+    "description": "Instructions introduction"
+  },
+  "uIUj6k": {
+    "defaultMessage": "Land zoeken...",
+    "description": "Placeholder for country search input"
+  },
+  "uJ7wsj": {
+    "defaultMessage": "Om je Xmoney-account te koppelen, moet je je API-gegevens ophalen uit je merchantdashboard:",
+    "description": "Instructions introduction"
+  },
+  "udRCBk": {
+    "defaultMessage": "Kopieer zowel de API Key als de Webhook Secret en plak ze in het bovenstaande formulier om je Xmoney-account te koppelen.",
+    "description": "Step 9: Copy credentials to form"
+  },
+  "udhwJm": {
+    "defaultMessage": "Koppel je Airbnb-account om accommodaties automatisch te importeren, kalenders te synchroniseren en al je boekingen centraal te beheren.",
+    "description": "Airbnb integration explanation"
+  },
+  "ue2TrB": {
+    "defaultMessage": "Start",
+    "description": "Navigation menu item for the homepage (reports dashboard)"
+  },
+  "uhZWOr": {
+    "defaultMessage": "We passen automatische opslag toe om uw inkomsten te behouden bij synchronisatie met ons PMS. <link>Hoe het werkt →</link>",
+    "description": "Split fee markup note with link to explanation"
+  },
+  "uje8KK": {
+    "defaultMessage": "di",
+    "description": "Short day of week: Tuesday"
+  },
+  "ur0YL9": {
+    "defaultMessage": "Niet-restitueerbaar binnen 24 uur voor check-in",
+    "description": "Second rule of flexible cancellation policy: no refunds within 24 hours before check-in or after"
+  },
+  "uskQOw": {
+    "defaultMessage": "Het Stripe-venster voor de verbinding is door je browser geblokkeerd. Sta pop-ups voor deze site toe en probeer het opnieuw.",
+    "description": "Error description when popup is blocked"
+  },
+  "uxZY0q": {
+    "defaultMessage": "Volg deze stappen om je PayPal API‑gegevens op te halen",
+    "description": "Setup instructions dialog description"
+  },
+  "v/zF5n": {
+    "defaultMessage": "gast",
+    "description": "Search keyword for bookings"
+  },
+  "v8XMQI": {
+    "defaultMessage": "Geen terugbetaling bij annulering, ongeacht het moment van annuleren",
+    "description": "Rule of non-refundable cancellation policy: guests never get refunds regardless of when they cancel"
+  },
+  "vLl8sK": {
+    "defaultMessage": "wo",
+    "description": "Short day of week: Wednesday"
+  },
+  "vRq6TW": {
+    "defaultMessage": "50% restitutie bij annulering 7–30 dagen voor check-in",
+    "description": "Second rule of strict cancellation policy: partial refund 7-30 days before check-in"
+  },
+  "vg4y7u": {
+    "defaultMessage": "Host: ~3%",
+    "description": "Split fee host rate badge"
+  },
+  "vt+Kki": {
+    "defaultMessage": "Selecteer land",
+    "description": "Country select placeholder"
+  },
+  "vzVrA1": {
+    "defaultMessage": "Maak in enkele seconden een aangepaste huurovereenkomst met AI en pas deze daarna aan uw wensen aan.",
+    "description": "Explanation that users can generate a rental contract automatically with AI and edit it afterwards"
+  },
+  "w/sV1T": {
+    "defaultMessage": "Pagina's",
+    "description": "Heading for the pages section in search results"
+  },
+  "wS0SOT": {
+    "defaultMessage": "Gast betaalt (na)",
+    "description": "Guest pays after summary"
+  },
+  "wb519+": {
+    "defaultMessage": "Als je API Key en Webhook Secret nog niet zichtbaar zijn, klik dan op de knop ‘Generate secrets’.",
+    "description": "Step 5: Generate secrets if needed"
+  },
+  "wiPTGZ": {
+    "defaultMessage": "Redsys-account koppelen",
+    "description": "Page title for connecting Redsys account"
+  },
+  "wvKs1e": {
+    "defaultMessage": "Uitgelichte status bijwerken mislukt",
+    "description": "Error message when amenity featured status update fails"
+  },
+  "wyAmDY": {
+    "defaultMessage": "Accepteer veilig betalingen met Razorpay, India’s toonaangevende betaalgateway met ondersteuning voor meerdere betaalmethoden, waaronder kaarten, UPI, netbanking en digitale wallets",
+    "description": "Razorpay gateway description"
+  },
+  "x1zJ+4": {
+    "defaultMessage": "Uploaden",
+    "description": "Button text to upload the selected file"
+  },
+  "x4fZqk": {
+    "defaultMessage": "Bewaar je Handtekeningsleutel veilig en deel deze nooit openbaar. De sleutel wordt gebruikt om alle transacties te verifiëren.",
+    "description": "Security warning about signature key"
+  },
+  "xPxl8b": {
+    "defaultMessage": "Betaalmethoden opslaan",
+    "description": "Payment gateway feature: store credit cards"
+  },
+  "xUHkcy": {
+    "defaultMessage": "Merknaam is verplicht",
+    "description": "Brand name required validation message"
+  },
+  "xjxLNM": {
+    "defaultMessage": "Verbinding mislukt",
+    "description": "Error title when Razorpay connection fails"
+  },
+  "xpO5Wj": {
+    "defaultMessage": "Er verandert niets, alleen waar de kosten worden getoond",
+    "description": "Key takeaway title"
+  },
+  "xy7KyL": {
+    "defaultMessage": "Accounts laden mislukt. Probeer het opnieuw.",
+    "description": "Account loading error message"
+  },
+  "y53dco": {
+    "defaultMessage": "Selecteer onder ‘Type of integration’ de optie ‘Custom’ in het dropdownmenu.",
+    "description": "Step 4: Select Custom integration type"
+  },
+  "y6/xbw": {
+    "defaultMessage": "Primaire host",
+    "description": "Primary host badge label for airbnb property."
+  },
+  "yO01eS": {
+    "defaultMessage": "Controleer het formulier op fouten",
+    "description": "Error message when form validation fails"
+  },
+  "yf0n+T": {
+    "defaultMessage": "Terug",
+    "description": "Button text to go back to previous screen"
+  },
+  "ykVfMx": {
+    "defaultMessage": "Naam",
+    "description": "Column header for amenity name"
+  },
+  "yspnIi": {
+    "defaultMessage": "Xmoney-account",
+    "description": "Link text for Xmoney"
+  },
+  "yv1I7k": {
+    "defaultMessage": "Ga terug",
+    "description": "Button to go back after error"
+  },
+  "yzg2T4": {
+    "defaultMessage": "Selecteer uw voorkeursbetalingsprovider",
+    "description": "Payment gateway setup page title"
+  },
+  "z7saLl": {
+    "defaultMessage": "De opgegeven gegevens zijn onjuist. Controleer je Merchant Key en Merchant Salt en probeer het opnieuw.",
+    "description": "Error description when PayU.in connection fails"
+  },
+  "zBjeyG": {
+    "defaultMessage": "Client Secret is verplicht",
+    "description": "Error message for missing PayPal Client Secret"
+  },
+  "zCEFXQ": {
+    "defaultMessage": "Einddatum moet na de startdatum liggen",
+    "description": "Error message when the end date is before the start date"
+  },
+  "zOoftm": {
+    "defaultMessage": "profiel",
+    "description": "Search keyword for profile"
+  },
+  "zSDtWg": {
+    "defaultMessage": "{count} {count, plural, one {taal} other {talen}} geselecteerd",
+    "description": "Count of selected languages"
+  },
+  "zpO4iy": {
+    "defaultMessage": "Beschrijf eventuele andere specifieke clausules, voorwaarden of details die u in de overeenkomst wilt opnemen",
+    "description": "Help text explaining users can add any additional legal clauses or special requirements to the rental agreement"
+  },
+  "zqYE4R": {
+    "defaultMessage": "Bezetting",
+    "description": "Property occupancy column header"
+  },
+  "zsf2V4": {
+    "defaultMessage": "bijv. Sunset Beach Rentals",
+    "description": "Placeholder for brand name input"
+  },
+  "zv3k/l": {
+    "defaultMessage": "PayPal‑account koppelen",
+    "description": "Button label to connect PayPal account"
+  }
+}

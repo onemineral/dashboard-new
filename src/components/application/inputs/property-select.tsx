@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Check, ChevronsUpDown, Loader2, X } from "lucide-react";
-import {cn, translated} from "@/lib/utils";
+import {cn} from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Command,
@@ -12,9 +12,11 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import api from "@/lib/api";
-import {Property} from "@onemineral/pms-js-sdk";
 import { useQuery } from "@tanstack/react-query";
 import {config} from "@/config.ts";
+import { useIntl } from "react-intl";
+import {Property} from "@sdk/generated";
+import {useTranslate} from "@/hooks/use-translate.ts";
 
 export interface PropertyInputProps {
   value?: Property | null;
@@ -30,15 +32,22 @@ export function PropertySelect({
   value,
   onChange,
   onBlur,
-  placeholder = "Select a property...",
+  placeholder,
   disabled = false,
   className,
   error = false,
 }: PropertyInputProps) {
+  const intl = useIntl();
   const [open, setOpen] = React.useState(false);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [debouncedSearchQuery, setDebouncedSearchQuery] = React.useState("");
   const [selectedIndex, setSelectedIndex] = React.useState(-1);
+  const translated = useTranslate();
+
+  const defaultPlaceholder = intl.formatMessage({
+    defaultMessage: "Select a property...",
+    description: "Placeholder text for property select input"
+  });
 
   // Debounce search query
   React.useEffect(() => {
@@ -141,7 +150,7 @@ export function PropertySelect({
           role="combobox"
           aria-expanded={open}
           aria-haspopup="listbox"
-          aria-label={placeholder}
+          aria-label={placeholder || defaultPlaceholder}
           disabled={disabled}
           className={cn(
             "w-full justify-between hover:bg-background font-normal",
@@ -161,14 +170,17 @@ export function PropertySelect({
               <span className="truncate">{translated(value.name)}</span>
             </div>
           ) : (
-            <span>{placeholder}</span>
+            <span>{placeholder || defaultPlaceholder}</span>
           )}
           <div className="flex items-center gap-1">
             {value && !disabled && (
               <a
                 onClick={handleClear}
                 className="rounded-sm opacity-50 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-                aria-label="Clear selection"
+                aria-label={intl.formatMessage({
+                  defaultMessage: "Clear selection",
+                  description: "Aria label for clear property selection button"
+                })}
               >
                 <X className="size-4 shrink-0" />
               </a>
@@ -183,7 +195,10 @@ export function PropertySelect({
           <div className="flex items-center border-b px-3">
             <input
               className="placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
-              placeholder="Search properties..."
+              placeholder={intl.formatMessage({
+                defaultMessage: "Search properties...",
+                description: "Placeholder for property search input"
+              })}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               autoFocus={false}
@@ -193,13 +208,26 @@ export function PropertySelect({
             )}
           </div>}
           <CommandList>
+            {isLoading && (
+              <div className="py-6 text-center text-sm">
+                <Loader2 className="size-4 mx-auto animate-spin opacity-50" />
+              </div>
+            )}
             {isError && (
               <div className="py-6 text-center text-sm text-destructive">
-                Failed to load properties. Please try again.
+                {intl.formatMessage({
+                  defaultMessage: "Failed to load properties. Please try again.",
+                  description: "Error message when properties fail to load"
+                })}
               </div>
             )}
             {!isError && !isLoading && properties.length === 0 && (
-              <CommandEmpty>No properties found.</CommandEmpty>
+              <CommandEmpty>
+                {intl.formatMessage({
+                  defaultMessage: "No properties found.",
+                  description: "Message shown when no properties match the search"
+                })}
+              </CommandEmpty>
             )}
             {!isError && properties.length > 0 && (
               <CommandGroup>

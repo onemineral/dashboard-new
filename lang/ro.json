@@ -1,0 +1,2562 @@
+{
+  "++Xb5Q": {
+    "defaultMessage": "Identificatorul unic de comerciant (FUC) furnizat de Redsys, de obicei format din 9 cifre",
+    "description": "Description for Redsys Merchant Code input"
+  },
+  "+0teqB": {
+    "defaultMessage": "Numărul de terminal atribuit de Redsys (de obicei „1” pentru configurațiile cu un singur terminal)",
+    "description": "Description for Redsys Terminal input"
+  },
+  "+TZnSI": {
+    "defaultMessage": "cazare",
+    "description": "Search keyword for properties"
+  },
+  "+crfr6": {
+    "defaultMessage": "Păstrați Merchant Salt în siguranță și nu îl distribuiți niciodată public. Este folosit pentru a genera hash‑uri securizate pentru toate solicitările de plată către contul dvs.",
+    "description": "Security warning about merchant salt"
+  },
+  "+dSPvA": {
+    "defaultMessage": "Panoul de dezvoltare PayPal (PayPal Developer Dashboard)",
+    "description": "Link text for PayPal Developer Dashboard"
+  },
+  "+efOJ6": {
+    "defaultMessage": "Sâm",
+    "description": "Short day of week: Saturday"
+  },
+  "+mL9Gz": {
+    "defaultMessage": "Actualizează disponibilitatea",
+    "description": "Button to update availability status (open or close dates) for guests to book."
+  },
+  "+o1ZCY": {
+    "defaultMessage": "Telefon",
+    "description": "Label for phone input"
+  },
+  "+qKl8A": {
+    "defaultMessage": "Resetează",
+    "description": "Button to reset all filters"
+  },
+  "+sCbso": {
+    "defaultMessage": "Cod fiscal / Cod TVA",
+    "description": "Label for tax ID input"
+  },
+  "+sFjDr": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu.",
+    "description": "Error description when failing to load Stripe configuration"
+  },
+  "+ssSkh": {
+    "defaultMessage": "Aveți nevoie de ajutor pentru a găsi datele de autentificare Xmoney? Consultați instrucțiunile de configurare",
+    "description": "Link to open setup instructions dialog"
+  },
+  "+uGQkt": {
+    "defaultMessage": "*",
+    "description": "Required field indicator"
+  },
+  "/12tKm": {
+    "defaultMessage": "API Login ID este obligatoriu",
+    "description": "Error message for missing Authorize.net API Login ID"
+  },
+  "/8YgtH": {
+    "defaultMessage": "Înainte",
+    "description": "Label for pagination next button"
+  },
+  "/LSOfM": {
+    "defaultMessage": "ID-ul unic API Login furnizat de Authorize.net pentru autentificarea prin API",
+    "description": "Description for Authorize.net API Login ID input"
+  },
+  "/XtBEU": {
+    "defaultMessage": "Pentru a conecta contul Razorpay, trebuie să obțineți datele API din panoul dvs. de control:",
+    "description": "Instructions introduction"
+  },
+  "/fzYxb": {
+    "defaultMessage": "Nu există monede disponibile",
+    "description": "No currencies available message"
+  },
+  "/myRRj": {
+    "defaultMessage": "Autentificați-vă în {link} folosind datele dvs. de comerciant.",
+    "description": "Step 1: Log in to Authorize.net"
+  },
+  "/qhPPc": {
+    "defaultMessage": "Elimină fișierul",
+    "description": "ARIA label for remove current file button"
+  },
+  "/rTtyJ": {
+    "defaultMessage": "Nume de familie",
+    "description": "Label for last name input"
+  },
+  "0/tQuf": {
+    "defaultMessage": "La conectarea prin API, Airbnb trece automat anunțurile tale pe structura de comision doar pentru gazdă (15,5% în loc de 3%). Noi compensăm prin ajustarea prețurilor, astfel încât oaspeții să plătească aceeași sumă, iar tu să încasezi același venit.",
+    "description": "Key takeaway explanation - clarifies Airbnb enforces this change"
+  },
+  "05N7am": {
+    "defaultMessage": "client",
+    "description": "Search keyword for guests"
+  },
+  "0GT0SI": {
+    "defaultMessage": "Anulează",
+    "description": "Cancel button label"
+  },
+  "0ICrVM": {
+    "defaultMessage": "Key ID este obligatoriu",
+    "description": "Error message for missing Razorpay Key ID"
+  },
+  "0KIYiv": {
+    "defaultMessage": "analize",
+    "description": "Search keyword for reports"
+  },
+  "0TZhGi": {
+    "defaultMessage": "program",
+    "description": "Search keyword for calendar"
+  },
+  "0U3uEj": {
+    "defaultMessage": "Dacă nu aveți încă nicio cheie API, faceți clic pe „Generate Key” pentru a crea o nouă pereche de chei.",
+    "description": "Step 4: Generate API keys if needed"
+  },
+  "0d4QCF": {
+    "defaultMessage": "Comision împărțit",
+    "description": "Split fee option title"
+  },
+  "0f/taE": {
+    "defaultMessage": "Selectează moneda ta implicită (de obicei EUR pentru Spania) și toate monedele pe care vrei să le accepți.",
+    "description": "Step 7: Select currencies"
+  },
+  "0kZeTh": {
+    "defaultMessage": "Conectează contul Redsys",
+    "description": "Button label to connect Redsys account"
+  },
+  "0lWa8l": {
+    "defaultMessage": "Iată de ce ajustarea prețurilor tale pe Airbnb nu schimbă nimic pentru tine sau pentru oaspeți.",
+    "description": "Dialog description"
+  },
+  "0lgY8w": {
+    "defaultMessage": "Salvare metode de plată (Save payment methods – pentru stocarea metodelor de plată)",
+    "description": "PayPal permission: Vault. IMPORTANT: Keep 'Save payment methods' in English in parentheses after translation if it makes sense, as this is the exact permission name in PayPal's interface."
+  },
+  "0mhGN1": {
+    "defaultMessage": "Faceți clic pe „Account Credentials” sau „API Keys” în secțiunea Settings.",
+    "description": "Step 3: Find API Credentials section"
+  },
+  "0nDVG5": {
+    "defaultMessage": "Cheie API",
+    "description": "Label for Xmoney API Key input"
+  },
+  "0uEyPn": {
+    "defaultMessage": "Reguli principale ale casei",
+    "description": "Section heading for selecting common property rules (smoking, pets, parties, quiet hours)"
+  },
+  "1+Njhd": {
+    "defaultMessage": "Monedă de afișare",
+    "description": "Label for display currency selector"
+  },
+  "1IwVJ/": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu.",
+    "description": "Error description when failing to load Xmoney configuration"
+  },
+  "1ME8gM": {
+    "defaultMessage": "Se salvează...",
+    "description": "Button text while saving the calendar updates"
+  },
+  "1c7Eg9": {
+    "defaultMessage": "Oaspete: 0%",
+    "description": "Host-only fee guest rate badge"
+  },
+  "1dOd3r": {
+    "defaultMessage": "Găsește „Merchant Code” (FUC - Código de comercio), de obicei un număr din 9 cifre.",
+    "description": "Step 3: Find Merchant Code. IMPORTANT: Keep 'FUC' and 'Código de comercio' as technical terms."
+  },
+  "1kryhX": {
+    "defaultMessage": "Client ID",
+    "description": "Label for PayPal Client ID input"
+  },
+  "1qWnpo": {
+    "defaultMessage": "Veți vedea Merchant Key (numită și API Key). Aceasta este o identificare unică pentru contul dvs. de comerciant. Copiați această valoare.",
+    "description": "Step 4: Copy Merchant Key"
+  },
+  "1tn+ul": {
+    "defaultMessage": "+ comision oaspete Airbnb",
+    "description": "Guest fee label"
+  },
+  "1zU6LU": {
+    "defaultMessage": "Coordonată latitudine",
+    "description": "ARIA label for latitude input"
+  },
+  "29UOKo": {
+    "defaultMessage": "Înainte",
+    "description": "Before badge label"
+  },
+  "2BRner": {
+    "defaultMessage": "Contract de închiriere în regim hotelier",
+    "description": "Option for a standard vacation rental agreement for short-term stays"
+  },
+  "2HHm1c": {
+    "defaultMessage": "Aveți nevoie de ajutor pentru a găsi datele de autentificare Authorize.net? Consultați instrucțiunile de configurare",
+    "description": "Link to open setup instructions dialog"
+  },
+  "2XJblv": {
+    "defaultMessage": "Recomandată",
+    "description": "Label for featured amenity status"
+  },
+  "2YpiUO": {
+    "defaultMessage": "Key Secret este obligatoriu",
+    "description": "Error message for missing Razorpay Key Secret"
+  },
+  "2kAsyS": {
+    "defaultMessage": "După autentificare, accesați „Settings” din meniul din bara laterală stângă.",
+    "description": "Step 2: Navigate to Settings"
+  },
+  "2n0X8r": {
+    "defaultMessage": "Urmați acești pași pentru a obține datele de autentificare Authorize.net și pentru a configura procesatorul de plăți",
+    "description": "Setup instructions dialog description"
+  },
+  "3+LMGK": {
+    "defaultMessage": "Cohost",
+    "description": "Secondary host badge label for airbnb property"
+  },
+  "30erry": {
+    "defaultMessage": "Panou comerciant PayU.in",
+    "description": "Link text for PayU.in Merchant Dashboard"
+  },
+  "356Com": {
+    "defaultMessage": "Restricție check-in",
+    "description": "Title for check-in restriction popover"
+  },
+  "3FLph+": {
+    "defaultMessage": "Dimensiune maximă: {size}",
+    "description": "Label showing maximum file size"
+  },
+  "3K7lCg": {
+    "defaultMessage": "Faceți clic pe „API Keys” în secțiunea Settings.",
+    "description": "Step 3: Find API Keys section"
+  },
+  "3KbOCN": {
+    "defaultMessage": "Să configurăm setările principale",
+    "description": "Main settings onboarding page title"
+  },
+  "3OaIGu": {
+    "defaultMessage": "Proprietăți",
+    "description": "Properties page title"
+  },
+  "3QtHMq": {
+    "defaultMessage": "Aveți nevoie de ajutor pentru a găsi datele de autentificare PayU.in? Consultați instrucțiunile de configurare",
+    "description": "Link to open setup instructions dialog"
+  },
+  "3UtT5H": {
+    "defaultMessage": "Continuă",
+    "description": "Continue button label"
+  },
+  "3VDEsx": {
+    "defaultMessage": "Recomandată",
+    "description": "Column header for featured amenity status"
+  },
+  "3Zued9": {
+    "defaultMessage": "Șterge fișierul",
+    "description": "ARIA label for the clear file button"
+  },
+  "3kCp+u": {
+    "defaultMessage": "Urmează acești pași pentru a obține datele tale de conectare Redsys și pentru a configura procesatorul de plăți",
+    "description": "Setup instructions dialog description"
+  },
+  "3kEEA8": {
+    "defaultMessage": "Procesare carduri de credit OTA",
+    "description": "Payment gateway feature: OTA credit card processing"
+  },
+  "3kIgh3": {
+    "defaultMessage": "Prenume",
+    "description": "Label for first name input"
+  },
+  "3mStAG": {
+    "defaultMessage": "Aplică",
+    "description": "Button to apply the picklist filter selection"
+  },
+  "3s3IxJ": {
+    "defaultMessage": "Importul iCal din {icalName} a actualizat starea disponibilității la {status}",
+    "description": "Sentence describing an iCal import changing availability status"
+  },
+  "42j2Yl": {
+    "defaultMessage": "Importă și gestionează rezervările fără efort",
+    "description": "Benefit of reservation management"
+  },
+  "4Ap+k9": {
+    "defaultMessage": "Se conectează...",
+    "description": "Button label while connecting to Xmoney"
+  },
+  "4DvW3w": {
+    "defaultMessage": "Contract prietenos pentru oaspeți, destinat sejururilor scurte (1–30 nopți). Ideal pentru rezervări prin Airbnb, VRBO sau direct. Acoperă garanțiile, politica de anulare, procedurile de check-in/check-out, regulile casei și responsabilitățile oaspeților.",
+    "description": "Detailed explanation of what a vacation rental agreement includes and when to use it"
+  },
+  "4Gg0C7": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Te rugăm să încerci din nou mai târziu.",
+    "description": "Error description when failing to load PayPal configuration"
+  },
+  "4JR3Dt": {
+    "defaultMessage": "Conectare eșuată",
+    "description": "Error title when Redsys connection fails"
+  },
+  "4JuKSp": {
+    "defaultMessage": "Istoric disponibilitate",
+    "description": "Title for availability history section"
+  },
+  "4Nlmyz": {
+    "defaultMessage": "Selectează țara",
+    "description": "Placeholder for country selector"
+  },
+  "4SR2Qh": {
+    "defaultMessage": "Zi",
+    "description": "Table header for day name"
+  },
+  "4Ucygo": {
+    "defaultMessage": "Se conectează...",
+    "description": "Button label while connecting to Razorpay"
+  },
+  "4ZLWca": {
+    "defaultMessage": "Caută adresă...",
+    "description": "Placeholder for address search input in geolocation picker"
+  },
+  "4ZNYGb": {
+    "defaultMessage": "Vin",
+    "description": "Short day of week: Friday"
+  },
+  "4gfoGt": {
+    "defaultMessage": "ID",
+    "description": "Column header for amenity ID"
+  },
+  "4hPHpa": {
+    "defaultMessage": "Transaction Key este obligatoriu",
+    "description": "Error message for missing Authorize.net Transaction Key"
+  },
+  "4vuqmI": {
+    "defaultMessage": "Bine ai venit la bord! Să facem setările inițiale",
+    "description": "Onboarding page title"
+  },
+  "5+u2og": {
+    "defaultMessage": "Nu s-au putut încărca statusurile de disponibilitate",
+    "description": "Error loading availability statuses message"
+  },
+  "55mCjK": {
+    "defaultMessage": "Caută proprietăți...",
+    "description": "Placeholder for property search input"
+  },
+  "56bErq": {
+    "defaultMessage": "Dată de sfârșit invalidă",
+    "description": "Error message when the end date is invalid"
+  },
+  "5DkMof": {
+    "defaultMessage": "Selectează limba interfeței",
+    "description": "Placeholder for UI language selector"
+  },
+  "5EFbSV": {
+    "defaultMessage": "Acceptă plăți în siguranță cu PayPal",
+    "description": "PayPal gateway description"
+  },
+  "5G+3FI": {
+    "defaultMessage": "Nu a fost găsit niciun cont.",
+    "description": "No accounts found message"
+  },
+  "5LH+O5": {
+    "defaultMessage": "Tariful trebuie să fie un număr valid",
+    "description": "Error message when rate is not a valid number"
+  },
+  "5OlbLO": {
+    "defaultMessage": "Înapoi",
+    "description": "Button text to go back from history view"
+  },
+  "5PMMrN": {
+    "defaultMessage": "Numele brandului trebuie să aibă cel puțin 2 caractere",
+    "description": "Brand name min length validation message"
+  },
+  "5UlhKh": {
+    "defaultMessage": "Adresă companie",
+    "description": "Label for address input"
+  },
+  "5WWihP": {
+    "defaultMessage": "{count} {count, plural, one {fișier selectat} other {fișiere selectate}}",
+    "description": "Message showing number of files selected"
+  },
+  "5iOMya": {
+    "defaultMessage": "Nu a fost găsită nicio țară.",
+    "description": "Message when no countries match the search"
+  },
+  "5rFDAN": {
+    "defaultMessage": "Descrieți tipul de contract personalizat",
+    "description": "Error message when user selects custom agreement type but doesn't provide a description"
+  },
+  "65M3eA": {
+    "defaultMessage": "Descrieți termenii de anulare și politica de rambursare",
+    "description": "Placeholder text prompting user to describe their custom cancellation and refund terms"
+  },
+  "66+pWG": {
+    "defaultMessage": "Reguli suplimentare ale casei",
+    "description": "Label for text input where users can add house rules not covered by the checkboxes"
+  },
+  "66uz/9": {
+    "defaultMessage": "După",
+    "description": "After badge label"
+  },
+  "6BVS0B": {
+    "defaultMessage": "Cheie de semnătură (SHA-256)",
+    "description": "Label for Redsys Signature Key input"
+  },
+  "6CXY7+": {
+    "defaultMessage": "Data de început trebuie să fie după {date}",
+    "description": "Error message when the start date is before the minimum date"
+  },
+  "6CZ2VT": {
+    "defaultMessage": "Câștigurile tale rămân neschimbate",
+    "description": "Dialog title for commission explanation"
+  },
+  "6QOz2B": {
+    "defaultMessage": "Monede acceptate",
+    "description": "Label for allowed currencies selection"
+  },
+  "6V7n+L": {
+    "defaultMessage": "Resetează",
+    "description": "Reset selection button"
+  },
+  "6YI4kg": {
+    "defaultMessage": "Navighează la „Aplicații și credențiale” (Apps & Credentials) din meniul de sus.",
+    "description": "Step 2: Navigate to Apps & Credentials menu. IMPORTANT: Keep 'Apps & Credentials' in English in parentheses after translation, as users need to find this exact menu item in PayPal's interface which may be in English."
+  },
+  "6aZ6oU": {
+    "defaultMessage": "Selectează toate monedele pe care acest procesator de plăți le poate accepta. Sumele în alte monede vor fi convertite în moneda implicită în momentul procesării.",
+    "description": "Description for allowed currencies selection"
+  },
+  "6hqX55": {
+    "defaultMessage": "Elimină {fileName}",
+    "description": "ARIA label for the remove file button"
+  },
+  "6jBqKO": {
+    "defaultMessage": "Conectare eșuată",
+    "description": "Error title when Authorize.net connection fails"
+  },
+  "6oqioY": {
+    "defaultMessage": "Da",
+    "description": "Boolean filter true label"
+  },
+  "6tO6oi": {
+    "defaultMessage": "Tariful tău afișat",
+    "description": "Listed price label"
+  },
+  "70DkFz": {
+    "defaultMessage": "Personalizat",
+    "description": "Option to define a custom cancellation policy in the user's own words"
+  },
+  "735/I6": {
+    "defaultMessage": "Limbi suplimentare",
+    "description": "Label for secondary languages selector"
+  },
+  "764Jrf": {
+    "defaultMessage": "Cheie secretă folosită pentru a verifica autenticitatea webhook-urilor și pentru a securiza notificările de plată. Păstrați-o confidențială și nu o distribuiți niciodată public.",
+    "description": "Description for Xmoney Webhook Secret input"
+  },
+  "79R694": {
+    "defaultMessage": "Actualizarea disponibilității a eșuat",
+    "description": "Error message when availability update fails"
+  },
+  "7LCyD2": {
+    "defaultMessage": "Selectează limba implicită",
+    "description": "Placeholder for default language selector"
+  },
+  "7RfiVr": {
+    "defaultMessage": "Fereastră pop-up blocată",
+    "description": "Error title when popup is blocked"
+  },
+  "7S9iXq": {
+    "defaultMessage": "Introduceți datele API PayU.in din panoul dvs. de comerciant",
+    "description": "PayU.in credentials form description"
+  },
+  "7T1liF": {
+    "defaultMessage": "Merchant Salt este obligatoriu",
+    "description": "Error message for missing PayU.in Merchant Salt"
+  },
+  "7U1n7w": {
+    "defaultMessage": "Generează contractul tău de închiriere",
+    "description": "Page title for AI-powered rental agreement generation tool during onboarding"
+  },
+  "7eul9b": {
+    "defaultMessage": "Webhook Secret",
+    "description": "Label for Xmoney Webhook Secret input"
+  },
+  "7jmAkN": {
+    "defaultMessage": "Aveți nevoie de ajutor pentru a găsi datele de autentificare Razorpay? Consultați instrucțiunile de configurare",
+    "description": "Link to open setup instructions dialog"
+  },
+  "7qDNyf": {
+    "defaultMessage": "Configurarea nu a putut fi încărcată",
+    "description": "Error title when failing to load PayPal configuration"
+  },
+  "82It5E": {
+    "defaultMessage": "Selectează o proprietate...",
+    "description": "Placeholder text for property select input"
+  },
+  "88kNaO": {
+    "defaultMessage": "Conectare eșuată",
+    "description": "Error title when PayPal connection fails"
+  },
+  "88zIRQ": {
+    "defaultMessage": "Se deschide fereastra de autorizare Stripe...",
+    "description": "Loading description when opening popup"
+  },
+  "8C+PAW": {
+    "defaultMessage": "Cod hex",
+    "description": "Hex color code input label"
+  },
+  "8FdIpV": {
+    "defaultMessage": "Se conectează...",
+    "description": "Button label while connecting to Authorize.net"
+  },
+  "8H9gfX": {
+    "defaultMessage": "Fără fumat",
+    "description": "Checkbox label for rule prohibiting smoking on the property"
+  },
+  "8LIDP6": {
+    "defaultMessage": "Transaction Key",
+    "description": "Label for Authorize.net Transaction Key input"
+  },
+  "8TIbvo": {
+    "defaultMessage": "Această politică se va aplica rezervărilor de pe site-ul tău și de pe VRBO. Alte OTA-uri, precum Airbnb și Booking.com, au propriile politici de anulare, care se vor aplica în schimb.",
+    "description": "Note explaining that this cancellation policy only applies to direct bookings and VRBO, not to other booking platforms"
+  },
+  "8U6PX5": {
+    "defaultMessage": "Selector interval de date",
+    "description": "ARIA label for the date range picker dialog"
+  },
+  "8WjQyt": {
+    "defaultMessage": "Autentifică-te în {link} folosind datele tale bancare.",
+    "description": "Step 1: Log in to Redsys"
+  },
+  "8f+bQB": {
+    "defaultMessage": "Logo brand",
+    "description": "Label for logo upload input"
+  },
+  "8jvJ2a": {
+    "defaultMessage": "rezervare",
+    "description": "Search keyword for bookings"
+  },
+  "8khNNy": {
+    "defaultMessage": "Structură de comision împărțit",
+    "description": "Airbnb split-fee commission structure label"
+  },
+  "8m2mNb": {
+    "defaultMessage": "Conectează-te la Airbnb",
+    "description": "Airbnb connection page title"
+  },
+  "8rC+q+": {
+    "defaultMessage": "Asigurați-vă că folosiți cheile pentru mediul corect: pentru plăți în producție utilizați cheile de „Live Mode” (rzp_live_), nu cheile de „Test Mode” (rzp_test_).",
+    "description": "Step 7: Verify environment"
+  },
+  "8rPgs4": {
+    "defaultMessage": "Introdu datele de comerciant Redsys din configurația TPV-ului tău virtual (Virtual POS)",
+    "description": "Redsys credentials form description"
+  },
+  "957I9k": {
+    "defaultMessage": "Selectează țara",
+    "description": "Aria label for country selector button"
+  },
+  "95bDjd": {
+    "defaultMessage": "Contul dvs. Authorize.net a fost conectat cu succes și este gata să proceseze plăți.",
+    "description": "Success description when Authorize.net connection succeeds"
+  },
+  "9GzCSL": {
+    "defaultMessage": "Stare actualizată",
+    "description": "Success message when property status is updated"
+  },
+  "9HQrgV": {
+    "defaultMessage": "Lăsați necompletat dacă nu operați printr-o firmă.",
+    "description": "Description for tax ID field"
+  },
+  "9JT9XF": {
+    "defaultMessage": "Date de autentificare Authorize.net",
+    "description": "Authorize.net credentials form title"
+  },
+  "9M/Nz4": {
+    "defaultMessage": "Nume",
+    "description": "Property name column header"
+  },
+  "9YTW5G": {
+    "defaultMessage": "Mai multe pagini",
+    "description": "Screen reader text for pagination ellipsis"
+  },
+  "9Zp2R9": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu.",
+    "description": "Error description when failing to load Authorize.net configuration"
+  },
+  "9ahmSP": {
+    "defaultMessage": "Copiați datele de autentificare și inserați-le în formular pentru a vă conecta contul Authorize.net.",
+    "description": "Step 8: Copy credentials"
+  },
+  "9kRCfP": {
+    "defaultMessage": "Acceptați plăți în siguranță cu Stripe, una dintre principalele platforme de plăți, cu suport pentru carduri de credit, carduri de debit, portofele digitale și metode locale de plată la nivel global",
+    "description": "Stripe gateway description"
+  },
+  "9kq+V8": {
+    "defaultMessage": "Conectează-te la Airbnb",
+    "description": "Connect button label"
+  },
+  "9xRnJR": {
+    "defaultMessage": "Cum doriți să gestionați datele selectate?",
+    "description": "Description prompting user to select an action for the calendar dates"
+  },
+  "A+xeP3": {
+    "defaultMessage": "Stare proprietate",
+    "description": "Property health score column header"
+  },
+  "AJ3+Af": {
+    "defaultMessage": "Acceptați plăți în criptomonede cu Xmoney, cu suport pentru Bitcoin, Ethereum, USDT și alte criptomonede importante, cu decontare instantanee",
+    "description": "Xmoney gateway description"
+  },
+  "ARaLjq": {
+    "defaultMessage": "Este necesară includerea domeniilor în lista albă",
+    "description": "Alert title for Razorpay domain whitelisting requirement"
+  },
+  "AqvmOj": {
+    "defaultMessage": "Calendar",
+    "description": "Navigation item for the calendar page"
+  },
+  "ArD4uQ": {
+    "defaultMessage": "ex.: RO123456789 sau EIN 12-3456789",
+    "description": "Placeholder for tax ID input"
+  },
+  "Aso6At": {
+    "defaultMessage": "Asigură-te că TPV-ul tău virtual este configurat în modul de integrare „REST API”.",
+    "description": "Step 6: Check integration mode. IMPORTANT: Keep 'REST API' as a technical term."
+  },
+  "AvzD7r": {
+    "defaultMessage": "Se încarcă lista de țări...",
+    "description": "Loading countries message"
+  },
+  "B34Ye5": {
+    "defaultMessage": "ex.: includeți reguli de siguranță pentru jacuzzi, menționați politica de parcare pentru 2 mașini, adăugați o clauză despre respectarea vecinilor, explicați taxele pentru încălzirea piscinei...",
+    "description": "Example text showing specific clauses users might add (hot tub safety, parking, neighbors, pool heating)"
+  },
+  "B3EMvw": {
+    "defaultMessage": "Găsește numărul „Terminal” (Número de terminal), de obicei „1” pentru configurațiile standard.",
+    "description": "Step 4: Find Terminal. IMPORTANT: Keep 'Número de terminal' in Spanish."
+  },
+  "B4uXBC": {
+    "defaultMessage": "Sejurul minim trebuie să fie un număr valid",
+    "description": "Error message when minimum stay is not a valid number"
+  },
+  "B7m04Z": {
+    "defaultMessage": "Dată de început invalidă",
+    "description": "Error message when the start date is invalid"
+  },
+  "BEWkMT": {
+    "defaultMessage": "disponibilitate",
+    "description": "Search keyword for calendar"
+  },
+  "BFYTcS": {
+    "defaultMessage": "Conectează-ți contul Airbnb pentru a sincroniza automat proprietățile și rezervările.",
+    "description": "Airbnb connection page description"
+  },
+  "BJM1Kd": {
+    "defaultMessage": "Veți vedea acum API Key (începe cu „u_live_api_” pentru modul live sau „u_test_api_” pentru modul de test). Copiați această valoare.",
+    "description": "Step 6: Copy API Key"
+  },
+  "BQCp+E": {
+    "defaultMessage": "Conectat cu succes",
+    "description": "Success title when Redsys connection succeeds"
+  },
+  "BSWE9u": {
+    "defaultMessage": "date",
+    "description": "Search keyword for reports"
+  },
+  "Ba3d8z": {
+    "defaultMessage": "Profilul meu",
+    "description": "Navigation item for the user profile page"
+  },
+  "BcQIVG": {
+    "defaultMessage": "Caută țări...",
+    "description": "Search countries placeholder"
+  },
+  "Bi53tf": {
+    "defaultMessage": "Personalizat",
+    "description": "Option to describe a custom rental agreement type in the user's own words"
+  },
+  "BlmJHz": {
+    "defaultMessage": "Încarcă fișier",
+    "description": "ARIA label for the upload dropzone area"
+  },
+  "BogP+d": {
+    "defaultMessage": "Fără animale de companie",
+    "description": "Checkbox label for rule prohibiting pets/animals on the property"
+  },
+  "BtvSd5": {
+    "defaultMessage": "Cheia de semnătură este obligatorie",
+    "description": "Error message for missing Redsys Signature Key"
+  },
+  "Bza8Ck": {
+    "defaultMessage": "oaspete",
+    "description": "Search keyword for guests"
+  },
+  "C5WQ1D": {
+    "defaultMessage": "Trebuie să adăugați în lista albă domeniul <strong>{currentDomain}</strong> și domeniul site-ului dvs. web în panoul Razorpay (Settings → API Keys → Whitelist Domains).",
+    "description": "Description for domain whitelisting requirement"
+  },
+  "C6mSpf": {
+    "defaultMessage": "Client ID-ul aplicației tale PayPal din Developer Dashboard",
+    "description": "Description for PayPal Client ID input"
+  },
+  "CA/i/C": {
+    "defaultMessage": "Interfață comerciant Authorize.net",
+    "description": "Link text for Authorize.net Merchant Interface"
+  },
+  "CCUbxX": {
+    "defaultMessage": "Monedă implicită",
+    "description": "Label for default currency select"
+  },
+  "CJ7o0o": {
+    "defaultMessage": "Folosită pentru afișarea datelor financiare agregate pentru toate proprietățile. Fiecare proprietate va avea propria monedă de rezervare.",
+    "description": "Description for display currency field"
+  },
+  "CNTZll": {
+    "defaultMessage": "Primești",
+    "description": "Amount received label"
+  },
+  "CYPLf9": {
+    "defaultMessage": "contact@example.com",
+    "description": "Placeholder for email input"
+  },
+  "CYqfVo": {
+    "defaultMessage": "Prenumele este obligatoriu",
+    "description": "First name required validation message"
+  },
+  "CbGXs2": {
+    "defaultMessage": "Astăzi",
+    "description": "Label for today in a select to move the calendar to the current date"
+  },
+  "CgIj0s": {
+    "defaultMessage": "Șterge selecția",
+    "description": "Clear account selection button label"
+  },
+  "Cm/acF": {
+    "defaultMessage": "Client Secret",
+    "description": "Label for PayPal Client Secret input"
+  },
+  "CphCmr": {
+    "defaultMessage": "Asigură-te că folosești credențiale din mediul Live pentru plățile din producție.",
+    "description": "Important notice about using live environment"
+  },
+  "Cw1PUM": {
+    "defaultMessage": "Autentificați-vă în {link} folosind datele dvs. de comerciant.",
+    "description": "Step 1: Log in to Razorpay"
+  },
+  "D+X/Qj": {
+    "defaultMessage": "Copiază „Client ID” și „Secret” de pe pagina cu detaliile aplicației.",
+    "description": "Step 7: Copy credentials. IMPORTANT: Keep 'Client ID' and 'Secret' in English in parentheses after translation if it makes sense, as these are the exact field labels in PayPal's interface."
+  },
+  "DJ7TGX": {
+    "defaultMessage": "Key ID",
+    "description": "Label for Razorpay Key ID input"
+  },
+  "DNXfj7": {
+    "defaultMessage": "În secțiunea „Funcționalități” (Features), asigură-te că următoarele permisiuni sunt activate:",
+    "description": "Step 6: Configure permissions intro. IMPORTANT: Keep 'Features' in English in parentheses after translation, as this is the exact section name in PayPal's interface."
+  },
+  "Dsr5qL": {
+    "defaultMessage": "Fără rambursare dacă rezervarea este anulată cu mai puțin de 7 zile înainte de check-in",
+    "description": "Third rule of strict cancellation policy: no refund less than 7 days before check-in"
+  },
+  "DuOTim": {
+    "defaultMessage": "Numele de familie este obligatoriu",
+    "description": "Last name required validation message"
+  },
+  "E8suJo": {
+    "defaultMessage": "Duminică",
+    "description": "Day of week: Sunday"
+  },
+  "EInxH0": {
+    "defaultMessage": "Checkout extins (Expanded checkout)",
+    "description": "PayPal permission: Issue refunds. IMPORTANT: Keep the English permission name in parentheses if it makes sense after translation."
+  },
+  "EJMuPX": {
+    "defaultMessage": "Salvează modificările",
+    "description": "Button text to save the form"
+  },
+  "EJqOKf": {
+    "defaultMessage": "Adaugă proprietate",
+    "description": "Add new property button"
+  },
+  "EOtRjL": {
+    "defaultMessage": "New York",
+    "description": "Placeholder for city input"
+  },
+  "EOvdde": {
+    "defaultMessage": "Editează",
+    "description": "Button to edit language selection"
+  },
+  "EcOwTg": {
+    "defaultMessage": "Interval valid: de la -180 la 180",
+    "description": "Validation error for longitude out of range"
+  },
+  "EnF3EM": {
+    "defaultMessage": "Folosit pentru afișarea orelor în întregul panou de control. Fiecare proprietate va avea propriul fus orar.",
+    "description": "Description for display timezone field"
+  },
+  "ErBvSd": {
+    "defaultMessage": "Pentru a-ți conecta contul PayPal, trebuie să creezi o aplicație PayPal și să obții credențialele API:",
+    "description": "Instructions introduction"
+  },
+  "F4LIQL": {
+    "defaultMessage": "Se conectează...",
+    "description": "Button label while connecting to PayU.in"
+  },
+  "F6lZL3": {
+    "defaultMessage": "Se așteaptă autorizarea",
+    "description": "Loading title when waiting for Stripe authorization"
+  },
+  "FEfTVi": {
+    "defaultMessage": "Cheia API este obligatorie",
+    "description": "Error message for missing Xmoney API Key"
+  },
+  "FHrDtj": {
+    "defaultMessage": "Joi",
+    "description": "Short day of week: Thursday"
+  },
+  "FIGyto": {
+    "defaultMessage": "Aceasta este limba folosită pentru toate meniurile, butoanele și elementele de interfață.",
+    "description": "Description for UI language field"
+  },
+  "FUcnBP": {
+    "defaultMessage": "Gestionează mesajele, solicitările, pre-aprobările și ofertele speciale",
+    "description": "Benefit of messaging and inquiries management"
+  },
+  "FYhbnJ": {
+    "defaultMessage": "Cheie API secretă folosită pentru autentificarea și autorizarea solicitărilor API. Păstrați-o confidențială și nu o distribuiți niciodată public.",
+    "description": "Description for Razorpay Key Secret input"
+  },
+  "Fte18l": {
+    "defaultMessage": "Disponibilitate",
+    "description": "Label for availability selector (will have 2 options: available and unavailable)"
+  },
+  "Fvrx4V": {
+    "defaultMessage": "Preț ajustat",
+    "description": "Adjusted price label"
+  },
+  "G17Zwg": {
+    "defaultMessage": "Maximum {maxFiles} {maxFiles, plural, one {fișier permis} other {fișiere permise}}",
+    "description": "Error message when maximum number of files is exceeded"
+  },
+  "G258Qr": {
+    "defaultMessage": "Aplică",
+    "description": "Button label to apply the selected date range"
+  },
+  "GDI8mK": {
+    "defaultMessage": "Panou Razorpay",
+    "description": "Link text for Razorpay Dashboard"
+  },
+  "GHNpa4": {
+    "defaultMessage": "Șterge toate fișierele",
+    "description": "ARIA label for the clear all files button"
+  },
+  "GJz/Ju": {
+    "defaultMessage": "− Comisionul tău de gazdă (15,5%)",
+    "description": "Host fee label"
+  },
+  "GV4liN": {
+    "defaultMessage": "Sub API Key veți vedea Webhook Secret. Copiați cu atenție această valoare, deoarece este folosită pentru a verifica autenticitatea webhook-urilor.",
+    "description": "Step 7: Copy Webhook Secret"
+  },
+  "Gvd55t": {
+    "defaultMessage": "API Login ID",
+    "description": "Label for Authorize.net API Login ID input"
+  },
+  "H67iMU": {
+    "defaultMessage": "Faceți clic pe pictograma „ochi” sau pe butonul „Show” de lângă Key Secret pentru a o afișa. Aceasta este cheia dvs. secretă folosită pentru autentificare. Copiați cu atenție această valoare.",
+    "description": "Step 6: Copy Key Secret"
+  },
+  "H9EL3M": {
+    "defaultMessage": "Denumire legală companie",
+    "description": "Label for legal name input"
+  },
+  "HBAXMq": {
+    "defaultMessage": "Nume",
+    "description": "Label for property name filter"
+  },
+  "HD0jtN": {
+    "defaultMessage": "Se așteaptă autorizarea...",
+    "description": "Waiting for OAuth authorization"
+  },
+  "HEXBfz": {
+    "defaultMessage": "Selectare rapidă",
+    "description": "Header for the quick date range selection presets"
+  },
+  "HOym9z": {
+    "defaultMessage": "Țara este obligatorie",
+    "description": "Country required validation message"
+  },
+  "HThB82": {
+    "defaultMessage": "Merchant Salt",
+    "description": "Label for PayU.in Merchant Salt input"
+  },
+  "I/Rbi1": {
+    "defaultMessage": "Tarif",
+    "description": "Table header for rate"
+  },
+  "I8mQRn": {
+    "defaultMessage": "Marți",
+    "description": "Day of week: Tuesday"
+  },
+  "IejaKr": {
+    "defaultMessage": "Nu",
+    "description": "Boolean filter false label"
+  },
+  "IhL/yX": {
+    "defaultMessage": "Vezi toate modificările făcute disponibilității pentru datele selectate",
+    "description": "Description for availability history section"
+  },
+  "ImL7iD": {
+    "defaultMessage": "Rambursare integrală dacă se anulează cu cel puțin 24 de ore înainte de check-in",
+    "description": "First rule of flexible cancellation policy: guests get full refund if canceling 24+ hours before arrival"
+  },
+  "Iv5u44": {
+    "defaultMessage": "Luni",
+    "description": "Day of week: Monday"
+  },
+  "J81fbb": {
+    "defaultMessage": "Nu există istoric",
+    "description": "Title when no availability history exists"
+  },
+  "JWwnVm": {
+    "defaultMessage": "Nu s-au putut încărca monedele",
+    "description": "Error loading currencies message"
+  },
+  "JeNf5C": {
+    "defaultMessage": "Ai atins numărul maxim de 5 limbi suplimentare",
+    "description": "Message when max secondary languages selected"
+  },
+  "JmUKsE": {
+    "defaultMessage": "Recomandată",
+    "description": "Label for featured amenities filter option"
+  },
+  "Jn6vdr": {
+    "defaultMessage": "Interval valid: de la -90 la 90",
+    "description": "Validation error for latitude out of range"
+  },
+  "Jo6yop": {
+    "defaultMessage": "Eșuat",
+    "description": "Status text showing file upload failed"
+  },
+  "Jx1XL/": {
+    "defaultMessage": "Nu există niciun procesator de plăți disponibil",
+    "description": "Message when no payment gateways are available"
+  },
+  "K133NN": {
+    "defaultMessage": "Nu s-a putut încărca lista de țări. Încearcă din nou.",
+    "description": "Error loading countries in dropdown"
+  },
+  "KBbI2C": {
+    "defaultMessage": "Fără modificare",
+    "description": "Option for no change in restrictions"
+  },
+  "KC3rcq": {
+    "defaultMessage": "Email",
+    "description": "Label for email input"
+  },
+  "KFGwsm": {
+    "defaultMessage": "Proprietățile nu au putut fi încărcate. Încearcă din nou.",
+    "description": "Error message when properties fail to load"
+  },
+  "KRYLvD": {
+    "defaultMessage": "Disponibilitatea a fost actualizată cu succes",
+    "description": "Success message after updating availability"
+  },
+  "KfDaoT": {
+    "defaultMessage": "Restricționează",
+    "description": "Option to restrict check-in or check-out"
+  },
+  "KgIF6j": {
+    "defaultMessage": "Configurarea nu a putut fi încărcată",
+    "description": "Error title when failing to load PayU.in configuration"
+  },
+  "Kmskqc": {
+    "defaultMessage": "Răsfoiește și gestionează toate facilitățile disponibile în sistem.",
+    "description": "Page description for amenities list"
+  },
+  "Kq0VZ6": {
+    "defaultMessage": "Omite pentru moment",
+    "description": "Button label to skip payment gateway setup"
+  },
+  "KsklO8": {
+    "defaultMessage": "Asigurați-vă că contul este setat în modul de producție, nu în modul de test, pentru plăți reale.",
+    "description": "Important notice about using production environment"
+  },
+  "KxKL+n": {
+    "defaultMessage": "Rezervări",
+    "description": "Navigation item for the bookings page"
+  },
+  "L14TDm": {
+    "defaultMessage": "Nu s-au făcut încă modificări pentru acest interval de date",
+    "description": "Description when no availability history exists"
+  },
+  "L42aHo": {
+    "defaultMessage": "Începem cu alegerea limbilor pentru interfață și conținut.",
+    "description": "Onboarding page description"
+  },
+  "LAbvMA": {
+    "defaultMessage": "Tarifele tale se vor sincroniza ca atare. Deja optimizate pentru utilizarea cu PMS.",
+    "description": "Host-only fee note"
+  },
+  "LDUyG4": {
+    "defaultMessage": "Data de sfârșit trebuie să fie după {date}",
+    "description": "Error message when the end date is before the minimum date"
+  },
+  "LHZI5Y": {
+    "defaultMessage": "Conectare reușită",
+    "description": "Success title when Authorize.net connection succeeds"
+  },
+  "LHg/un": {
+    "defaultMessage": "Vezi istoricul",
+    "description": "Button to view the availability changes history"
+  },
+  "LQEcMx": {
+    "defaultMessage": "Sincronizare în timp real a disponibilității și a tarifelor",
+    "description": "Benefit of calendar sync"
+  },
+  "LT4CJg": {
+    "defaultMessage": "Statusul de disponibilitate este obligatoriu",
+    "description": "Error message when availability status is required but not selected"
+  },
+  "LaKRvO": {
+    "defaultMessage": "Configurarea nu a putut fi încărcată",
+    "description": "Error title when failing to load Razorpay configuration"
+  },
+  "Lg4Fi9": {
+    "defaultMessage": "Important",
+    "description": "Important notice title"
+  },
+  "Lhbbcw": {
+    "defaultMessage": "Caută după numele proprietății",
+    "description": "Placeholder for property name search input"
+  },
+  "LqNWNm": {
+    "defaultMessage": "Credențialele furnizate sunt incorecte. Verifică Client ID și Client Secret și încearcă din nou.",
+    "description": "Error description when PayPal connection fails"
+  },
+  "M92dZr": {
+    "defaultMessage": "Asigură-te că folosești datele de producție, nu date de test, pentru plățile reale.",
+    "description": "Important notice about using production environment"
+  },
+  "MCAh17": {
+    "defaultMessage": "Date API Xmoney",
+    "description": "Xmoney credentials form title"
+  },
+  "MLQakG": {
+    "defaultMessage": "A apărut o eroare.",
+    "description": "Generic error message"
+  },
+  "MXtKEO": {
+    "defaultMessage": "Schimbă starea disponibilității pentru datele selectate. Poți marca datele ca disponibile sau indisponibile pentru rezervări. Opțional, adaugă note pentru a urmări motivul modificării.",
+    "description": "Explanation text for updating availability functionality"
+  },
+  "MfrEpx": {
+    "defaultMessage": "Actualizează disponibilitatea pentru datele selectate",
+    "description": "Title for updating availability information"
+  },
+  "MmX1j5": {
+    "defaultMessage": "Aplică",
+    "description": "Button to apply the boolean filter selection"
+  },
+  "MqJtIe": {
+    "defaultMessage": "Oaspeți",
+    "description": "Navigation item for the guests page"
+  },
+  "MsOMSR": {
+    "defaultMessage": "Sincronizează automat anunțurile și detaliile proprietăților",
+    "description": "Benefit of syncing property listings"
+  },
+  "N+75uC": {
+    "defaultMessage": "Comision doar pentru gazdă",
+    "description": "Host-only fee option title"
+  },
+  "N0sIXl": {
+    "defaultMessage": "Joi",
+    "description": "Day of week: Thursday"
+  },
+  "N2OYyx": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Vă rugăm să încercați din nou mai târziu.",
+    "description": "Error description when failing to load Razorpay configuration"
+  },
+  "NDEfG/": {
+    "defaultMessage": "Conectare reușită",
+    "description": "Success title when PayU.in connection succeeds"
+  },
+  "NJGmr+": {
+    "defaultMessage": "Număr maxim de fișiere: {count}",
+    "description": "Label showing maximum number of files"
+  },
+  "NTyqYb": {
+    "defaultMessage": "preferințe",
+    "description": "Search keyword for settings"
+  },
+  "NZZi1d": {
+    "defaultMessage": "Importă anunțuri Airbnb",
+    "description": "Import listings from airbnb title"
+  },
+  "NZwqC9": {
+    "defaultMessage": "acasă",
+    "description": "Search keyword for dashboard"
+  },
+  "NfG5Dv": {
+    "defaultMessage": "Merchant Key",
+    "description": "Label for PayU.in Merchant Key input"
+  },
+  "Nty3JH": {
+    "defaultMessage": "Se conectează...",
+    "description": "Button label while connecting to PayPal"
+  },
+  "NxALzL": {
+    "defaultMessage": "Longitudine",
+    "description": "Label for longitude coordinate input"
+  },
+  "O/8GDW": {
+    "defaultMessage": "Configurați numele brandului, moneda și alte setări esențiale.",
+    "description": "Main settings onboarding page description"
+  },
+  "O2TvYO": {
+    "defaultMessage": "Exemplu: Pentru un anunț de 100 $/noapte",
+    "description": "Example section title"
+  },
+  "O4G22V": {
+    "defaultMessage": "Selectați fusul orar",
+    "description": "Timezone select placeholder"
+  },
+  "O4JbH7": {
+    "defaultMessage": "Confirmați generarea și copiați imediat noul Transaction Key – va fi afișat o singură dată din motive de securitate.",
+    "description": "Step 6: Save Transaction Key"
+  },
+  "O8g76z": {
+    "defaultMessage": "Actualizează tarifele și restricțiile",
+    "description": "Title for updating rates and restrictions"
+  },
+  "OCVZ6a": {
+    "defaultMessage": "Gata",
+    "description": "Button to close language selection dialog"
+  },
+  "OGLvM4": {
+    "defaultMessage": "Sejurul minim trebuie să fie un număr pozitiv",
+    "description": "Error message when minimum stay is not a positive number"
+  },
+  "Oax1XH": {
+    "defaultMessage": "Încarcă fișiere",
+    "description": "ARIA label for the upload dropzone area"
+  },
+  "OeHpB+": {
+    "defaultMessage": "statistici",
+    "description": "Search keyword for reports"
+  },
+  "Ono6nG": {
+    "defaultMessage": "Strada Principală 123",
+    "description": "Placeholder for address input"
+  },
+  "Oubdq/": {
+    "defaultMessage": "Plasează fișierele aici sau dă click pentru a le selecta",
+    "description": "Placeholder text for the multi-file upload dropzone"
+  },
+  "OwgPg/": {
+    "defaultMessage": "Limba principală a conținutului",
+    "description": "Label for primary language selector"
+  },
+  "P76X5R": {
+    "defaultMessage": "Salvează",
+    "description": "Save changes button"
+  },
+  "PHnbNG": {
+    "defaultMessage": "Site-ul meu",
+    "description": "Navigation menu item for the website management page"
+  },
+  "PT0PoN": {
+    "defaultMessage": "Moneda implicită este obligatorie",
+    "description": "Error message for missing default currency"
+  },
+  "PYORN9": {
+    "defaultMessage": "Contul dvs. Razorpay a fost conectat cu succes și este gata să proceseze plăți.",
+    "description": "Success description when Razorpay connection succeeds"
+  },
+  "PYUO/D": {
+    "defaultMessage": "Generează sau recuperează „Signature Key SHA-256” (Clave secreta de firma). Dacă nu ai una, va trebui să o generezi în secțiunea de securitate.",
+    "description": "Step 5: Get Signature Key. IMPORTANT: Keep 'SHA-256' and 'Clave secreta de firma' as technical terms."
+  },
+  "PZO/Vm": {
+    "defaultMessage": "Coordonată longitudine",
+    "description": "ARIA label for longitude input"
+  },
+  "PZgJFD": {
+    "defaultMessage": "Numele companiei sau al proprietății afișat în comunicările cu oaspeții și pe linkurile de plată.",
+    "description": "Description for brand name field"
+  },
+  "PeSZfT": {
+    "defaultMessage": "Proprietăți",
+    "description": "Navigation item for the properties page"
+  },
+  "Q7u+VV": {
+    "defaultMessage": "anunț",
+    "description": "Search keyword for properties"
+  },
+  "QFItoI": {
+    "defaultMessage": "Nume mapare",
+    "description": "Column header for amenity mapping name"
+  },
+  "QSt/yx": {
+    "defaultMessage": "Alegeți un procesator de plăți pentru a accepta plăți online, a procesa rezervări și a trimite oaspeților linkuri de plată securizate.",
+    "description": "Payment gateway setup page description"
+  },
+  "QcRAOz": {
+    "defaultMessage": "Introdu numărul de telefon",
+    "description": "Placeholder text for phone number input"
+  },
+  "QhExZh": {
+    "defaultMessage": "Total plătit de oaspete",
+    "description": "Guest total label"
+  },
+  "QkU8pF": {
+    "defaultMessage": "Rapoarte",
+    "description": "Navigation item for the reports page"
+  },
+  "QrrLMn": {
+    "defaultMessage": "Păstrați API Key și Webhook Secret în siguranță și nu le distribuiți niciodată public. Sunt folosite pentru a autentifica toate solicitările API și pentru a verifica autenticitatea webhook-urilor.",
+    "description": "Security warning about credentials"
+  },
+  "R26oUq": {
+    "defaultMessage": "Moneda de afișare este obligatorie",
+    "description": "Currency required validation message"
+  },
+  "RAoXEd": {
+    "defaultMessage": "Acceptă în siguranță plăți cu cardul prin Redsys, principalul procesator de plăți din Spania",
+    "description": "Redsys gateway description"
+  },
+  "RBGdAu": {
+    "defaultMessage": "Dă click pe hartă pentru a seta locația",
+    "description": "Placeholder when Places API is not available"
+  },
+  "RJf6QP": {
+    "defaultMessage": "client",
+    "description": "Search keyword for guests"
+  },
+  "RLi2kv": {
+    "defaultMessage": "Presetări",
+    "description": "Color picker presets tab label"
+  },
+  "RN2TV/": {
+    "defaultMessage": "Afișat pe linkurile de plată și în comunicările cu oaspeții.",
+    "description": "Description for logo upload field"
+  },
+  "RQPIrX": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Te rugăm să încerci din nou mai târziu.",
+    "description": "Error description when failing to load Redsys configuration"
+  },
+  "RaGXAl": {
+    "defaultMessage": "Se încarcă istoricul...",
+    "description": "Loading message for availability history"
+  },
+  "Rx858S": {
+    "defaultMessage": "Urmați acești pași pentru a obține datele de autentificare PayU.in și pentru a configura procesatorul de plăți",
+    "description": "Setup instructions dialog description"
+  },
+  "Rywutb": {
+    "defaultMessage": "Se conectează...",
+    "description": "Button label while connecting to Redsys"
+  },
+  "S/W8wt": {
+    "defaultMessage": "Caută după numele facilității",
+    "description": "Placeholder for amenity name search"
+  },
+  "S0jR0w": {
+    "defaultMessage": "Nerecomandată",
+    "description": "Label for not featured amenity status"
+  },
+  "STkUKY": {
+    "defaultMessage": "Copiați atât Merchant Key, cât și Merchant Salt, apoi inserați-le în formularul de mai sus pentru a conecta contul PayU.in la Rentalwise.",
+    "description": "Step 7: Copy credentials"
+  },
+  "SUSpIj": {
+    "defaultMessage": "Cheia Google Maps API nu este configurată",
+    "description": "Error message when Google Maps API key is missing"
+  },
+  "Sv2doR": {
+    "defaultMessage": "Fără petreceri/evenimente",
+    "description": "Checkbox label for rule prohibiting parties and events on the property"
+  },
+  "T4AJRc": {
+    "defaultMessage": "Preautorizare depozit de garanție",
+    "description": "Payment gateway feature: card authorization"
+  },
+  "T7FKbK": {
+    "defaultMessage": "Introduceți datele API Razorpay din panoul dvs. de control",
+    "description": "Razorpay credentials form description"
+  },
+  "TAQtsp": {
+    "defaultMessage": "Recomandată",
+    "description": "Filter label for featured amenities"
+  },
+  "TNt0xR": {
+    "defaultMessage": "Nu s-a putut încărca lista de țări",
+    "description": "Error loading countries message"
+  },
+  "TP9+uy": {
+    "defaultMessage": "Cum funcționează →",
+    "description": "Link to open commission structure explanation dialog"
+  },
+  "TPRG4x": {
+    "defaultMessage": "Alegeți până la 5 limbi suplimentare pentru conținutul dvs. Faceți clic pe o limbă pentru a o selecta sau deselecta.",
+    "description": "Dialog description for language selection"
+  },
+  "TX4nd7": {
+    "defaultMessage": "Vezi detaliile plății",
+    "description": "View payment details"
+  },
+  "Tc801C": {
+    "defaultMessage": "Actualizarea calendarului a eșuat",
+    "description": "Error message when calendar update fails"
+  },
+  "Tj93Dw": {
+    "defaultMessage": "Merchant Code",
+    "description": "Label for Redsys Merchant Code input"
+  },
+  "TnFf7r": {
+    "defaultMessage": "Te rugăm să selectezi un interval de date",
+    "description": "Error message when date range is required but not selected"
+  },
+  "U+BpmB": {
+    "defaultMessage": "Nu există statusuri de disponibilitate",
+    "description": "No availability statuses available message"
+  },
+  "U+Ld/N": {
+    "defaultMessage": "Conectează contul PayPal",
+    "description": "Page title for connecting PayPal account"
+  },
+  "U33urL": {
+    "defaultMessage": "Șterge intervalul de date",
+    "description": "ARIA label for the clear date range button"
+  },
+  "U7kE1U": {
+    "defaultMessage": "Accesează {link} și autentifică-te cu contul tău PayPal Business.",
+    "description": "Step 1: Navigate to PayPal Developer Portal"
+  },
+  "U96Y45": {
+    "defaultMessage": "Alegeți o acțiune",
+    "description": "Title for the action selection section in the calendar"
+  },
+  "UFslXe": {
+    "defaultMessage": "Faceți clic pe „API Credentials & Keys” în secțiunea Security Settings.",
+    "description": "Step 3: Find API Credentials section"
+  },
+  "UGsmv6": {
+    "defaultMessage": "Rezervare nouă",
+    "description": "Button to create a new reservation in the calendar"
+  },
+  "UXa4EB": {
+    "defaultMessage": "Datele de autentificare introduse sunt incorecte. Verificați API Login ID și Transaction Key și încercați din nou.",
+    "description": "Error description when Authorize.net connection fails"
+  },
+  "Ub1bVM": {
+    "defaultMessage": "Locație",
+    "description": "Property location column header"
+  },
+  "Us8Yir": {
+    "defaultMessage": "{userName} a actualizat starea disponibilității la {status}",
+    "description": "Sentence describing a user changing availability status"
+  },
+  "V8cxvA": {
+    "defaultMessage": "Selectați limbi suplimentare",
+    "description": "Button to open language selection dialog when empty"
+  },
+  "VB01E9": {
+    "defaultMessage": "Pentru a obține Transaction Key, faceți clic pe „New Transaction Key” sau „Request New Key”. Notă: aceasta va invalida orice cheie de tranzacție existentă.",
+    "description": "Step 5: Generate Transaction Key"
+  },
+  "VD8QDF": {
+    "defaultMessage": "Setează tarifele, cerințele privind sejurul minim și restricțiile de rezervare pentru datele selectate. Folosește modul simplu pentru prețuri uniforme sau modul avansat pentru setări specifice fiecărei zile.",
+    "description": "Explanation text for updating rates functionality"
+  },
+  "VKPYTy": {
+    "defaultMessage": "Canale",
+    "description": "Property channel connections column header"
+  },
+  "VKdC7r": {
+    "defaultMessage": "Terminalul este obligatoriu",
+    "description": "Error message for missing Redsys Terminal"
+  },
+  "VPF1PR": {
+    "defaultMessage": "Facilitatea nu a putut fi ștearsă. Încearcă din nou.",
+    "description": "Error message for amenity deletion failure"
+  },
+  "VS03hF": {
+    "defaultMessage": "ex.: -122.419415",
+    "description": "Example placeholder for longitude input"
+  },
+  "VgfswN": {
+    "defaultMessage": "Starea de evidențiere a fost actualizată",
+    "description": "Success message when amenity featured status is updated"
+  },
+  "VnV1LF": {
+    "defaultMessage": "Limba panoului de control",
+    "description": "Label for UI language selector"
+  },
+  "Vrxnkj": {
+    "defaultMessage": "Încărcare reușită!",
+    "description": "Success message when file upload completes"
+  },
+  "VttIVF": {
+    "defaultMessage": "Facilități",
+    "description": "Page title for amenities list"
+  },
+  "VvRDvN": {
+    "defaultMessage": "Faceți clic pe fila „API Keys” pentru a accesa datele dvs. API.",
+    "description": "Step 3: Open API Keys tab"
+  },
+  "Vyw+lR": {
+    "defaultMessage": "Configurarea nu a putut fi încărcată",
+    "description": "Error title when failing to load Xmoney configuration"
+  },
+  "W3sWk1": {
+    "defaultMessage": "Moneda implicită trebuie să fie inclusă în lista de monede acceptate",
+    "description": "Error message when default currency is not in allowed currencies"
+  },
+  "W57wea": {
+    "defaultMessage": "Asigurați-vă că vizualizați datele de autentificare pentru mediul corect: pentru plăți reale folosiți datele de „Production”, nu datele de „Test Mode”.",
+    "description": "Step 6: Verify environment"
+  },
+  "W5v/Iw": {
+    "defaultMessage": "Încarcă tot",
+    "description": "Button text to upload all selected files"
+  },
+  "WKNigj": {
+    "defaultMessage": "Panou de control",
+    "description": "Navigation item for the dashboard page"
+  },
+  "WaOLqy": {
+    "defaultMessage": "Contul tău Redsys a fost conectat cu succes și este pregătit să proceseze plăți.",
+    "description": "Success description when Redsys connection succeeds"
+  },
+  "WfDKxB": {
+    "defaultMessage": "Datele de autentificare introduse sunt incorecte. Verificați Key ID și Key Secret și încercați din nou.",
+    "description": "Error description when Razorpay connection fails"
+  },
+  "WpPA+r": {
+    "defaultMessage": "Caută după numele proprietății",
+    "description": "Search by property name placeholder"
+  },
+  "WuulWW": {
+    "defaultMessage": "Se salvează...",
+    "description": "Button text shown while api request is made"
+  },
+  "X+vN43": {
+    "defaultMessage": "Șterge facilitatea „{name}”",
+    "description": "Delete amenity dialog title"
+  },
+  "X8DbWD": {
+    "defaultMessage": "Introduceți datele API Xmoney din panoul dvs. de comerciant",
+    "description": "Xmoney credentials form description"
+  },
+  "XDLNej": {
+    "defaultMessage": "Contul tău PayPal a fost conectat cu succes.",
+    "description": "Success description when PayPal connection succeeds"
+  },
+  "XNEu/M": {
+    "defaultMessage": "Vezi clientul",
+    "description": "View customer details"
+  },
+  "XP9hJ7": {
+    "defaultMessage": "Data de început trebuie să fie înainte de {date}",
+    "description": "Error message when the start date is after the maximum date"
+  },
+  "XYPKf0": {
+    "defaultMessage": "Introdu un nume pentru aplicație (de ex. „Sistemul meu de administrare proprietăți”) și apasă „Creează aplicație” (Create App).",
+    "description": "Step 5: Name your app. IMPORTANT: Keep 'Create App' button label in English in parentheses after translation."
+  },
+  "Xbhlim": {
+    "defaultMessage": "Adresă de email invalidă",
+    "description": "Email pattern validation message"
+  },
+  "XkXjGM": {
+    "defaultMessage": "Calendarul a fost actualizat cu succes",
+    "description": "Success message after updating calendar rates and availability"
+  },
+  "Xw/VVZ": {
+    "defaultMessage": "Oraș",
+    "description": "Label for city input"
+  },
+  "Xyl+wc": {
+    "defaultMessage": "Setări",
+    "description": "Navigation item for the settings page"
+  },
+  "Xyos1g": {
+    "defaultMessage": "Adresa este obligatorie",
+    "description": "Address required validation message"
+  },
+  "Y/SI/Y": {
+    "defaultMessage": "Date de conectare Redsys",
+    "description": "Redsys credentials form title"
+  },
+  "Y0X1Ig": {
+    "defaultMessage": "Veți vedea Key ID (începe cu „rzp_test_” pentru modul de test sau „rzp_live_” pentru modul live). Aceasta este cheia dvs. publică. Copiați această valoare.",
+    "description": "Step 5: Copy Key ID"
+  },
+  "Y9jAxS": {
+    "defaultMessage": "Structura de comision Airbnb",
+    "description": "Commission structure section title"
+  },
+  "YH20C7": {
+    "defaultMessage": "Comută în modul „Live” (Live) folosind comutatorul din partea de sus.",
+    "description": "Step 3: Select Live environment. IMPORTANT: Keep 'Live' in English in parentheses after translation, as this is the exact label in PayPal's interface."
+  },
+  "YXHsVb": {
+    "defaultMessage": "rezervare",
+    "description": "Search keyword for bookings"
+  },
+  "YXbN+o": {
+    "defaultMessage": "Actualizează",
+    "description": "Button text to update the selected dates"
+  },
+  "Yf3ND3": {
+    "defaultMessage": "Conectare reușită",
+    "description": "Success title when Razorpay connection succeeds"
+  },
+  "Yh8hMS": {
+    "defaultMessage": "Asigurați-vă că folosiți date de autentificare pentru Live Mode (u_live_api_) pentru plăți în producție, nu date pentru Test Mode (u_test_api_).",
+    "description": "Important notice about using production environment"
+  },
+  "YouQp1": {
+    "defaultMessage": "Primești (după)",
+    "description": "You receive after summary"
+  },
+  "YqBHbh": {
+    "defaultMessage": "Ai nevoie de ajutor pentru a găsi credențialele PayPal? Vezi instrucțiunile de configurare",
+    "description": "Link to open setup instructions dialog"
+  },
+  "Yr7Ms5": {
+    "defaultMessage": "Permite",
+    "description": "Option to allow check-in or check-out"
+  },
+  "Z5m5GD": {
+    "defaultMessage": "Sejur minim",
+    "description": "Table header for minimum stay"
+  },
+  "Z6cYcW": {
+    "defaultMessage": "Selectați structura de comision Airbnb pentru a sincroniza corect tarifele.",
+    "description": "Commission structure section description"
+  },
+  "Z6ymtI": {
+    "defaultMessage": "Păstrați Key Secret în siguranță și nu o distribuiți niciodată public. Este folosită pentru a autentifica toate solicitările API către contul dvs.",
+    "description": "Security warning about key secret"
+  },
+  "ZEtjaq": {
+    "defaultMessage": "Caută conturi...",
+    "description": "Account search input placeholder"
+  },
+  "ZKB9Y7": {
+    "defaultMessage": "ex.: fără pantofi în interior, dușul exterior trebuie folosit pentru echipamente de plajă, maximum 2 vehicule în alee",
+    "description": "Example text showing the type of custom house rules users can add (shoes, outdoor shower, parking)"
+  },
+  "ZspUhP": {
+    "defaultMessage": "Șterge selecția",
+    "description": "Aria label for clear property selection button"
+  },
+  "ZuYUdv": {
+    "defaultMessage": "Apasă butonul „Creează aplicație” (Create App) pentru a crea o aplicație nouă.",
+    "description": "Step 4: Create new app. IMPORTANT: Keep 'Create App' in English in parentheses after translation, as this is the exact button label in PayPal's interface."
+  },
+  "a+SxgC": {
+    "defaultMessage": "Aceasta este limba în care trebuie să adaugi conținutul. Opțional, poți adăuga traduceri și în alte limbi.",
+    "description": "Description for default language field"
+  },
+  "a35CJS": {
+    "defaultMessage": "Miercuri",
+    "description": "Day of week: Wednesday"
+  },
+  "aA+qMl": {
+    "defaultMessage": "Starea proprietății a fost setată la „{status}”.",
+    "description": "Description of the status update with the new status value"
+  },
+  "aADdjn": {
+    "defaultMessage": "Data de sfârșit trebuie să fie înainte de {date}",
+    "description": "Error message when the end date is after the maximum date"
+  },
+  "aJ3++V": {
+    "defaultMessage": "Conectează contul Xmoney",
+    "description": "Button label to connect Xmoney account"
+  },
+  "aPILyt": {
+    "defaultMessage": "Înapoi",
+    "description": "Label for pagination previous button"
+  },
+  "aWcemL": {
+    "defaultMessage": "Se încarcă...",
+    "description": "Status text while file is uploading"
+  },
+  "aXKcVp": {
+    "defaultMessage": "Finalizați autorizarea în fereastra Stripe. Această fereastră se va închide automat după ce terminați.",
+    "description": "Loading description when waiting for authorization"
+  },
+  "aXmvIA": {
+    "defaultMessage": "Starea disponibilității a fost actualizată la {status}",
+    "description": "Sentence describing an unknown source changing availability status"
+  },
+  "ab0hY/": {
+    "defaultMessage": "Key Secret",
+    "description": "Label for Razorpay Key Secret input"
+  },
+  "advKPO": {
+    "defaultMessage": "Urmați acești pași pentru a obține datele de autentificare Razorpay și pentru a configura procesatorul de plăți",
+    "description": "Setup instructions dialog description"
+  },
+  "aeebtJ": {
+    "defaultMessage": "Unele proprietăți sunt marcate ca având co-gazdă, ceea ce înseamnă că nu ești gazda principală. Aceste proprietăți vor fi importate în panoul tău de control, însă orice modificări făcute aici nu vor fi sincronizate înapoi cu Airbnb, pentru a evita conflictele cu setările gazdei principale.",
+    "description": "Co-hosted properties information alert"
+  },
+  "afXEu2": {
+    "defaultMessage": "Conectează contul Authorize.net",
+    "description": "Button label to connect Authorize.net account"
+  },
+  "aht69K": {
+    "defaultMessage": "Flexibilă",
+    "description": "Most guest-friendly cancellation policy option (full refund up to 24 hours before check-in)"
+  },
+  "amPlaW": {
+    "defaultMessage": "Copiază datele de conectare și lipește-le în formular pentru a-ți conecta contul Redsys.",
+    "description": "Step 8: Copy credentials"
+  },
+  "aosPfz": {
+    "defaultMessage": "Descrieți în cuvintele dvs.",
+    "description": "Placeholder text prompting user to describe their custom agreement type"
+  },
+  "atFgtD": {
+    "defaultMessage": "Momentan nu există niciun procesator de plăți disponibil pentru configurare.",
+    "description": "Description when no payment gateways are available"
+  },
+  "b1haC1": {
+    "defaultMessage": "Nu s-au putut încărca procesatorii de plăți",
+    "description": "Error message when payment gateways fail to load"
+  },
+  "b3sTwT": {
+    "defaultMessage": "Profilul meu",
+    "description": "User menu item to access profile page"
+  },
+  "b3xOJ9": {
+    "defaultMessage": "Cod poștal",
+    "description": "Label for postcode input"
+  },
+  "bCNGo4": {
+    "defaultMessage": "Nu s-au găsit rezultate.",
+    "description": "Message shown when search returns no results"
+  },
+  "bVzg2H": {
+    "defaultMessage": "Asigurați-vă că folosiți date de autentificare pentru Live Mode (u_live_api_) pentru plăți în producție, nu date pentru Test Mode (u_test_api_).",
+    "description": "Step 8: Verify environment"
+  },
+  "bavx1x": {
+    "defaultMessage": "Începe să tastezi...",
+    "description": "Placeholder for text search filter input"
+  },
+  "bdgAC1": {
+    "defaultMessage": "Nu a fost găsită nicio țară.",
+    "description": "No countries found message"
+  },
+  "bkwL/j": {
+    "defaultMessage": "Nerambursabilă",
+    "description": "Strictest policy option: no refunds at any time (usually offered at discounted rates)"
+  },
+  "brw6xY": {
+    "defaultMessage": "Autentificați-vă în {link} folosind datele dvs. de comerciant.",
+    "description": "Step 1: Log in to Xmoney"
+  },
+  "bszm8L": {
+    "defaultMessage": "Selectează statusul de disponibilitate",
+    "description": "Availability status select placeholder"
+  },
+  "c+rEQa": {
+    "defaultMessage": "Integrări",
+    "description": "Link to property integrations"
+  },
+  "c0M/n2": {
+    "defaultMessage": "Cerințe specifice",
+    "description": "Label for text input where users can specify custom clauses or requirements for the rental agreement"
+  },
+  "c39yv7": {
+    "defaultMessage": "Date de autentificare Razorpay",
+    "description": "Razorpay credentials form title"
+  },
+  "c4y18J": {
+    "defaultMessage": "Client ID este obligatoriu",
+    "description": "Error message for missing PayPal Client ID"
+  },
+  "c8ysE5": {
+    "defaultMessage": "Șterge tot",
+    "description": "Button text to clear all selected files"
+  },
+  "cDDnbv": {
+    "defaultMessage": "Politică de anulare",
+    "description": "Section heading for selecting refund terms when guests cancel bookings"
+  },
+  "cPZY1f": {
+    "defaultMessage": "Încărcare eșuată",
+    "description": "Error message when file upload fails"
+  },
+  "cU+Iey": {
+    "defaultMessage": "Comision doar pentru gazdă",
+    "description": "Airbnb host-only commission structure label"
+  },
+  "cc8ReJ": {
+    "defaultMessage": "Cheie de tranzacție secretă folosită pentru autentificarea solicitărilor API. Păstrați-o în siguranță și nu o distribuiți niciodată public.",
+    "description": "Description for Authorize.net Transaction Key input"
+  },
+  "ccsc2K": {
+    "defaultMessage": "Introdu codul hex (ex.: #FF5733)",
+    "description": "Hex color code input helper text"
+  },
+  "ce6iAC": {
+    "defaultMessage": "utilizator",
+    "description": "Search keyword for profile"
+  },
+  "cjpksE": {
+    "defaultMessage": "Mai multe informații",
+    "description": "Aria label for info tooltip button"
+  },
+  "cnVnFc": {
+    "defaultMessage": "Cheia API unică furnizată de Xmoney pentru autentificarea solicitărilor API și procesarea plăților în criptomonede",
+    "description": "Description for Xmoney API Key input"
+  },
+  "co30zv": {
+    "defaultMessage": "Moneda principală cu care este configurat contul tău Redsys. Tranzacțiile în alte monede vor fi convertite în această monedă.",
+    "description": "Description for default currency select"
+  },
+  "cpqeDo": {
+    "defaultMessage": "Avansat",
+    "description": "Tab label for advanced rates update mode with day-specific settings"
+  },
+  "cu+51N": {
+    "defaultMessage": "Linkuri de plată",
+    "description": "Payment gateway feature: payment links"
+  },
+  "d0LNAH": {
+    "defaultMessage": "A apărut o eroare",
+    "description": "Generic error message when operation fails"
+  },
+  "d1EL0O": {
+    "defaultMessage": "Denumirea legală este obligatorie",
+    "description": "Legal name required validation message"
+  },
+  "d1sT0D": {
+    "defaultMessage": "Lun",
+    "description": "Short day of week: Monday"
+  },
+  "dPuxw6": {
+    "defaultMessage": "Păstrați Transaction Key în siguranță și nu îl distribuiți niciodată public. Este folosit pentru a autentifica toate solicitările API către contul dvs.",
+    "description": "Security warning about transaction key"
+  },
+  "dQLjUG": {
+    "defaultMessage": "Datele de autentificare introduse sunt incorecte. Verificați API Key și Webhook Secret și încercați din nou.",
+    "description": "Error description when Xmoney connection fails"
+  },
+  "dXpXUg": {
+    "defaultMessage": "Codul poștal este obligatoriu",
+    "description": "Postcode required validation message"
+  },
+  "df/Qz1": {
+    "defaultMessage": "Date de autentificare PayU.in",
+    "description": "PayU.in credentials form title"
+  },
+  "dlLwTR": {
+    "defaultMessage": "Plasează fișierul aici",
+    "description": "Message shown when dragging a file over the dropzone"
+  },
+  "dlWOii": {
+    "defaultMessage": "API Login ID va fi afișat. Copiați această valoare – este un identificator unic pentru contul dvs.",
+    "description": "Step 4: Copy API Login ID"
+  },
+  "dlgRJf": {
+    "defaultMessage": "Adaugă facilitate",
+    "description": "Button text to add a new amenity"
+  },
+  "dmqjA4": {
+    "defaultMessage": "Merchant Key este obligatoriu",
+    "description": "Error message for missing PayU.in Merchant Key"
+  },
+  "dpQveJ": {
+    "defaultMessage": "Aplică",
+    "description": "Button to apply the radio filter selection"
+  },
+  "ds1sfT": {
+    "defaultMessage": "Cheia de tranzacție poate fi afișată o singură dată, în momentul generării. Dacă o pierzi, va trebui să generezi una nouă.",
+    "description": "Warning about transaction key being shown only once"
+  },
+  "eJQkpB": {
+    "defaultMessage": "Tip de contract",
+    "description": "Section heading for selecting the type of rental agreement (vacation rental or custom)"
+  },
+  "eQr1Nt": {
+    "defaultMessage": "Plasează fișierul aici sau fă clic pentru a căuta",
+    "description": "Placeholder text for the file upload dropzone"
+  },
+  "eZtwZg": {
+    "defaultMessage": "Descrieți politica de anulare personalizată",
+    "description": "Error message when user selects custom cancellation policy but doesn't provide details"
+  },
+  "edHwNb": {
+    "defaultMessage": "Places API nu este activat. Folosește harta pentru a seta locația.",
+    "description": "Warning message when Places API is not enabled"
+  },
+  "ehRkrZ": {
+    "defaultMessage": "Încărcarea istoricului a eșuat",
+    "description": "Error message when history fails to load"
+  },
+  "eimE5J": {
+    "defaultMessage": "ex.: Sunset Beach Rentals SRL",
+    "description": "Placeholder for legal name input"
+  },
+  "ezQ6SF": {
+    "defaultMessage": "Descrieți, vă rugăm, politica dvs. personalizată de anulare",
+    "description": "Error message when user selects custom cancellation policy but doesn't provide details"
+  },
+  "f1ZlPP": {
+    "defaultMessage": "Configurarea nu a putut fi încărcată",
+    "description": "Error title when failing to load Redsys configuration"
+  },
+  "f4qEIV": {
+    "defaultMessage": "Emailul este obligatoriu",
+    "description": "Email required validation message"
+  },
+  "f598gT": {
+    "defaultMessage": "Acest lucru este necesar pentru ca formularele de plată să funcționeze atât pentru linkurile de plată, cât și pe site-ul tău web pentru clienți.",
+    "description": "Explanation for why both domains need whitelisting"
+  },
+  "fsCHeb": {
+    "defaultMessage": "Fișier invalid",
+    "description": "Error message when a file is invalid"
+  },
+  "gGp8BG": {
+    "defaultMessage": "Merchant Salt secret (API Salt) folosit pentru a genera hash-uri sigure pentru solicitările de plată. Păstrează această informație confidențială și nu o distribui public.",
+    "description": "Description for PayU.in Merchant Salt input"
+  },
+  "gNizG3": {
+    "defaultMessage": "Pentru a-ți conecta contul Authorize.net, trebuie să obții datele API din contul tău de comerciant:",
+    "description": "Instructions introduction"
+  },
+  "gUTs9M": {
+    "defaultMessage": "Prin conectare, autorizezi această aplicație să acceseze datele contului tău Airbnb. Poți întrerupe conexiunea oricând din setări.",
+    "description": "Authorization disclaimer"
+  },
+  "gYyW2F": {
+    "defaultMessage": "Proprietăți",
+    "description": "Navigation menu item for the properties page"
+  },
+  "gcJzNv": {
+    "defaultMessage": "Înapoi",
+    "description": "Button text to go back from the form"
+  },
+  "gcogeP": {
+    "defaultMessage": "Merchant Key (API Key) unic(ă), furnizat(ă) de PayU.in pentru autentificarea solicitărilor API",
+    "description": "Description for PayU.in Merchant Key input"
+  },
+  "guxn2d": {
+    "defaultMessage": "Nume",
+    "description": "Property name filter label"
+  },
+  "h7MHkw": {
+    "defaultMessage": "Instrucțiuni de configurare",
+    "description": "Setup instructions dialog title"
+  },
+  "hGWNhw": {
+    "defaultMessage": "Conectează contul PayU.in",
+    "description": "Page title for connecting PayU.in account"
+  },
+  "hK+bTp": {
+    "defaultMessage": "Entitate juridică",
+    "description": "Legal entity label"
+  },
+  "hNmK/a": {
+    "defaultMessage": "Autentifică-te în {link} folosind datele tale de comerciant.",
+    "description": "Step 1: Log in to PayU.in"
+  },
+  "hcwLhe": {
+    "defaultMessage": "Terminal",
+    "description": "Label for Redsys Terminal input"
+  },
+  "hdOUlx": {
+    "defaultMessage": "Grup de facilități",
+    "description": "Column header for amenity group"
+  },
+  "hm3XWh": {
+    "defaultMessage": "Acceptă plăți cu cardul de credit în siguranță prin Authorize.net, un procesator de plăți de încredere, folosit de companii din întreaga lume",
+    "description": "Authorize.net gateway description"
+  },
+  "hnT+Ex": {
+    "defaultMessage": "Places API nu este activat. Te rugăm să îl activezi în Google Cloud Console sau folosește harta pentru a seta locația.",
+    "description": "Tooltip explaining Places API is disabled"
+  },
+  "hzwyg5": {
+    "defaultMessage": "Conectează contul Razorpay",
+    "description": "Page title for connecting Razorpay account"
+  },
+  "i12iVe": {
+    "defaultMessage": "Mergi la",
+    "description": "Placeholder for month selection dropdown"
+  },
+  "i48IBK": {
+    "defaultMessage": "{count, plural, one {+1 conexiune în plus} other {+# conexiuni în plus}}",
+    "description": "Additional channel connections count"
+  },
+  "i6kvwt": {
+    "defaultMessage": "Calendar",
+    "description": "Link to property calendar"
+  },
+  "iDYGXC": {
+    "defaultMessage": "Gazdă: 15,5%",
+    "description": "Host-only fee host rate badge"
+  },
+  "iHNXRF": {
+    "defaultMessage": "Selectează o opțiune",
+    "description": "Placeholder for picklist filter dropdown"
+  },
+  "iKXPtM": {
+    "defaultMessage": "Webhook Secret este obligatoriu",
+    "description": "Error message for missing Xmoney Webhook Secret"
+  },
+  "iNbK2s": {
+    "defaultMessage": "Deschide meniul",
+    "description": "Open actions menu for property"
+  },
+  "iVnpqX": {
+    "defaultMessage": "După autentificare, mergi la „Integrations” din meniul principal.",
+    "description": "Step 2: Navigate to Integrations"
+  },
+  "igJ6NH": {
+    "defaultMessage": "Cheie secretă de semnătură folosită pentru autentificarea tranzacțiilor (Clave secreta de firma)",
+    "description": "Description for Redsys Signature Key input"
+  },
+  "ivMxuN": {
+    "defaultMessage": "Nu s-a putut încărca configurația",
+    "description": "Error title when failing to load Authorize.net configuration"
+  },
+  "iwSAmy": {
+    "defaultMessage": "configurare",
+    "description": "Search keyword for settings"
+  },
+  "j0ZBkg": {
+    "defaultMessage": "Pentru a-ți conecta contul PayU.in, trebuie să obții datele API din panoul tău de comerciant:",
+    "description": "Instructions introduction"
+  },
+  "j0wmPI": {
+    "defaultMessage": "Se verifică conexiunea...",
+    "description": "Verifying connection status"
+  },
+  "j1rtzL": {
+    "defaultMessage": "Conectează contul PayU.in",
+    "description": "Button label to connect PayU.in account"
+  },
+  "j7b5hy": {
+    "defaultMessage": "Această acțiune este <strong>ireversibilă</strong>. Ștergerea unei facilități o va elimina definitiv din sistem. Sigur vrei să continui?",
+    "description": "Delete amenity confirmation message"
+  },
+  "jBqjwf": {
+    "defaultMessage": "Vineri",
+    "description": "Day of week: Friday"
+  },
+  "jCh/D0": {
+    "defaultMessage": "Ion",
+    "description": "Placeholder for first name input"
+  },
+  "jImZFP": {
+    "defaultMessage": "Conectare reușită",
+    "description": "Success title when Xmoney connection succeeds"
+  },
+  "jMo8lD": {
+    "defaultMessage": "Dacă nu operați printr-o firmă, introduceți numele și prenumele.",
+    "description": "Description for legal name field"
+  },
+  "jcEZpK": {
+    "defaultMessage": "Deconectare",
+    "description": "User menu item to log out of the application"
+  },
+  "jhIDCX": {
+    "defaultMessage": "{count} {count, plural, one {selectat} other {selectate}}",
+    "description": "Number of items selected in checkbox filter"
+  },
+  "jvK+qk": {
+    "defaultMessage": "Rambursare integrală dacă rezervarea este anulată cu cel puțin 30 de zile înainte de check-in",
+    "description": "First rule of strict cancellation policy: full refund for cancellations 30+ days in advance"
+  },
+  "k+FE8+": {
+    "defaultMessage": "Stare",
+    "description": "Property status column header"
+  },
+  "k+yRbg": {
+    "defaultMessage": "Câmp fișier",
+    "description": "ARIA label for the hidden file input"
+  },
+  "kBI7py": {
+    "defaultMessage": "Contul tău Xmoney a fost conectat cu succes și este pregătit să proceseze plăți în criptomonede.",
+    "description": "Success description when Xmoney connection succeeds"
+  },
+  "kG7fT4": {
+    "defaultMessage": "proprietate",
+    "description": "Search keyword for properties"
+  },
+  "kHKPr2": {
+    "defaultMessage": "Credențiale PayPal",
+    "description": "PayPal credentials form title"
+  },
+  "kQrSIK": {
+    "defaultMessage": "Introdu credențialele aplicației tale PayPal",
+    "description": "API credentials form description"
+  },
+  "kbQEWe": {
+    "defaultMessage": "Nefavorizată",
+    "description": "Label for not featured amenities filter option"
+  },
+  "kjXDMk": {
+    "defaultMessage": "Facilitatea este acum „{status}”.",
+    "description": "Description of the featured status update with the new status value"
+  },
+  "kl5YRB": {
+    "defaultMessage": "Caută...",
+    "description": "Placeholder text for the search input"
+  },
+  "koiR5e": {
+    "defaultMessage": "Sub Merchant Key vei găsi Merchant Salt (numit și API Salt). Aceasta este o valoare secretă folosită pentru generarea de hash-uri de plată sigure. Copiază această valoare cu atenție.",
+    "description": "Step 5: Copy Merchant Salt"
+  },
+  "krzoKh": {
+    "defaultMessage": "Ore de liniște (22:00-08:00)",
+    "description": "Checkbox label for quiet hours rule requiring guests to be quiet between 10pm and 8am"
+  },
+  "l2G4ts": {
+    "defaultMessage": "cont",
+    "description": "Search keyword for profile"
+  },
+  "l58peo": {
+    "defaultMessage": "Conectează contul Authorize.net",
+    "description": "Page title for connecting Authorize.net account"
+  },
+  "lICqky": {
+    "defaultMessage": "Sâmbătă",
+    "description": "Day of week: Saturday"
+  },
+  "lLsqx/": {
+    "defaultMessage": "Simplu",
+    "description": "Tab label for simple rates update mode"
+  },
+  "lXmebi": {
+    "defaultMessage": "Nu a fost găsită nicio proprietate.",
+    "description": "Message shown when no properties match the search"
+  },
+  "lbuhtO": {
+    "defaultMessage": "Numărul de telefon este obligatoriu",
+    "description": "Phone required validation message"
+  },
+  "lf1G7F": {
+    "defaultMessage": "Dum",
+    "description": "Short day of week: Sunday"
+  },
+  "lfavTr": {
+    "defaultMessage": "JavaScript SDK v6 (JavaScript SDK v6)",
+    "description": "PayPal permission: JavaScript SDK v6. IMPORTANT: Keep the English permission name in parentheses after translation if it makes sense, as these are exact permission names in PayPal's interface."
+  },
+  "lsb4H5": {
+    "defaultMessage": "10001",
+    "description": "Placeholder for postcode input"
+  },
+  "lw4XRE": {
+    "defaultMessage": "Fusul orar de afișare este obligatoriu",
+    "description": "Timezone required validation message"
+  },
+  "m4CjvC": {
+    "defaultMessage": "Primești (înainte)",
+    "description": "You receive before summary"
+  },
+  "m9X8dj": {
+    "defaultMessage": "Personalizat",
+    "description": "Color picker custom tab label"
+  },
+  "mEGoCy": {
+    "defaultMessage": "Țară",
+    "description": "Label for country input"
+  },
+  "mRPckU": {
+    "defaultMessage": "Lipește credențialele în formular pentru a-ți conecta contul PayPal.",
+    "description": "Step 8: Paste credentials"
+  },
+  "mTNG6W": {
+    "defaultMessage": "Panou de administrare Redsys",
+    "description": "Link text for Redsys Admin Panel"
+  },
+  "ma3FDS": {
+    "defaultMessage": "Popescu",
+    "description": "Placeholder for last name input"
+  },
+  "mc9NYQ": {
+    "defaultMessage": "Latitudine",
+    "description": "Label for latitude coordinate input"
+  },
+  "mhR7ow": {
+    "defaultMessage": "Selectați moneda",
+    "description": "Placeholder for currency selector"
+  },
+  "mhXM05": {
+    "defaultMessage": "prezentare generală",
+    "description": "Search keyword for dashboard"
+  },
+  "mjTX/O": {
+    "defaultMessage": "Se salvează...",
+    "description": "Button text while saving the form"
+  },
+  "mk2r03": {
+    "defaultMessage": "Nu am putut încărca informațiile necesare. Te rugăm să încerci din nou mai târziu.",
+    "description": "Error description when failing to load PayU.in configuration"
+  },
+  "moB4X5": {
+    "defaultMessage": "Golește",
+    "description": "Button label to clear the selected date range"
+  },
+  "mut/Iu": {
+    "defaultMessage": "Selectați fusul orar",
+    "description": "Placeholder for timezone selector"
+  },
+  "myf6nu": {
+    "defaultMessage": "Orașul este obligatoriu",
+    "description": "City required validation message"
+  },
+  "n+V4Hf": {
+    "defaultMessage": "Actualizați tarifele și restricțiile",
+    "description": "Button to update pricing and booking restrictions in the calendar"
+  },
+  "n8TPub": {
+    "defaultMessage": "Aici vei găsi toate proprietățile tale",
+    "description": "Properties page description"
+  },
+  "n8X4fP": {
+    "defaultMessage": "Contul tău PayU.in a fost conectat cu succes și este pregătit să proceseze plăți.",
+    "description": "Success description when PayU.in connection succeeds"
+  },
+  "nE/K2O": {
+    "defaultMessage": "Conectare reușită",
+    "description": "Success title when PayPal connection succeeds"
+  },
+  "nOHLhe": {
+    "defaultMessage": "Nu s-a putut încărca configurația",
+    "description": "Error title when failing to load Stripe configuration"
+  },
+  "nPTP4o": {
+    "defaultMessage": "Restricție check-out",
+    "description": "Title for check-out restriction popover"
+  },
+  "nXPU3C": {
+    "defaultMessage": "Ai nevoie de ajutor pentru a găsi datele tale Redsys? Vezi instrucțiunile de configurare",
+    "description": "Link to open setup instructions dialog"
+  },
+  "nbKA0x": {
+    "defaultMessage": "Nu am putut încărca procesatorii de plăți disponibili. Te rugăm să încerci din nou mai târziu.",
+    "description": "Error description when payment gateways fail to load"
+  },
+  "nhKZzR": {
+    "defaultMessage": "Asigură-te că folosești datele de producție pentru plăți reale, nu datele pentru modul de test.",
+    "description": "Important notice about using production environment"
+  },
+  "ntDrY2": {
+    "defaultMessage": "Plasează fișierele aici",
+    "description": "Message shown when dragging files over the dropzone"
+  },
+  "ntIlMj": {
+    "defaultMessage": "Nume",
+    "description": "Filter label for amenity name"
+  },
+  "nyf+Nu": {
+    "defaultMessage": "Mesagerie",
+    "description": "Navigation menu item for the messaging inbox page"
+  },
+  "oDbRSf": {
+    "defaultMessage": "Trageți logo-ul aici sau faceți clic pentru a selecta",
+    "description": "Placeholder for logo upload"
+  },
+  "oG3zop": {
+    "defaultMessage": "Șterge numărul de telefon",
+    "description": "Aria label for clear phone number button"
+  },
+  "oQ6S9i": {
+    "defaultMessage": "Numele brandului",
+    "description": "Label for brand name input"
+  },
+  "ocx71s": {
+    "defaultMessage": "Rezervarea {bookingId} a creat disponibilitate cu starea {status}",
+    "description": "Sentence describing a booking creating availability"
+  },
+  "ogXEWD": {
+    "defaultMessage": "Copiază ID-ul proprietății",
+    "description": "Copy property ID to clipboard"
+  },
+  "oo/YC7": {
+    "defaultMessage": "Înapoi",
+    "description": "Back button label"
+  },
+  "p+eukQ": {
+    "defaultMessage": "Oaspete: 14,1 - 16,5%",
+    "description": "Split fee guest rate badge"
+  },
+  "pBqc2F": {
+    "defaultMessage": "Merchant Code este obligatoriu",
+    "description": "Error message for missing Redsys Merchant Code"
+  },
+  "pMXWp/": {
+    "defaultMessage": "Fus orar de afișare",
+    "description": "Label for display timezone selector"
+  },
+  "pXGhQw": {
+    "defaultMessage": "Mergi la „Account” în meniul de sus, apoi selectează „Settings” din lista derulantă.",
+    "description": "Step 2: Navigate to Account Settings"
+  },
+  "pYdLI6": {
+    "defaultMessage": "Conectare eșuată",
+    "description": "Error title when PayU.in connection fails"
+  },
+  "pp3eG5": {
+    "defaultMessage": "Datele introduse sunt incorecte. Verifică Merchant Code, Terminal și Signature Key și încearcă din nou.",
+    "description": "Error description when Redsys connection fails"
+  },
+  "q1+03r": {
+    "defaultMessage": "Selectați limbi suplimentare",
+    "description": "Dialog title for language selection"
+  },
+  "q2UBZy": {
+    "defaultMessage": "{count} {count, plural, one {proprietate selectată} other {proprietăți selectate}}.",
+    "description": "The number of selected properties"
+  },
+  "qB/T8g": {
+    "defaultMessage": "Introdu datele API Authorize.net din contul tău de comerciant",
+    "description": "Authorize.net credentials form description"
+  },
+  "qErICT": {
+    "defaultMessage": "Plătit de oaspete (înainte)",
+    "description": "Guest pays before summary"
+  },
+  "qLSweW": {
+    "defaultMessage": "Încărcat",
+    "description": "Status text showing file was uploaded successfully"
+  },
+  "qS74wR": {
+    "defaultMessage": "Client Secret-ul aplicației tale PayPal din Developer Dashboard",
+    "description": "Description for PayPal Client Secret input"
+  },
+  "qTk3rP": {
+    "defaultMessage": "Acceptă plăți în siguranță cu PayU.in, principalul procesator de plăți din India, care suportă multiple metode de plată, inclusiv carduri, UPI, net banking și portofele electronice",
+    "description": "PayU.in gateway description"
+  },
+  "qilQYG": {
+    "defaultMessage": "Facilitatea a fost ștearsă cu succes.",
+    "description": "Success message for amenity deletion"
+  },
+  "qpDXUm": {
+    "defaultMessage": "Navighează la secțiunea „Virtual POS Configuration” sau „Configuración TPV Virtual”.",
+    "description": "Step 2: Navigate to Virtual POS Configuration. IMPORTANT: Keep 'Configuración TPV Virtual' in Spanish as users need to find this menu item which may be in Spanish."
+  },
+  "r+yQE+": {
+    "defaultMessage": "Selectați moneda",
+    "description": "Currency select placeholder"
+  },
+  "r4Jebe": {
+    "defaultMessage": "Se încarcă...",
+    "description": "Loading currencies message"
+  },
+  "rDdMBr": {
+    "defaultMessage": "Conectare eșuată",
+    "description": "Error title when Xmoney connection fails"
+  },
+  "rLWAAL": {
+    "defaultMessage": "Calendar",
+    "description": "Navigation menu item for the calendar page"
+  },
+  "rRpsqb": {
+    "defaultMessage": "Opțional",
+    "description": "Badge text for optional form fields"
+  },
+  "rZvg97": {
+    "defaultMessage": "− Comisionul tău de gazdă (3%)",
+    "description": "Host fee label"
+  },
+  "rv6bA0": {
+    "defaultMessage": "ID-ul unic al cheii API (Key ID) furnizat de Razorpay pentru autentificarea solicitărilor API",
+    "description": "Description for Razorpay Key ID input"
+  },
+  "rwhoDv": {
+    "defaultMessage": "Integrări",
+    "description": "Navigation menu item for the app integrations page"
+  },
+  "s4m994": {
+    "defaultMessage": "Exportă",
+    "description": "Export properties button"
+  },
+  "s5dtls": {
+    "defaultMessage": "Asigură-te că folosești cheile pentru Live Mode (rzp_live_) pentru plăți în producție, nu cheile pentru Test Mode (rzp_test_).",
+    "description": "Important notice about using production environment"
+  },
+  "s6oEjd": {
+    "defaultMessage": "Actualizarea stării a eșuat",
+    "description": "Error message when property status update fails"
+  },
+  "s9BGAO": {
+    "defaultMessage": "ex.: 37.774929",
+    "description": "Example placeholder for latitude input"
+  },
+  "sR8HuW": {
+    "defaultMessage": "Copiază atât Key ID, cât și Key Secret, apoi lipește-le în formularul de mai sus pentru a-ți conecta contul Razorpay la Rentalwise.",
+    "description": "Step 8: Copy credentials"
+  },
+  "sTtBm4": {
+    "defaultMessage": "Conectează contul Xmoney",
+    "description": "Page title for connecting Xmoney account"
+  },
+  "sW0C5+": {
+    "defaultMessage": "Conectează contul Razorpay",
+    "description": "Button label to connect Razorpay account"
+  },
+  "sW8CTD": {
+    "defaultMessage": "Acceptate: {types}",
+    "description": "Label showing accepted file types"
+  },
+  "sbeE6m": {
+    "defaultMessage": "Procesare rambursări direct din sistem",
+    "description": "Payment gateway feature: process refunds"
+  },
+  "sgXEFE": {
+    "defaultMessage": "Continuă",
+    "description": "Button text"
+  },
+  "shuc96": {
+    "defaultMessage": "Trageți noul logo aici sau faceți clic pentru a-l înlocui.",
+    "description": "Placeholder for logo upload when logo exists"
+  },
+  "soTKGn": {
+    "defaultMessage": "Urmează pașii de mai jos pentru a obține datele Xmoney și a configura procesatorul tău de plăți în criptomonede",
+    "description": "Setup instructions dialog description"
+  },
+  "t42aKR": {
+    "defaultMessage": "Strictă (recomandată)",
+    "description": "Balanced cancellation policy option with moderate protection (recommended for most hosts)"
+  },
+  "t5xsxX": {
+    "defaultMessage": "Rezervări",
+    "description": "Navigation menu item for the bookings page"
+  },
+  "tAeD+O": {
+    "defaultMessage": "Selectează moneda implicită (de obicei USD pentru companiile din SUA) și toate monedele pe care vrei să le accepți.",
+    "description": "Step 7: Select currencies"
+  },
+  "tCSwzO": {
+    "defaultMessage": "Selectează un cont...",
+    "description": "Account select placeholder"
+  },
+  "tHJmFA": {
+    "defaultMessage": "Toate fișierele au fost încărcate cu succes!",
+    "description": "Success message when all files are uploaded"
+  },
+  "tN9vEy": {
+    "defaultMessage": "Omite pentru moment",
+    "description": "Skip button label"
+  },
+  "tTrQFe": {
+    "defaultMessage": "Se deschide Stripe",
+    "description": "Loading title when opening Stripe"
+  },
+  "tqRV1/": {
+    "defaultMessage": "Tariful trebuie să fie un număr pozitiv",
+    "description": "Error message when rate is not a positive number"
+  },
+  "ts0cV6": {
+    "defaultMessage": "Aplică",
+    "description": "Button to apply the checkbox filter selection"
+  },
+  "uCQNym": {
+    "defaultMessage": "Se încarcă...",
+    "description": "Loading availability statuses message"
+  },
+  "uDc/J3": {
+    "defaultMessage": "Pentru a-ți conecta contul Redsys, trebuie să obții datele TPV-ului virtual (Virtual POS) din contul tău Redsys:",
+    "description": "Instructions introduction"
+  },
+  "uIUj6k": {
+    "defaultMessage": "Caută țara...",
+    "description": "Placeholder for country search input"
+  },
+  "uJ7wsj": {
+    "defaultMessage": "Pentru a-ți conecta contul Xmoney, trebuie să obții datele API din panoul tău de comerciant:",
+    "description": "Instructions introduction"
+  },
+  "udRCBk": {
+    "defaultMessage": "Copiază atât API Key, cât și Webhook Secret, apoi lipește-le în formularul de mai sus pentru a-ți conecta contul Xmoney.",
+    "description": "Step 9: Copy credentials to form"
+  },
+  "udhwJm": {
+    "defaultMessage": "Conectează-ți contul Airbnb pentru a importa automat proprietățile, a sincroniza calendarele și a gestiona rezervările dintr-un singur loc.",
+    "description": "Airbnb integration explanation"
+  },
+  "ue2TrB": {
+    "defaultMessage": "Acasă",
+    "description": "Navigation menu item for the homepage (reports dashboard)"
+  },
+  "uhZWOr": {
+    "defaultMessage": "Vom aplica un adaos automat pentru a vă menține câștigurile atunci când sincronizați cu PMS-ul nostru. <link>Cum funcționează →</link>",
+    "description": "Split fee markup note with link to explanation"
+  },
+  "uje8KK": {
+    "defaultMessage": "Mar",
+    "description": "Short day of week: Tuesday"
+  },
+  "ur0YL9": {
+    "defaultMessage": "Nerambursabil în intervalul de 24 de ore înainte de check-in",
+    "description": "Second rule of flexible cancellation policy: no refunds within 24 hours before check-in or after"
+  },
+  "uskQOw": {
+    "defaultMessage": "Fereastra de conectare Stripe a fost blocată de browserul tău. Te rugăm să permiți ferestre pop-up pentru acest site și să încerci din nou.",
+    "description": "Error description when popup is blocked"
+  },
+  "uxZY0q": {
+    "defaultMessage": "Urmează acești pași pentru a obține credențialele tale API PayPal",
+    "description": "Setup instructions dialog description"
+  },
+  "v/zF5n": {
+    "defaultMessage": "oaspete",
+    "description": "Search keyword for bookings"
+  },
+  "v8XMQI": {
+    "defaultMessage": "Fără rambursare pentru anulări, indiferent de momentul acestora",
+    "description": "Rule of non-refundable cancellation policy: guests never get refunds regardless of when they cancel"
+  },
+  "vLl8sK": {
+    "defaultMessage": "Mie",
+    "description": "Short day of week: Wednesday"
+  },
+  "vRq6TW": {
+    "defaultMessage": "Rambursare de 50% dacă rezervarea este anulată cu 7–30 de zile înainte de check-in",
+    "description": "Second rule of strict cancellation policy: partial refund 7-30 days before check-in"
+  },
+  "vg4y7u": {
+    "defaultMessage": "Gazdă: ~3%",
+    "description": "Split fee host rate badge"
+  },
+  "vt+Kki": {
+    "defaultMessage": "Selectează țara",
+    "description": "Country select placeholder"
+  },
+  "vzVrA1": {
+    "defaultMessage": "Creați în câteva secunde un contract de închiriere personalizat cu ajutorul AI, apoi ajustați-l după nevoile dvs.",
+    "description": "Explanation that users can generate a rental contract automatically with AI and edit it afterwards"
+  },
+  "w/sV1T": {
+    "defaultMessage": "Pagini",
+    "description": "Heading for the pages section in search results"
+  },
+  "wS0SOT": {
+    "defaultMessage": "Plătit de oaspete (după)",
+    "description": "Guest pays after summary"
+  },
+  "wb519+": {
+    "defaultMessage": "Dacă API Key și Webhook Secret nu sunt încă vizibile, apasă butonul „Generate secrets”.",
+    "description": "Step 5: Generate secrets if needed"
+  },
+  "wiPTGZ": {
+    "defaultMessage": "Conectează contul Redsys",
+    "description": "Page title for connecting Redsys account"
+  },
+  "wvKs1e": {
+    "defaultMessage": "Actualizarea stării de evidențiere a eșuat",
+    "description": "Error message when amenity featured status update fails"
+  },
+  "wyAmDY": {
+    "defaultMessage": "Acceptă plăți în siguranță cu Razorpay, principalul procesator de plăți din India, care suportă multiple metode de plată, inclusiv carduri, UPI, net banking și portofele digitale",
+    "description": "Razorpay gateway description"
+  },
+  "x1zJ+4": {
+    "defaultMessage": "Încarcă",
+    "description": "Button text to upload the selected file"
+  },
+  "x4fZqk": {
+    "defaultMessage": "Păstrează Cheia de semnătură în siguranță și nu o distribui niciodată public. Este folosită pentru autentificarea tuturor tranzacțiilor.",
+    "description": "Security warning about signature key"
+  },
+  "xPxl8b": {
+    "defaultMessage": "Salvare metode de plată",
+    "description": "Payment gateway feature: store credit cards"
+  },
+  "xUHkcy": {
+    "defaultMessage": "Numele brandului este obligatoriu",
+    "description": "Brand name required validation message"
+  },
+  "xjxLNM": {
+    "defaultMessage": "Conectare eșuată",
+    "description": "Error title when Razorpay connection fails"
+  },
+  "xpO5Wj": {
+    "defaultMessage": "Nu se schimbă nimic, doar unde apare comisionul",
+    "description": "Key takeaway title"
+  },
+  "xy7KyL": {
+    "defaultMessage": "Încărcarea conturilor a eșuat. Te rugăm să încerci din nou.",
+    "description": "Account loading error message"
+  },
+  "y53dco": {
+    "defaultMessage": "La „Type of integration”, selectează „Custom” din meniul derulant.",
+    "description": "Step 4: Select Custom integration type"
+  },
+  "y6/xbw": {
+    "defaultMessage": "Gazdă principală",
+    "description": "Primary host badge label for airbnb property."
+  },
+  "yO01eS": {
+    "defaultMessage": "Te rugăm să verifici formularul pentru erori",
+    "description": "Error message when form validation fails"
+  },
+  "yf0n+T": {
+    "defaultMessage": "Înapoi",
+    "description": "Button text to go back to previous screen"
+  },
+  "ykVfMx": {
+    "defaultMessage": "Nume",
+    "description": "Column header for amenity name"
+  },
+  "yspnIi": {
+    "defaultMessage": "Cont Xmoney",
+    "description": "Link text for Xmoney"
+  },
+  "yv1I7k": {
+    "defaultMessage": "Înapoi",
+    "description": "Button to go back after error"
+  },
+  "yzg2T4": {
+    "defaultMessage": "Selectați furnizorul de plăți preferat",
+    "description": "Payment gateway setup page title"
+  },
+  "z7saLl": {
+    "defaultMessage": "Datele introduse sunt incorecte. Te rugăm să verifici Merchant Key și Merchant Salt și să încerci din nou.",
+    "description": "Error description when PayU.in connection fails"
+  },
+  "zBjeyG": {
+    "defaultMessage": "Client Secret este obligatoriu",
+    "description": "Error message for missing PayPal Client Secret"
+  },
+  "zCEFXQ": {
+    "defaultMessage": "Data de sfârșit trebuie să fie după data de început",
+    "description": "Error message when the end date is before the start date"
+  },
+  "zOoftm": {
+    "defaultMessage": "profil",
+    "description": "Search keyword for profile"
+  },
+  "zSDtWg": {
+    "defaultMessage": "{count} {count, plural, one {limbă} other {limbi}} selectate",
+    "description": "Count of selected languages"
+  },
+  "zpO4iy": {
+    "defaultMessage": "Descrieți orice alte clauze, politici sau detalii specifice pe care doriți să le includem în contract",
+    "description": "Help text explaining users can add any additional legal clauses or special requirements to the rental agreement"
+  },
+  "zqYE4R": {
+    "defaultMessage": "Capacitate",
+    "description": "Property occupancy column header"
+  },
+  "zsf2V4": {
+    "defaultMessage": "ex.: Sunset Beach Rentals",
+    "description": "Placeholder for brand name input"
+  },
+  "zv3k/l": {
+    "defaultMessage": "Conectează contul PayPal",
+    "description": "Button label to connect PayPal account"
+  }
+}

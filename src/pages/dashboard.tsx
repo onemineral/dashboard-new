@@ -13,9 +13,9 @@ import {DemoRadialChart} from "@/app/demo/charts/radial-chart.tsx";
 import Link from "@/components/application/link.tsx";
 import {PropertySelect} from "@/components/application/inputs/property-select.tsx";
 import {useState} from "react";
-import {Account, Property} from "@onemineral/pms-js-sdk";
 import {AccountSelect} from "@/components/application/inputs/account-select.tsx";
 import {DateRangePicker} from "@/components/application/inputs/daterange-picker.tsx";
+import {Account, Property} from "@sdk/generated";
 
 export default function Dashboard() {
     const [property, setProperty] = useState<Property|null>(null);
@@ -36,8 +36,8 @@ export default function Dashboard() {
 
         <PageContent className={'!px-0'}>
             <div className={'px-4 flex items-center space-x-4'}>
-                <PropertySelect className={'max-w-64'} value={property} onChange={setProperty} />
-                <AccountSelect className={'max-w-64'} value={account} onChange={setAccount} />
+                <PropertySelect className={'w-auto max-w-64'} value={property} onChange={setProperty} />
+                <AccountSelect className={'w-auto max-w-64'} value={account} onChange={setAccount} />
             </div>
             <div className={'mt-4 grid grid-cols-1 @3xl:grid-cols-2 @5xl:grid-cols-3 gap-6 pb-4'}>
                 <DemoVerticalBarChart/>

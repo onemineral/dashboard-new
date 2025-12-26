@@ -24,7 +24,8 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@sdk/*": ["./sdk/js-sdk/src/*"]
     }
   },
   "include": ["src"]

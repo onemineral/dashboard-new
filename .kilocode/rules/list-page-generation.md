@@ -1,6 +1,6 @@
 # Filte: Generating List Pages for Resource Records
 
-This filte provides step-by-step instructions for Roo Code to generate new pages that display lists of records for any resource type (e.g., properties, users, bookings). The approach is based on the patterns and best practices in [`src/routes/pms/properties/index.tsx`](src/routes/pms/properties/index.tsx:1).
+This filte provides step-by-step instructions for Roo Code to generate new pages that display lists of records for any resource type (e.g., properties, users, bookings). The approach is based on the patterns and best practices in [`src/routes/pms/properties/multi-calendar.tsx`](src/routes/pms/properties/index.tsx:1).
 
 ---
 

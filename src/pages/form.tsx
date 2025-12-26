@@ -2,7 +2,7 @@ import { useForm, Controller } from "react-hook-form";
 import { Page, PageHeader, PageTitle, PageContent, PageHeaderContainer, PageDescription } from "@/components/application/page";
 import { MultiLanguageTextarea } from "@/components/application/inputs/multi-language-textarea";
 import { MultiLanguageInput } from "@/components/application/inputs/multi-language-input";
-import { InputWrapper } from "@/components/application/inputs/input-wrapper";
+import { InputField } from "@/components/application/inputs/input-field.tsx";
 import { DateRangePicker, DateRangeValue } from "@/components/application/inputs/daterange-picker";
 import { AccountSelect } from "@/components/application/inputs/account-select";
 import { PropertySelect } from "@/components/application/inputs/property-select";
@@ -15,7 +15,6 @@ import { GeoLocationInput, CoordinateValue } from "@/components/application/inpu
 import { ColorPicker } from "@/components/application/inputs/color-picker";
 import { FileUpload } from "@/components/application/inputs/upload/file-upload";
 import { MultiFileUpload } from "@/components/application/inputs/upload/multi-file-upload";
-import { UploadProgress } from "@/components/application/inputs/upload/upload-utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {Account, Booking, Property} from "@onemineral/pms-js-sdk";
@@ -122,10 +121,12 @@ export default function FormPage() {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           {/* Text Inputs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <InputWrapper
+            <InputField
               label="First Name"
+              description={'Alabala'}
               required
               error={errors.firstName?.message}
+              orientation={'responsive'}
             >
               <Controller
                 name="firstName"
@@ -138,9 +139,9 @@ export default function FormPage() {
                   />
                 )}
               />
-            </InputWrapper>
+            </InputField>
 
-            <InputWrapper
+            <InputField
               label="Last Name"
               required
               error={errors.lastName?.message}
@@ -156,10 +157,10 @@ export default function FormPage() {
                   />
                 )}
               />
-            </InputWrapper>
+            </InputField>
           </div>
 
-          <InputWrapper
+          <InputField
             label="Email"
             required
             error={errors.email?.message}
@@ -182,7 +183,7 @@ export default function FormPage() {
                 />
               )}
             />
-          </InputWrapper>
+          </InputField>
 
           <Controller
             name="productName"
@@ -196,7 +197,7 @@ export default function FormPage() {
               },
             }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Product Name"
                 required
                 error={fieldState.error?.message}
@@ -210,7 +211,7 @@ export default function FormPage() {
                   placeholder="Enter product name..."
                   maxCharacters={100}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -219,7 +220,7 @@ export default function FormPage() {
             control={control}
             rules={{ required: "Phone is required" }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Phone Number"
                 required
                 error={fieldState.error?.message}
@@ -231,7 +232,7 @@ export default function FormPage() {
                   error={!!fieldState.error}
                   defaultCountry="US"
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -240,7 +241,7 @@ export default function FormPage() {
             control={control}
             rules={{ required: "Date range is required" }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Booking Dates"
                 required
                 error={fieldState.error?.message}
@@ -253,7 +254,7 @@ export default function FormPage() {
                   enablePresets
                   minDate={new Date()}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -261,7 +262,7 @@ export default function FormPage() {
             name="appointmentTime"
             control={control}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Appointment Time"
                 optional
                 error={fieldState.error?.message}
@@ -272,7 +273,7 @@ export default function FormPage() {
                   onBlur={field.onBlur}
                   error={!!fieldState.error}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -281,7 +282,7 @@ export default function FormPage() {
             control={control}
             rules={{ required: "Account is required" }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Guest Account"
                 required
                 error={fieldState.error?.message}
@@ -293,7 +294,7 @@ export default function FormPage() {
                   error={!!fieldState.error}
                   resource_type="guest"
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -301,7 +302,7 @@ export default function FormPage() {
             name="property"
             control={control}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Property"
                 optional
                 error={fieldState.error?.message}
@@ -312,7 +313,7 @@ export default function FormPage() {
                   onBlur={field.onBlur}
                   error={!!fieldState.error}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -321,7 +322,7 @@ export default function FormPage() {
             control={control}
             rules={{ required: "Commission is required", min: 0, max: 50 }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Commission Rate"
                 required
                 error={fieldState.error?.message}
@@ -333,7 +334,7 @@ export default function FormPage() {
                   onBlur={field.onBlur}
                   max={50}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -349,7 +350,7 @@ export default function FormPage() {
               },
             }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Product Description"
                 required
                 error={fieldState.error?.message}
@@ -360,9 +361,11 @@ export default function FormPage() {
                   onBlur={field.onBlur}
                   error={!!fieldState.error}
                   placeholder="Enter product description..."
+                  maxCharacters={20}
+                  minCharacters={10}
                   minHeight={120}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -371,7 +374,7 @@ export default function FormPage() {
             control={control}
             rules={{ maxLength: { value: 200, message: "Bio must be less than 200 characters" } }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Biography"
                 description="Tell us about yourself"
                 error={fieldState.error?.message}
@@ -384,7 +387,7 @@ export default function FormPage() {
                   rows={4}
                   maxCharacters={200}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -398,7 +401,7 @@ export default function FormPage() {
               }
             }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Additional Notes"
                 description="Rich text editor with formatting options"
                 error={fieldState.error?.message}
@@ -414,7 +417,7 @@ export default function FormPage() {
                   minHeight="200px"
                   maxHeight="400px"
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -423,7 +426,7 @@ export default function FormPage() {
             control={control}
             rules={{ required: "Location is required" }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Property Location"
                 required
                 error={fieldState.error?.message}
@@ -434,11 +437,10 @@ export default function FormPage() {
                   onChange={field.onChange}
                   onBlur={field.onBlur}
                   error={!!fieldState.error}
-                  placeholder="Search for address..."
                   mapHeight={400}
                   defaultZoom={10}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -453,7 +455,7 @@ export default function FormPage() {
               },
             }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Brand Color"
                 required
                 error={fieldState.error?.message}
@@ -464,7 +466,7 @@ export default function FormPage() {
                   onChange={field.onChange}
                   onBlur={field.onBlur}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -473,7 +475,7 @@ export default function FormPage() {
             control={control}
             rules={{ required: "Document is required" }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Upload Document"
                 required
                 error={fieldState.error?.message}
@@ -488,7 +490,7 @@ export default function FormPage() {
                   maxSize={5 * 1024 * 1024}
                   error={!!fieldState.error}
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -496,7 +498,7 @@ export default function FormPage() {
             name="profileImage"
             control={control}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Profile Image"
                 optional
                 error={fieldState.error?.message}
@@ -511,9 +513,8 @@ export default function FormPage() {
                   maxSize={2 * 1024 * 1024}
                   autoUpload
                   error={!!fieldState.error}
-                  placeholder="Drop your profile image here or click to browse"
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 
@@ -525,11 +526,10 @@ export default function FormPage() {
                 value.length > 0 || "At least one attachment is required",
             }}
             render={({ field, fieldState }) => (
-              <InputWrapper
+              <InputField
                 label="Multiple Attachments"
                 required
                 error={fieldState.error?.message}
-                description="Upload multiple files (images, PDFs, documents - max 10 files, 5MB each)"
               >
                 <MultiFileUpload
                   value={field.value}
@@ -541,9 +541,8 @@ export default function FormPage() {
                   maxFiles={10}
                   autoUpload
                   error={!!fieldState.error}
-                  placeholder="Drop multiple files here or click to browse"
                 />
-              </InputWrapper>
+              </InputField>
             )}
           />
 

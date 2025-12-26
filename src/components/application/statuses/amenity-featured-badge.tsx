@@ -1,30 +1,13 @@
 // AmenityFeaturedBadge.tsx
 import * as React from "react";
-import { useMutation } from "@tanstack/react-query";
 import api from "@/lib/api";
 import { CheckCircle, XCircle } from "lucide-react";
 import Status, { StatusDefinition } from "./status-badge";
 import { toast } from "sonner";
 import { AppContext } from "@/contexts/app-context";
+import { useIntl } from "react-intl";
 
 type AmenityFeaturedStatus = "featured" | "not_featured";
-
-const AMENITY_FEATURED_STATUSES: StatusDefinition<AmenityFeaturedStatus>[] = [
-  {
-    value: "featured",
-    label: "Featured",
-    icon: CheckCircle,
-    colorClass: "bg-green-100 text-green-800",
-    badgeVariant: "default",
-  },
-  {
-    value: "not_featured",
-    label: "Not featured",
-    icon: XCircle,
-    colorClass: "bg-gray-100 text-gray-600",
-    badgeVariant: "secondary",
-  },
-];
 
 interface Amenity {
   id: number | string;
@@ -34,50 +17,69 @@ interface Amenity {
 
 interface AmenityFeaturedBadgeProps {
   amenity: Amenity;
-  onStatusChange?: (is_featured: boolean) => void;
   disabled?: boolean;
   refetchQueryKeys?: Array<string | number>;
 }
 
 export const AmenityFeaturedBadge: React.FC<AmenityFeaturedBadgeProps> = ({
   amenity,
-  onStatusChange,
   disabled = false,
   refetchQueryKeys,
 }) => {
-  const [currentStatus, setCurrentStatus] = React.useState<AmenityFeaturedStatus>(
-    amenity.is_featured ? "featured" : "not_featured"
-  );
-  // Keep currentStatus in sync with amenity.is_featured prop after refetch
-  React.useEffect(() => {
-    setCurrentStatus(amenity.is_featured ? "featured" : "not_featured");
-  }, [amenity.is_featured]);
   const { schema } = React.useContext(AppContext);
+  const intl = useIntl();
 
-  const mutation = useMutation({
-    mutationFn: async (newStatus: AmenityFeaturedStatus) => {
+  const AMENITY_FEATURED_STATUSES: StatusDefinition<AmenityFeaturedStatus>[] = React.useMemo(
+    () => [
+      {
+        value: "featured",
+        label: intl.formatMessage({ defaultMessage: "Featured", description: "Label for featured amenity status" }),
+        icon: CheckCircle,
+        colorClass: "bg-green-100 text-green-800",
+        badgeVariant: "default",
+      },
+      {
+        value: "not_featured",
+        label: intl.formatMessage({ defaultMessage: "Not featured", description: "Label for not featured amenity status" }),
+        icon: XCircle,
+        colorClass: "bg-gray-100 text-gray-600",
+        badgeVariant: "secondary",
+      },
+    ],
+    [intl]
+  );
+
+  const currentStatus: AmenityFeaturedStatus = amenity.is_featured ? "featured" : "not_featured";
+
+  const handleChange = async (newStatus: AmenityFeaturedStatus) => {
+    try {
       const is_featured = newStatus === "featured";
-      return await api.amenity.update({ id: Number(amenity.id), is_featured });
-    },
-    onMutate: async (newStatus) => {
-      setCurrentStatus(newStatus);
-      if (onStatusChange) onStatusChange(newStatus === "featured");
-    },
-    onError: (error, newStatus, context) => {
-      setCurrentStatus(amenity.is_featured ? "featured" : "not_featured"); // revert
-      toast.error("Failed to update featured status", {
-        description: (error as Error)?.message || "An error occurred.",
-      });
-      if (onStatusChange) onStatusChange(amenity.is_featured);
-    },
-    onSuccess: async (data, newStatus) => {
-      toast.success("Featured status updated", {
-        description: `Amenity is now "${
-          AMENITY_FEATURED_STATUSES.find((s) => s.value === newStatus)?.label ?? newStatus
-        }".`,
-      });
-    },
-  });
+      await api.amenity.update({ id: Number(amenity.id), is_featured });
+      
+      toast.success(
+        intl.formatMessage({ defaultMessage: "Featured status updated", description: "Success message when amenity featured status is updated" }),
+        {
+          description: intl.formatMessage(
+            {
+              defaultMessage: 'Amenity is now "{status}".',
+              description: "Description of the featured status update with the new status value"
+            },
+            {
+              status: AMENITY_FEATURED_STATUSES.find((s) => s.value === newStatus)?.label ?? newStatus
+            }
+          ),
+        }
+      );
+    } catch (error) {
+      toast.error(
+        intl.formatMessage({ defaultMessage: "Failed to update featured status", description: "Error message when amenity featured status update fails" }),
+        {
+          description: (error as Error)?.message || intl.formatMessage({ defaultMessage: "An error occurred.", description: "Generic error message" }),
+        }
+      );
+      throw error;
+    }
+  };
 
   const canUpdate = !disabled && schema?.canAction?.("amenity", "update");
 
@@ -86,13 +88,7 @@ export const AmenityFeaturedBadge: React.FC<AmenityFeaturedBadgeProps> = ({
       value={currentStatus}
       statuses={AMENITY_FEATURED_STATUSES}
       refetchQueryKeys={refetchQueryKeys}
-      onChange={async (status) => {
-        try {
-          await mutation.mutateAsync(status);
-        } catch (e) {
-          console.error(e);
-        }
-      }}
+      onChange={handleChange}
       disabled={!canUpdate}
       ariaLabel={AMENITY_FEATURED_STATUSES.find((s) => s.value === currentStatus)?.label}
       showDropdown={canUpdate}

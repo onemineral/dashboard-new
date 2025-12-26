@@ -1,9 +1,10 @@
 import * as React from "react";
-import {Wrapper, Status} from "@googlemaps/react-wrapper";
-import {Loader2, MapPin} from "lucide-react";
+import {Wrapper} from "@googlemaps/react-wrapper";
+import {MapPin} from "lucide-react";
 import {cn} from "@/lib/utils";
 import {Input} from "@/components/ui/input";
 import {config} from "@/config";
+import {FormattedMessage, useIntl} from "react-intl";
 
 // Extend Window interface for Google Maps marker library
 declare global {
@@ -80,39 +81,6 @@ export interface GeoLocationInputProps {
 }
 
 /**
- * Google Maps wrapper status renderer
- */
-const MapLoadingStatus = (status: Status) => {
-    if (status === Status.LOADING) {
-        return (
-            <div className="flex items-center justify-center h-[400px] bg-muted rounded-md">
-                <div className="flex flex-col items-center gap-2">
-                    <Loader2 className="size-6 animate-spin text-muted-foreground"/>
-                    <p className="text-sm text-muted-foreground">Loading map...</p>
-                </div>
-            </div>
-        );
-    }
-
-    if (status === Status.FAILURE) {
-        return (
-            <div
-                className="flex items-center justify-center h-[400px] bg-destructive/10 rounded-md border border-destructive">
-                <div className="flex flex-col items-center gap-2 text-center px-4">
-                    <MapPin className="size-6 text-destructive"/>
-                    <p className="text-sm text-destructive font-medium">Failed to load map</p>
-                    <p className="text-xs text-muted-foreground">
-                        Please check your Google Maps API key configuration
-                    </p>
-                </div>
-            </div>
-        );
-    }
-
-    return null;
-};
-
-/**
  * Map component that handles the Google Maps instance
  * Accepts coordinates in component format {lat, lon} and converts to Google Maps format internally
  */
@@ -127,7 +95,7 @@ interface MapComponentProps {
 const MapComponent = React.memo<MapComponentProps>(
     ({center, zoom, onMarkerDrag, disabled, height}) => {
         // Convert component format to Google Maps format for use with Google Maps APIs
-        const googleMapsCenter = React.useMemo(() => toGoogleMapsFormat(center), [center.lat, center.lon]);
+        const googleMapsCenter = React.useMemo(() => toGoogleMapsFormat(center), [center]);
         const mapRef = React.useRef<HTMLDivElement>(null);
         const [map, setMap] = React.useState<google.maps.Map | null>(null);
         const [marker, setMarker] = React.useState<google.maps.marker.AdvancedMarkerElement | null>(null);
@@ -151,7 +119,7 @@ const MapComponent = React.memo<MapComponentProps>(
             });
 
             setMap(newMap);
-        }, [center, zoom, map]);
+        }, [center, zoom, map, googleMapsCenter]);
 
         // Create/update marker
         React.useEffect(() => {
@@ -222,6 +190,7 @@ interface AutocompleteInputProps {
 
 const AutocompleteInput = React.memo<AutocompleteInputProps>(
     ({value, onChange, onPlaceSelect, placeholder, disabled, error}) => {
+        const intl = useIntl();
         const inputRef = React.useRef<HTMLInputElement>(null);
         const autocompleteRef = React.useRef<google.maps.places.Autocomplete | null>(null);
         const [hasPlacesError, setHasPlacesError] = React.useState(false);
@@ -259,20 +228,35 @@ const AutocompleteInput = React.memo<AutocompleteInputProps>(
                     type="text"
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
-                    placeholder={hasPlacesError ? "Click on the map to set location" : placeholder}
+                    placeholder={hasPlacesError
+                        ? intl.formatMessage({
+                            defaultMessage: "Click on the map to set location",
+                            description: "Placeholder when Places API is not available"
+                        })
+                        : placeholder
+                    }
                     disabled={disabled || hasPlacesError}
                     className={cn(
                         "pr-10 bg-background/95 backdrop-blur-sm shadow-lg",
                         error && "border-destructive",
                         hasPlacesError && "cursor-not-allowed"
                     )}
-                    title={hasPlacesError ? "Places API not enabled. Please enable it in Google Cloud Console or use the map to set location." : undefined}
+                    title={hasPlacesError
+                        ? intl.formatMessage({
+                            defaultMessage: "Places API not enabled. Please enable it in Google Cloud Console or use the map to set location.",
+                            description: "Tooltip explaining Places API is disabled"
+                        })
+                        : undefined
+                    }
                 />
                 <MapPin
                     className="absolute right-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground pointer-events-none"/>
                 {hasPlacesError && (
                     <p className="text-xs text-amber-600 mt-1 bg-background/95 backdrop-blur-sm px-2 py-1 rounded-md shadow-sm">
-                        Places API not enabled. Use the map to set location.
+                        <FormattedMessage
+                            defaultMessage="Places API not enabled. Use the map to set location."
+                            description="Warning message when Places API is not enabled"
+                        />
                     </p>
                 )}
             </div>
@@ -352,7 +336,7 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
          value,
          onChange,
          onBlur,
-         placeholder = "Search for address...",
+         placeholder,
          disabled = false,
          error = false,
          className,
@@ -360,11 +344,18 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
          defaultZoom = 10,
          "data-testid": dataTestId,
      }) => {
+        const intl = useIntl();
         const [searchValue, setSearchValue] = React.useState("");
         const [latInput, setLatInput] = React.useState("");
         const [lonInput, setLonInput] = React.useState("");
         const [currentZoom, setCurrentZoom] = React.useState(defaultZoom);
         const [isTyping, setIsTyping] = React.useState(false);
+
+        // Get translated placeholder
+        const translatedPlaceholder = placeholder || intl.formatMessage({
+            defaultMessage: "Search for address...",
+            description: "Placeholder for address search input in geolocation picker"
+        });
 
         // Default center (fallback to a neutral location)
         const defaultCenter: CoordinateValue = {lat: 0, lon: 0};
@@ -376,7 +367,7 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                 setLatInput(value.lat.toFixed(6));
                 setLonInput(value.lon.toFixed(6));
             }
-        }, [value?.lat, value?.lon, isTyping]);
+        }, [value, isTyping]);
 
         // Handle autocomplete selection - zoom in to level 16 when address selected
         const handlePlaceSelect = React.useCallback(
@@ -462,7 +453,10 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                         <div className="flex flex-col items-center gap-2 text-center px-4">
                             <MapPin className="size-6 text-muted-foreground"/>
                             <p className="text-sm text-muted-foreground">
-                                Google Maps API key not configured
+                                <FormattedMessage
+                                    defaultMessage="Google Maps API key not configured"
+                                    description="Error message when Google Maps API key is missing"
+                                />
                             </p>
                         </div>
                     </div>
@@ -472,7 +466,6 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
             return (
                 <Wrapper
                     apiKey={config.googleMapsApiKey}
-                    render={MapLoadingStatus}
                     libraries={["places", "marker"]}
                 >
                     <div className="relative">
@@ -491,7 +484,7 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                                 value={searchValue}
                                 onChange={setSearchValue}
                                 onPlaceSelect={handlePlaceSelect}
-                                placeholder={placeholder}
+                                placeholder={translatedPlaceholder}
                                 disabled={disabled}
                                 error={error}
                             />
@@ -512,7 +505,10 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                             htmlFor="latitude-input"
                             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         >
-                            Latitude
+                            <FormattedMessage
+                                defaultMessage="Latitude"
+                                description="Label for latitude coordinate input"
+                            />
                         </label>
                         <Input
                             id="latitude-input"
@@ -523,16 +519,25 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                             value={latInput}
                             onChange={handleLatChange}
                             onBlur={handleCoordinateBlur}
-                            placeholder="e.g., 37.774929"
+                            placeholder={intl.formatMessage({
+                                defaultMessage: "e.g., 37.774929",
+                                description: "Example placeholder for latitude input"
+                            })}
                             disabled={disabled}
                             className={cn(
                                 !isLatInputValid && "border-destructive"
                             )}
-                            aria-label="Latitude coordinate"
+                            aria-label={intl.formatMessage({
+                                defaultMessage: "Latitude coordinate",
+                                description: "ARIA label for latitude input"
+                            })}
                         />
                         {!isLatInputValid && (
                             <p className="text-xs text-destructive">
-                                Valid range: -90 to 90
+                                <FormattedMessage
+                                    defaultMessage="Valid range: -90 to 90"
+                                    description="Validation error for latitude out of range"
+                                />
                             </p>
                         )}
                     </div>
@@ -542,7 +547,10 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                             htmlFor="longitude-input"
                             className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         >
-                            Longitude
+                            <FormattedMessage
+                                defaultMessage="Longitude"
+                                description="Label for longitude coordinate input"
+                            />
                         </label>
                         <Input
                             id="longitude-input"
@@ -553,16 +561,25 @@ export const GeoLocationInput = React.memo<GeoLocationInputProps>(
                             value={lonInput}
                             onChange={handleLonChange}
                             onBlur={handleCoordinateBlur}
-                            placeholder="e.g., -122.419415"
+                            placeholder={intl.formatMessage({
+                                defaultMessage: "e.g., -122.419415",
+                                description: "Example placeholder for longitude input"
+                            })}
                             disabled={disabled}
                             className={cn(
                                 !isLonInputValid && "border-destructive"
                             )}
-                            aria-label="Longitude coordinate"
+                            aria-label={intl.formatMessage({
+                                defaultMessage: "Longitude coordinate",
+                                description: "ARIA label for longitude input"
+                            })}
                         />
                         {!isLonInputValid && (
                             <p className="text-xs text-destructive">
-                                Valid range: -180 to 180
+                                <FormattedMessage
+                                    defaultMessage="Valid range: -180 to 180"
+                                    description="Validation error for longitude out of range"
+                                />
                             </p>
                         )}
                     </div>

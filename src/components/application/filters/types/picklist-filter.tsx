@@ -9,9 +9,11 @@ import {cn} from "@/lib/utils.ts";
 import {useFilter} from "@/components/application/filters/hooks/use-filter";
 import {Plus} from "lucide-react";
 import {FilterRemoveButton} from "@/components/application/filters/filters";
+import {useIntl} from "react-intl";
 
 const PicklistFilter = ({options, field}: { options: { [key: string]: string | ReactNode }, field: string }) => {
     const {remove, settings, set, selection} = useFilter();
+    const intl = useIntl();
     const value = selection?.value;
     const [internalValue, setInternalValue] = useState<string | undefined>(value?.[0]);
     const [open, setOpen] = useState<boolean>(!settings.featured && selection?.value === null);
@@ -78,7 +80,10 @@ const PicklistFilter = ({options, field}: { options: { [key: string]: string | R
                 <FormItem>
                     <Select value={internalValue} onValueChange={setInternalValue}>
                         <SelectTrigger className={'w-full [&>span]:truncate'}>
-                            <SelectValue placeholder="Select an option"/>
+                            <SelectValue placeholder={intl.formatMessage({
+                                defaultMessage: "Select an option",
+                                description: "Placeholder for picklist filter dropdown"
+                            })}/>
                         </SelectTrigger>
                         <SelectContent className={'max-w-sm'}>
                             {Object.keys(options).map((key: string) => (
@@ -91,7 +96,12 @@ const PicklistFilter = ({options, field}: { options: { [key: string]: string | R
                 <Button variant={'default'} className={'w-full mt-4'} onClick={() => {
                     updateValue();
                     setOpen(!open);
-                }}>Apply</Button>
+                }}>
+                    {intl.formatMessage({
+                        defaultMessage: "Apply",
+                        description: "Button to apply the picklist filter selection"
+                    })}
+                </Button>
             </PopoverContent>
         </Popover>
         <FilterRemoveButton onClick={() => setInternalValue(undefined)} />

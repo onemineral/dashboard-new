@@ -9,9 +9,11 @@ import { useFilter } from "@/components/application/filters/hooks/use-filter";
 import { Plus } from "lucide-react";
 import { FilterRemoveButton } from "@/components/application/filters/filters";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group.tsx";
+import { useIntl } from "react-intl";
 
 const RadioFilter = ({ options, field }: { options: { [key: string]: string | ReactNode }, field: string }) => {
     const { remove, settings, set, selection } = useFilter();
+    const intl = useIntl();
     const value = selection?.value;
     const [internalValue, setInternalValue] = useState<string | undefined>(value?.[0]);
     const [open, setOpen] = useState<boolean>(!settings.featured && selection?.value === null);
@@ -96,7 +98,12 @@ const RadioFilter = ({ options, field }: { options: { [key: string]: string | Re
                     <Button variant={'default'} className={'w-full mt-4'} onClick={() => {
                         updateValue();
                         setOpen(!open);
-                    }}>Apply</Button>
+                    }}>
+                        {intl.formatMessage({
+                            defaultMessage: "Apply",
+                            description: "Button to apply the radio filter selection"
+                        })}
+                    </Button>
                 </PopoverContent>
             </Popover>
             <FilterRemoveButton onClick={() => setInternalValue(undefined)} />

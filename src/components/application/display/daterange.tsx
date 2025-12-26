@@ -101,8 +101,7 @@ export function DateRange({
         </span>
       );
     }
-
-    // Show date range with arrow
+    
     return (
       <span
         className={cn("inline-flex items-center gap-1.5", className)}

@@ -1,6 +1,6 @@
 import { FilterSelection } from "@/components/application/filters/filters";
 import { useFiltersRequest } from "@/components/application/filters/hooks/use-filters-request";
-import { SortDefinition } from "@/components/application/sort-dropdown";
+import { SortDefinition } from "@/components/application/data/sort-dropdown.tsx";
 import { mergeObjects } from "@/lib/utils";
 import { useEffect, useState } from "react";
 

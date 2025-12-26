@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useEffectEvent, useRef, useState} from "react";
 import {addMonths, differenceInDays, format, subMonths} from "date-fns";
 import {cn} from "@/lib/utils.ts";
 import useMultiCalendarStore from "@/components/application/calendar/multi/store/useMultiCalendarStore.ts";
@@ -8,6 +8,7 @@ import {
     CalendarResource,
     CalendarResourceDayData
 } from "@/components/application/calendar/types.ts";
+import {useEventListener} from "@/hooks/use-event-listener.ts";
 
 export type MulticalendarDayElementProp = {
     date: CalendarDate;
@@ -102,64 +103,103 @@ export default function Multicalendar({
     const setResources = useMultiCalendarStore((state) => state.setResources);
     const setDates = useMultiCalendarStore((state) => state.setDates);
 
-    if(!dates.length) {
+    if (!dates.length) {
         const startDate = subMonths(new Date(), pastMonthsToRender);
         const endDate = addMonths(new Date(), futureMonthsToRender);
 
         setDates(startDate, endDate);
     }
 
-    useEffect(() => {
-        setResources(resources);
-    }, [resources]);
-
     const containerRef = useRef<HTMLDivElement>(null);
-    const [dimensions, setDimensions] = useState({width: 0, height: 0, visibleRows: 0, visibleColumns: 0});
-    const [hideContainer, setHideContainer] = useState(true);
+    const [dimensions, setDimensions] = useState({visibleRows: 0, visibleColumns: 0});
 
     const setVisibleDatesIndexes = useMultiCalendarStore((state) => state.setVisibleDatesIndexes);
     const setVisibleResourcesIndexes = useMultiCalendarStore((state) => state.setVisibleResourcesIndexes);
 
     const getMissingDataToLoad = useMultiCalendarStore((state) => state.getMissingDataToLoad);
     const addDaysData = useMultiCalendarStore((state) => state.addDaysAndEventData);
+    const clearDaysData = useMultiCalendarStore((state) => state.clearDaysData);
     const getResourceDatesSelection = useMultiCalendarStore((state) => state.getResourceDatesSelection);
     const clearResourceDateSelection = useMultiCalendarStore((state) => state.clearResourceDateSelection);
 
+    // Reusable function to calculate visible resource indexes
+    const calculateVisibleResourcesIndexes = useEffectEvent((scrollTop: number) => {
+        const firstRowIndex = Math.floor(scrollTop / (dayCellHeight + resourceRowHeight));
+        const minRow = Math.max(0, firstRowIndex - 3);
+        const maxRow = Math.min(resources.length, firstRowIndex + dimensions.visibleRows + 3);
+        const newRows = Array.from({length: maxRow - minRow}, (_, i) => minRow + i);
+        setVisibleResourcesIndexes(newRows);
+    });
+
+    const calculateVisibleColsIndexes = useEffectEvent((scrollLeft: number) => {
+        // calculate first column to display based on scroll left position
+        const firstColumnIndex = Math.floor(scrollLeft / (dayCellWidth + 4));
+        const minColumn = Math.max(0, firstColumnIndex - 3);
+        const maxColumn = Math.min(dates.length, firstColumnIndex + dimensions.visibleColumns + 3);
+
+        const newColumns = Array.from({length: maxColumn - minColumn}, (_, i) => minColumn + i);
+
+        setVisibleDatesIndexes(newColumns);
+    })
+
+    // Reusable function to scroll to a specific date
+    const scrollToDate = useEffectEvent((targetDate: Date, smooth: boolean = false) => {
+        if (dates.length && containerRef.current) {
+            const daysToTarget = differenceInDays(targetDate, dates[0].date) - 2;
+            const scrollLeft = Math.max(daysToTarget, 0) * (dayCellWidth + 4);
+
+            if (smooth) {
+                containerRef.current.scrollTo({
+                    left: scrollLeft,
+                    behavior: 'smooth'
+                });
+            } else {
+                containerRef.current.scrollLeft = scrollLeft;
+            }
+        }
+    });
+
     useEffect(() => {
-        if (!containerRef.current) {
+        containerRef.current?.scrollTo({
+            top: 0
+        });
+        setResources(resources);
+
+        calculateVisibleResourcesIndexes(containerRef.current?.scrollTop || 0);
+        attemptLoadData();
+    }, [resources]);
+
+    const handleResize = useEffectEvent(() => {
+        const containerElement = containerRef.current;
+
+        if (!containerElement) {
             return;
         }
 
-        const containerElement = containerRef.current;
+        const cs = getComputedStyle(containerElement.parentNode as Element);
 
-        const handleResize = () => {
-            setHideContainer(true);
+        const paddingX = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight);
+        const paddingY = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
 
-            setTimeout(() => {
-                const cs = getComputedStyle(containerElement.parentNode as Element);
+        const borderX = parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
+        const borderY = parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
 
-                const paddingX = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight);
-                const paddingY = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);
+        // @ts-ignore
+        const height = containerElement.parentNode.offsetHeight - paddingY - borderY;
+        // @ts-ignore
+        const width = containerElement.parentNode.offsetWidth - paddingX - borderX;
+        setDimensions({
+            // @ts-ignore
+            visibleRows: Math.ceil(height / (dayCellHeight + resourceRowHeight)),
+            visibleColumns: Math.ceil(width / dayCellWidth),
+        });
 
-                const borderX = parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
-                const borderY = parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
+        calculateVisibleColsIndexes(containerElement.scrollLeft);
+        calculateVisibleResourcesIndexes(containerElement.scrollTop);
+        attemptLoadData();
+    });
 
-                // @ts-ignore
-                const height = containerElement.parentNode.offsetHeight - paddingY - borderY;
-                // @ts-ignore
-                const width = containerElement.parentNode.offsetWidth - paddingX - borderX;
-                setDimensions({
-                    // @ts-ignore
-                    width: width,
-                    // @ts-ignore
-                    height: height,
-                    visibleRows: Math.ceil(height / (dayCellHeight + resourceRowHeight)),
-                    visibleColumns: Math.ceil(width / dayCellWidth),
-                });
-                setHideContainer(false);
-            }, 100);
-        };
-
+    useEffect(() => {
         handleResize();
 
         window.addEventListener('resize', handleResize);
@@ -181,72 +221,58 @@ export default function Multicalendar({
 
     }, []);
 
-    useEffect(() => {
-        if(dates.length && containerRef.current && !hideContainer) {
-            console.log('scrolling to today');
-            const daysToPresent = differenceInDays(new Date(), dates[0].date);
-            containerRef.current.scrollLeft = Math.max(daysToPresent, 0) * (dayCellWidth + 4);
-        }
-    }, [dates, hideContainer]);
+    // @ts-ignore
+    useEventListener('multicalendar:scrollToDate', (e: CustomEvent) => {
+        const targetDate = e.detail?.date ? new Date(e.detail.date) : new Date();
+        scrollToDate(targetDate, true);
+    });
+    // @ts-ignore
+    useEventListener('multicalendar:calendar-updated', (e: CustomEvent) => {
+        clearDaysData(e.detail.property.id, e.detail.daterange.start, e.detail.daterange.end);
+        attemptLoadData();
+    });
 
+    useEffect(() => {
+        scrollToDate(new Date(), false);
+    }, []);
+
+    const attemptLoadData = () => {
+        if (throttleInProgress.current) {
+            clearTimeout(throttleInProgress.current);
+        }
+
+        // @ts-ignore
+        throttleInProgress.current = setTimeout(() => {
+            // Get current visible resources from store
+            const missingData = getMissingDataToLoad();
+
+            if (missingData) {
+                onLoadMissingData(missingData.resources, missingData.start, missingData.end).then((data: CalendarResourceDayData[]) => {
+                    addDaysData(data);
+                });
+            }
+        }, 300);
+    };
 
 
     return <div
-        className={cn('overflow-auto relative', {
-            'hidden': hideContainer,
-        })}
+        className={cn('overflow-auto max-w-full absolute inset-0 scrollbar-thin')}
         ref={containerRef}
-        style={dimensions.width ? {
-            width: dimensions.width + 'px',
-            height: dimensions.height + 'px',
-        } : {}}
         onScroll={(event) => {
             event.preventDefault();
-
-            // calculate first row to display based on scroll top position
-            const firstRowIndex = Math.floor(event.currentTarget.scrollTop / (dayCellHeight + resourceRowHeight));
-            const minRow = Math.max(0, firstRowIndex - 3);
-            const maxRow = Math.min(resources.length, firstRowIndex + dimensions.visibleRows + 3);
-
-            // calculate first column to display based on scroll left position
-            const firstColumnIndex = Math.floor(event.currentTarget.scrollLeft / (dayCellWidth + 4));
-            const minColumn = Math.max(0, firstColumnIndex - 3);
-            const maxColumn = Math.min(dates.length, firstColumnIndex + dimensions.visibleColumns + 3);
-
-            const newRows = Array.from({length: maxRow - minRow}, (_, i) => minRow + i);
-            const newColumns = Array.from({length: maxColumn - minColumn}, (_, i) => minColumn + i);
-
-            setVisibleResourcesIndexes(newRows);
-            setVisibleDatesIndexes(newColumns);
-
-            if(throttleInProgress.current) {
-                clearTimeout(throttleInProgress.current);
-            }
-
-            // @ts-ignore
-            throttleInProgress.current = setTimeout(() => {
-                const missingData = getMissingDataToLoad(
-                    newRows,
-                    newColumns[0],
-                    newColumns[newColumns.length - 1]
-                );
-
-                if (missingData) {
-                    onLoadMissingData(missingData.resources, missingData.start, missingData.end).then((data: CalendarResourceDayData[]) => {
-                        addDaysData(data);
-                    });
-                }
-            }, 100);
+            calculateVisibleResourcesIndexes(event.currentTarget.scrollTop);
+            calculateVisibleColsIndexes(event.currentTarget.scrollLeft);
+            attemptLoadData();
         }}
     >
         <div className={'flex flex-col'}
              style={{
-                 height: `${(dayCellHeight + resourceRowHeight) * resources.length}px`,
                  width: `${dates.length * (dayCellWidth + 4)}px`,
+                 height: `${((dayCellHeight + resourceRowHeight) * resources.length)}px`,
                  position: 'relative',
              }}
         >
-            <MulticalendarHeader renderDayHeaderElement={renderDayHeaderElement} dayCellWidth={dayCellWidth} />
+            <MulticalendarHeader renderDayHeaderElement={renderDayHeaderElement} dayCellWidth={dayCellWidth}/>
 
             {dates.length > 0 && <MulticalendarContent
                 renderDayElement={renderDayElement}
@@ -264,27 +290,27 @@ export default function Multicalendar({
 };
 
 const MulticalendarHeader = ({
-    renderDayHeaderElement,
-    dayCellWidth,
+                                 renderDayHeaderElement,
+                                 dayCellWidth,
                              }: {
-        renderDayHeaderElement: React.Component<{
-            date: CalendarDate,
-            cellWidth: number,
-            isHovered: boolean,
-        } & React.HTMLProps<HTMLDivElement>>;
-        dayCellWidth: number;
+    renderDayHeaderElement: React.Component<{
+        date: CalendarDate,
+        cellWidth: number,
+        isHovered: boolean,
+    } & React.HTMLProps<HTMLDivElement>>;
+    dayCellWidth: number;
 }) => {
 
     const datesGroupedByMonth = useMultiCalendarStore((state) => state.datesGroupedByMonth);
 
-    return <div className={'flex sticky top-0 z-2 bg-background pb-1'}>
+    return <div className={'flex sticky top-0 z-20 bg-background pb-1'}>
         {datesGroupedByMonth.map((groupedMonth, index) => (
             <div key={index} className={'flex'}>
                 <div>
                     <div className={'sticky left-0 w-fit text-sm font-bold mb-1 p-1'}>
                         {format(groupedMonth.firstDayOfMonth, 'MMM yyyy')}
                     </div>
-                    <div className={'flex space-x-1'}>
+                    <div className={'flex space-x-[4px]'}>
                         {/*@ts-ignore*/}
                         {groupedMonth.days.map((date) => <MulticalendarHeaderDayElement
                             key={date.formattedDate}
@@ -359,6 +385,7 @@ const MulticalendarContent = ({
                         </div>
                         <MulticalendarRow
                             rowIndex={row}
+                            resource={resources[row]}
                             eventRowHeight={eventRowHeight}
                             resourceRowHeight={resourceRowHeight}
                             dayCellHeight={dayCellHeight}
@@ -379,6 +406,7 @@ const MulticalendarContent = ({
 
 const MulticalendarRow = ({
                               rowIndex,
+                              resource,
                               eventRowHeight,
                               dayCellHeight,
                               dayCellWidth,
@@ -389,45 +417,33 @@ const MulticalendarRow = ({
                           }: any) => {
     const getEventsForResource = useMultiCalendarStore((state) => state.getEventsForResource);
     const visibleDatesIndexes = useMultiCalendarStore((state) => state.visibleDatesIndexes);
-    const rowSize = useMultiCalendarStore((state) => state.rowSizes[rowIndex]);
-    const setResourceRowSize = useMultiCalendarStore((state) => state.setResourceRowSize);
 
-    const multicalendarEvents = getEventsForResource(rowIndex, visibleDatesIndexes);
-
-    const eventsSize = eventRowHeight * multicalendarEvents.maxOverlappingEvents;
-    const newRowHeight = dayCellHeight + eventsSize;
-
-    if(rowSize !== newRowHeight) {
-        setResourceRowSize(rowIndex, newRowHeight);
-    }
-
+    const multicalendarEvents = getEventsForResource(resource.id, visibleDatesIndexes);
 
     return (
         <div className={'relative'} style={{
-            height: rowSize,
+            height: dayCellHeight,
         }}>
             {visibleDatesIndexes.map((col: number) => <MulticalendarCol
                 key={col}
                 colIndex={col}
                 rowIndex={rowIndex}
+                resource={resource}
                 dayCellWidth={dayCellWidth}
                 allowSelection={allowSelection}
                 allowSelectInPast={allowSelectInPast}
                 renderDayElement={renderDayElement}
-                totalHeight={rowSize}
+                totalHeight={dayCellHeight}
             />)}
 
-            <div className={'absolute w-full'} style={{
-                height: eventsSize,
-                top: 1
-            }}>
-                <RenderEvents renderEventElement={renderEventElement}
-                              events={multicalendarEvents.events}
-                              eventRowHeight={eventRowHeight}
-                              dayCellWidth={dayCellWidth}
-                              rowIndex={rowIndex}
-                />
-            </div>
+            <RenderEvents renderEventElement={renderEventElement}
+                          events={multicalendarEvents.events}
+                          eventRowHeight={eventRowHeight}
+                          dayCellWidth={dayCellWidth}
+                          rowIndex={rowIndex}
+                          resource={resource}
+
+            />
         </div>
     );
 }
@@ -439,7 +455,7 @@ const RenderEvents = ({rowIndex, renderEventElement, events, eventRowHeight, day
     const EventElement = renderEventElement;
 
 
-    return <div className={'absolute'}>
+    return <>
         {events?.map((event: CalendarEventInfo) => {
             const leftPosition = (dayCellWidth + 4) * differenceInDays(event.start, dates[0].date) + dayCellWidth / 3;
             const eventWidth = (dayCellWidth + 4) * differenceInDays(event.end, event.start);
@@ -449,7 +465,6 @@ const RenderEvents = ({rowIndex, renderEventElement, events, eventRowHeight, day
                                  event={event}
                                  className={'absolute'}
                                  style={{
-                                     top: `${(event.calendarPosition - 1) * eventRowHeight}px`,
                                      left: leftPosition,
                                      width: eventWidth,
                                      height: `${eventRowHeight}px`,
@@ -457,19 +472,19 @@ const RenderEvents = ({rowIndex, renderEventElement, events, eventRowHeight, day
             />;
 
         })}
-    </div>;
+    </>;
 }
 
 const MulticalendarCol = ({
                               colIndex,
                               rowIndex,
+                              resource,
                               dayCellWidth,
                               allowSelection,
                               allowSelectInPast,
                               renderDayElement,
                               totalHeight,
                           }: any) => {
-    const resources = useMultiCalendarStore((state) => state.resources);
     const dates = useMultiCalendarStore((state) => state.dates);
     const selectedDates = useMultiCalendarStore((state) => state.resourceDatesSelection);
     const addDateSelection = useMultiCalendarStore((state) => state.addDateSelection);
@@ -477,13 +492,13 @@ const MulticalendarCol = ({
     const setHoveredDateIndex = useMultiCalendarStore((state) => state.setHoveredDateIndex);
 
     const isDraggable = allowSelection && (allowSelectInPast || !dates[colIndex].isPast);
-    const rowDayData = useMultiCalendarStore((state) => state.dayData[rowIndex]);
+    const rowDayData = useMultiCalendarStore((state) => state.dayData[resource.id]);
 
     const DayElement = renderDayElement;
 
 
     return <DayElement
-        resource={resources[rowIndex]}
+        resource={resource}
         date={dates[colIndex]}
         dayInfo={rowDayData[colIndex]}
         prevDayInfo={rowDayData[colIndex - 1]}
@@ -495,7 +510,7 @@ const MulticalendarCol = ({
             e.preventDefault();
         } : undefined}
         onMouseOver={() => {
-            if(isDraggable) {
+            if (isDraggable) {
                 addDateSelection(colIndex);
             }
             setHoveredDateIndex(colIndex);

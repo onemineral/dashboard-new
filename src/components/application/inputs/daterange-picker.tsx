@@ -1,7 +1,8 @@
 import * as React from "react";
 import { CalendarIcon, X } from "lucide-react";
 import { DateRange, Matcher } from "react-day-picker";
-import { isAfter, isBefore, isValid, startOfDay } from "date-fns";
+import { isAfter, isBefore, isValid, startOfDay, parseISO } from "date-fns";
+import { useIntl } from "react-intl";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -20,16 +21,59 @@ export type WeekStartsOn = 0 | 1 | 2 | 3 | 4 | 5 | 6;
  */
 export interface DateRangePreset {
   label: string;
-  getValue: () => DateRange;
+  getValue: () => DateRangeValue;
 }
 
 /**
- * Date range value type
+ * Date range value type - uses {start, end} with Date or yyyy-MM-dd string format
  */
 export interface DateRangeValue {
+  start: Date | string | undefined;
+  end: Date | string | undefined;
+}
+
+/**
+ * Internal date range type used by react-day-picker
+ */
+interface InternalDateRange {
   from: Date | undefined;
   to: Date | undefined;
 }
+
+/**
+ * Convert a Date or yyyy-MM-dd string to a Date object
+ */
+const toDate = (value: Date | string | undefined): Date | undefined => {
+  if (!value) return undefined;
+  if (value instanceof Date) return value;
+  try {
+    return parseISO(value);
+  } catch {
+    return undefined;
+  }
+};
+
+/**
+ * Convert DateRangeValue to internal format used by react-day-picker
+ */
+const toInternalRange = (value: DateRangeValue | null): InternalDateRange | null => {
+  if (!value) return null;
+  return {
+    from: toDate(value.start),
+    to: toDate(value.end),
+  };
+};
+
+/**
+ * Convert internal format to DateRangeValue
+ */
+const fromInternalRange = (range: InternalDateRange | null): DateRangeValue | null => {
+  if (!range || (!range.from && !range.to)) return null;
+  return {
+    start: range.from,
+    end: range.to,
+  };
+};
 
 /**
  * Props for the DateRangePicker component
@@ -70,64 +114,25 @@ export interface DateRangePickerProps {
 }
 
 /**
- * Default preset date ranges
- */
-const defaultPresets: DateRangePreset[] = [
-  {
-    label: "Last 7 Days",
-    getValue: () => {
-      const today = startOfDay(new Date());
-      const weekAgo = new Date(today);
-      weekAgo.setDate(weekAgo.getDate() - 6);
-      return { from: weekAgo, to: today };
-    },
-  },
-  {
-    label: "Last 30 Days",
-    getValue: () => {
-      const today = startOfDay(new Date());
-      const monthAgo = new Date(today);
-      monthAgo.setDate(monthAgo.getDate() - 29);
-      return { from: monthAgo, to: today };
-    },
-  },
-  {
-    label: "This Month",
-    getValue: () => {
-      const today = new Date();
-      const firstDay = new Date(today.getFullYear(), today.getMonth(), 1);
-      return { from: firstDay, to: startOfDay(today) };
-    },
-  },
-  {
-    label: "Last Month",
-    getValue: () => {
-      const today = new Date();
-      const firstDayLastMonth = new Date(today.getFullYear(), today.getMonth() - 1, 1);
-      const lastDayLastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
-      return { from: firstDayLastMonth, to: lastDayLastMonth };
-    },
-  },
-  {
-    label: "This Quarter",
-    getValue: () => {
-      const today = new Date();
-      const quarter = Math.floor(today.getMonth() / 3);
-      const firstDay = new Date(today.getFullYear(), quarter * 3, 1);
-      return { from: firstDay, to: startOfDay(today) };
-    },
-  },
-];
-
-/**
  * DateRangePicker component for selecting a date range with calendar interface
- * 
+ *
+ * The component uses {start: Date|string, end: Date|string} format where:
+ * - Date objects for programmatic use
+ * - yyyy-MM-dd strings for API/storage compatibility
+ *
  * @example
  * ```tsx
- * // Controlled component
+ * // Controlled component with Date objects
  * const [range, setRange] = useState<DateRangeValue | null>(null);
  * <DateRangePicker value={range} onChange={setRange} />
- * 
+ *
+ * // With yyyy-MM-dd strings
+ * const [range, setRange] = useState<DateRangeValue | null>({
+ *   start: "2024-01-01",
+ *   end: "2024-12-31"
+ * });
+ * <DateRangePicker value={range} onChange={setRange} />
+ *
  * // With presets and validation
  * <DateRangePicker
  *   value={range}
@@ -137,7 +142,7 @@ const defaultPresets: DateRangePreset[] = [
  *   error={!!errors.dateRange}
  *   errorMessage={errors.dateRange?.message}
  * />
- * 
+ *
  * // With React Hook Form
  * <Controller
  *   name="dateRange"
@@ -180,9 +185,10 @@ export const DateRangePicker = React.memo(
       const [internalValue, setInternalValue] = React.useState<DateRangeValue | null>(
         defaultValue || null
       );
-      const [tempValue, setTempValue] = React.useState<DateRangeValue | null>(null);
+      const [tempValue, setTempValue] = React.useState<InternalDateRange | null>(null);
       const [validationError, setValidationError] = React.useState<string>("");
       const isMobile = useIsMobile();
+      const intl = useIntl();
       
       // Use the formatting hook for consistent date display
       const formatDate = useDateFormat();
@@ -190,58 +196,73 @@ export const DateRangePicker = React.memo(
       // Determine if component is controlled
       const isControlled = value !== undefined;
       const currentValue = isControlled ? value : internalValue;
+      
+      // Convert currentValue to internal format for calendar
+      const currentInternalValue = toInternalRange(currentValue);
 
       // Preset ranges to use
       const presetRanges = React.useMemo(
-        () => (enablePresets ? presets || defaultPresets : []),
+        () => (enablePresets ? presets || [] : []),
         [enablePresets, presets]
       );
 
       /**
-       * Validate date range
+       * Validate date range (internal format)
        */
       const validateRange = React.useCallback(
-        (range: DateRangeValue | null): string => {
+        (range: InternalDateRange | null): string => {
           if (!range) return "";
 
           const { from, to } = range;
 
           // Check if dates are valid
           if (from && !isValid(from)) {
-            return "Invalid start date";
+            return intl.formatMessage({ defaultMessage: "Invalid start date", description: "Error message when the start date is invalid" });
           }
           if (to && !isValid(to)) {
-            return "Invalid end date";
+            return intl.formatMessage({ defaultMessage: "Invalid end date", description: "Error message when the end date is invalid" });
           }
 
           // Check if end date is before start date
           if (from && to && isAfter(from, to)) {
-            return "End date must be after start date";
+            return intl.formatMessage({ defaultMessage: "End date must be after start date", description: "Error message when the end date is before the start date" });
           }
 
           // Check min date constraint
           if (minDate) {
             if (from && isBefore(from, startOfDay(minDate))) {
-              return `Start date must be after ${formatDate(minDate)}`;
+              return intl.formatMessage(
+                { defaultMessage: "Start date must be after {date}", description: "Error message when the start date is before the minimum date" },
+                { date: formatDate(minDate) }
+              );
             }
             if (to && isBefore(to, startOfDay(minDate))) {
-              return `End date must be after ${formatDate(minDate)}`;
+              return intl.formatMessage(
+                { defaultMessage: "End date must be after {date}", description: "Error message when the end date is before the minimum date" },
+                { date: formatDate(minDate) }
+              );
             }
           }
 
           // Check max date constraint
           if (maxDate) {
             if (from && isAfter(from, startOfDay(maxDate))) {
-              return `Start date must be before ${formatDate(maxDate)}`;
+              return intl.formatMessage(
+                { defaultMessage: "Start date must be before {date}", description: "Error message when the start date is after the maximum date" },
+                { date: formatDate(maxDate) }
+              );
             }
             if (to && isAfter(to, startOfDay(maxDate))) {
-              return `End date must be before ${formatDate(maxDate)}`;
+              return intl.formatMessage(
+                { defaultMessage: "End date must be before {date}", description: "Error message when the end date is after the maximum date" },
+                { date: formatDate(maxDate) }
+              );
             }
           }
 
           return "";
         },
-        [minDate, maxDate, formatDate]
+        [minDate, maxDate, formatDate, intl]
       );
 
       /**
@@ -256,7 +277,11 @@ export const DateRangePicker = React.memo(
 
           // Always allow selection during the picking process
           // Validation will happen when applying
-          setTempValue(range as DateRangeValue);
+          setTempValue(range as InternalDateRange);
+
+          if(validateRange(range as InternalDateRange)) {
+              handleApply();
+          }
         },
         []
       );
@@ -272,10 +297,13 @@ export const DateRangePicker = React.memo(
           return;
         }
 
+        // Convert internal format back to DateRangeValue
+        const newValue = fromInternalRange(tempValue);
+
         if (isControlled) {
-          onChange?.(tempValue);
+          onChange?.(newValue);
         } else {
-          setInternalValue(tempValue);
+          setInternalValue(newValue);
         }
 
         setValidationError("");
@@ -319,7 +347,7 @@ export const DateRangePicker = React.memo(
        */
       const handlePresetSelect = React.useCallback((preset: DateRangePreset) => {
         const range = preset.getValue();
-        setTempValue(range as DateRangeValue);
+        setTempValue(toInternalRange(range));
       }, []);
 
       /**
@@ -330,8 +358,8 @@ export const DateRangePicker = React.memo(
           setOpen(isOpen);
 
           if (isOpen) {
-            // Initialize temp value with current value when opening
-            setTempValue(currentValue);
+            // Initialize temp value with current value when opening (convert to internal format)
+            setTempValue(toInternalRange(currentValue));
             setValidationError("");
           } else {
             // Reset temp value when closing without applying
@@ -392,13 +420,16 @@ export const DateRangePicker = React.memo(
 
       // Convert currentValue to format expected by DateRangeDisplay component
       const displayDateRange = React.useMemo(() => {
-        if (!currentValue || (!currentValue.from && !currentValue.to)) {
+        if (!currentValue || (!currentValue.start && !currentValue.end)) {
           return null;
         }
         
+        const startDate = toDate(currentValue.start);
+        const endDate = toDate(currentValue.end);
+        
         return {
-          start: currentValue.from?.toISOString() || "",
-          end: currentValue.to?.toISOString() || "",
+          start: startDate ? (typeof currentValue.start === 'string' ? currentValue.start : startDate.toISOString()) : "",
+          end: endDate ? (typeof currentValue.end === 'string' ? currentValue.end : endDate.toISOString()) : "",
         };
       }, [currentValue]);
 
@@ -448,7 +479,7 @@ export const DateRangePicker = React.memo(
                       type="button"
                       onClick={handleClear}
                       className="rounded-sm opacity-50 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 min-w-[44px] min-h-[44px] md:min-w-[20px] md:min-h-[20px] flex items-center justify-center"
-                      aria-label="Clear date range"
+                      aria-label={intl.formatMessage({ defaultMessage: "Clear date range", description: "ARIA label for the clear date range button" })}
                       tabIndex={-1}
                     >
                       <X className="size-4 shrink-0" aria-hidden="true" />
@@ -462,12 +493,14 @@ export const DateRangePicker = React.memo(
               align="start"
               onKeyDown={handleKeyDown}
               role="dialog"
-              aria-label="Date range picker"
+              aria-label={intl.formatMessage({ defaultMessage: "Date range picker", description: "ARIA label for the date range picker dialog" })}
             >
               <div className="flex flex-col md:flex-row">
                 {presetRanges.length > 0 && !isMobile && (
                   <div className="border-b md:border-b-0 md:border-r p-3 space-y-1 max-w-46">
-                    <div className="text-sm font-medium px-2 py-1">Quick Select</div>
+                    <div className="text-sm font-medium px-2 py-1">
+                      {intl.formatMessage({ defaultMessage: "Quick Select", description: "Header for the quick date range selection presets" })}
+                    </div>
                     {presetRanges.map((preset, index) => (
                       <Button
                         key={index}
@@ -492,7 +525,7 @@ export const DateRangePicker = React.memo(
                     numberOfMonths={isMobile ? 1: numberOfMonths}
                     weekStartsOn={weekStartsOn}
                     disabled={disabledMatcher}
-                    defaultMonth={tempValue?.from || currentValue?.from}
+                    defaultMonth={tempValue?.from || currentInternalValue?.from}
                     today={new Date()}
                     showOutsideDays={false}
                     modifiersClassNames={{
@@ -518,7 +551,7 @@ export const DateRangePicker = React.memo(
                       className="min-h-[44px] md:min-h-[32px]"
                       data-testid={`${dataTestId}-cancel`}
                     >
-                      Clear
+                      {intl.formatMessage({ defaultMessage: "Clear", description: "Button label to clear the selected date range" })}
                     </Button>
                     <Button
                       size="sm"
@@ -527,7 +560,7 @@ export const DateRangePicker = React.memo(
                       className="min-h-[44px] md:min-h-[32px]"
                       data-testid={`${dataTestId}-apply`}
                     >
-                      Apply
+                      {intl.formatMessage({ defaultMessage: "Apply", description: "Button label to apply the selected date range" })}
                     </Button>
                   </div>
                 </div>

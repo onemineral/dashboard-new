@@ -131,9 +131,20 @@ export function Status<T extends string>({
   const [isSaving, setIsSaving] = React.useState(false);
   const queryClient = useQueryClient();
 
+  // Internal state management to handle prop updates during mutations
+  const [internalValue, setInternalValue] = React.useState(value);
+  const isMutatingRef = React.useRef(false);
+
+  // Sync internal value with prop when not mutating
+  React.useEffect(() => {
+    if (!isMutatingRef.current) {
+      setInternalValue(value);
+    }
+  }, [value]);
+
   const current = React.useMemo(
-    () => statuses.find((s) => s.value === value),
-    [statuses, value]
+    () => statuses.find((s) => s.value === internalValue),
+    [statuses, internalValue]
   );
 
   // Only show dropdown if enabled, onChange is provided, and there are multiple statuses
@@ -149,16 +160,29 @@ export function Status<T extends string>({
   }
 
   const handleChange = async (newValue: T) => {
-    if (onChange && newValue !== value && !disabled) {
+    if (onChange && newValue !== internalValue && !disabled) {
       setIsSaving(true);
-      await onChange(newValue);
-      setIsSaving(false);
+      
+      // Optimistic update
+      isMutatingRef.current = true;
+      setInternalValue(newValue);
 
-      // Invalidate and refetch queries if refetchQueryKeys is provided
-      if (Array.isArray(refetchQueryKeys)) {
-        await queryClient.invalidateQueries({
+      try {
+        await onChange(newValue);
+        
+        // Invalidate and refetch queries if refetchQueryKeys is provided
+        if (Array.isArray(refetchQueryKeys)) {
+          await queryClient.invalidateQueries({
             queryKey: refetchQueryKeys
           });
+        }
+      } catch (error) {
+        // Revert on error
+        setInternalValue(value);
+        throw error;
+      } finally {
+        setIsSaving(false);
+        isMutatingRef.current = false;
       }
     }
   };
@@ -214,7 +238,7 @@ export function Status<T extends string>({
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start">
           <DropdownMenuRadioGroup
-            value={value}
+            value={internalValue}
             onValueChange={(val) => handleChange(val as T)}
           >
             {statuses.map((s) => (

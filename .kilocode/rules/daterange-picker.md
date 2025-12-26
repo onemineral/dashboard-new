@@ -29,6 +29,10 @@ npm install react-day-picker date-fns lucide-react
 
 ## Basic Usage
 
+The component accepts date ranges in the format `{start: Date|string, end: Date|string}` where:
+- **Date objects** for programmatic use and internal operations
+- **yyyy-MM-dd strings** for API compatibility and storage
+
 ```tsx
 import { DateRangePicker } from "@/components/application/inputs/daterange-picker";
 
@@ -43,6 +47,14 @@ function MyComponent() {
     />
   );
 }
+```
+
+**Using with string dates:**
+```tsx
+const [dateRange, setDateRange] = useState({
+  start: "2024-01-01",
+  end: "2024-12-31"
+});
 ```
 
 ## Date Formatting
@@ -80,17 +92,19 @@ The date format is automatically determined by:
 
 ```typescript
 interface DateRangeValue {
-  from: Date | undefined;
-  to: Date | undefined;
+  start: Date | string | undefined;
+  end: Date | string | undefined;
 }
 
 interface DateRangePreset {
   label: string;
-  getValue: () => DateRange;
+  getValue: () => DateRangeValue;
 }
 
 type WeekStartsOn = 0 | 1 | 2 | 3 | 4 | 5 | 6;
 ```
+
+**Note:** The component internally converts between Date objects and strings as needed. You can provide either format, and the component will handle the conversion.
 
 ## Examples
 
@@ -139,8 +153,15 @@ const customPresets = [
       const today = new Date();
       const nextWeek = new Date();
       nextWeek.setDate(nextWeek.getDate() + 7);
-      return { from: today, to: nextWeek };
+      return { start: today, end: nextWeek };
     },
+  },
+  {
+    label: "Q1 2024",
+    getValue: () => ({
+      start: "2024-01-01",
+      end: "2024-03-31"
+    }),
   },
 ];
 
@@ -196,15 +217,21 @@ function MyComponent() {
   const [dateRange, setDateRange] = useState<DateRangeValue | null>(null);
   const formatDate = useDateFormat();
 
+  // Helper to convert string or Date to Date object
+  const toDate = (value: Date | string | undefined) => {
+    if (!value) return undefined;
+    return value instanceof Date ? value : new Date(value);
+  };
+
   return (
     <div>
       <DateRangePicker
         value={dateRange}
         onChange={setDateRange}
       />
-      {dateRange?.from && dateRange?.to && (
+      {dateRange?.start && dateRange?.end && (
         <p>
-          Selected: {formatDate(dateRange.from)} - {formatDate(dateRange.to)}
+          Selected: {formatDate(toDate(dateRange.start))} - {formatDate(toDate(dateRange.end))}
         </p>
       )}
     </div>
@@ -334,13 +361,23 @@ import { useDateFormat } from '@/hooks/use-format';
 function MyComponent() {
   const formatDate = useDateFormat();
   
+  const toDate = (value: Date | string | undefined) => {
+    if (!value) return undefined;
+    return value instanceof Date ? value : new Date(value);
+  };
+  
   const handleChange = (range: DateRangeValue | null) => {
-    if (range?.from && range?.to) {
-      const utcFrom = zonedTimeToUtc(range.from, 'America/New_York');
-      const utcTo = zonedTimeToUtc(range.to, 'America/New_York');
-      // Use UTC dates for storage/API
-      // Use formatDate for display
-      console.log('Display:', formatDate(range.from), '-', formatDate(range.to));
+    if (range?.start && range?.end) {
+      const startDate = toDate(range.start);
+      const endDate = toDate(range.end);
+      
+      if (startDate && endDate) {
+        const utcFrom = zonedTimeToUtc(startDate, 'America/New_York');
+        const utcTo = zonedTimeToUtc(endDate, 'America/New_York');
+        // Use UTC dates for storage/API
+        // Use formatDate for display
+        console.log('Display:', formatDate(startDate), '-', formatDate(endDate));
+      }
     }
   };
   
@@ -363,7 +400,19 @@ const [minDate, setMinDate] = useState(new Date());
 
 ## Date Format Configuration
 
-To change the date format for all users, update the user profile settings. The format should follow date-fns format strings:
+### Value Format
+The component accepts and returns date ranges in the format:
+```typescript
+{
+  start: Date | string | undefined;
+  end: Date | string | undefined;
+}
+```
+
+Where strings must be in **yyyy-MM-dd** format (ISO 8601 date format).
+
+### Display Format
+To change the **display** format for all users, update the user profile settings. The format should follow date-fns format strings:
 
 - `MM/dd/yyyy` - US format (12/31/2024)
 - `dd/MM/yyyy` - European format (31/12/2024)
@@ -381,6 +430,8 @@ Example profile settings:
 ```
 
 The `useDateFormat` hook will automatically handle the format conversion (replacing `YYYY` with `yyyy` and `DD` with `dd` for date-fns compatibility).
+
+**Important:** The value format (yyyy-MM-dd strings) is separate from the display format. The component handles conversion between these formats internally.
 
 ## Contributing
 

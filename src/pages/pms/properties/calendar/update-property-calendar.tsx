@@ -2,7 +2,7 @@ import {Button} from "@/components/ui/button.tsx";
 import {useForm, Controller} from "react-hook-form";
 import {Form} from "@/components/ui/form.tsx";
 import {Page, PageContent, PageDescription, PageFooter, PageHeader, PageTitle} from "@/components/application/page";
-import {InputWrapper} from "@/components/application/inputs/input-wrapper.tsx";
+import {InputField} from "@/components/application/inputs/input-field.tsx";
 import {DateRangePicker, DateRangeValue} from "@/components/application/inputs/daterange-picker.tsx";
 import useWobbleAnimate from "@/hooks/use-wobble-animate.ts";
 import { toast } from "sonner";
@@ -64,7 +64,7 @@ export default function UpdatePropertyCalendar() {
                                 required: "Date range is required"
                             }}
                             render={({field, fieldState}) => (
-                                <InputWrapper
+                                <InputField
                                     label="Date Range"
                                     required
                                     description="Select the start and end dates for the calendar update."
@@ -80,7 +80,7 @@ export default function UpdatePropertyCalendar() {
                                         errorMessage={fieldState.error?.message}
                                         numberOfMonths={2}
                                     />
-                                </InputWrapper>
+                                </InputField>
                             )}
                         />
                     </div>
