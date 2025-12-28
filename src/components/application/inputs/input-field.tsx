@@ -160,19 +160,14 @@ export const InputField = React.memo(
                                 {infoTooltip && (
                                     <Tooltip>
                                         <TooltipTrigger asChild>
-                                            <FormattedMessage defaultMessage="More information"
-                                                              description="Aria label for info tooltip button">
-                                                {() => (
                                                     <button
                                                         type="button"
                                                         className="inline-flex items-center justify-center rounded-full hover:bg-accent size-5"
                                                     >
                                                         <Info className="size-3.5 text-muted-foreground"/>
                                                     </button>
-                                                )}
-                                            </FormattedMessage>
                                         </TooltipTrigger>
-                                        <TooltipContent side="top" align="center" className="max-w-xs">
+                                        <TooltipContent side="top" align="center" className="max-w-80">
                                             {infoTooltip}
                                         </TooltipContent>
                                     </Tooltip>

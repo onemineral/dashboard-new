@@ -2,7 +2,7 @@ import {Routes, useLocation, Route} from 'react-router-dom';
 import {NotFound} from './pages/not-found'
 import routes from './routes';
 import Layout from './components/application/layout';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {AppContext} from '@/contexts/app-context.tsx'
 import {useQuery} from '@tanstack/react-query';
 import AppLoader from './components/application/app-loader';
@@ -12,11 +12,10 @@ import api from './lib/api';
 import {Toaster} from './components/ui/sonner';
 import Schema from "@/models/Schema.ts";
 import {IntlProvider} from "react-intl";
-import {useEffect} from 'react';
 import {Onboarding} from "@/pages/onboarding";
 import {Settings} from "@sdk/generated";
-import {ro, es, de, fr, it, nl, pt} from 'date-fns/locale'
 import {setDefaultOptions} from "date-fns";
+import {useDateFnsLocale} from "@/hooks/use-date-fns-locale.ts";
 
 // Use Vite's import.meta.glob for automatic locale loading
 const localeModules = import.meta.glob<{ default: Record<string, string> }>('../lang/compiled/*.json');
@@ -75,16 +74,13 @@ function App() {
         if (data) {
             loadLocaleData(locale).then((msgs) => {
                 setTranslations(msgs);
-                setDefaultOptions({
-                    locale: ro,
-                })
             });
         }
     }, [data]);
 
-    if (isLoading || !translations) return <AppLoader />;
-    if (!hasAccess) return <UnauthorizedAccess />;
-    if (askForPayment) return <ReactivateSubscription />;
+    if (isLoading || !translations) return <AppLoader/>;
+    if (!hasAccess) return <UnauthorizedAccess/>;
+    if (askForPayment) return <ReactivateSubscription/>;
 
 
     return <AppContext.Provider
@@ -94,26 +90,47 @@ function App() {
         } as any}
     >
         <IntlProvider messages={translations} locale={locale} defaultLocale="en">
-            {mustOnboard ? <Onboarding/> : <AppRoute/>}
-            <StackRoutes/>
-            <Toaster
-                position={"bottom-center"}
-                toastOptions={{
-                    unstyled: true,
-                    classNames: {
-                        error:
-                            "bg-red-50 text-red-800 border border-red-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-red-500",
-                        success:
-                            "bg-green-50 text-green-800 border border-green-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-green-500",
-                        warning:
-                            "bg-yellow-50 text-yellow-900 border border-yellow-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-yellow-500",
-                        info:
-                            "bg-blue-50 text-blue-800 border border-blue-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-blue-500",
-                    },
-                }}
-            />
+            <Dashboard>
+                {mustOnboard ? <Onboarding/> : <AppRoute/>}
+                <StackRoutes/>
+                <Toaster
+                    position={"bottom-center"}
+                    toastOptions={{
+                        unstyled: true,
+                        classNames: {
+                            error:
+                                "bg-red-50 text-red-800 border border-red-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-red-500",
+                            success:
+                                "bg-green-50 text-green-800 border border-green-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-green-500",
+                            warning:
+                                "bg-yellow-50 text-yellow-900 border border-yellow-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-yellow-500",
+                            info:
+                                "bg-blue-50 text-blue-800 border border-blue-200 rounded-lg shadow-lg px-4 py-3 flex items-center gap-3 [&>svg]:text-blue-500",
+                        },
+                    }}
+                />
+            </Dashboard>
         </IntlProvider>
     </AppContext.Provider>;
+}
+
+const Dashboard = ({children}: any) => {
+    const locale = useDateFnsLocale();
+    const [done, setDone] = useState(false);
+
+    useEffect(() => {
+        setDefaultOptions({
+            // @ts-ignore
+            locale: locale,
+        });
+        setDone(true);
+    }, [locale]);
+
+    if (!done) {
+        return null;
+    }
+
+    return <>{children}</>
 }
 
 const AppRoute = () => {

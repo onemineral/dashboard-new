@@ -137,6 +137,10 @@ export default function SimpleCalendarUpdateForm({property, daterange, onClose, 
                                 onBlur={field.onBlur}
                                 error={fieldState.error?.message}
                                 options={{currency: property.currency}}
+                                infoTooltip={intl.formatMessage({
+                                    defaultMessage: "Set the base nightly rate for this period. The final price charged to guests may include additional fees such as extra guest charges, length-of-stay discounts, and promotional offers.",
+                                    description: "Tooltip explaining the base rate field in calendar update form"
+                                })}
                             />
                         )}
                     />
@@ -155,6 +159,10 @@ export default function SimpleCalendarUpdateForm({property, daterange, onClose, 
                                 onBlur={field.onBlur}
                                 error={fieldState.error?.message}
                                 options={{currency: property.currency}}
+                                infoTooltip={intl.formatMessage({
+                                    defaultMessage: "Set the minimum number of nights required for bookings with check-in dates within this period. Guests will not be able to book stays shorter than this duration.",
+                                    description: "Tooltip explaining the minimum stay field in calendar update form"
+                                })}
                             />
                         )}
                     />

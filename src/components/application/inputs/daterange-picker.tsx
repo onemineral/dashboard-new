@@ -10,6 +10,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { useIsMobile } from "@/hooks/use-mobile.ts";
 import { useDateFormat } from "@/hooks/use-format.ts";
 import { DateRange as DateRangeDisplay } from "@/components/application/display/daterange";
+import {useDateFnsLocale} from "@/hooks/use-date-fns-locale.ts";
 
 /**
  * Week start day (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
@@ -180,6 +181,7 @@ export const DateRangePicker = React.memo(
       },
       ref
     ) => {
+        const locale = useDateFnsLocale();
       // State management
       const [open, setOpen] = React.useState(false);
       const [internalValue, setInternalValue] = React.useState<DateRangeValue | null>(
@@ -518,6 +520,7 @@ export const DateRangePicker = React.memo(
                 <div className="p-3">
                   <Calendar
                     mode="range"
+                    locale={locale}
                     selected={tempValue || undefined}
                     onSelect={(range) => {
                       handleSelect(range);

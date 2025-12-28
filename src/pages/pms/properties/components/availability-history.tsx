@@ -89,7 +89,7 @@ function BaseTimelineItemContent({
             {/* Notes */}
             {notes && (
                 <div className="flex gap-1.5 text-sm mt-2">
-                    <FileText className="size-3.5 text-muted-foreground mt-0.5 flex-shrink-0" />
+                    <FileText className="size-3.5 text-muted-foreground mt-1.5 flex-shrink-0" />
                     <p className="text-muted-foreground text-sm leading-relaxed">
                         {notes}
                     </p>

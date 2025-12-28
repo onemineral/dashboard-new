@@ -9,6 +9,7 @@ import {
     CalendarResourceDayData
 } from "@/components/application/calendar/types.ts";
 import {useEventListener} from "@/hooks/use-event-listener.ts";
+import CalendarSelectionSheet from "@/pages/pms/properties/components/calendar-selection-sheet.tsx";
 
 export type MulticalendarDayElementProp = {
     date: CalendarDate;
@@ -87,7 +88,6 @@ export default function Multicalendar({
                                           dayCellHeight = 40,
                                           eventRowHeight = 40,
                                           resourceRowHeight = 45,
-                                          onDateRangeSelected,
                                           onLoadMissingData,
                                           allowSelection = true,
                                           allowSelectInPast = false,
@@ -119,8 +119,6 @@ export default function Multicalendar({
     const getMissingDataToLoad = useMultiCalendarStore((state) => state.getMissingDataToLoad);
     const addDaysData = useMultiCalendarStore((state) => state.addDaysAndEventData);
     const clearDaysData = useMultiCalendarStore((state) => state.clearDaysData);
-    const getResourceDatesSelection = useMultiCalendarStore((state) => state.getResourceDatesSelection);
-    const clearResourceDateSelection = useMultiCalendarStore((state) => state.clearResourceDateSelection);
 
     // Reusable function to calculate visible resource indexes
     const calculateVisibleResourcesIndexes = useEffectEvent((scrollTop: number) => {
@@ -204,19 +202,8 @@ export default function Multicalendar({
 
         window.addEventListener('resize', handleResize);
 
-        const handleMouseUp = () => {
-            const selection = getResourceDatesSelection();
-            if (selection) {
-                onDateRangeSelected?.(selection.resource, selection.start, selection.end);
-                clearResourceDateSelection();
-            }
-        };
-
-        document.addEventListener('mouseup', handleMouseUp);
-
         return () => {
             window.removeEventListener('resize', handleResize);
-            document.removeEventListener('mouseup', handleMouseUp);
         };
 
     }, []);
@@ -255,39 +242,44 @@ export default function Multicalendar({
     };
 
 
-    return <div
-        className={cn('overflow-auto max-w-full absolute inset-0 scrollbar-thin')}
-        ref={containerRef}
-        onScroll={(event) => {
-            event.preventDefault();
-            calculateVisibleResourcesIndexes(event.currentTarget.scrollTop);
-            calculateVisibleColsIndexes(event.currentTarget.scrollLeft);
-            attemptLoadData();
-        }}
-    >
-        <div className={'flex flex-col'}
-             style={{
-                 width: `${dates.length * (dayCellWidth + 4)}px`,
-                 height: `${((dayCellHeight + resourceRowHeight) * resources.length)}px`,
-                 position: 'relative',
-             }}
-        >
-            <MulticalendarHeader renderDayHeaderElement={renderDayHeaderElement} dayCellWidth={dayCellWidth}/>
+    return <>
+        <div className={'relative w-full flex flex-1'}>
+            <div
+                className={cn('overflow-auto max-w-full absolute inset-0 scrollbar-thin')}
+                ref={containerRef}
+                onScroll={(event) => {
+                    event.preventDefault();
+                    calculateVisibleResourcesIndexes(event.currentTarget.scrollTop);
+                    calculateVisibleColsIndexes(event.currentTarget.scrollLeft);
+                    attemptLoadData();
+                }}
+            >
+                <div className={'flex flex-col'}
+                     style={{
+                         width: `${dates.length * (dayCellWidth + 4)}px`,
+                         height: `${((dayCellHeight + resourceRowHeight) * resources.length)}px`,
+                         position: 'relative',
+                     }}
+                >
+                    <MulticalendarHeader renderDayHeaderElement={renderDayHeaderElement} dayCellWidth={dayCellWidth}/>
 
-            {dates.length > 0 && <MulticalendarContent
-                renderDayElement={renderDayElement}
-                renderEventElement={renderEventElement}
-                renderResourceElement={renderResourceElement}
-                dayCellWidth={dayCellWidth}
-                dayCellHeight={dayCellHeight}
-                eventRowHeight={eventRowHeight}
-                resourceRowHeight={resourceRowHeight}
-                allowSelection={allowSelection}
-                allowSelectInPast={allowSelectInPast}
-            />}
+                    {dates.length > 0 && <MulticalendarContent
+                        renderDayElement={renderDayElement}
+                        renderEventElement={renderEventElement}
+                        renderResourceElement={renderResourceElement}
+                        dayCellWidth={dayCellWidth}
+                        dayCellHeight={dayCellHeight}
+                        eventRowHeight={eventRowHeight}
+                        resourceRowHeight={resourceRowHeight}
+                        allowSelection={allowSelection}
+                        allowSelectInPast={allowSelectInPast}
+                    />}
+                </div>
+            </div>
         </div>
-    </div>
-};
+        <CalendarSelectionSheet/>
+    </>;
+}
 
 const MulticalendarHeader = ({
                                  renderDayHeaderElement,
@@ -485,34 +477,34 @@ const MulticalendarCol = ({
                               renderDayElement,
                               totalHeight,
                           }: any) => {
-    const dates = useMultiCalendarStore((state) => state.dates);
-    const selectedDates = useMultiCalendarStore((state) => state.resourceDatesSelection);
+    const date = useMultiCalendarStore((state) => state.dates[colIndex]);
+    const hasSelectedDates = useMultiCalendarStore((state) => !!state.resourceDatesSelection[rowIndex]);
     const addDateSelection = useMultiCalendarStore((state) => state.addDateSelection);
-    const startDateSelection = useMultiCalendarStore((state) => state.startDateSelection);
+    const startDateSelection = useMultiCalendarStore((state) => state.setDateSelection);
     const setHoveredDateIndex = useMultiCalendarStore((state) => state.setHoveredDateIndex);
-
-    const isDraggable = allowSelection && (allowSelectInPast || !dates[colIndex].isPast);
-    const rowDayData = useMultiCalendarStore((state) => state.dayData[resource.id]);
+    const isSelected = useMultiCalendarStore(state => state.resourceDatesSelection[rowIndex] && state.resourceDatesSelection[rowIndex].start <= colIndex && state.resourceDatesSelection[rowIndex].end >= colIndex)
+    const isDraggable = allowSelection && (allowSelectInPast || !date.isPast);
+    const dayInfo = useMultiCalendarStore((state) => state.dayData[resource.id]?.[colIndex]);
+    const prevDayInfo = useMultiCalendarStore((state) => state.dayData[resource.id]?.[colIndex - 1]);
 
     const DayElement = renderDayElement;
 
-
     return <DayElement
         resource={resource}
-        date={dates[colIndex]}
-        dayInfo={rowDayData[colIndex]}
-        prevDayInfo={rowDayData[colIndex - 1]}
-        isSelected={selectedDates[rowIndex] && selectedDates[rowIndex].start <= colIndex && selectedDates[rowIndex].end >= colIndex}
-        draggable={isDraggable}
-        onDragStart={isDraggable ? (e: DragEvent) => {
-            e.dataTransfer?.setDragImage(dragImg, 0, 0);
-            startDateSelection(rowIndex, colIndex);
-            e.preventDefault();
-        } : undefined}
-        onMouseOver={() => {
+        date={date}
+        dayInfo={dayInfo}
+        prevDayInfo={prevDayInfo}
+        isSelected={isSelected}
+        onClick={() => {
             if (isDraggable) {
-                addDateSelection(colIndex);
+                if (hasSelectedDates) {
+                    addDateSelection(colIndex);
+                } else {
+                    startDateSelection(rowIndex, colIndex);
+                }
             }
+        }}
+        onMouseOver={() => {
             setHoveredDateIndex(colIndex);
         }}
         onMouseLeave={() => {

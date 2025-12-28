@@ -551,6 +551,12 @@
       "value": "Nu a fost găsit niciun cont."
     }
   ],
+  "5IieQ8": [
+    {
+      "type": 0,
+      "value": "Sejur minim"
+    }
+  ],
   "5LH+O5": [
     {
       "type": 0,
@@ -613,6 +619,12 @@
     {
       "type": 0,
       "value": "Nu a fost găsită nicio țară."
+    }
+  ],
+  "5lEXDN": [
+    {
+      "type": 0,
+      "value": "Check-in nepermis"
     }
   ],
   "5rFDAN": [
@@ -1205,6 +1217,12 @@
       "value": "Copiază „Client ID” și „Secret” de pe pagina cu detaliile aplicației."
     }
   ],
+  "D6o7tY": [
+    {
+      "type": 0,
+      "value": "Faceți clic pe orice dată din calendar pentru a începe să gestionați tarifele, disponibilitatea și rezervările."
+    }
+  ],
   "DJ7TGX": [
     {
       "type": 0,
@@ -1397,6 +1415,12 @@
     {
       "type": 0,
       "value": "− Comisionul tău de gazdă (15,5%)"
+    }
+  ],
+  "GOBrm7": [
+    {
+      "type": 0,
+      "value": "Check-out nepermis"
     }
   ],
   "GV4liN": [
@@ -2035,6 +2059,12 @@
     {
       "type": 0,
       "value": "Cheia Google Maps API nu este configurată"
+    }
+  ],
+  "SbCjk5": [
+    {
+      "type": 0,
+      "value": "Selectați datele"
     }
   ],
   "Sv2doR": [

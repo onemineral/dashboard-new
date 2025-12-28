@@ -21,18 +21,12 @@ export default function UpdateRatesForm({property, daterange, onClose, onBack}: 
     return (
         <div className="flex flex-col flex-1 mt-4">
             <div className="space-y-1 px-4 mb-4">
-                <h3 className="font-medium text-foreground">
+                <h3 className="font-medium text-center text-foreground">
                     <FormattedMessage
                         defaultMessage="Update rates & restrictions"
                         description="Title for updating rates and restrictions"
                     />
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                    <FormattedMessage
-                        defaultMessage="Set rates, minimum stay requirements, and booking restrictions for your selected dates. Use simple mode for consistent pricing or advanced mode for day-specific settings."
-                        description="Explanation text for updating rates functionality"
-                    />
-                </p>
             </div>
 
             <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as "simple" | "advanced")} className="flex-1 flex flex-col px-4">

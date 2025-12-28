@@ -349,7 +349,7 @@ export default function AdvancedCalendarUpdateForm({property, daterange, onClose
                             <Table className="min-w-full divide-y divide-border table-fixed">
                                 <TableHeader>
                                     <TableRow>
-                                        <TableHead scope="col" className="text-left text-xs font-medium w-[15%] sm:w-auto">
+                                        <TableHead scope="col" className="text-left text-xs font-medium w-[50px]">
                                             <FormattedMessage
                                                 defaultMessage="Day"
                                                 description="Table header for day name"
@@ -381,8 +381,7 @@ export default function AdvancedCalendarUpdateForm({property, daterange, onClose
                                         return (
                                             <TableRow key={day.key} className={!isActive ? 'opacity-40 pointer-events-none' : ''}>
                                                 <TableCell className="text-sm font-medium truncate">
-                                                    <span className="hidden sm:inline">{day.label}</span>
-                                                    <span className="sm:hidden">{day.shortLabel}</span>
+                                                    <span>{day.shortLabel}</span>
                                                 </TableCell>
                                                 
                                                 <TableCell>

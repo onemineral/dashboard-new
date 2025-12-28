@@ -551,6 +551,12 @@
       "value": "Geen accounts gevonden."
     }
   ],
+  "5IieQ8": [
+    {
+      "type": 0,
+      "value": "Minimumverblijf"
+    }
+  ],
   "5LH+O5": [
     {
       "type": 0,
@@ -617,6 +623,12 @@
     {
       "type": 0,
       "value": "Geen land gevonden."
+    }
+  ],
+  "5lEXDN": [
+    {
+      "type": 0,
+      "value": "Inchecken niet toegestaan"
     }
   ],
   "5rFDAN": [
@@ -1213,6 +1225,12 @@
       "value": "Kopieer de \"Client ID\" en \"Secret\" van de app-details pagina."
     }
   ],
+  "D6o7tY": [
+    {
+      "type": 0,
+      "value": "Klik op een datum in de kalender om tarieven, beschikbaarheid en reserveringen te beheren."
+    }
+  ],
   "DJ7TGX": [
     {
       "type": 0,
@@ -1409,6 +1427,12 @@
     {
       "type": 0,
       "value": "− Je hostkosten (15,5%)"
+    }
+  ],
+  "GOBrm7": [
+    {
+      "type": 0,
+      "value": "Uitchecken niet toegestaan"
     }
   ],
   "GV4liN": [
@@ -2051,6 +2075,12 @@
     {
       "type": 0,
       "value": "Google Maps API-sleutel niet geconfigureerd"
+    }
+  ],
+  "SbCjk5": [
+    {
+      "type": 0,
+      "value": "Selecteer datums"
     }
   ],
   "Sv2doR": [

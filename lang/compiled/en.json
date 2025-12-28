@@ -551,6 +551,12 @@
       "value": "No accounts found."
     }
   ],
+  "5IieQ8": [
+    {
+      "type": 0,
+      "value": "Minimum stay"
+    }
+  ],
   "5LH+O5": [
     {
       "type": 0,
@@ -617,6 +623,12 @@
     {
       "type": 0,
       "value": "No country found."
+    }
+  ],
+  "5lEXDN": [
+    {
+      "type": 0,
+      "value": "Check-in not allowed"
     }
   ],
   "5rFDAN": [
@@ -1209,6 +1221,12 @@
       "value": "Copy the \"Client ID\" and \"Secret\" from the app details page."
     }
   ],
+  "D6o7tY": [
+    {
+      "type": 0,
+      "value": "Click on any date in the calendar to get started managing rates, availability, and reservations."
+    }
+  ],
   "DJ7TGX": [
     {
       "type": 0,
@@ -1405,6 +1423,12 @@
     {
       "type": 0,
       "value": "− Your host fee (15.5%)"
+    }
+  ],
+  "GOBrm7": [
+    {
+      "type": 0,
+      "value": "Check-out not allowed"
     }
   ],
   "GV4liN": [
@@ -2043,6 +2067,12 @@
     {
       "type": 0,
       "value": "Google Maps API key not configured"
+    }
+  ],
+  "SbCjk5": [
+    {
+      "type": 0,
+      "value": "Select dates"
     }
   ],
   "Sv2doR": [

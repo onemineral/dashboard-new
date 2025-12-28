@@ -424,7 +424,7 @@ export const ResourceInput = React.memo<ResourceInputProps>(
                 error={error}
                 errorsAsTooltip={errorsAsTooltip}
                 infoTooltip={infoTooltip}
-                className={className}
+                className={cn('bg-background', className)}
                 data-testid={dataTestId ? `${dataTestId}-wrapper` : undefined}
             >
                 {renderer(inputProps, field)}

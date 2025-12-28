@@ -108,18 +108,12 @@ export default function UpdateAvailabilityForm({property, daterange, onClose, on
         <form onSubmit={onSubmit}
               className="space-y-4 flex-1 flex flex-col mt-4 px-4">
             <div className="space-y-1">
-                <h3 className="font-medium text-foreground">
+                <h3 className="font-medium text-center text-foreground">
                     <FormattedMessage
                         defaultMessage="Update availability for selected dates"
                         description="Title for updating availability information"
                     />
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                    <FormattedMessage
-                        defaultMessage="Change the availability status for the selected dates. You can mark dates as available or unavailable for bookings. Optionally add notes to track the reason for the change."
-                        description="Explanation text for updating availability functionality"
-                    />
-                </p>
             </div>
 
             <div className="space-y-4">
@@ -156,6 +150,10 @@ export default function UpdateAvailabilityForm({property, daterange, onClose, on
                             onChange={field.onChange}
                             onBlur={field.onBlur}
                             error={fieldState.error?.message}
+                            infoTooltip={intl.formatMessage({
+                                defaultMessage: "Add optional notes to document the reason for this availability change. These notes will be saved in the availability history for future reference.",
+                                description: "Tooltip explaining the notes field in update availability form"
+                            })}
                         />
                     )}
                 />

@@ -3,7 +3,7 @@ import Multicalendar, {
     MulticalendarEventElementProp,
     RenderDayHeader
 } from "@/components/application/calendar/multi";
-import {cn, formatDate, mergeObjects} from "@/lib/utils.ts";
+import {cn, mergeObjects} from "@/lib/utils.ts";
 import {toDate, addMonths, startOfMonth, format} from "date-fns";
 import {Skeleton} from "@/components/ui/skeleton.tsx";
 import React, {useState, useMemo, useEffect} from "react";
@@ -17,25 +17,27 @@ import useFiltersDefinition from "@/components/application/filters/hooks/use-fil
 import {useDataTable} from "@/hooks/use-data-table.ts";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select.tsx";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
-import {useIntl} from "react-intl";
+import {FormattedMessage, useIntl} from "react-intl";
 import BookingStatusBadge from "@/components/application/statuses/booking-status-badge.tsx";
 import {Booking, Property, RatesAvailability} from "@sdk/generated";
 import {useTranslate} from "@/hooks/use-translate.ts";
-import CalendarSelectionSheet from "@/pages/pms/properties/components/calendar-selection-sheet.tsx";
 import AutocompleteTextSearchFilter from "@/components/application/filters/types/autocomplete-text-search-filter.tsx";
+import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip.tsx";
+import {LogIn, LogOut} from "lucide-react";
 
 const EventElement = (props: MulticalendarEventElementProp) => {
     const {event, className, ...divProps} = props;
 
-    return <div className={cn(className, 'p-1 overflow-hidden inline-flex top-1 border-sky-950 rounded bg-sky-700')} {...divProps}>
+    return <div
+        className={cn(className, 'p-1 overflow-hidden inline-flex top-1 border-sky-950 rounded bg-sky-700')} {...divProps}>
         <Link modal to={`/calendar/${event.id}`}
               className={'px-1 sticky left-0 top-0 flex items-center text-xs text-white'}>
             <div className={' flex items-center text-ellipsis whitespace-nowrap max-w-full gap-1'}>
                 {event.channel?.icon_url ? <Avatar className={'size-7 bg-white p-1'}>
-                    <AvatarImage src={event.channel?.icon_url} alt={''} />
+                    <AvatarImage src={event.channel?.icon_url} alt={''}/>
                 </Avatar> : null}
                 <span>{event.main_guest?.full_name}</span>
-                <BookingStatusBadge status={event.status} />
+                <BookingStatusBadge status={event.status}/>
             </div>
         </Link>
     </div>;
@@ -54,16 +56,14 @@ const DayElementRate = ({rate, prevRate, resource}: {
         // Parse the UTC timestamp and get current UTC time
         const updatedAt = new Date(rate.updated_at + 'Z');
         const nowUtc = new Date();
-        
+
         // Calculate time difference in seconds (both dates are in UTC)
         const timeDiffSeconds = (nowUtc.getTime() - updatedAt.getTime()) / 1000;
-
-        console.log(timeDiffSeconds);
 
         // Check if updated within last 5 seconds
         if (timeDiffSeconds >= 0 && timeDiffSeconds <= 10) {
             setShowGlow(true);
-            
+
             // Remove the glow class after 2 seconds
             const timeout = setTimeout(() => {
                 setShowGlow(false);
@@ -76,14 +76,57 @@ const DayElementRate = ({rate, prevRate, resource}: {
     return <>
         {rate ? (
             <>
-                {rate.rate && rate.availability_status_type !== 'booked' ?
-                    <div className={'text-xs mb-[18px] relative z-10'}>
-                        {rate.rate?.toLocaleString(undefined, {
+                {rate.availability_status_type !== 'booked' ?
+                    <div className={'text-xs relative z-10 flex flex-col items-center w-full'}>
+                        <span>{rate.rate?.toLocaleString(undefined, {
                             style: 'currency',
                             currency: resource.currency?.iso_code,
                             currencyDisplay: 'narrowSymbol',
                             minimumFractionDigits: 0,
-                        })}
+                        })}</span>
+                        <span className={'flex justify-around items-center w-full'}>
+                            <Tooltip>
+                                <TooltipTrigger>
+                            <LogIn className={cn({
+                                'text-red-600': rate.checkin_restricted,
+                                'text-transparent': !rate.checkin_restricted,
+                            })} size={10}/>
+                                    </TooltipTrigger>
+                                {rate.checkin_restricted && <TooltipContent>
+                                    <FormattedMessage
+                                        defaultMessage="Check-in not allowed"
+                                        description="Tooltip text indicating check-in is not allowed on this date"
+                                    />
+                                </TooltipContent>}
+                                </Tooltip>
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <span className={'text-xs text-muted-foreground grow text-center'}>
+                            {rate.min_stay}+
+                        </span>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <FormattedMessage
+                                    defaultMessage="Minimum stay"
+                                    description="Tooltip text for minimum stay requirement in calendar"
+                                />
+                            </TooltipContent>
+                        </Tooltip>
+                            <Tooltip>
+                            <TooltipTrigger>
+                            <LogOut className={cn({
+                                'text-red-600': rate.checkout_restricted,
+                                'text-transparent': !rate.checkout_restricted,
+                            })} size={10}/>
+                                    </TooltipTrigger>
+                                {rate.checkout_restricted && <TooltipContent>
+                                    <FormattedMessage
+                                        defaultMessage="Check-out not allowed"
+                                        description="Tooltip text indicating check-out is not allowed on this date"
+                                    />
+                                </TooltipContent>}
+                                </Tooltip>
+                        </span>
                     </div> : <div className={'rate-not-defined w-full h-full'}></div>}
 
                 {/* Glow animation overlay */}
@@ -105,7 +148,7 @@ const DayElementRate = ({rate, prevRate, resource}: {
                          style={{background: rate.availability_status?.calendar_color}}></div>
                 </div>
             </>
-        ) : (<Skeleton className={'w-10 h-3 mb-[18px]'}/>)}
+        ) : (<div className={'flex flex-col items-center justify-center gap-2'}><Skeleton className={'w-10 h-4'}/> <Skeleton className={'w-10 h-3'}/></div>)}
     </>;
 };
 
@@ -116,7 +159,7 @@ const DayElement = (props: MulticalendarDayElementProp) => {
     return <div
         {...divProps}
         draggable={props.draggable && !date.isPast}
-        className={cn('border cursor-default rounded hover:border-foreground flex items-end justify-center text-sm relative overflow-hidden', props.className, {
+        className={cn('border cursor-default rounded hover:border-foreground flex items-center justify-center text-sm relative overflow-hidden', props.className, {
             'border-yellow-400': date.isToday,
             'opacity-50': date.isPast,
             'bg-sky-300/10': date.isWeekend,
@@ -162,10 +205,9 @@ const ResourceElement = (props: { resource: Property } & React.HTMLProps<HTMLDiv
 
 export default function MultiCalendar() {
     const intl = useIntl();
-    const [selectedProperty, setSelectedProperty] = useState<Property|null>(null);
-    const [selectedDates, setSelectedDates] = useState<{start: string; end: string} | null>(null);
-    
+
     // Generate month options from next month to 20 months in the future
+    // Uses date-fns format with the locale to display month names in the user's language
     const monthOptions = useMemo(() => {
         const options = [
             {
@@ -177,7 +219,7 @@ export default function MultiCalendar() {
             }
         ];
         const today = new Date();
-        
+
         for (let i = 1; i <= 20; i++) {
             const monthDate = startOfMonth(addMonths(today, i));
             options.push({
@@ -185,18 +227,18 @@ export default function MultiCalendar() {
                 label: format(monthDate, 'MMMM yyyy'),
             });
         }
-        
+
         return options;
-    }, []);
-    
+    }, [intl]);
+
     const handleMonthJump = (value: string) => {
         const selectedDate = new Date(value);
         const event = new CustomEvent('multicalendar:scrollToDate', {
-            detail: { date: selectedDate }
+            detail: {date: selectedDate}
         });
         window.dispatchEvent(event);
     };
-    
+
     const availableFilters = useFiltersDefinition('property', [
         {
             name: 'name',
@@ -290,7 +332,7 @@ export default function MultiCalendar() {
                         <SelectValue placeholder={intl.formatMessage({
                             defaultMessage: 'Jump to',
                             description: 'Placeholder for month selection dropdown'
-                        })} />
+                        })}/>
                     </SelectTrigger>
                     <SelectContent>
                         {monthOptions.map((option) => (
@@ -301,7 +343,7 @@ export default function MultiCalendar() {
                     </SelectContent>
                 </Select>
             </Filters>
-            <div className="flex-1 relative">
+            <div className="flex-1 relative flex">
                 {propertiesLoading && (
                     <div className="space-y-4">
                         {Array.from({length: 5}).map((_, index) => (
@@ -332,14 +374,6 @@ export default function MultiCalendar() {
                         resourceRowHeight={50}
                         eventRowHeight={40}
                         onLoadMissingData={(resources: Property[], start, end) => loadData(resources, start, end)}
-                        /* // @ts-ignore */
-                        onDateRangeSelected={(resource: Property, startDate, endDate) => {
-                            setSelectedDates({
-                                start: formatDate(startDate),
-                                end: formatDate(endDate),
-                            });
-                            setSelectedProperty(resource);
-                        }}
                         pastMonthsToRender={1}
                         futureMonthsToRender={24}
                         // @ts-ignore
@@ -354,11 +388,6 @@ export default function MultiCalendar() {
                     />
                 }
             </div>
-
-                <CalendarSelectionSheet property={selectedProperty} daterange={selectedDates} onClose={() => {
-                    setSelectedProperty(null);
-                    setSelectedDates(null);
-                }} />
 
         </PageContent>
     </Page>);

@@ -351,6 +351,10 @@
     "defaultMessage": "Nu a fost găsit niciun cont.",
     "description": "No accounts found message"
   },
+  "5IieQ8": {
+    "defaultMessage": "Sejur minim",
+    "description": "Tooltip text for minimum stay requirement in calendar"
+  },
   "5LH+O5": {
     "defaultMessage": "Tariful trebuie să fie un număr valid",
     "description": "Error message when rate is not a valid number"
@@ -374,6 +378,10 @@
   "5iOMya": {
     "defaultMessage": "Nu a fost găsită nicio țară.",
     "description": "Message when no countries match the search"
+  },
+  "5lEXDN": {
+    "defaultMessage": "Check-in nepermis",
+    "description": "Tooltip text indicating check-in is not allowed on this date"
   },
   "5rFDAN": {
     "defaultMessage": "Descrieți tipul de contract personalizat",
@@ -743,6 +751,10 @@
     "defaultMessage": "Copiază „Client ID” și „Secret” de pe pagina cu detaliile aplicației.",
     "description": "Step 7: Copy credentials. IMPORTANT: Keep 'Client ID' and 'Secret' in English in parentheses after translation if it makes sense, as these are the exact field labels in PayPal's interface."
   },
+  "D6o7tY": {
+    "defaultMessage": "Faceți clic pe orice dată din calendar pentru a începe să gestionați tarifele, disponibilitatea și rezervările.",
+    "description": "Description prompting user to select dates from the calendar"
+  },
   "DJ7TGX": {
     "defaultMessage": "Key ID",
     "description": "Label for Razorpay Key ID input"
@@ -850,6 +862,10 @@
   "GJz/Ju": {
     "defaultMessage": "− Comisionul tău de gazdă (15,5%)",
     "description": "Host fee label"
+  },
+  "GOBrm7": {
+    "defaultMessage": "Check-out nepermis",
+    "description": "Tooltip text indicating check-out is not allowed on this date"
   },
   "GV4liN": {
     "defaultMessage": "Sub API Key veți vedea Webhook Secret. Copiați cu atenție această valoare, deoarece este folosită pentru a verifica autenticitatea webhook-urilor.",
@@ -1270,6 +1286,10 @@
   "SUSpIj": {
     "defaultMessage": "Cheia Google Maps API nu este configurată",
     "description": "Error message when Google Maps API key is missing"
+  },
+  "SbCjk5": {
+    "defaultMessage": "Selectați datele",
+    "description": "Title shown when no dates are selected in calendar"
   },
   "Sv2doR": {
     "defaultMessage": "Fără petreceri/evenimente",

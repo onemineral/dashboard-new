@@ -551,6 +551,12 @@
       "value": "Aucun compte trouvé."
     }
   ],
+  "5IieQ8": [
+    {
+      "type": 0,
+      "value": "Séjour minimum"
+    }
+  ],
   "5LH+O5": [
     {
       "type": 0,
@@ -613,6 +619,12 @@
     {
       "type": 0,
       "value": "Aucun pays trouvé."
+    }
+  ],
+  "5lEXDN": [
+    {
+      "type": 0,
+      "value": "Arrivée non autorisée"
     }
   ],
   "5rFDAN": [
@@ -1205,6 +1217,12 @@
       "value": "Copiez le « Client ID » et le « Secret » depuis la page de détails de l’application."
     }
   ],
+  "D6o7tY": [
+    {
+      "type": 0,
+      "value": "Cliquez sur une date dans le calendrier pour commencer à gérer les tarifs, les disponibilités et les réservations."
+    }
+  ],
   "DJ7TGX": [
     {
       "type": 0,
@@ -1397,6 +1415,12 @@
     {
       "type": 0,
       "value": "− Vos frais hôte (15,5 %)"
+    }
+  ],
+  "GOBrm7": [
+    {
+      "type": 0,
+      "value": "Départ non autorisé"
     }
   ],
   "GV4liN": [
@@ -2035,6 +2059,12 @@
     {
       "type": 0,
       "value": "Clé d’API Google Maps non configurée"
+    }
+  ],
+  "SbCjk5": [
+    {
+      "type": 0,
+      "value": "Sélectionnez des dates"
     }
   ],
   "Sv2doR": [

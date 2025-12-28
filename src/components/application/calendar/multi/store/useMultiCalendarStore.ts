@@ -27,7 +27,7 @@ export type MultiCalendarStore = {
     setVisibleDatesIndexes: (indexes: number[]) => void;
     setVisibleResourcesIndexes: (indexes: number[]) => void;
 
-    startDateSelection: (resourceIndex: number, dateIndex: number) => void;
+    setDateSelection: (resourceIndex: number, startDateIndex: number, endDateIndex?: number) => void;
     addDateSelection: (dateIndex: number) => void;
     clearResourceDateSelection: () => void;
     getResourceDatesSelection: () => {resource: CalendarResource, start: Date, end: Date} | null;
@@ -298,12 +298,12 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
         };
     },
 
-    startDateSelection: (resourceIndex: number, dateIndex: number) => {
+    setDateSelection: (resourceIndex: number, startDateIndex: number, endDateIndex?: number) => {
         set({
             resourceDatesSelection: {
                 [resourceIndex]: {
-                    start: dateIndex,
-                    end: dateIndex,
+                    start: startDateIndex,
+                    end: endDateIndex || startDateIndex,
                 }
             }
         });
@@ -323,6 +323,7 @@ const useMultiCalendarStore = create<MultiCalendarStore>((set, get) => ({
             } else {
                 resourceDatesSelection[index].start = dateIndex;
             }
+            resourceDatesSelection[index] = {...resourceDatesSelection[index]};
         });
 
         set({

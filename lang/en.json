@@ -351,6 +351,10 @@
     "defaultMessage": "No accounts found.",
     "description": "No accounts found message"
   },
+  "5IieQ8": {
+    "defaultMessage": "Minimum stay",
+    "description": "Tooltip text for minimum stay requirement in calendar"
+  },
   "5LH+O5": {
     "defaultMessage": "Rate must be a valid number",
     "description": "Error message when rate is not a valid number"
@@ -374,6 +378,10 @@
   "5iOMya": {
     "defaultMessage": "No country found.",
     "description": "Message when no countries match the search"
+  },
+  "5lEXDN": {
+    "defaultMessage": "Check-in not allowed",
+    "description": "Tooltip text indicating check-in is not allowed on this date"
   },
   "5rFDAN": {
     "defaultMessage": "Please describe your custom agreement type",
@@ -743,6 +751,10 @@
     "defaultMessage": "Copy the \"Client ID\" and \"Secret\" from the app details page.",
     "description": "Step 7: Copy credentials. IMPORTANT: Keep 'Client ID' and 'Secret' in English in parentheses after translation if it makes sense, as these are the exact field labels in PayPal's interface."
   },
+  "D6o7tY": {
+    "defaultMessage": "Click on any date in the calendar to get started managing rates, availability, and reservations.",
+    "description": "Description prompting user to select dates from the calendar"
+  },
   "DJ7TGX": {
     "defaultMessage": "Key ID",
     "description": "Label for Razorpay Key ID input"
@@ -850,6 +862,10 @@
   "GJz/Ju": {
     "defaultMessage": "− Your host fee (15.5%)",
     "description": "Host fee label"
+  },
+  "GOBrm7": {
+    "defaultMessage": "Check-out not allowed",
+    "description": "Tooltip text indicating check-out is not allowed on this date"
   },
   "GV4liN": {
     "defaultMessage": "Below the API Key, you will see your Webhook Secret. Copy this value carefully as it's used to verify webhook authenticity.",
@@ -1270,6 +1286,10 @@
   "SUSpIj": {
     "defaultMessage": "Google Maps API key not configured",
     "description": "Error message when Google Maps API key is missing"
+  },
+  "SbCjk5": {
+    "defaultMessage": "Select dates",
+    "description": "Title shown when no dates are selected in calendar"
   },
   "Sv2doR": {
     "defaultMessage": "No Parties/Events",

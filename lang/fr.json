@@ -351,6 +351,10 @@
     "defaultMessage": "Aucun compte trouvé.",
     "description": "No accounts found message"
   },
+  "5IieQ8": {
+    "defaultMessage": "Séjour minimum",
+    "description": "Tooltip text for minimum stay requirement in calendar"
+  },
   "5LH+O5": {
     "defaultMessage": "Le tarif doit être un nombre valide",
     "description": "Error message when rate is not a valid number"
@@ -374,6 +378,10 @@
   "5iOMya": {
     "defaultMessage": "Aucun pays trouvé.",
     "description": "Message when no countries match the search"
+  },
+  "5lEXDN": {
+    "defaultMessage": "Arrivée non autorisée",
+    "description": "Tooltip text indicating check-in is not allowed on this date"
   },
   "5rFDAN": {
     "defaultMessage": "Veuillez décrire votre type de contrat personnalisé",
@@ -743,6 +751,10 @@
     "defaultMessage": "Copiez le « Client ID » et le « Secret » depuis la page de détails de l’application.",
     "description": "Step 7: Copy credentials. IMPORTANT: Keep 'Client ID' and 'Secret' in English in parentheses after translation if it makes sense, as these are the exact field labels in PayPal's interface."
   },
+  "D6o7tY": {
+    "defaultMessage": "Cliquez sur une date dans le calendrier pour commencer à gérer les tarifs, les disponibilités et les réservations.",
+    "description": "Description prompting user to select dates from the calendar"
+  },
   "DJ7TGX": {
     "defaultMessage": "Key ID",
     "description": "Label for Razorpay Key ID input"
@@ -850,6 +862,10 @@
   "GJz/Ju": {
     "defaultMessage": "− Vos frais hôte (15,5 %)",
     "description": "Host fee label"
+  },
+  "GOBrm7": {
+    "defaultMessage": "Départ non autorisé",
+    "description": "Tooltip text indicating check-out is not allowed on this date"
   },
   "GV4liN": {
     "defaultMessage": "Sous la clé API, vous verrez votre Webhook Secret. Copiez cette valeur avec précaution, car elle sert à vérifier l’authenticité des webhooks.",
@@ -1270,6 +1286,10 @@
   "SUSpIj": {
     "defaultMessage": "Clé d’API Google Maps non configurée",
     "description": "Error message when Google Maps API key is missing"
+  },
+  "SbCjk5": {
+    "defaultMessage": "Sélectionnez des dates",
+    "description": "Title shown when no dates are selected in calendar"
   },
   "Sv2doR": {
     "defaultMessage": "Pas de fêtes/événements",

@@ -555,6 +555,12 @@
       "value": "Keine Konten gefunden."
     }
   ],
+  "5IieQ8": [
+    {
+      "type": 0,
+      "value": "Mindestaufenthalt"
+    }
+  ],
   "5LH+O5": [
     {
       "type": 0,
@@ -621,6 +627,12 @@
     {
       "type": 0,
       "value": "Kein Land gefunden."
+    }
+  ],
+  "5lEXDN": [
+    {
+      "type": 0,
+      "value": "Check-in nicht möglich"
     }
   ],
   "5rFDAN": [
@@ -1217,6 +1229,12 @@
       "value": "Kopieren Sie die „Client ID“ und das „Secret“ von der Detailseite der App."
     }
   ],
+  "D6o7tY": [
+    {
+      "type": 0,
+      "value": "Klicken Sie im Kalender auf ein beliebiges Datum, um Preise, Verfügbarkeit und Buchungen zu verwalten."
+    }
+  ],
   "DJ7TGX": [
     {
       "type": 0,
@@ -1413,6 +1431,12 @@
     {
       "type": 0,
       "value": "− Deine Gastgebergebühr (15,5 %)"
+    }
+  ],
+  "GOBrm7": [
+    {
+      "type": 0,
+      "value": "Check-out nicht möglich"
     }
   ],
   "GV4liN": [
@@ -2055,6 +2079,12 @@
     {
       "type": 0,
       "value": "Google-Maps-API-Schlüssel nicht konfiguriert"
+    }
+  ],
+  "SbCjk5": [
+    {
+      "type": 0,
+      "value": "Daten auswählen"
     }
   ],
   "Sv2doR": [

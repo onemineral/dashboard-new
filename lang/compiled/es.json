@@ -551,6 +551,12 @@
       "value": "No se encontraron cuentas."
     }
   ],
+  "5IieQ8": [
+    {
+      "type": 0,
+      "value": "Estancia mínima"
+    }
+  ],
   "5LH+O5": [
     {
       "type": 0,
@@ -617,6 +623,12 @@
     {
       "type": 0,
       "value": "No se encontró ningún país."
+    }
+  ],
+  "5lEXDN": [
+    {
+      "type": 0,
+      "value": "No se permite el check-in"
     }
   ],
   "5rFDAN": [
@@ -1209,6 +1221,12 @@
       "value": "Copia el \"Client ID\" (Client ID) y el \"Secret\" (Secret) desde la página de detalles de la aplicación."
     }
   ],
+  "D6o7tY": [
+    {
+      "type": 0,
+      "value": "Haz clic en cualquier fecha del calendario para empezar a gestionar tarifas, disponibilidad y reservas."
+    }
+  ],
   "DJ7TGX": [
     {
       "type": 0,
@@ -1401,6 +1419,12 @@
     {
       "type": 0,
       "value": "− Tu comisión de anfitrión (15,5%)"
+    }
+  ],
+  "GOBrm7": [
+    {
+      "type": 0,
+      "value": "No se permite el check-out"
     }
   ],
   "GV4liN": [
@@ -2039,6 +2063,12 @@
     {
       "type": 0,
       "value": "La clave de la API de Google Maps no está configurada"
+    }
+  ],
+  "SbCjk5": [
+    {
+      "type": 0,
+      "value": "Selecciona fechas"
     }
   ],
   "Sv2doR": [
